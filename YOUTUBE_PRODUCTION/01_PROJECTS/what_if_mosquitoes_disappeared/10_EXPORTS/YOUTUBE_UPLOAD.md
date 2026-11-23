@@ -1,34 +1,81 @@
-# YouTube Upload Sheet
+# YouTube SEO & Upload Package
 
-**File:** `what_if_all_mosquitoes_disappeared_full.mp4` (12:06, 1080p, 24 fps)
-**Captions:** `what_if_all_mosquitoes_disappeared_full.srt`. Upload under Subtitles → Upload file → "With timing".
-**Thumbnail:** `../09_THUMBNAIL/thumbnail_1280x720.jpg`
+**Video:** `what_if_all_mosquitoes_disappeared_full.mp4` (12:06, 1080p)
 
-## Title options
-1. What Would Happen If All Mosquitoes Disappeared?
-2. What If Every Mosquito Died Tonight?
-3. 3,500 Species Gone Overnight: A World Without Mosquitoes
+**Ready to paste:**
+- `description.txt` (2,020 / 5,000 chars)
+- `tags.txt` (396 / 500 chars)
+- `what_if_all_mosquitoes_disappeared_full.srt` (captions)
 
-## Description
-Tonight, at midnight, every mosquito on Earth drops dead. No more itchy bites, no more malaria. Sounds perfect, right? Scientists actually disagree. Join Pip on a trip through ponds, the Arctic tundra, northern bogs and a century of humanity's war on mosquitoes to find out what would really happen.
+---
 
-00:00 Every mosquito, gone
-00:40 Why we'd want this
-01:33 How a mosquito finds you
-02:06 An ancient survivor
-02:39 The mosquitoes we never think about
-03:17 Life under water
-04:55 The night shift
-05:35 The Arctic
-06:46 The orchid that needs mosquitoes
-07:28 What changes for humans
-08:20 We've tried this before
-09:40 Could we actually do it?
-10:59 The risks
-11:20 So what would happen?
-12:00 Which creature next?
+## 1. What the search results told us
+Searched on 2026-11-23 for "what if all mosquitoes disappeared", "what would happen if mosquitoes went extinct" and "world without mosquitoes". These are view counts as shown on the results pages. I had no access to keyword search-volume tools, so this is evidence from rankings, not search-volume data.
 
-Sources: WHO World Malaria Report 2024/2025; WHO dengue fact sheet; Fang (2010) Nature 466:432; Lahondère et al. (2019) PNAS; Utarini et al. (2021) NEJM; Hammond et al. (2021) Nature Communications; Greenwalt et al. (2013) PNAS; USGS Arctic caribou research. The full list is in the project research file.
+| Video (channel) | Views | Age | Takeaway |
+|---|---|---|---|
+| What If All Mosquitoes Disappear? (Peekaboo Kidz) | 9.4M | 5 y | Kids' channel owns the exact phrase |
+| What If We Killed All Mosquitoes? (What If) | 6.5M | 7 y | Big, old, short (4:47) |
+| What Would Happen if Mosquitoes Went Extinct? (SciShow) | 5.1M | 10 y | Same |
+| What If We Killed Every Mosquito On Earth? (AsapSCIENCE) | 1.9M | 2 y | |
+| Should Mosquitoes Go Extinct? (Lindsay Nikole) | 974K | 4 mo | **Long-form (27 min), recent, does well** |
+| We Can Erase EVERY Single Mosquito. But There's a Catch. (Math and Science) | 866K | 3 wk | **Story + curiosity-gap title wins today** |
+| ~10 new uploads titled almost exactly "What If All Mosquitoes Disappeared?" | 5–2,000 | 1 d–3 mo | **Copy-paste titles get buried** |
 
-## Tags
-mosquitoes, what if, world without mosquitoes, malaria, dengue, ecology, animated science, food chain, gene drive, wolbachia, extinction
+**Conclusions:**
+1. Don't use the bare keyword phrase as the whole title. The top slots are held by big, old videos, and new copies get almost nothing.
+2. What works now is a **story or curiosity hook** with the keyword "mosquito" in it.
+3. Our 12-minute length is an advantage. Most results are 5-minute explainers, and the recent long-form video did very well.
+4. Put the exact search phrases in the **description's first line, the chapters and the tags**. That is where they help most without making the title generic.
+
+## 2. Titles (all accurate to what the video shows)
+| # | Title | Chars | Use |
+|---|---|---|---|
+| **1 (recommended)** | **Every Mosquito on Earth Dies at Midnight. Here's What Happens Next** | 66 | Mirrors the opening scene exactly; a story hook stands out among copycat titles |
+| 2 | What Would Happen If All Mosquitoes Disappeared? It's Complicated | 65 | Exact-match search phrase plus an honest hook |
+| 3 | What If Every Mosquito Died Tonight? Scientists Don't Agree | 59 | Shortest; matches the "scientists disagree" thread in the video |
+
+Use YouTube Studio's **Test & compare** to A/B-test titles 1–3. Front-load the keyword, because phones cut titles at about 50–60 characters.
+
+## 3. Thumbnails (`../09_THUMBNAIL/`)
+All three are 1280×720 JPGs well under YouTube's 2 MB limit. `mobile_preview_336px.png` confirms they read at phone size.
+
+| File | Text | Image | Pair with |
+|---|---|---|---|
+| **`thumb_A_1280x720.jpg` (recommended)** | EVERY ONE. GONE. | Dead mosquito (X-eyes) falling, clock at midnight, shocked Pip | Title 1 |
+| `thumb_B_1280x720.jpg` | DELETE THEM ALL? | Giant mosquito looming over worried Pip | Title 3 |
+| `thumb_C_1280x720.jpg` | ALL 3,500 SPECIES? | Earth with mosquitoes being crossed out, shocked Pip | Title 2 |
+
+Upload all three in **Test & compare** and YouTube will pick the winner by watch time. The thumbnail text deliberately doesn't repeat the title; the two complement each other.
+
+The older `thumbnail_1280x720.jpg` (EVERY MOSQUITO / GONE?) is kept as a fallback.
+
+## 4. Description
+Paste `description.txt`. It contains:
+- **First line** (shown in search): the exact query "What would happen if all mosquitoes disappeared?" plus the hook
+- a summary naming every topic people also search for (malaria, the bat myth, Panama Canal, Wolbachia, gene drive)
+- 15 chapters, which show as "Key moments" in Google and YouTube search
+- an engagement question
+- sources (builds trust)
+- an honest note that the voice is computer-generated
+- 3 hashtags, which appear above the title
+
+## 5. Tags
+Paste `tags.txt` (20 tags, 396 chars). Tags carry little weight on YouTube today, but they help with misspellings and variants:
+
+> what if all mosquitoes disappeared, what would happen if mosquitoes went extinct, world without mosquitoes, what if mosquitoes disappeared, should we kill all mosquitoes, mosquito extinction, kill all mosquitoes, mosquitoes, mosquito facts, why do mosquitoes exist, what if, malaria, dengue, gene drive, wolbachia, ecology, food chain, animated science, science explained, the disappearance files
+
+## 6. Upload settings checklist
+- **Category:** Science & Technology (or Education).
+- **Language and caption language:** English. Upload the `.srt` under Subtitles → Upload file → With timing.
+- **Chapters:** automatic from the description.
+- **Made for kids:** your legal call (COPPA). The cartoon style doesn't by itself make it "made for kids". The script targets a general and teen audience; choosing "No" keeps comments and end screens enabled.
+- **Altered/synthetic content:** the narration is TTS, but the video is an obvious cartoon with no realistic person or event, so disclosure is likely not required. The description already says the voice is computer-generated.
+- **End screen (last 20 s, 11:46 onward):** subscribe button plus a "best for viewer" video. The outro scene leaves space on the right.
+- **Pinned comment:** "Which animal should disappear next: bats, bees, vultures or spiders? 👇"
+- **Playlist:** "What If They Disappeared?". Create it now so future episodes join it.
+- **Visibility:** schedule rather than publish immediately, so you can check the processed HD version first.
+
+## 7. After publishing (first 48 h)
+- In Studio, compare **CTR** across the three thumbnails and **average view duration** for the first 0:40. The hook is where most drop-off happens.
+- If CTR stays under about 4% after 48 h, swap to the next title or thumbnail pair.
