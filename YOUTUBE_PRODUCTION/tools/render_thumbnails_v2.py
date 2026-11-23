@@ -50,49 +50,54 @@ def clock(x, y, r):
             f'<path d="M0 0 L0 {-r * 0.78}" stroke="{RED}" stroke-width="12" stroke-linecap="round"/><circle r="14" fill="{INK}"/></g>')
 
 
-# A: "EVERY ONE. GONE." -- dead mosquito falling at midnight + shocked Pip
-A = glow_bg("#3E4F7E", "#0E1426", 30, 40, "ga")
-A += f'<circle cx="560" cy="470" r="520" fill="url(#glow)" opacity="0.35"/>'
-A += clock(1010, 170, 115)
-A += "".join(f'<path d="M{x} {y} l0 -90" stroke="#F4E9B8" stroke-width="7" stroke-linecap="round" opacity="0.55"/>' for x, y in [(380, 330), (470, 270), (640, 300), (720, 360)])
-A += mosquito(560, 560, 4.2, rot=165, frame=0, dead=True, flap=False)
-A += shocked_head(1450, 790, 330, look=(-6, -2))
-A += big_text([("EVERY ONE.", CREAM), ("GONE.", RED)], 60, 860, 170)
+def main():
+    # A: "EVERY ONE. GONE." -- dead mosquito falling at midnight + shocked Pip
+    A = glow_bg("#3E4F7E", "#0E1426", 30, 40, "ga")
+    A += f'<circle cx="560" cy="470" r="520" fill="url(#glow)" opacity="0.35"/>'
+    A += clock(1010, 170, 115)
+    A += "".join(f'<path d="M{x} {y} l0 -90" stroke="#F4E9B8" stroke-width="7" stroke-linecap="round" opacity="0.55"/>' for x, y in [(380, 330), (470, 270), (640, 300), (720, 360)])
+    A += mosquito(560, 560, 4.2, rot=165, frame=0, dead=True, flap=False)
+    A += shocked_head(1450, 790, 330, look=(-6, -2))
+    A += big_text([("EVERY ONE.", CREAM), ("GONE.", RED)], 60, 860, 170)
 
-# B: giant mosquito looming over Pip, "DELETE THEM?"
-B = glow_bg("#F7C98B", "#B5543F", 70, 40, "gb")
-B += mosquito(1250, 470, 6.0, frame=0, look=(-6, 4), flip=True)
-B += shocked_head(470, 930, 330, look=(10, -6), mouth="worried")
-B += big_text([("DELETE", CREAM), ("THEM ALL?", MUSTARD)], 60, 180, 150)
+    # B: giant mosquito looming over Pip, "DELETE THEM?"
+    B = glow_bg("#F7C98B", "#B5543F", 70, 40, "gb")
+    B += mosquito(1250, 470, 6.0, frame=0, look=(-6, 4), flip=True)
+    B += shocked_head(470, 930, 330, look=(10, -6), mouth="worried")
+    B += big_text([("DELETE", CREAM), ("THEM ALL?", MUSTARD)], 60, 180, 150)
 
-# C: Earth with every mosquito vanishing, "ALL GONE?"
-r_ = rnd(77)
-C = glow_bg("#1B2442", "#05070F", 50, 50, "gc")
-C += "".join(f'<circle cx="{r_.uniform(0, 1920):.0f}" cy="{r_.uniform(0, 1080):.0f}" r="{r_.choice([2, 3, 4])}" fill="#F4E9B8"/>' for _ in range(90))
-C += S.earth(1260, 560, 380)
-for k in range(46):
-    import math
-    a = r_.uniform(0, 6.28); d = r_.uniform(420, 560)
-    x, y = 1260 + d * math.cos(a), 560 + d * math.sin(a) * 0.9
-    C += tiny_mosquito(x, y, 1.6, frame=k, alpha=1.0 if x < 1260 else 0.25, rot=r_.uniform(-20, 20))
-    if x >= 1260:
-        C += f'<path d="M{x - 16:.0f} {y - 16:.0f} l32 32 M{x + 16:.0f} {y - 16:.0f} l-32 32" stroke="{RED}" stroke-width="9" stroke-linecap="round"/>'
-C += shocked_head(330, 830, 230, look=(10, -4))
-C += big_text([("ALL 3,500", CREAM), ("SPECIES?", MUSTARD)], 60, 180, 150)
+    # C: Earth with every mosquito vanishing, "ALL GONE?"
+    r_ = rnd(77)
+    C = glow_bg("#1B2442", "#05070F", 50, 50, "gc")
+    C += "".join(f'<circle cx="{r_.uniform(0, 1920):.0f}" cy="{r_.uniform(0, 1080):.0f}" r="{r_.choice([2, 3, 4])}" fill="#F4E9B8"/>' for _ in range(90))
+    C += S.earth(1260, 560, 380)
+    for k in range(46):
+        import math
+        a = r_.uniform(0, 6.28); d = r_.uniform(420, 560)
+        x, y = 1260 + d * math.cos(a), 560 + d * math.sin(a) * 0.9
+        C += tiny_mosquito(x, y, 1.6, frame=k, alpha=1.0 if x < 1260 else 0.25, rot=r_.uniform(-20, 20))
+        if x >= 1260:
+            C += f'<path d="M{x - 16:.0f} {y - 16:.0f} l32 32 M{x + 16:.0f} {y - 16:.0f} l-32 32" stroke="{RED}" stroke-width="9" stroke-linecap="round"/>'
+    C += shocked_head(330, 830, 230, look=(10, -4))
+    C += big_text([("ALL 3,500", CREAM), ("SPECIES?", MUSTARD)], 60, 180, 150)
 
-variants = {"A": A, "B": B, "C": C}
-with sync_playwright() as p:
-    b = p.chromium.launch(executable_path="/opt/pw-browsers/chromium-1243/chrome-linux64/chrome")
-    pg = b.new_page(viewport={"width": 1920, "height": 1080})
-    for k, content in variants.items():
-        svg = frame_svg(content, (1.0, 960, 540), seed=1, vignette=0.7, grain=0.0)
-        pg.set_content('<html><body style="margin:0">' + svg + '</body></html>')
-        master = os.path.join(out, f"thumb_{k}_master_1920x1080.png")
-        pg.screenshot(path=master, clip={"x": 0, "y": 0, "width": 1920, "height": 1080})
-        jpg = os.path.join(out, f"thumb_{k}_1280x720.jpg")
-        subprocess.run(["convert", master, "-resize", "1280x720", "-unsharp", "0x0.6", "-quality", "90", jpg], check=True)
-        print(jpg, os.path.getsize(jpg) // 1024, "KB")
-    b.close()
-# mobile-size readability check (YouTube home feed on phones shows ~320-360 px wide)
-subprocess.run(["montage"] + [os.path.join(out, f"thumb_{k}_1280x720.jpg") for k in "ABC"] +
-               ["-tile", "3x1", "-geometry", "336x189+8+8", "-background", "#0F0F0F", os.path.join(out, "mobile_preview_336px.png")], check=True)
+    variants = {"A": A, "B": B, "C": C}
+    with sync_playwright() as p:
+        b = p.chromium.launch(executable_path="/opt/pw-browsers/chromium-1243/chrome-linux64/chrome")
+        pg = b.new_page(viewport={"width": 1920, "height": 1080})
+        for k, content in variants.items():
+            svg = frame_svg(content, (1.0, 960, 540), seed=1, vignette=0.7, grain=0.0)
+            pg.set_content('<html><body style="margin:0">' + svg + '</body></html>')
+            master = os.path.join(out, f"thumb_{k}_master_1920x1080.png")
+            pg.screenshot(path=master, clip={"x": 0, "y": 0, "width": 1920, "height": 1080})
+            jpg = os.path.join(out, f"thumb_{k}_1280x720.jpg")
+            subprocess.run(["convert", master, "-resize", "1280x720", "-unsharp", "0x0.6", "-quality", "90", jpg], check=True)
+            print(jpg, os.path.getsize(jpg) // 1024, "KB")
+        b.close()
+    # mobile-size readability check (YouTube home feed on phones shows ~320-360 px wide)
+    subprocess.run(["montage"] + [os.path.join(out, f"thumb_{k}_1280x720.jpg") for k in "ABC"] +
+                   ["-tile", "3x1", "-geometry", "336x189+8+8", "-background", "#0F0F0F", os.path.join(out, "mobile_preview_336px.png")], check=True)
+
+
+if __name__ == "__main__":
+    main()

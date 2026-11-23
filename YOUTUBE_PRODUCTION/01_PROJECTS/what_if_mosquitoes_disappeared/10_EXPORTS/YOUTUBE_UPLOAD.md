@@ -42,11 +42,12 @@ All three are 1280×720 JPGs well under YouTube's 2 MB limit. `mobile_preview_33
 
 | File | Text | Image | Pair with |
 |---|---|---|---|
-| **`thumb_A_1280x720.jpg` (recommended)** | EVERY ONE. GONE. | Dead mosquito (X-eyes) falling, clock at midnight, shocked Pip | Title 1 |
+| **`thumb_D_detailed_1280x720.jpg` (recommended, main)** | 11:59 PM / 12:00 AM | Detailed before/after bedroom. 11:59 PM: warm lamp light, Pip awake and angry, arm bitten, mosquitoes everywhere. 12:00 AM: moonlight, every mosquito dead on the blanket and floor, Pip shocked. "ALL 3,500 SPECIES" tag. Matches the video's opening scene exactly. | Title 1 |
+| `thumb_A_1280x720.jpg` | EVERY ONE. GONE. | Dead mosquito (X-eyes) falling, clock at midnight, shocked Pip | Title 1 |
 | `thumb_B_1280x720.jpg` | DELETE THEM ALL? | Giant mosquito looming over worried Pip | Title 3 |
 | `thumb_C_1280x720.jpg` | ALL 3,500 SPECIES? | Earth with mosquitoes being crossed out, shocked Pip | Title 2 |
 
-Upload all three in **Test & compare** and YouTube will pick the winner by watch time. The thumbnail text deliberately doesn't repeat the title; the two complement each other.
+Upload D plus A and C in **Test & compare** (YouTube allows 3) and YouTube will pick the winner by watch time. The thumbnail text deliberately doesn't repeat the title; the two complement each other.
 
 The older `thumbnail_1280x720.jpg` (EVERY MOSQUITO / GONE?) is kept as a fallback.
 
