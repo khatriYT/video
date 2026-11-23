@@ -1,0 +1,49 @@
+{
+  "system": "YouTube production pipeline (The Disappearance Files)",
+  "created": "2026-11-23",
+  "competitor": {
+    "name": "Nobody Gets In",
+    "url": "https://www.youtube.com/@NobodyGetsIn",
+    "use": "editing/visual/structure reference only; never copy characters, scripts, thumbnails"
+  },
+  "paths": {
+    "root": "YOUTUBE_PRODUCTION",
+    "system_docs": "00_SYSTEM",
+    "projects": "01_PROJECTS",
+    "shared_assets": "02_SHARED_ASSETS",
+    "tools": "tools",
+    "per_project": {
+      "research": "01_RESEARCH",
+      "script": "02_SCRIPT",
+      "storyboard": "03_STORYBOARD",
+      "images": "04_IMAGES",
+      "animations": "05_ANIMATIONS/scene_###/scene_###.mp4",
+      "audio": "06_AUDIO",
+      "final_video": "07_FINAL_VIDEO",
+      "editing_project": "08_EDITING_PROJECT",
+      "thumbnail": "09_THUMBNAIL",
+      "exports": "10_EXPORTS"
+    }
+  },
+  "video": { "resolution": "1920x1080", "aspect": "16:9", "fps": 24, "codec": "H.264 yuv420p CRF 18", "audio": "AAC 192k 48 kHz, loudnorm -14 LUFS" },
+  "tools": {
+    "image_generation": "Code-drawn SVG illustrations (tools/draw.py + tools/scenes_<topic>.py) rendered by headless Chromium (Playwright). No AI image API configured.",
+    "animation": "Frame-by-frame SVG animation rendered by Chromium -> FFmpeg (tools/render.py). Line boil 8 fps, grain via ffmpeg noise filter.",
+    "narration_tts": "Kokoro v1.0 ONNX, local (voice am_michael). Model files: kokoro-v1.0.onnx + voices-v1.0.bin from github.com/thewh1teagle/kokoro-onnx releases (model-files-v1.0).",
+    "music_sfx": "Synthesised with numpy (tools/make_audio_assets.py), royalty-free",
+    "assembly": "FFmpeg (tools/assemble.py)",
+    "capcut": "Not available in the cloud container; assets + SRT + timeline exported for manual import"
+  },
+  "timing": { "scene_duration": "narration_length + 0.55 s, minimum 2.0 s", "narration_offset_s": 0.12, "narration_wpm_estimate": 150 },
+  "commands": {
+    "1_docs": "python3 tools/build_docs.py 01_PROJECTS/<project>",
+    "2_tts": "python3 tools/tts.py 01_PROJECTS/<project> <kokoro_model_dir> [first last] [voice]",
+    "3_stills": "python3 tools/render.py 01_PROJECTS/<project> still [ids]",
+    "4_refs": "python3 tools/render_refs.py 01_PROJECTS/<project> 02_SHARED_ASSETS",
+    "5_anim": "python3 tools/render.py 01_PROJECTS/<project> anim [ids]",
+    "6_audio_assets": "python3 tools/make_audio_assets.py 01_PROJECTS/<project>",
+    "7_assemble": "python3 tools/assemble.py 01_PROJECTS/<project> <first> <last> <output_basename>",
+    "8_thumbnail": "python3 tools/render_thumbnail.py 01_PROJECTS/<project>"
+  },
+  "dependencies": "pip install kokoro-onnx soundfile numpy playwright; system: ffmpeg, imagemagick, chromium (Playwright build)"
+}
