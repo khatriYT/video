@@ -1,0 +1,892 @@
+{
+ "fps": 24,
+ "resolution": "1920x1080",
+ "total_duration": 726.667,
+ "narration_offset": 0.12,
+ "music": "../06_AUDIO/music/music_bed_curious_72bpm.wav",
+ "music_gain": 0.16,
+ "scenes": [
+  {
+   "id": 1,
+   "file": "scene_001",
+   "start": 0.0,
+   "duration": 4.958,
+   "narration": "Tonight, at exactly midnight, every mosquito on Earth drops dead.",
+   "clip": "../05_ANIMATIONS/scene_001/scene_001.mp4",
+   "audio": "../06_AUDIO/narration/scene_001.wav"
+  },
+  {
+   "id": 2,
+   "file": "scene_002",
+   "start": 4.958,
+   "duration": 7.542,
+   "narration": "All of them. More than three thousand five hundred species. Trillions of insects, gone in a single second.",
+   "clip": "../05_ANIMATIONS/scene_002/scene_002.mp4",
+   "audio": "../06_AUDIO/narration/scene_002.wav"
+  },
+  {
+   "id": 3,
+   "file": "scene_003",
+   "start": 12.5,
+   "duration": 3.375,
+   "narration": "No more buzzing in your ear at two in the morning.",
+   "clip": "../05_ANIMATIONS/scene_003/scene_003.mp4",
+   "audio": "../06_AUDIO/narration/scene_003.wav"
+  },
+  {
+   "id": 4,
+   "file": "scene_004",
+   "start": 15.875,
+   "duration": 2.25,
+   "narration": "No more itchy bites.",
+   "clip": "../05_ANIMATIONS/scene_004/scene_004.mp4",
+   "audio": "../06_AUDIO/narration/scene_004.wav"
+  },
+  {
+   "id": 5,
+   "file": "scene_005",
+   "start": 18.125,
+   "duration": 2.0,
+   "narration": "No more malaria.",
+   "clip": "../05_ANIMATIONS/scene_005/scene_005.mp4",
+   "audio": "../06_AUDIO/narration/scene_005.wav"
+  },
+  {
+   "id": 6,
+   "file": "scene_006",
+   "start": 20.125,
+   "duration": 2.208,
+   "narration": "Sounds perfect, right?",
+   "clip": "../05_ANIMATIONS/scene_006/scene_006.mp4",
+   "audio": "../06_AUDIO/narration/scene_006.wav"
+  },
+  {
+   "id": 7,
+   "file": "scene_007",
+   "start": 22.333,
+   "duration": 8.375,
+   "narration": "Scientists have actually asked this question, seriously. And some of them say: go ahead. Nothing important would be lost.",
+   "clip": "../05_ANIMATIONS/scene_007/scene_007.mp4",
+   "audio": "../06_AUDIO/narration/scene_007.wav"
+  },
+  {
+   "id": 8,
+   "file": "scene_008",
+   "start": 30.708,
+   "duration": 2.292,
+   "narration": "Others aren't so sure.",
+   "clip": "../05_ANIMATIONS/scene_008/scene_008.mp4",
+   "audio": "../06_AUDIO/narration/scene_008.wav"
+  },
+  {
+   "id": 9,
+   "file": "scene_009",
+   "start": 33.0,
+   "duration": 2.125,
+   "narration": "So let's find out.",
+   "clip": "../05_ANIMATIONS/scene_009/scene_009.mp4",
+   "audio": "../06_AUDIO/narration/scene_009.wav"
+  },
+  {
+   "id": 10,
+   "file": "scene_010",
+   "start": 35.125,
+   "duration": 5.292,
+   "narration": "What really happens to the world, the morning after the mosquitoes disappear?",
+   "clip": "../05_ANIMATIONS/scene_010/scene_010.mp4",
+   "audio": "../06_AUDIO/narration/scene_010.wav"
+  },
+  {
+   "id": 11,
+   "file": "scene_011",
+   "start": 40.417,
+   "duration": 3.917,
+   "narration": "First, let's be clear about why anyone would want this.",
+   "clip": "../05_ANIMATIONS/scene_011/scene_011.mp4",
+   "audio": "../06_AUDIO/narration/scene_011.wav"
+  },
+  {
+   "id": 12,
+   "file": "scene_012",
+   "start": 44.333,
+   "duration": 6.333,
+   "narration": "Mosquitoes are, by a wide margin, the deadliest animal to humans on the planet.",
+   "clip": "../05_ANIMATIONS/scene_012/scene_012.mp4",
+   "audio": "../06_AUDIO/narration/scene_012.wav"
+  },
+  {
+   "id": 13,
+   "file": "scene_013",
+   "start": 50.667,
+   "duration": 4.75,
+   "narration": "Not sharks. Not snakes. A fly smaller than your fingernail.",
+   "clip": "../05_ANIMATIONS/scene_013/scene_013.mp4",
+   "audio": "../06_AUDIO/narration/scene_013.wav"
+  },
+  {
+   "id": 14,
+   "file": "scene_014",
+   "start": 55.417,
+   "duration": 11.0,
+   "narration": "Malaria alone kills around six hundred thousand people every year, according to the World Health Organization. Most of them are young children in Africa.",
+   "clip": "../05_ANIMATIONS/scene_014/scene_014.mp4",
+   "audio": "../06_AUDIO/narration/scene_014.wav"
+  },
+  {
+   "id": 15,
+   "file": "scene_015",
+   "start": 66.417,
+   "duration": 9.667,
+   "narration": "Then there's dengue. In 2024, countries reported more than fourteen million cases, the highest number ever recorded.",
+   "clip": "../05_ANIMATIONS/scene_015/scene_015.mp4",
+   "audio": "../06_AUDIO/narration/scene_015.wav"
+  },
+  {
+   "id": 16,
+   "file": "scene_016",
+   "start": 76.083,
+   "duration": 12.208,
+   "narration": "Add Zika, yellow fever, West Nile virus, chikungunya, and you start to understand why some scientists say a world without mosquitoes would simply be safer for us.",
+   "clip": "../05_ANIMATIONS/scene_016/scene_016.mp4",
+   "audio": "../06_AUDIO/narration/scene_016.wav"
+  },
+  {
+   "id": 17,
+   "file": "scene_017",
+   "start": 88.292,
+   "duration": 4.75,
+   "narration": "But here's the twist. Most mosquitoes don't care about you at all.",
+   "clip": "../05_ANIMATIONS/scene_017/scene_017.mp4",
+   "audio": "../06_AUDIO/narration/scene_017.wav"
+  },
+  {
+   "id": 18,
+   "file": "scene_018",
+   "start": 93.042,
+   "duration": 6.083,
+   "narration": "Part of what makes the dangerous ones so dangerous is how good they are at finding us.",
+   "clip": "../05_ANIMATIONS/scene_018/scene_018.mp4",
+   "audio": "../06_AUDIO/narration/scene_018.wav"
+  },
+  {
+   "id": 19,
+   "file": "scene_019",
+   "start": 99.125,
+   "duration": 11.375,
+   "narration": "Every time you breathe out, you release a plume of carbon dioxide. A hungry female can pick up that trail from several metres away, and follow it upwind.",
+   "clip": "../05_ANIMATIONS/scene_019/scene_019.mp4",
+   "audio": "../06_AUDIO/narration/scene_019.wav"
+  },
+  {
+   "id": 20,
+   "file": "scene_020",
+   "start": 110.5,
+   "duration": 11.875,
+   "narration": "As she gets closer, she switches senses. She smells the chemicals in your sweat and skin. Then, in the last few dozen centimetres, she can feel the heat coming off your body.",
+   "clip": "../05_ANIMATIONS/scene_020/scene_020.mp4",
+   "audio": "../06_AUDIO/narration/scene_020.wav"
+  },
+  {
+   "id": 21,
+   "file": "scene_021",
+   "start": 122.375,
+   "duration": 3.625,
+   "narration": "Breath, smell, heat. Three clues, one target.",
+   "clip": "../05_ANIMATIONS/scene_021/scene_021.mp4",
+   "audio": "../06_AUDIO/narration/scene_021.wav"
+  },
+  {
+   "id": 22,
+   "file": "scene_022",
+   "start": 126.0,
+   "duration": 5.208,
+   "narration": "Mosquitoes are also survivors. They were buzzing around long before us.",
+   "clip": "../05_ANIMATIONS/scene_022/scene_022.mp4",
+   "audio": "../06_AUDIO/narration/scene_022.wav"
+  },
+  {
+   "id": 23,
+   "file": "scene_023",
+   "start": 131.208,
+   "duration": 8.792,
+   "narration": "Mosquitoes have been found preserved in amber that is around ninety-nine million years old, from the age of the dinosaurs.",
+   "clip": "../05_ANIMATIONS/scene_023/scene_023.mp4",
+   "audio": "../06_AUDIO/narration/scene_023.wav"
+  },
+  {
+   "id": 24,
+   "file": "scene_024",
+   "start": 140.0,
+   "duration": 10.125,
+   "narration": "And in Montana, scientists found a forty-six-million-year-old fossil mosquito whose belly still held traces of the blood from its last meal.",
+   "clip": "../05_ANIMATIONS/scene_024/scene_024.mp4",
+   "audio": "../06_AUDIO/narration/scene_024.wav"
+  },
+  {
+   "id": 25,
+   "file": "scene_025",
+   "start": 150.125,
+   "duration": 9.833,
+   "narration": "They have lived through ice ages, asteroid impacts and shifting continents. Which makes it all the stranger to imagine them gone overnight.",
+   "clip": "../05_ANIMATIONS/scene_025/scene_025.mp4",
+   "audio": "../06_AUDIO/narration/scene_025.wav"
+  },
+  {
+   "id": 26,
+   "file": "scene_026",
+   "start": 159.958,
+   "duration": 9.542,
+   "narration": "Of those three and a half thousand species, only a small fraction bite humans. Estimates range from around a hundred to a few hundred.",
+   "clip": "../05_ANIMATIONS/scene_026/scene_026.mp4",
+   "audio": "../06_AUDIO/narration/scene_026.wav"
+  },
+  {
+   "id": 27,
+   "file": "scene_027",
+   "start": 169.5,
+   "duration": 3.458,
+   "narration": "And only a few dozen spread serious disease.",
+   "clip": "../05_ANIMATIONS/scene_027/scene_027.mp4",
+   "audio": "../06_AUDIO/narration/scene_027.wav"
+  },
+  {
+   "id": 28,
+   "file": "scene_028",
+   "start": 172.958,
+   "duration": 6.792,
+   "narration": "And even among the biters, only the females drink blood. They need the protein to make eggs.",
+   "clip": "../05_ANIMATIONS/scene_028/scene_028.mp4",
+   "audio": "../06_AUDIO/narration/scene_028.wav"
+  },
+  {
+   "id": 29,
+   "file": "scene_029",
+   "start": 179.75,
+   "duration": 4.708,
+   "narration": "The males? They spend their whole lives sipping nectar from flowers.",
+   "clip": "../05_ANIMATIONS/scene_029/scene_029.mp4",
+   "audio": "../06_AUDIO/narration/scene_029.wav"
+  },
+  {
+   "id": 30,
+   "file": "scene_030",
+   "start": 184.458,
+   "duration": 10.25,
+   "narration": "So when we say delete every mosquito, we're not just deleting the killers. We're deleting thousands of species that have never touched a human being.",
+   "clip": "../05_ANIMATIONS/scene_030/scene_030.mp4",
+   "audio": "../06_AUDIO/narration/scene_030.wav"
+  },
+  {
+   "id": 31,
+   "file": "scene_031",
+   "start": 194.708,
+   "duration": 2.333,
+   "narration": "What were all of them doing?",
+   "clip": "../05_ANIMATIONS/scene_031/scene_031.mp4",
+   "audio": "../06_AUDIO/narration/scene_031.wav"
+  },
+  {
+   "id": 32,
+   "file": "scene_032",
+   "start": 197.042,
+   "duration": 5.0,
+   "narration": "To find out, we have to look somewhere most people never do: underwater.",
+   "clip": "../05_ANIMATIONS/scene_032/scene_032.mp4",
+   "audio": "../06_AUDIO/narration/scene_032.wav"
+  },
+  {
+   "id": 33,
+   "file": "scene_033",
+   "start": 202.042,
+   "duration": 8.75,
+   "narration": "Every mosquito starts life in water. A female lays her eggs on or near the surface, sometimes hundreds at a time.",
+   "clip": "../05_ANIMATIONS/scene_033/scene_033.mp4",
+   "audio": "../06_AUDIO/narration/scene_033.wav"
+  },
+  {
+   "id": 34,
+   "file": "scene_034",
+   "start": 210.792,
+   "duration": 5.625,
+   "narration": "Some eggs can even survive drying out for months, waiting for the next rain.",
+   "clip": "../05_ANIMATIONS/scene_034/scene_034.mp4",
+   "audio": "../06_AUDIO/narration/scene_034.wav"
+  },
+  {
+   "id": 35,
+   "file": "scene_035",
+   "start": 216.417,
+   "duration": 10.917,
+   "narration": "The eggs hatch into larvae, little wriggling worms hanging upside down from the surface of a pond, a puddle, or even the water trapped in an old tire.",
+   "clip": "../05_ANIMATIONS/scene_035/scene_035.mp4",
+   "audio": "../06_AUDIO/narration/scene_035.wav"
+  },
+  {
+   "id": 36,
+   "file": "scene_036",
+   "start": 227.333,
+   "duration": 10.542,
+   "narration": "These larvae are filter feeders. They eat decaying leaves, bacteria and tiny bits of organic matter, helping recycle nutrients in the water.",
+   "clip": "../05_ANIMATIONS/scene_036/scene_036.mp4",
+   "audio": "../06_AUDIO/narration/scene_036.wav"
+  },
+  {
+   "id": 37,
+   "file": "scene_037",
+   "start": 237.875,
+   "duration": 7.292,
+   "narration": "After a few moults, the larva becomes a pupa, a comma-shaped capsule that tumbles through the water.",
+   "clip": "../05_ANIMATIONS/scene_037/scene_037.mp4",
+   "audio": "../06_AUDIO/narration/scene_037.wav"
+  },
+  {
+   "id": 38,
+   "file": "scene_038",
+   "start": 245.167,
+   "duration": 11.0,
+   "narration": "Then it splits open, and an adult climbs out onto the surface and flies away. In warm weather, the whole journey from egg to adult can take just a week or two.",
+   "clip": "../05_ANIMATIONS/scene_038/scene_038.mp4",
+   "audio": "../06_AUDIO/narration/scene_038.wav"
+  },
+  {
+   "id": 39,
+   "file": "scene_039",
+   "start": 256.167,
+   "duration": 7.042,
+   "narration": "And they're food. Fish, dragonfly nymphs, beetles and tadpoles all eat mosquito larvae.",
+   "clip": "../05_ANIMATIONS/scene_039/scene_039.mp4",
+   "audio": "../06_AUDIO/narration/scene_039.wav"
+  },
+  {
+   "id": 40,
+   "file": "scene_040",
+   "start": 263.208,
+   "duration": 6.333,
+   "narration": "So the morning after, in millions of ponds around the world, a menu item has vanished.",
+   "clip": "../05_ANIMATIONS/scene_040/scene_040.mp4",
+   "audio": "../06_AUDIO/narration/scene_040.wav"
+  },
+  {
+   "id": 41,
+   "file": "scene_041",
+   "start": 269.542,
+   "duration": 6.25,
+   "narration": "Would the fish starve? Probably not. Most of these predators eat many other things too.",
+   "clip": "../05_ANIMATIONS/scene_041/scene_041.mp4",
+   "audio": "../06_AUDIO/narration/scene_041.wav"
+  },
+  {
+   "id": 42,
+   "file": "scene_042",
+   "start": 275.792,
+   "duration": 6.083,
+   "narration": "Midges, other fly larvae and small crustaceans would likely fill much of the gap.",
+   "clip": "../05_ANIMATIONS/scene_042/scene_042.mp4",
+   "audio": "../06_AUDIO/narration/scene_042.wav"
+  },
+  {
+   "id": 43,
+   "file": "scene_043",
+   "start": 281.875,
+   "duration": 13.75,
+   "narration": "But in some small, isolated habitats, like the tiny pools of water inside pitcher plants, mosquito larvae are part of a very small food web, and the effects there are much harder to predict.",
+   "clip": "../05_ANIMATIONS/scene_043/scene_043.mp4",
+   "audio": "../06_AUDIO/narration/scene_043.wav"
+  },
+  {
+   "id": 44,
+   "file": "scene_044",
+   "start": 295.625,
+   "duration": 4.667,
+   "narration": "Once they take to the air, adult mosquitoes become food too.",
+   "clip": "../05_ANIMATIONS/scene_044/scene_044.mp4",
+   "audio": "../06_AUDIO/narration/scene_044.wav"
+  },
+  {
+   "id": 45,
+   "file": "scene_045",
+   "start": 300.292,
+   "duration": 9.292,
+   "narration": "Dragonflies snatch them mid-flight. Spiders catch them in webs. Swallows, swifts and many small birds scoop them out of the air.",
+   "clip": "../05_ANIMATIONS/scene_045/scene_045.mp4",
+   "audio": "../06_AUDIO/narration/scene_045.wav"
+  },
+  {
+   "id": 46,
+   "file": "scene_046",
+   "start": 309.583,
+   "duration": 6.417,
+   "narration": "And then there are bats. You may have heard that a single bat eats thousands of mosquitoes a night.",
+   "clip": "../05_ANIMATIONS/scene_046/scene_046.mp4",
+   "audio": "../06_AUDIO/narration/scene_046.wav"
+  },
+  {
+   "id": 47,
+   "file": "scene_047",
+   "start": 316.0,
+   "duration": 13.875,
+   "narration": "The truth is more interesting. When scientists checked the DNA in bat droppings, they did find mosquitoes, often. But for most bats, moths and beetles make up a much bigger part of the menu.",
+   "clip": "../05_ANIMATIONS/scene_047/scene_047.mp4",
+   "audio": "../06_AUDIO/narration/scene_047.wav"
+  },
+  {
+   "id": 48,
+   "file": "scene_048",
+   "start": 329.875,
+   "duration": 5.375,
+   "narration": "For the hunters of the night, mosquitoes are more like a snack than a main course.",
+   "clip": "../05_ANIMATIONS/scene_048/scene_048.mp4",
+   "audio": "../06_AUDIO/narration/scene_048.wav"
+  },
+  {
+   "id": 49,
+   "file": "scene_049",
+   "start": 335.25,
+   "duration": 3.833,
+   "narration": "Now let's travel north, to the Arctic tundra.",
+   "clip": "../05_ANIMATIONS/scene_049/scene_049.mp4",
+   "audio": "../06_AUDIO/narration/scene_049.wav"
+  },
+  {
+   "id": 50,
+   "file": "scene_050",
+   "start": 339.083,
+   "duration": 8.542,
+   "narration": "Here, for a few weeks each summer, mosquitoes emerge from melting snow pools in swarms so thick they can darken the sky.",
+   "clip": "../05_ANIMATIONS/scene_050/scene_050.mp4",
+   "audio": "../06_AUDIO/narration/scene_050.wav"
+  },
+  {
+   "id": 51,
+   "file": "scene_051",
+   "start": 347.625,
+   "duration": 7.083,
+   "narration": "For migratory birds that fly thousands of kilometres to nest here, all those insects are a feast.",
+   "clip": "../05_ANIMATIONS/scene_051/scene_051.mp4",
+   "audio": "../06_AUDIO/narration/scene_051.wav"
+  },
+  {
+   "id": 52,
+   "file": "scene_052",
+   "start": 354.708,
+   "duration": 7.042,
+   "narration": "One estimate suggested that tundra bird numbers could fall by more than half without mosquitoes.",
+   "clip": "../05_ANIMATIONS/scene_052/scene_052.mp4",
+   "audio": "../06_AUDIO/narration/scene_052.wav"
+  },
+  {
+   "id": 53,
+   "file": "scene_053",
+   "start": 361.75,
+   "duration": 7.5,
+   "narration": "But other researchers point out that midges show up in bird stomachs far more often. Nobody knows for sure.",
+   "clip": "../05_ANIMATIONS/scene_053/scene_053.mp4",
+   "audio": "../06_AUDIO/narration/scene_053.wav"
+  },
+  {
+   "id": 54,
+   "file": "scene_054",
+   "start": 369.25,
+   "duration": 12.792,
+   "narration": "Then there are the caribou. Swarms of mosquitoes harass them so badly that the herds move uphill and onto snow patches just to escape, sometimes giving up good grazing to do it.",
+   "clip": "../05_ANIMATIONS/scene_054/scene_054.mp4",
+   "audio": "../06_AUDIO/narration/scene_054.wav"
+  },
+  {
+   "id": 55,
+   "file": "scene_055",
+   "start": 382.042,
+   "duration": 4.292,
+   "narration": "Remove the mosquitoes, and the caribou could eat in peace.",
+   "clip": "../05_ANIMATIONS/scene_055/scene_055.mp4",
+   "audio": "../06_AUDIO/narration/scene_055.wav"
+  },
+  {
+   "id": 56,
+   "file": "scene_056",
+   "start": 386.333,
+   "duration": 9.792,
+   "narration": "Their movement could change. And whatever changes for a herd of caribou spreads to the wolves that hunt them, and the plants they trample and graze.",
+   "clip": "../05_ANIMATIONS/scene_056/scene_056.mp4",
+   "audio": "../06_AUDIO/narration/scene_056.wav"
+  },
+  {
+   "id": 57,
+   "file": "scene_057",
+   "start": 396.125,
+   "duration": 10.167,
+   "narration": "A world without mosquitoes isn't automatically a world with fewer animals. In some places, it might even be a world with healthier ones.",
+   "clip": "../05_ANIMATIONS/scene_057/scene_057.mp4",
+   "audio": "../06_AUDIO/narration/scene_057.wav"
+  },
+  {
+   "id": 58,
+   "file": "scene_058",
+   "start": 406.292,
+   "duration": 4.125,
+   "narration": "But there's one relationship that could genuinely be lost.",
+   "clip": "../05_ANIMATIONS/scene_058/scene_058.mp4",
+   "audio": "../06_AUDIO/narration/scene_058.wav"
+  },
+  {
+   "id": 59,
+   "file": "scene_059",
+   "start": 410.417,
+   "duration": 7.792,
+   "narration": "In the cool forests and bogs of northern North America grows a small green orchid called the blunt-leaf orchid.",
+   "clip": "../05_ANIMATIONS/scene_059/scene_059.mp4",
+   "audio": "../06_AUDIO/narration/scene_059.wav"
+  },
+  {
+   "id": 60,
+   "file": "scene_060",
+   "start": 418.208,
+   "duration": 3.208,
+   "narration": "And its main visitors, are mosquitoes.",
+   "clip": "../05_ANIMATIONS/scene_060/scene_060.mp4",
+   "audio": "../06_AUDIO/narration/scene_060.wav"
+  },
+  {
+   "id": 61,
+   "file": "scene_061",
+   "start": 421.417,
+   "duration": 12.542,
+   "narration": "In 2019, researchers found that the orchid's scent attracts mosquitoes, mostly Aedes species, which drink its nectar and carry its pollen from flower to flower.",
+   "clip": "../05_ANIMATIONS/scene_061/scene_061.mp4",
+   "audio": "../06_AUDIO/narration/scene_061.wav"
+  },
+  {
+   "id": 62,
+   "file": "scene_062",
+   "start": 433.958,
+   "duration": 7.417,
+   "narration": "Mosquitoes aren't major pollinators of our crops. Bees, flies and moths do most of that work.",
+   "clip": "../05_ANIMATIONS/scene_062/scene_062.mp4",
+   "audio": "../06_AUDIO/narration/scene_062.wav"
+  },
+  {
+   "id": 63,
+   "file": "scene_063",
+   "start": 441.375,
+   "duration": 6.875,
+   "narration": "But for a handful of plants like this orchid, losing mosquitoes could mean losing their best partners.",
+   "clip": "../05_ANIMATIONS/scene_063/scene_063.mp4",
+   "audio": "../06_AUDIO/narration/scene_063.wav"
+  },
+  {
+   "id": 64,
+   "file": "scene_064",
+   "start": 448.25,
+   "duration": 2.083,
+   "narration": "And then there's us.",
+   "clip": "../05_ANIMATIONS/scene_064/scene_064.mp4",
+   "audio": "../06_AUDIO/narration/scene_064.wav"
+  },
+  {
+   "id": 65,
+   "file": "scene_065",
+   "start": 450.333,
+   "duration": 5.958,
+   "narration": "The morning after, the biggest change wouldn't be in the forest. It would be in hospitals.",
+   "clip": "../05_ANIMATIONS/scene_065/scene_065.mp4",
+   "audio": "../06_AUDIO/narration/scene_065.wav"
+  },
+  {
+   "id": 66,
+   "file": "scene_066",
+   "start": 456.292,
+   "duration": 5.375,
+   "narration": "No new malaria infections. Ever. No dengue outbreaks. No Zika.",
+   "clip": "../05_ANIMATIONS/scene_066/scene_066.mp4",
+   "audio": "../06_AUDIO/narration/scene_066.wav"
+  },
+  {
+   "id": 67,
+   "file": "scene_067",
+   "start": 461.667,
+   "duration": 7.167,
+   "narration": "Year after year, hundreds of thousands of people, most of them children, who would have died, simply wouldn't.",
+   "clip": "../05_ANIMATIONS/scene_067/scene_067.mp4",
+   "audio": "../06_AUDIO/narration/scene_067.wav"
+  },
+  {
+   "id": 68,
+   "file": "scene_068",
+   "start": 468.833,
+   "duration": 5.792,
+   "narration": "Billions spent every year on bed nets, sprays and treatments could go elsewhere.",
+   "clip": "../05_ANIMATIONS/scene_068/scene_068.mp4",
+   "audio": "../06_AUDIO/narration/scene_068.wav"
+  },
+  {
+   "id": 69,
+   "file": "scene_069",
+   "start": 474.625,
+   "duration": 5.417,
+   "narration": "Some regions that were once too dangerous to farm or settle could open up.",
+   "clip": "../05_ANIMATIONS/scene_069/scene_069.mp4",
+   "audio": "../06_AUDIO/narration/scene_069.wav"
+  },
+  {
+   "id": 70,
+   "file": "scene_070",
+   "start": 480.042,
+   "duration": 11.417,
+   "narration": "And that could bring its own pressure: more land clearing, more roads, more people in wild places that mosquito-borne disease had, by accident, kept quiet.",
+   "clip": "../05_ANIMATIONS/scene_070/scene_070.mp4",
+   "audio": "../06_AUDIO/narration/scene_070.wav"
+  },
+  {
+   "id": 71,
+   "file": "scene_071",
+   "start": 491.458,
+   "duration": 9.167,
+   "narration": "Some ecologists have suggested that in a few corners of the world, the mosquito may have been one of nature's most effective park rangers.",
+   "clip": "../05_ANIMATIONS/scene_071/scene_071.mp4",
+   "audio": "../06_AUDIO/narration/scene_071.wav"
+  },
+  {
+   "id": 72,
+   "file": "scene_072",
+   "start": 500.625,
+   "duration": 6.292,
+   "narration": "Humans have been at war with mosquitoes for a long time, and we've learned some hard lessons.",
+   "clip": "../05_ANIMATIONS/scene_072/scene_072.mp4",
+   "audio": "../06_AUDIO/narration/scene_072.wav"
+  },
+  {
+   "id": 73,
+   "file": "scene_073",
+   "start": 506.917,
+   "duration": 15.542,
+   "narration": "In the 1880s, France tried to dig a canal across Panama. Yellow fever and malaria tore through the workforce, and by the time the project collapsed, an estimated twenty thousand people had died.",
+   "clip": "../05_ANIMATIONS/scene_073/scene_073.mp4",
+   "audio": "../06_AUDIO/narration/scene_073.wav"
+  },
+  {
+   "id": 74,
+   "file": "scene_074",
+   "start": 522.458,
+   "duration": 12.208,
+   "narration": "When the United States took over in 1904, an army doctor named William Gorgas tried something new. Instead of fighting the disease, he went after the mosquito.",
+   "clip": "../05_ANIMATIONS/scene_074/scene_074.mp4",
+   "audio": "../06_AUDIO/narration/scene_074.wav"
+  },
+  {
+   "id": 75,
+   "file": "scene_075",
+   "start": 534.667,
+   "duration": 10.917,
+   "narration": "His teams drained standing water, covered water barrels, and put screens on windows. Within about two years, yellow fever was gone from the canal zone.",
+   "clip": "../05_ANIMATIONS/scene_075/scene_075.mp4",
+   "audio": "../06_AUDIO/narration/scene_075.wav"
+  },
+  {
+   "id": 76,
+   "file": "scene_076",
+   "start": 545.583,
+   "duration": 13.75,
+   "narration": "Then came D D T. In 1955, the World Health Organization launched a global campaign to wipe out malaria, by spraying insecticide inside millions of homes.",
+   "clip": "../05_ANIMATIONS/scene_076/scene_076.mp4",
+   "audio": "../06_AUDIO/narration/scene_076.wav"
+  },
+  {
+   "id": 77,
+   "file": "scene_077",
+   "start": 559.333,
+   "duration": 14.75,
+   "narration": "It worked in many places. But mosquitoes evolved resistance, funding dried up, and much of tropical Africa was never fully included. In 1969, the eradication plan was abandoned.",
+   "clip": "../05_ANIMATIONS/scene_077/scene_077.mp4",
+   "audio": "../06_AUDIO/narration/scene_077.wav"
+  },
+  {
+   "id": 78,
+   "file": "scene_078",
+   "start": 574.083,
+   "duration": 6.083,
+   "narration": "The lesson? Mosquitoes adapt. Any plan to stop them has to be smarter than they are.",
+   "clip": "../05_ANIMATIONS/scene_078/scene_078.mp4",
+   "audio": "../06_AUDIO/narration/scene_078.wav"
+  },
+  {
+   "id": 79,
+   "file": "scene_079",
+   "start": 580.167,
+   "duration": 4.208,
+   "narration": "So is this just a thought experiment? Not entirely.",
+   "clip": "../05_ANIMATIONS/scene_079/scene_079.mp4",
+   "audio": "../06_AUDIO/narration/scene_079.wav"
+  },
+  {
+   "id": 80,
+   "file": "scene_080",
+   "start": 584.375,
+   "duration": 11.875,
+   "narration": "One idea already works on city streets. Scientists infect Aedes mosquitoes with a common bacterium called Wolbachia, which makes them much worse at spreading dengue.",
+   "clip": "../05_ANIMATIONS/scene_080/scene_080.mp4",
+   "audio": "../06_AUDIO/narration/scene_080.wav"
+  },
+  {
+   "id": 81,
+   "file": "scene_081",
+   "start": 596.25,
+   "duration": 10.25,
+   "narration": "In a trial in Yogyakarta, Indonesia, neighbourhoods where these mosquitoes were released had seventy-seven percent fewer dengue cases.",
+   "clip": "../05_ANIMATIONS/scene_081/scene_081.mp4",
+   "audio": "../06_AUDIO/narration/scene_081.wav"
+  },
+  {
+   "id": 82,
+   "file": "scene_082",
+   "start": 606.5,
+   "duration": 9.583,
+   "narration": "Other teams release swarms of sterile or modified males. They mate with wild females, but no new generation survives.",
+   "clip": "../05_ANIMATIONS/scene_082/scene_082.mp4",
+   "audio": "../06_AUDIO/narration/scene_082.wav"
+  },
+  {
+   "id": 83,
+   "file": "scene_083",
+   "start": 616.083,
+   "duration": 10.625,
+   "narration": "In laboratories, scientists have also built a gene drive, a genetic change that spreads through a population faster than normal inheritance allows.",
+   "clip": "../05_ANIMATIONS/scene_083/scene_083.mp4",
+   "audio": "../06_AUDIO/narration/scene_083.wav"
+  },
+  {
+   "id": 84,
+   "file": "scene_084",
+   "start": 626.708,
+   "duration": 10.25,
+   "narration": "In large indoor cages, it wiped out populations of Anopheles gambiae, one of the main malaria mosquitoes, in less than a year.",
+   "clip": "../05_ANIMATIONS/scene_084/scene_084.mp4",
+   "audio": "../06_AUDIO/narration/scene_084.wav"
+  },
+  {
+   "id": 85,
+   "file": "scene_085",
+   "start": 636.958,
+   "duration": 5.417,
+   "narration": "But notice the target: not all mosquitoes. One species. Maybe a few.",
+   "clip": "../05_ANIMATIONS/scene_085/scene_085.mp4",
+   "audio": "../06_AUDIO/narration/scene_085.wav"
+  },
+  {
+   "id": 86,
+   "file": "scene_086",
+   "start": 642.375,
+   "duration": 11.167,
+   "narration": "Because that's where most researchers have landed. We don't need to erase three and a half thousand species to save lives. We need to stop the few dozen that make us sick.",
+   "clip": "../05_ANIMATIONS/scene_086/scene_086.mp4",
+   "audio": "../06_AUDIO/narration/scene_086.wav"
+  },
+  {
+   "id": 87,
+   "file": "scene_087",
+   "start": 653.542,
+   "duration": 5.667,
+   "narration": "And the gene drive is still being tested. It hasn't been released into the wild.",
+   "clip": "../05_ANIMATIONS/scene_087/scene_087.mp4",
+   "audio": "../06_AUDIO/narration/scene_087.wav"
+  },
+  {
+   "id": 88,
+   "file": "scene_088",
+   "start": 659.208,
+   "duration": 11.917,
+   "narration": "There's a good reason to be careful. A gene drive is designed to spread on its own. Once released, it can't easily be called back, and mosquitoes don't respect borders.",
+   "clip": "../05_ANIMATIONS/scene_088/scene_088.mp4",
+   "audio": "../06_AUDIO/narration/scene_088.wav"
+  },
+  {
+   "id": 89,
+   "file": "scene_089",
+   "start": 671.125,
+   "duration": 9.083,
+   "narration": "That's why scientists, governments and the communities who live with these mosquitoes are still debating how, and whether, to use it.",
+   "clip": "../05_ANIMATIONS/scene_089/scene_089.mp4",
+   "audio": "../06_AUDIO/narration/scene_089.wav"
+  },
+  {
+   "id": 90,
+   "file": "scene_090",
+   "start": 680.208,
+   "duration": 4.042,
+   "narration": "So what would happen if every mosquito disappeared tonight?",
+   "clip": "../05_ANIMATIONS/scene_090/scene_090.mp4",
+   "audio": "../06_AUDIO/narration/scene_090.wav"
+  },
+  {
+   "id": 91,
+   "file": "scene_091",
+   "start": 684.25,
+   "duration": 3.375,
+   "narration": "The skies over the Arctic would be quieter.",
+   "clip": "../05_ANIMATIONS/scene_091/scene_091.mp4",
+   "audio": "../06_AUDIO/narration/scene_091.wav"
+  },
+  {
+   "id": 92,
+   "file": "scene_092",
+   "start": 687.625,
+   "duration": 3.583,
+   "narration": "A few fish and birds would change their menus.",
+   "clip": "../05_ANIMATIONS/scene_092/scene_092.mp4",
+   "audio": "../06_AUDIO/narration/scene_092.wav"
+  },
+  {
+   "id": 93,
+   "file": "scene_093",
+   "start": 691.208,
+   "duration": 3.792,
+   "narration": "A small orchid might struggle to find a partner.",
+   "clip": "../05_ANIMATIONS/scene_093/scene_093.mp4",
+   "audio": "../06_AUDIO/narration/scene_093.wav"
+  },
+  {
+   "id": 94,
+   "file": "scene_094",
+   "start": 695.0,
+   "duration": 6.208,
+   "narration": "And somewhere, hundreds of thousands of children would grow up who otherwise never would have.",
+   "clip": "../05_ANIMATIONS/scene_094/scene_094.mp4",
+   "audio": "../06_AUDIO/narration/scene_094.wav"
+  },
+  {
+   "id": 95,
+   "file": "scene_095",
+   "start": 701.208,
+   "duration": 7.375,
+   "narration": "Nature would almost certainly adapt. Something else would slip into the empty spaces, as it always does.",
+   "clip": "../05_ANIMATIONS/scene_095/scene_095.mp4",
+   "audio": "../06_AUDIO/narration/scene_095.wav"
+  },
+  {
+   "id": 96,
+   "file": "scene_096",
+   "start": 708.583,
+   "duration": 5.458,
+   "narration": "The harder question isn't whether the world could survive without mosquitoes.",
+   "clip": "../05_ANIMATIONS/scene_096/scene_096.mp4",
+   "audio": "../06_AUDIO/narration/scene_096.wav"
+  },
+  {
+   "id": 97,
+   "file": "scene_097",
+   "start": 714.042,
+   "duration": 6.167,
+   "narration": "It's whether we're brave enough, and careful enough, to decide which ones it should live without.",
+   "clip": "../05_ANIMATIONS/scene_097/scene_097.mp4",
+   "audio": "../06_AUDIO/narration/scene_097.wav"
+  },
+  {
+   "id": 98,
+   "file": "scene_098",
+   "start": 720.208,
+   "duration": 6.458,
+   "narration": "Next time, we'll make another creature disappear. Which one should it be? Tell us in the comments.",
+   "clip": "../05_ANIMATIONS/scene_098/scene_098.mp4",
+   "audio": "../06_AUDIO/narration/scene_098.wav"
+  }
+ ]
+}

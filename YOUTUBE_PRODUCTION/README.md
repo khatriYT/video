@@ -17,7 +17,7 @@ for animated "What if X disappeared?" science videos.
 - **Tools:** `tools/`, the Python pipeline. Commands are in `00_SYSTEM/SYSTEM_CONFIG.json`.
 
 ## Current project
-`01_PROJECTS/what_if_mosquitoes_disappeared/`. Scenes 001–010 are finished in `07_FINAL_VIDEO/`. See `PROJECT_STATUS.md` there.
+`01_PROJECTS/what_if_mosquitoes_disappeared/`. The full 12-minute episode is in `07_FINAL_VIDEO/`. See `PROJECT_STATUS.md` there.
 
 ## New video in 6 steps
 1. Copy the project folder layout. Write `tools/storyboard_data.py` for the new topic (sections plus scenes), after research.

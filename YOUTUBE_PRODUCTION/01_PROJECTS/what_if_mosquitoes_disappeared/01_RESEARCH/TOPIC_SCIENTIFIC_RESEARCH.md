@@ -73,3 +73,34 @@ Researched 2026-11-23. Most findings come from search-result summaries of the so
 - National Geographic (2015), Arctic mosquitoes and caribou. https://www.nationalgeographic.com/animals/article/150915-Arctic-mosquito-warming-caribou-Greenland-climate-CO2
 - Kyrou et al. (2018), Nature Biotechnology. https://pubmed.ncbi.nlm.nih.gov/30247490/
 - Hammond et al. (2021), Nature Communications. https://pmc.ncbi.nlm.nih.gov/articles/PMC8319305
+
+---
+
+# Addendum (v2, for the 12-minute cut)
+
+## 7. How mosquitoes find people
+- **[FACT]** Exhaled CO2 (about 4% of breath) is the long-range activator and attractant. Reported detection distances are about 10 m ("30+ feet"), from press coverage. The script says "several metres".
+- **[FACT]** At closer range, skin and sweat odours (e.g. lactic acid) and body heat guide landing. A 2024 *Nature* study found infrared heat doubled host-seeking, detectable to about 2.5 ft (0.75 m). The script says "within the last few dozen centimetres... heat". CO2 detection gates the responses to heat and lactic acid (McMeniman et al., *Cell* 2014). [Rockefeller University](https://www.rockefeller.edu/news/7833-research-shows-combination-of-sensory-signals-draw-mosquitoes-in-for-a-bite/); [UW 2015](https://www.washington.edu/news/2015/07/16/uw-researchers-show-that-the-mosquito-smells-before-it-sees-a-bloody-feast)
+
+## 8. Life cycle
+- **[FACT]** The stages are egg, larva, pupa and adult. All immature stages are aquatic. Pupae don't feed and are mobile ("tumblers"). In warm conditions, development from egg to adult can take about 7–14 days (CDC general guidance).
+- **[FACT]** *Aedes* eggs laid just above the waterline can survive drying out for months and hatch when flooded (CDC).
+
+## 9. Predators of adult mosquitoes
+- **[FACT]** Dragonflies, spiders, swallows, swifts and other aerial insectivores eat adult mosquitoes among other insects.
+- **[FACT]** Bats: DNA studies of droppings generally find mosquitoes are a small share of wild bat diets. Moths and beetles are often more important. One Wisconsin study (Wray et al. 2018) found mosquito DNA in about 72% of little brown bat samples. That shows frequency, not volume. [PMC3795000](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3795000/); [UW–Madison](https://news.wisc.edu/study-bolsters-bats-reputation-as-mosquito-devourers/)
+- **[UNCERTAIN]** The popular claim that a bat "eats 1,000 mosquitoes an hour" comes from lab feeding studies and is not representative of wild diets.
+
+## 10. History
+- **[FACT]** The French Panama Canal effort in the 1880s is commonly estimated to have cost about 22,000 lives, much of it to yellow fever and malaria. Under US control from 1904, William Gorgas's sanitation campaign (draining or covering standing water, screens, fumigation) eliminated yellow fever from the zone by about 1905–1906. [Linda Hall Library](https://www.lindahall.org/william-gorgas/); [Gavi](https://www.gavi.org/vaccineswork/yellow-fever-and-panama-canal)
+- **[FACT]** WHO's Global Malaria Eradication Programme ran from 1955 to 1969. It relied heavily on DDT indoor residual spraying. It was abandoned in 1969 amid insecticide and drug resistance, funding gaps and other problems, and much of tropical Africa was never fully included. [PLoS Med 10.1371/journal.pmed.1000412](https://doi.org/10.1371/journal.pmed.1000412); [CDC history](https://www.cdc.gov/malaria/history/index.html)
+
+## 11. Modern control
+- **[FACT]** *Wolbachia* (wMel) *Aedes aegypti* releases in Yogyakarta, Indonesia (AWED cluster-randomised trial, 2017–2020) gave a **77% reduction in dengue incidence** and an 86% reduction in hospitalisations. Utarini et al., *NEJM* 2021. [PMC8103655](https://pmc.ncbi.nlm.nih.gov/articles/PMC8103655)
+- **[FACT]** Sterile insect technique and self-limiting genetically modified males are released so that matings produce no surviving offspring. Field pilots include Oxitec releases (e.g. Florida Keys, from 2021).
+- **[INTERP]** Gene drives are designed to self-propagate across populations and national borders. Governance, reversibility and community consent are active debates.
+
+## 12. Deep history
+- **[FACT]** Mosquitoes are known from mid-Cretaceous Burmese amber, about 99–100 million years old (e.g. *Burmaculex antiquus*, Borkent & Grimaldi 2004).
+- **[FACT]** A 46-million-year-old blood-engorged fossil mosquito from the Kishenehn Formation, Montana, preserved haem-derived porphyrins from blood (Greenwalt et al., *PNAS* 2013, doi:10.1073/pnas.1310885110).
+- **[INTERP]** The mosquito lineage survived the end-Cretaceous extinction and the Pleistocene glaciations, given its Cretaceous fossil record and modern diversity.

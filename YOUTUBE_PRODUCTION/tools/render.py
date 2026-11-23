@@ -13,7 +13,7 @@ from draw import frame_svg
 import scenes_mosquito as S
 
 CHROME = os.environ.get("CHROME_PATH", "/opt/pw-browsers/chromium-1243/chrome-linux64/chrome")
-FPS, PAD, MIN_DUR = 24, 0.55, 2.0
+FPS, PAD, MIN_DUR = 24, 0.7, 2.0
 BOIL_FPS = 8
 
 args = [a for a in sys.argv[1:] if not a.startswith("--")]

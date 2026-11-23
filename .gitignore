@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+# regenerable from 05_ANIMATIONS + tools/assemble.py; kept out of git to save LFS space
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_EDITING_PROJECT/*_video_only.mp4
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_EDITING_PROJECT/*_audio_mix.wav

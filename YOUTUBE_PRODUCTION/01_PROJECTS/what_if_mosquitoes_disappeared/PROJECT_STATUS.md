@@ -1,22 +1,23 @@
 # Project Status: What If All Mosquitoes Disappeared?
 
-Updated 2026-11-23.
+Updated 2026-11-23. This is v2, the full 12-minute episode.
 
 | Stage | Status | Output / note |
 |---|---|---|
-| Competitor Research | Completed | `00_SYSTEM/COMPETITOR_RESEARCH_REPORT.md`. Built from public metadata and thumbnails. YouTube blocked playback and transcripts, so motion and narration notes are inferred. |
+| Competitor Research | Completed | `00_SYSTEM/COMPETITOR_RESEARCH_REPORT.md`. Motion and narration notes are inferred, because YouTube blocked playback here. |
 | Visual Analysis | Completed | `00_SYSTEM/COMPETITOR_VISUAL_STYLE_GUIDE.md` |
 | Scriptwriting Analysis | Completed | `00_SYSTEM/SCRIPTWRITING_FRAMEWORK.md` |
-| Topic Selection | Completed | `00_SYSTEM/TOPIC_IDEAS.md`. Mosquitoes was picked as the first topic because it was the user's first example. |
-| Scientific Research | Completed | `01_RESEARCH/TOPIC_SCIENTIFIC_RESEARCH.md` |
-| Scriptwriting | Completed | `02_SCRIPT/SCRIPT.md`, `02_SCRIPT/SCRIPT_FINAL.txt` (1,049 words) |
-| Script Approval | Waiting for User | Produced without a formal approval step, as requested. Review the script. |
-| Storyboard | Completed | `03_STORYBOARD/STORYBOARD.md` + `storyboard.json` (68 scenes) |
-| Reference Assets | Completed | `04_IMAGES/characters`, `backgrounds`, `objects` + `02_SHARED_ASSETS` |
-| Image Generation | In Progress | Scenes 001–010 completed and verified; 011–068 pending |
-| Image Quality Control | Completed (001–010) | `04_IMAGES/IMAGE_GENERATION_REPORT.md` |
-| Animation | In Progress | Scenes 001–010 completed and verified; 011–068 pending |
-| Animation Quality Control | Completed (001–010) | `05_ANIMATIONS/ANIMATION_REPORT.md` |
-| Narration (TTS) | Completed | 68/68 scenes in `06_AUDIO/narration` |
-| Video Assembly | Completed (001–010) | `07_FINAL_VIDEO/…scenes_001-010.mp4` |
-| Final Export | Completed (001–010 preview) | `10_EXPORTS/` + `FINAL_PRODUCTION_REPORT.md`. The full episode is pending scenes 011–068. |
+| Topic Selection | Completed | Mosquitoes |
+| Scientific Research | Completed | `01_RESEARCH/TOPIC_SCIENTIFIC_RESEARCH.md`, sections 1–12 |
+| Scriptwriting | Completed | `02_SCRIPT/SCRIPT.md`, `SCRIPT_FINAL.txt` (1,687 words) |
+| Script Approval | Waiting for User | Extended to 12 min on request; please review |
+| Storyboard | Completed | `03_STORYBOARD/STORYBOARD.md` + `storyboard.json` (98 scenes) |
+| Reference Assets | Completed | `04_IMAGES/characters`, `backgrounds`, `objects` |
+| Image Generation | Completed | 98 / 98 |
+| Image Quality Control | Completed | `04_IMAGES/IMAGE_GENERATION_REPORT.md` |
+| Narration (TTS) | Completed | 98 / 98 |
+| Animation | Completed | 98 / 98 clips |
+| Animation Quality Control | Completed | `05_ANIMATIONS/ANIMATION_REPORT.md` |
+| Sound Mix | Completed | SFX lowered about 11 dB and ducked under the voice; music ducked |
+| Video Assembly | Completed | `07_FINAL_VIDEO/what_if_all_mosquitoes_disappeared_full.mp4` (12:06) |
+| Final Export | Completed | `10_EXPORTS/` + `YOUTUBE_UPLOAD.md` + `FINAL_PRODUCTION_REPORT.md` |

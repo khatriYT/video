@@ -349,3 +349,20 @@ def s010(t, T, fr):
 
 SCENES = {1: s001, 2: s002, 3: s003, 4: s004, 5: s005, 6: s006, 7: s007, 8: s008, 9: s009, 10: s010}
 KEYFRAME = {1: 0.4, 2: 0.25, 3: 0.3, 4: 0.25, 5: 0.15, 6: 0.7, 7: 0.6, 8: 0.6, 9: 0.9, 10: 0.9}
+
+
+# ---- scenes 011+ live in scenes_mosquito2.py / scenes_mosquito3.py ----
+def _extend():
+    import importlib
+    for mod in ("scenes_mosquito2", "scenes_mosquito3"):
+        try:
+            m = importlib.import_module(mod)
+        except ModuleNotFoundError as e:
+            if e.name == mod:
+                continue
+            raise
+        SCENES.update(m.SCENES)
+        KEYFRAME.update({k: getattr(m, "KEYFRAME", {}).get(k, 0.6) for k in m.SCENES})
+
+
+_extend()
