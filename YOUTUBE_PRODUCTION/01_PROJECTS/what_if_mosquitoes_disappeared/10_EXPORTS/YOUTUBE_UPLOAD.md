@@ -28,21 +28,23 @@ Searched on 2026-11-23 for "what if all mosquitoes disappeared", "what would hap
 3. Our 12-minute length is an advantage. Most results are 5-minute explainers, and the recent long-form video did very well.
 4. Put the exact search phrases in the **description's first line, the chapters and the tags**. That is where they help most without making the title generic.
 
-## 2. Titles (all accurate to what the video shows)
+## 2. Titles (user's preferred style: simple "What if" question)
 | # | Title | Chars | Use |
 |---|---|---|---|
-| **1 (recommended)** | **Every Mosquito on Earth Dies at Midnight. Here's What Happens Next** | 66 | Mirrors the opening scene exactly; a story hook stands out among copycat titles |
-| 2 | What Would Happen If All Mosquitoes Disappeared? It's Complicated | 65 | Exact-match search phrase plus an honest hook |
-| 3 | What If Every Mosquito Died Tonight? Scientists Don't Agree | 59 | Shortest; matches the "scientists disagree" thread in the video |
+| **1 (chosen)** | **What If All Mosquitoes Disappeared Tonight?** | 44 | Exact search phrase + "Tonight" matches the midnight opening and stands apart from the identical copies |
+| 2 | What If All Mosquitoes Disappeared? | 35 | Pure exact match (very crowded) |
+| 3 | What If All Mosquitoes Disappeared? (Scientists Don't Agree) | 60 | Exact match + honest hook |
+| 4 | What If All Mosquitoes Disappeared From Earth? | 46 | Alternative |
+| alt | Every Mosquito on Earth Dies at Midnight. Here's What Happens Next | 66 | Story-style backup for A/B testing |
 
-Use YouTube Studio's **Test & compare** to A/B-test titles 1–3. Front-load the keyword, because phones cut titles at about 50–60 characters.
+Spelling: **mosquitoes** (with an "e"). Use **Test & compare** in YouTube Studio to try title 1 against title 3.
 
 ## 3. Thumbnails (`../09_THUMBNAIL/`)
 All three are 1280×720 JPGs well under YouTube's 2 MB limit. `mobile_preview_336px.png` confirms they read at phone size.
 
 | File | Text | Image | Pair with |
 |---|---|---|---|
-| **`thumb_D_detailed_1280x720.jpg` (recommended, main)** | 11:59 PM / 12:00 AM | Detailed before/after bedroom. 11:59 PM: warm lamp light, Pip awake and angry, arm bitten, mosquitoes everywhere. 12:00 AM: moonlight, every mosquito dead on the blanket and floor, Pip shocked. "ALL 3,500 SPECIES" tag. Matches the video's opening scene exactly. | Title 1 |
+| **`thumb_D_detailed_1280x720.jpg` (recommended, main)** | 11:59 PM / 12:00 AM | Detailed before/after bedroom. 11:59 PM: warm lamp light, Pip awake and angry, arm bitten, mosquitoes everywhere. 12:00 AM: moonlight, every mosquito dead on the blanket and floor, Pip shocked. "ALL 3,500 SPECIES" tag. Matches the video's opening scene exactly. | Title 1 ("…Tonight?") |
 | `thumb_A_1280x720.jpg` | EVERY ONE. GONE. | Dead mosquito (X-eyes) falling, clock at midnight, shocked Pip | Title 1 |
 | `thumb_B_1280x720.jpg` | DELETE THEM ALL? | Giant mosquito looming over worried Pip | Title 3 |
 | `thumb_C_1280x720.jpg` | ALL 3,500 SPECIES? | Earth with mosquitoes being crossed out, shocked Pip | Title 2 |
