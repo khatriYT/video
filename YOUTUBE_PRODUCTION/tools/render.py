@@ -9,11 +9,14 @@ Never overwrites an existing output unless --force is given.
 import json, os, subprocess, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from playwright.sync_api import sync_playwright
+import importlib
 from draw import frame_svg
-import scenes_mosquito as S
+import kinetic
 
+opts = dict(a[2:].split("=", 1) for a in sys.argv[1:] if a.startswith("--") and "=" in a)
+S = importlib.import_module(opts.get("scenes", "scenes_mosquito"))   # e.g. --scenes=scenes_bees
 CHROME = os.environ.get("CHROME_PATH", "/opt/pw-browsers/chromium-1243/chrome-linux64/chrome")
-FPS, PAD, MIN_DUR = 24, 0.7, 2.0
+FPS, PAD, MIN_DUR = 24, float(opts.get("pad", 0.7)), 2.0                # e.g. --pad=0.85
 BOIL_FPS = 8
 
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
@@ -21,6 +24,8 @@ force = "--force" in sys.argv
 proj, mode = args[0], args[1]
 ids = [int(i) for i in args[2:]] or sorted(S.SCENES)
 durs = json.load(open(os.path.join(proj, "06_AUDIO", "narration", "durations.json")))
+_sb = os.path.join(proj, "03_STORYBOARD", "storyboard.json")
+ONSCREEN = {s["id"]: s.get("onscreen", "") for s in json.load(open(_sb))["scenes"]} if os.path.exists(_sb) else {}
 
 
 def scene_T(i):
@@ -30,7 +35,8 @@ def scene_T(i):
 def svg_at(i, t, T, fr):
     content, cam = S.SCENES[i](t, T, fr)
     seed = 1 + (int(t * BOIL_FPS) % 3)  # line boil: 3 alternating drawings at 8 fps
-    return frame_svg(content, cam, seed=seed), seed
+    overlay = kinetic.render(ONSCREEN.get(i, ""), t, T)   # animated on-screen text, kept crisp (outside line boil)
+    return frame_svg(content, cam, seed=seed, overlay=overlay), seed
 
 
 with sync_playwright() as p:

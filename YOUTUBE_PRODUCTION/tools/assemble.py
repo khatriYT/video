@@ -6,7 +6,9 @@ import json, os, shutil, subprocess, sys
 import numpy as np
 import soundfile as sf
 
-proj, a, b, base = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), sys.argv[4]
+_args = [x for x in sys.argv[1:] if not x.startswith("--")]
+OPTS = dict(x[2:].split("=", 1) for x in sys.argv[1:] if x.startswith("--") and "=" in x)
+proj, a, b, base = _args[0], int(_args[1]), int(_args[2]), _args[3]
 SR, FPS, PAD, MIN_DUR, NARR_OFFSET = 48000, 24, 0.55, 2.0, 0.12
 P = lambda *x: os.path.join(proj, *x)
 sb = {s["id"]: s for s in json.load(open(P("03_STORYBOARD", "storyboard.json")))["scenes"]}
@@ -55,6 +57,14 @@ def cues(i, T):
     return c.get(i, [])
 
 
+MUSIC_FILE = "music_bed_curious_72bpm.wav"
+if "sfx" in OPTS:                      # per-project cue sheet, e.g. --sfx=sfx_bees
+    import importlib
+    _m = importlib.import_module(OPTS["sfx"])
+    cues = _m.cues
+    SFX_MASTER = getattr(_m, "SFX_MASTER", SFX_MASTER)
+    MUSIC_FILE = getattr(_m, "MUSIC_FILE", MUSIC_FILE)
+
 ids = list(range(a, b + 1))
 timeline, t0 = [], 0.0
 for i in ids:
@@ -96,7 +106,7 @@ active = np.clip(np.convolve(np.convolve(active, k, "same"), k, "same") * 1.5, 0
 env = np.repeat(active, blk)
 env = np.concatenate([env, np.full(n - len(env), env[-1] if len(env) else 0, np.float32)])
 fx = fx * SFX_MASTER * (1 - 0.45 * env)               # SFX: -11 dB master, another ~-5 dB while speaking
-music = load(P("06_AUDIO", "music", "music_bed_curious_72bpm.wav"))
+music = load(P("06_AUDIO", "music", MUSIC_FILE))
 music = np.resize(music, n) * (0.17 - 0.07 * env)      # music bed ducks under the voice
 fo = int(2.5 * SR); music[-fo:] *= np.linspace(1, 0, fo)
 fi = int(0.8 * SR); music[:fi] *= np.linspace(0, 1, fi)

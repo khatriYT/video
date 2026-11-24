@@ -4,9 +4,13 @@ Usage: python3 build_docs.py <project_dir>
 """
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from storyboard_data import TITLE, STYLE, PIP, MOSQ, SCI_A, SCI_B, SECTIONS
+import importlib
+from storyboard_data import STYLE, PIP, MOSQ, SCI_A, SCI_B
 
 proj = sys.argv[1]
+SB = importlib.import_module(sys.argv[2] if len(sys.argv) > 2 else "storyboard_data")
+TITLE, SECTIONS = SB.TITLE, SB.SECTIONS
+CHARS = getattr(SB, "CHARS", {})
 WPM = 150
 SHOTS = {"ECU": "extreme close-up", "MCU": "medium close-up (head and vest)", "MS": "medium shot (full figure)", "WS": "wide shot"}
 
@@ -15,7 +19,9 @@ def expand_chars(chars):
     out = []
     for c in chars:
         lc = c.lower()
-        if lc.startswith("pip"):
+        if c in CHARS:
+            out.append(CHARS[c])
+        elif lc.startswith("pip"):
             out.append(PIP + ("" if c == "Pip" else f" (show only: {c[4:].strip('() ')})"))
         elif "mosquito" in lc:
             out.append(MOSQ + ("" if lc == "mosquito" else f" ({c})"))
@@ -30,7 +36,9 @@ def expand_chars(chars):
 
 scenes, n = [], 0
 for section, items in SECTIONS:
-    for (narr, shot, visual, chars, bg, action, camera, anim) in items:
+    for item in items:
+        (narr, shot, visual, chars, bg, action, camera, anim) = item[:8]
+        onscreen = item[8] if len(item) > 8 else ""
         n += 1
         words = len(narr.split())
         dur = round(words / WPM * 60 + 0.6, 1)
@@ -42,11 +50,11 @@ for section, items in SECTIONS:
                       f"Style: {STYLE}.")
         anim_prompt = (f"Animate the still image for {dur} s at 24 fps. Main motion: {action}. Secondary motion: {anim}. "
                        f"Camera: {camera}, eased in-out. Add subtle hand-drawn line boil (outline wobble refreshed 8 times per second). "
-                       f"Characters blink once if a face is visible. Start composition = the still image; end composition = same framing after the camera move. "
+                       + (f"Animated on-screen text: {s_os}. " if (s_os := onscreen) else "") + f"Characters blink once if a face is visible. Start composition = the still image; end composition = same framing after the camera move. "
                        f"Motion intensity: low to medium. Keep the illustration style, colours and character design exactly as in the image; no new objects.")
         scenes.append(dict(id=n, file=f"scene_{n:03d}", section=section, narration=narr, words=words, est_duration_s=dur,
                            shot=shot, visual=visual, characters=chars, background=bg, action=action,
-                           camera=camera, animation=anim, image_prompt=img_prompt, animation_prompt=anim_prompt))
+                           camera=camera, animation=anim, onscreen=onscreen, image_prompt=img_prompt, animation_prompt=anim_prompt))
 
 d = lambda *p: os.path.join(proj, *p)
 json.dump(dict(title=TITLE, scenes=scenes), open(d("03_STORYBOARD", "storyboard.json"), "w"), indent=1)
@@ -81,6 +89,9 @@ with open(d("03_STORYBOARD", "STORYBOARD.md"), "w") as f:
         f.write(f"## Scene {s['id']:03d} ({s['section']})\n\n")
         f.write(f"- **Narration:** \"{s['narration']}\"\n- **Estimated duration:** {s['est_duration_s']} s\n")
         f.write(f"- **Visual:** {s['visual']}\n- **Characters:** {', '.join(s['characters']) or 'none'}\n")
-        f.write(f"- **Background:** {s['background']}\n- **Action:** {s['action']}\n- **Camera:** {s['shot']}, {s['camera']}\n\n")
+        f.write(f"- **Background:** {s['background']}\n- **Action:** {s['action']}\n- **Camera:** {s['shot']}, {s['camera']}\n")
+        if s.get("onscreen"):
+            f.write(f"- **Animated on-screen text:** `{s['onscreen']}`\n")
+        f.write("\n")
         f.write(f"**Image prompt**\n\n> {s['image_prompt']}\n\n**Animation prompt**\n\n> {s['animation_prompt']}\n\n")
 print(len(scenes), "scenes,", total_words, "words")
