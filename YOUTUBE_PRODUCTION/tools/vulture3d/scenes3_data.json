@@ -41,10 +41,10 @@
   "69": "DUMP_dawn",
   "70": "DUMP_morning_low",
   "72": "ROOST_portrait",
-  "74": "DUMP_pip"
+  "74": "DUMP_pip",
+  "73": "DUMP_nepal"
  },
  "full": [
-  71,
-  73
+  71
  ]
 }

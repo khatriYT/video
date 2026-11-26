@@ -146,7 +146,8 @@ SCENES = {
     8: dict(plate="DUMP_pip", actors=[(PIP, "wave", (-3.4, -7.0, 0), 0.55, 1.0, 1,
                                        dict(schedule=[(0, "wave"), (2.6, "talk")]))]),
     9: dict(plate="ROOST_portrait", actors=perched(1, 9)),
-    10: dict(plate="SKY_hero", actors=[(V, "glide", (-4.5, 1.5, 1.2), 0, 1.0, 10, dict(vel=(1.1, -0.15, 0.05)))]),
+    10: dict(plate="SKY_hero", actors=[(V, "circle", (0, 0.2, 0), 0, 1.0, 10,
+                                        dict(center=(-0.7, 2.1, 1.75), radius=1.1, speed=0.24, phase=-1.4, bank=0.3))]),
     12: dict(plate="DUMP_morning_wide", actors=feeders(4, 12) + landers(5, 120, delay0=0.2, gap=1.7) +
              circlers(3, (0, 6, 0), seed=12)),
     13: dict(plate="SKY_high", actors=[(V, "glide", (-1.6, 0.3, 0.4), 0, 1.0, 13, dict(vel=(0.35, 0.05, 0.02)))]),
@@ -230,9 +231,10 @@ SCENES = {
 }
 FULL = {
     71: dict(plate="ROOST_wide", light="golden", actors=perched(7, 710), camera="orbit"),
-    73: dict(plate="DUMP_nepal", actors=feeders(4, 73) + circlers(5, (0, 4, 0), r=(4, 9), z=(6, 13), seed=73) +
-             [(PIP, "look_up", (-5.5, -6.5, 0), 0.3, 1.0, 73, {})], camera="dolly"),
 }
+SCENES[73] = dict(plate="DUMP_nepal", actors=feeders(4, 73) + landers(2, 730, delay0=0.6, gap=2.4) +
+                  circlers(5, (0, 4, 0), r=(4, 9), z=(6, 13), seed=73) +
+                  [(PIP, "look_up", (-5.5, -6.5, 0), 0.3, 1.0, 73, {})])
 
 
 # ------------------------------------------------------------------ environment builders
@@ -389,11 +391,13 @@ def setup_camera(pk, info):
         per = Vector(info["perches"][0])
         rz = -0.45
         head = per + Vector((0.46 * math.cos(rz), 0.46 * math.sin(rz), 1.1 - 0.05))
-        if c == "PORTRAIT":
-            return L.camera(tuple(head + Vector((2.4, -2.1, -0.15))), tuple(head + Vector((-0.25, 0, -0.42))), lens=60,
-                            dof_dist="auto", fstop=2.0)
-        return L.camera(tuple(head + Vector((0.6, -1.6, 0.1))), tuple(head + Vector((0.05, 0, -0.05))), lens=85,
-                        dof_dist="auto", fstop=2.0)
+        fwd = Vector((math.cos(rz), math.sin(rz), 0))
+        side = Vector((-math.sin(rz), math.cos(rz), 0))
+        if c == "PORTRAIT":   # head and upper body, 3/4 front
+            return L.camera(tuple(head + fwd * 3.0 - side * 1.3 + Vector((0, 0, -0.2))),
+                            tuple(head - side * 0.5 + Vector((0, 0, -0.18))), lens=50, dof_dist="auto", fstop=2.2)
+        return L.camera(tuple(head + fwd * 1.25 - side * 0.9 + Vector((0, 0, 0.05))), tuple(head + Vector((0.05, 0, -0.03))),
+                        lens=85, dof_dist="auto", fstop=2.2)
     d = CAM[c]
     return L.camera(d["loc"], d["target"], lens=d["lens"], dof_dist=d.get("dof"), fstop=d.get("fstop", 2.8))
 
