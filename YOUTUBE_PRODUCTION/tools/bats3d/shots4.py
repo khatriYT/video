@@ -119,7 +119,8 @@ SHOTS = {
 }
 
 # character-pass frame rates (default 12): slow/subtle motion at 8, hovering wings at 16
-for _k in ("HIB_FUNGUS_CU", "HIB_HEART", "HIB_FUNGUS_CU2", "FARM_BATHOUSE", "EMERGE_MOON_PIP"):
+for _k in ("HIB_FUNGUS_CU", "HIB_HEART", "HIB_FUNGUS_CU2", "FARM_BATHOUSE", "EMERGE_MOON_PIP", "HIB_ENTER",
+           "EMERGE_PIP", "CORN_NET", "FARM_MOTHS"):
     SHOTS[_k]["fps"] = 8
 for _k in ("AGAVE_BAT_CU", "DURIAN_NIGHT"):
     SHOTS[_k]["fps"] = 16
