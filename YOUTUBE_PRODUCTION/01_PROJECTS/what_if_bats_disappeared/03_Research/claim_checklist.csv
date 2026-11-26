@@ -1,0 +1,38 @@
+claim_id,claim_as_used_in_script,evidence_tag,source_ids,status,notes
+C01,"In February 2006 a caver photographed hibernating bats with white fuzz on their noses in a cave west of Albany New York",STRONG,S02,verified-primary-abstract,Howes Cave; 16 Feb 2006; the photographer is not named in the script
+C02,"The cause is a fungus from outside North America, Pseudogymnoascus destructans",STRONG,"S02,S04",verified-secondary,"Origin outside North America is widely reported (Europe/Asia); the script says only 'a cold-loving fungus'"
+C03,"Infected bats wake up again and again during hibernation, burning fat they need to survive the winter",STRONG,S06,verified-primary,Reeder 2012; the mechanism behind the arousals is unknown and is not claimed
+C04,"Millions of bats have died",STRONG,"S03,S05",verified-secondary,The 5.7-6.7 M figure dates from 2012; the script says only 'millions'
+C05,"Little brown, northern long-eared and tricolored bats fell more than 90 percent in under ten years",STRONG,S03,verified-secondary,Cheng et al. 2021 via USGS
+C06,"The disease is now in more than 40 US states and parts of Canada",STRONG,S04,verified-secondary,USGS Dec 2025: 41 states; province counts vary
+C07,"There are more than 1400 bat species, about one in five mammal species",STRONG,S12,verified-secondary,"Counts range 1,400-1,500 by taxonomy"
+C08,"A bat's wing is a hand: long finger bones with skin stretched between them",STRONG,S12,textbook,General anatomy
+C09,"Economist Eyal Frank used the fungus's county-by-county spread as a natural experiment",STRONG,S01,verified-secondary,
+C10,"Where bats died, farmers used 31 percent more insecticide",STRONG,S01,verified-secondary,"31.1%, relative to unaffected counties"
+C11,"Infant deaths from internal causes rose about 8 percent in those counties",STRONG,S01,verified-secondary,"7.9%; one peer-reviewed study; the script says 'linked to'"
+C12,"About 1334 more infant deaths in 245 counties between 2006 and 2017",ESTIMATE,S01,verified-secondary,Model estimate; tagged ESTIMATE on screen
+C13,"Losses to farmers were estimated at about 27 billion dollars",ESTIMATE,S01,verified-secondary,"$26.9 bn 2006-2017; revenue plus pesticide spending; tagged ESTIMATE"
+C14,"Bats are worth more than 3.7 billion dollars a year to North American farms; the central estimate is about 23 billion",ESTIMATE,S07,verified-primary-abstract,"Range 3.7-53 bn; tagged ESTIMATE"
+C15,"Bracken Cave in Texas holds 15 to 20 million free-tailed bats, the largest known bat colony",STRONG,S10,verified-secondary,Seasonal: March-October
+C16,"Free-tailed bats climb hundreds of metres to hunt migrating moths, including the corn earworm",STRONG,"S11,S08",verified-secondary,"The '10,000 ft' figure is not used"
+C17,"In eight Texas counties, bats' pest control for cotton was valued at about 741,000 dollars a year",ESTIMATE,S08,verified-primary,"Range $121k-1.7 M"
+C18,"When corn plots were netted at night to keep bats out, there were nearly 60 percent more earworms and 56 percent more damaged kernels",STRONG,S09,verified-primary,Maine & Boyles 2015 (Illinois)
+C19,"Pest suppression by bats is worth more than a billion dollars a year for corn worldwide",ESTIMATE,S09,verified-primary,"Assumption-laden extrapolation; tagged ESTIMATE"
+C20,"Mosquitoes are on the menu, but for most bats they are a small part of the diet; moths and beetles matter more",DEBATED,S21,verified-secondary,"72% of little brown bat samples contained mosquitoes; share by mass is small in most diet studies"
+C21,"More than 500 plant species rely on bats for pollination",STRONG,S13,verified-primary-review,About 528 species in 67 families
+C22,"The lesser long-nosed bat pollinates agave; tequila agave is cloned, which narrows genetic diversity; bat-friendly growers let some plants flower",STRONG,S14,verified-secondary,"Careful: tequila production does not require bats"
+C23,"Durian flowers are visited mainly by cave nectar bats in southern Thailand, and fruit set drops farther from bat caves",STRONG,S15,verified-primary-abstract,
+C24,"Fruit bats carry the seeds of pioneer plants into cleared land, helping forests regrow",STRONG,S16,verified-primary,"Regional studies; the script says 'helping', not 'responsible for'"
+C25,"In Peru, culling vampire bats did not reduce rabies exposure, and sporadic culling was linked to more exposure",STRONG,S17,verified-primary,Mechanism tagged HYPOTHESIS
+C26,"In Uganda, miners wiped out a fruit-bat colony after Marburg cases; bats returned, and infection rates among them were higher",STRONG,S18,verified-primary,"Higher than the 5.1% found in 2007-08; the script gives no percentages"
+C27,"Some little brown bat colonies in New York have stabilised and seem to resist the fungus",DEBATED,S19,verified-primary,Recovery slow; mechanism unknown; tagged DEBATED
+C28,"Pausing wind turbines at low wind speeds cut bat deaths by about 60 percent",STRONG,S20,verified-primary-abstract,"62% (2024); 63% (2021)"
+C29,"Only three bat species drink blood",STRONG,S12,textbook,"Common, hairy-legged and white-winged vampire bats"
+C30,"Some bats carry viruses that can make people sick, such as rabies and Marburg virus",STRONG,"S17,S18",verified-primary,"Framed carefully: most bats never contact people"
+C31,"Vampire bats spread rabies to livestock in Latin America, and colonies have been culled to control it",STRONG,S17,verified-primary,
+C32,"Scientists suspect culling removes immune adults and leaves more young, unexposed bats, which can help viruses circulate",HYPOTHESIS,S17,verified-primary,Tagged HYPOTHESIS on screen
+C33,"A hibernating bat's heart can slow from a few hundred beats a minute to about ten, and its body cools to near cave temperature",STRONG,S23,verified-secondary,"NPS: 200-300 bpm to 10 bpm; varies by species"
+C34,"A nursing mother free-tailed bat can eat insects weighing more than half her body weight in a night",STRONG,S24,verified-primary-abstract,"Kunz et al. 1995: 39-73% of body mass, early to mid-lactation"
+C35,"Lesser long-nosed bat: fewer than 1,000 at 14 roosts in 1988; about 200,000 at 75 roosts by 2018; first bat delisted due to recovery",STRONG,S22,verified-primary,USFWS press release and Federal Register final rule
+C36,"A little brown bat usually raises one pup a year, so recovery is slow",STRONG,"S19,S23",textbook,Slow reproduction noted in S19 coverage
+C37,"Estimates of US wind-turbine bat deaths run from hundreds of thousands to more than a million a year",ESTIMATE,S25,verified-secondary,"2012 estimates ~600k-888k; USGS: predictions >1.5 M/yr from 2021"

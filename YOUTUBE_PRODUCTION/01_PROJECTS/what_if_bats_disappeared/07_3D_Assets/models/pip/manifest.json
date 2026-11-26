@@ -1,0 +1,255 @@
+{
+ "kind": "pip",
+ "parts": [
+  {
+   "file": "head.bin",
+   "mat": "skin",
+   "tint": 3,
+   "local": [
+    0.0,
+    0.006,
+    1.552
+   ],
+   "bones": [
+    "head",
+    "neck",
+    "chest"
+   ]
+  },
+  {
+   "file": "ears.bin",
+   "mat": "skin",
+   "tint": 3,
+   "local": [
+    0.0,
+    0.006,
+    1.552
+   ],
+   "bones": [
+    "head"
+   ]
+  },
+  {
+   "file": "hair.bin",
+   "mat": "hair",
+   "tint": 0,
+   "local": [
+    0.0,
+    0.006,
+    1.552
+   ],
+   "bones": [
+    "head"
+   ]
+  },
+  {
+   "file": "armL.bin",
+   "mat": "skin",
+   "tint": 3,
+   "local": null,
+   "bones": [
+    "upperarm.L",
+    "forearm.L",
+    "hand.L",
+    "index1.L",
+    "index2.L",
+    "middle1.L",
+    "middle2.L",
+    "ring1.L",
+    "ring2.L",
+    "pinky1.L",
+    "pinky2.L",
+    "thumb1.L",
+    "thumb2.L"
+   ]
+  },
+  {
+   "file": "bootL.bin",
+   "mat": "boot",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "shin.L",
+    "foot.L",
+    "toe.L"
+   ]
+  },
+  {
+   "file": "soleL.bin",
+   "mat": "sole",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "foot.L",
+    "toe.L"
+   ]
+  },
+  {
+   "file": "armR.bin",
+   "mat": "skin",
+   "tint": 3,
+   "local": null,
+   "bones": [
+    "upperarm.R",
+    "forearm.R",
+    "hand.R",
+    "index1.R",
+    "index2.R",
+    "middle1.R",
+    "middle2.R",
+    "ring1.R",
+    "ring2.R",
+    "pinky1.R",
+    "pinky2.R",
+    "thumb1.R",
+    "thumb2.R"
+   ]
+  },
+  {
+   "file": "bootR.bin",
+   "mat": "boot",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "shin.R",
+    "foot.R",
+    "toe.R"
+   ]
+  },
+  {
+   "file": "soleR.bin",
+   "mat": "sole",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "foot.R",
+    "toe.R"
+   ]
+  },
+  {
+   "file": "shirt.bin",
+   "mat": "shirt",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "pelvis",
+    "spine",
+    "chest",
+    "neck",
+    "shoulder.L",
+    "shoulder.R",
+    "upperarm.L",
+    "upperarm.R"
+   ]
+  },
+  {
+   "file": "collar.bin",
+   "mat": "shirt",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "chest",
+    "neck"
+   ]
+  },
+  {
+   "file": "vest.bin",
+   "mat": "vest",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "pelvis",
+    "spine",
+    "chest",
+    "shoulder.L",
+    "shoulder.R"
+   ]
+  },
+  {
+   "file": "trousers.bin",
+   "mat": "trousers",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "pelvis",
+    "spine",
+    "thigh.L",
+    "thigh.R",
+    "shin.L",
+    "shin.R"
+   ]
+  },
+  {
+   "file": "belt.bin",
+   "mat": "belt",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "pelvis",
+    "spine"
+   ]
+  },
+  {
+   "file": "scarf.bin",
+   "mat": "scarf",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "chest",
+    "neck"
+   ]
+  },
+  {
+   "file": "satchel.bin",
+   "mat": "satchel",
+   "tint": 0,
+   "local": null,
+   "bones": [
+    "pelvis"
+   ]
+  }
+ ],
+ "bones": [
+  "pelvis",
+  "spine",
+  "chest",
+  "neck",
+  "head",
+  "shoulder.L",
+  "upperarm.L",
+  "forearm.L",
+  "hand.L",
+  "index1.L",
+  "index2.L",
+  "middle1.L",
+  "middle2.L",
+  "ring1.L",
+  "ring2.L",
+  "pinky1.L",
+  "pinky2.L",
+  "thumb1.L",
+  "thumb2.L",
+  "thigh.L",
+  "shin.L",
+  "foot.L",
+  "toe.L",
+  "shoulder.R",
+  "upperarm.R",
+  "forearm.R",
+  "hand.R",
+  "index1.R",
+  "index2.R",
+  "middle1.R",
+  "middle2.R",
+  "ring1.R",
+  "ring2.R",
+  "pinky1.R",
+  "pinky2.R",
+  "thumb1.R",
+  "thumb2.R",
+  "thigh.R",
+  "shin.R",
+  "foot.R",
+  "toe.R"
+ ]
+}

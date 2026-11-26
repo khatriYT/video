@@ -24,3 +24,10 @@ YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/claims/
 YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/plates/*.png
 YOUTUBE_PRODUCTION/01_PROJECTS/*/09_Animation/*.v2
 YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/logs/
+# ep4 (bats) regenerable intermediates
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/07_3D_Assets/models/*/*.bin
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/08_Scenes/lookdev/*.png
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/08_Scenes/logs/
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/08_Scenes/renders4/
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/09_Animation/*.mp4
+YOUTUBE_PRODUCTION/tools/bats3d/__pycache__/

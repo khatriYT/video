@@ -23,6 +23,7 @@ proj, model_dir = sys.argv[1], sys.argv[2]
 a, b = (int(sys.argv[3]), int(sys.argv[4])) if len(sys.argv) > 4 else (1, 10 ** 6)
 sb = json.load(open(os.path.join(proj, "06_Storyboard", "storyboard.json")))
 voice = sb.get("voice", "am_michael")
+RESPELL.update(sb.get("respell", {}))
 k = Kokoro(os.path.join(model_dir, "kokoro-v1.0.onnx"), os.path.join(model_dir, "voices-v1.0.bin"))
 outdir = os.path.join(proj, "10_Audio", "narration")
 os.makedirs(outdir, exist_ok=True)
