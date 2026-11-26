@@ -232,6 +232,8 @@ SCENES = {
 FULL = {
     71: dict(plate="ROOST_wide", light="golden", actors=perched(7, 710), camera="orbit"),
 }
+SCENES[65] = dict(plate="ROOM", actors=[(PIP, "talk", (0.0, 0.9, 0), 0.0, 1.0, 65,
+                                         dict(schedule=[(0, "point"), (2.2, "talk")]))])
 SCENES[73] = dict(plate="DUMP_nepal", actors=feeders(4, 73) + landers(2, 730, delay0=0.6, gap=2.4) +
                   circlers(5, (0, 4, 0), r=(4, 9), z=(6, 13), seed=73) +
                   [(PIP, "look_up", (-5.5, -6.5, 0), 0.3, 1.0, 73, {})])
