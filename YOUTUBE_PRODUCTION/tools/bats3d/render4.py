@@ -357,7 +357,8 @@ def lights_for(E, shot, cam, mode):
     if E.key:
         k = C.sun("SUN", E.key[0], E.key[1], E.key[2], angle=2.5)
     lamp = shot.get("lamp")
-    cl, ct = cam.location, cam.matrix_world @ Vector((0, 0, -3))
+    bpy.context.view_layer.update()          # camera matrix must be current before aiming lamps at its view
+    cl, ct = cam.matrix_world.translation.copy(), cam.matrix_world @ Vector((0, 0, -3))
     if lamp in ("cam", "cam_warm"):
         C.spot("TORCH", tuple(cl + Vector((0.25, 0.1, 0.25))), tuple(ct), "#FFD9A0" if lamp == "cam" else "#FFC27A",
                700.0, 42.0, 0.55, 0.03)
