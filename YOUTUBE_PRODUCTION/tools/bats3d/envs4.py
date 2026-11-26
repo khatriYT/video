@@ -868,17 +868,20 @@ def env_mine():
     g = FL.m_ground("mine_ground", [("#5A3A2A", 0.25), ("#4E7A30", 0.5), ("#6A9A3A", 0.8)], 0.12, 0.5,
                     slope_rock="#8A6A52")
     near = terrain("mine_near", 160, 180, h, g)
-    rock_m = FL.m_rock("mine_rock", "#8A6A5A", "#4A3A32", lichen=("#C89A3A", "#7A9A4A"))
-    face = FL.rock("mine_face", 7.0, rock_m, seed=3, flat=0.9)
-    face.location = (0, 6.0, 1.5)
-    face.scale = (1.6, 0.8, 0.9)
+    rock_m = FL.m_rock("mine_rock", "#9A7462", "#4A3A32", lichen=("#C89A3A", "#7A9A4A"), scale=0.8)
+    face = meshio.load(os.path.join(MODELS, "env", "cave_mouth.bin"), "mine_face", rock_m, decimate=1.0)
+    face.scale = (0.42, 0.42, 0.42)
+    face.location = (0, 0.6, h(0, 2.0) - 0.4)
     dark = C.m_simple("mine_dark", "#030202", 1.0)
-    hole = FL.grid("mine_hole", 2.6, 3.2, 1, 1, dark)
-    hole.rotation_euler = (math.radians(90), 0, 0)
-    hole.location = (0, 0.8, 1.6)
+    hole = FL.icosphere("mine_void", 1.6, 2, dark)
+    hole.scale = (1.3, 2.4, 1.1)
+    hole.location = (0, 4.6, h(0, 2.0) + 0.3)
     timber = FL.m_bark("timber", "#6A4A30", 8.0)
-    for a, b in (((-1.5, 0.6, 0), (-1.5, 0.6, 3.4)), ((1.5, 0.6, 0), (1.5, 0.6, 3.4)), ((-1.8, 0.6, 3.3), (1.8, 0.6, 3.3))):
-        C.tube(f"timber{a}", [Vector(a), Vector(b)], [0.16, 0.16], 6, timber)
+    z0 = h(0, 2.0) - 0.3
+    for a, b in (((-1.3, 1.6, z0), (-1.3, 1.6, z0 + 2.6)), ((1.3, 1.6, z0), (1.3, 1.6, z0 + 2.6)),
+                 ((-1.6, 1.6, z0 + 2.5), (1.6, 1.6, z0 + 2.5)), ((-1.3, 2.6, z0), (-1.3, 2.6, z0 + 2.4)),
+                 ((1.3, 2.6, z0), (1.3, 2.6, z0 + 2.4)), ((-1.5, 2.6, z0 + 2.35), (1.5, 2.6, z0 + 2.35))):
+        C.tube(f"timber{a}{b}", [Vector(a), Vector(b)], [0.13, 0.13], 6, timber)
     ban_l = FL.m_leaf("banana_leaf", "#6AA83E", 0.08, 0.45, 0.35, waxy=0.2)
     ban_s = FL.m_leaf("banana_stem", "#7A9A4A", 0.06)
     rnd = random.Random(5)
@@ -894,7 +897,7 @@ def env_mine():
     C.volume_fog(0.003, "#F2B090", 0.3, size=500.0, center=(0, 0, 10), height=20.0)
     E.key = ((-1.0, -0.35, 0.12), "#FFA062", 4.5)
     E.ground = [near]
-    E.marks = dict(mouth=Vector((0, 0.8, 1.6)))
+    E.marks = dict(mouth=Vector((0, 2.0, h(0, 2.0) + 1.0)))
     return E
 
 

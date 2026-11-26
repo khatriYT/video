@@ -140,8 +140,8 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
         a = a[alive]
         n = len(a)
         th0 = rng.uniform(0, 2 * np.pi, nb)[alive]
-        lat = rng.normal(0, 1.0, (nb, 3))[alive]
-        rr = rng.uniform(0.7, 1.3, nb)[alive]
+        lat = rng.normal(0, 0.45 if kind in ("emerge", "column") else 1.0, (nb, 3))[alive]
+        rr = rng.uniform(0.85, 1.15, nb)[alive]
         if kind == "bathouse":
             out = np.stack([np.zeros(n), -np.ones(n), np.zeros(n)], 1)
             p = mouth + out * (2.5 * a)[:, None] + np.array([0, 0, 1.0]) * (0.6 * a ** 1.4)[:, None]
@@ -156,17 +156,33 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
             ex = np.minimum(a, exit_t)
             p_exit = mouth + np.array([0.0, -1.0, 0.25])[None] * (4.0 * ex)[:, None] + lat * np.array([1.6, 0.4, 0.9])
             sa = np.maximum(a - exit_t, 0.0)
-            R = (3.5 + 1.6 * sa) * rr
-            th = th0 + sa * (0.9 / rr)
-            z = 2.0 + 2.6 * sa ** 1.08
-            drift = np.array([3.0, 4.0, 0.0])[None] * (sa / 10.0)[:, None]
-            p_sp = ax + np.stack([R * np.cos(th), R * np.sin(th), z], 1) + drift + lat * 0.6
+            # a coherent, snaking ribbon: every bat follows the same rising helix, offset by its birth time
+            R = (3.0 + 0.55 * sa) * rr
+            th = 0.9 * sa + 0.15 * th0
+            z = 2.0 + 2.4 * sa ** 1.05
+            drift = np.array([4.0, 6.0, 0.0])[None] * (sa / 10.0)[:, None]
+            p_sp = ax + np.stack([R * np.cos(th), R * np.sin(th), z], 1) + drift + lat * (0.5 + 0.08 * sa)[:, None]
             w = np.clip((a - exit_t + 0.6) / 1.2, 0, 1)[:, None]
             p = p_exit * (1 - w) + p_sp * w
         keep = p[:, 2] < 160
         p = p[keep]
-        # heading by finite difference
-        return p, None, rng.uniform(0, 1, nb)[alive][keep], ("emerge", alive, keep)
+        ph_ = rng.uniform(0, 1, nb)[alive][keep]
+        if kind in ("emerge", "column"):
+            # a few bats sweep close past the camera, for scale and drama
+            nfly = 14
+            fb = np.random.default_rng(rng_seed + 99)
+            t0 = fb.uniform(-2.0, max(dur, 1.0), nfly)
+            side = fb.choice([-1.0, 1.0], nfly)
+            a2 = t - t0
+            start = mouth + np.array([0.0, -6.0, 2.5])
+            off = np.stack([side * fb.uniform(2.0, 5.0, nfly), fb.uniform(-3, 3, nfly), fb.uniform(0.5, 3.0, nfly)], 1)
+            end = camp + off
+            u = (a2 / 3.2)[:, None]
+            pf = start + (end - start) * u + np.array([0, 0, 1.0]) * (np.sin(np.clip(u, 0, 1) * np.pi) * 2.0)
+            ok = (a2 > 0) & (a2 < 4.0)
+            p = np.concatenate([p, pf[ok]])
+            ph_ = np.concatenate([ph_, fb.uniform(0, 1, nfly)[ok]])
+        return p, None, ph_, ("emerge", alive, keep)
     if kind in ("hunt", "agave", "durian", "sky", "fig", "fly_over", "silhouette", "mine"):
         n = {"hunt": 70, "agave": 40, "durian": 4, "sky": 90, "fig": 14, "fly_over": 1, "silhouette": 40,
              "mine": 60}[kind]
@@ -249,9 +265,17 @@ def draw_swarm(canvas, depth, cam, atlas, sp, kind, t, meta, density, dur, prese
     fogd = {"sunset": 140.0, "dusk": 110.0, "moon": 90.0, "dawn": 80.0}.get(preset, 120.0)
     img = canvas
     Hh, Ww = depth.shape
+    dots = ImageDraw.Draw(img, "RGBA")
+    dotc = (20, 14, 22, 200) if preset != "moon" else (8, 10, 20, 220)
     for j, i in enumerate(idx):
         size = int(cam.f * world_cell / z[i])
-        if size < 3:
+        if size < 9:      # far bats: a soft dark dash (wings blurred by motion)
+            cx, cy = x[i], y[i]
+            if 0 <= int(cx) < Ww and 0 <= int(cy) < Hh and depth[int(cy), int(cx)] < z[i] - 0.3:
+                continue
+            w_ = max(1.2, size * 0.45)
+            fl = abs(math.sin((t * FLAP_HZ[sp] + ph[i]) * math.pi))
+            dots.ellipse([cx - w_, cy - w_ * (0.25 + 0.35 * fl), cx + w_, cy + w_ * (0.25 + 0.35 * fl)], fill=dotc)
             continue
         cx, cy = int(x[i]), int(y[i])
         if 0 <= cx < Ww and 0 <= cy < Hh and depth[cy, cx] < z[i] - 0.3:
