@@ -19,6 +19,7 @@ import soundfile as sf
 
 SR = 48000
 NARR_OFFSET = 0.12
+SCORE_NAME = "score_vultures.wav"
 rng = np.random.default_rng(31)
 
 
@@ -228,7 +229,7 @@ def make_music(proj):
     fi = int(1.5 * SR)
     out[:fi] *= np.linspace(0, 1, fi)
     os.makedirs(P("10_Audio", "music"), exist_ok=True)
-    save(P("10_Audio", "music", "score_vultures.wav"), out, 0.8)
+    save(P("10_Audio", "music", SCORE_NAME), out, 0.8)
     json.dump([dict(section=a, start=round(b, 2), end=round(c, 2)) for a, b, c in spans],
               open(P("10_Audio", "music", "score_sections.json"), "w"), indent=1)
     print("music", round(total, 1), "s,", len(spans), "sections")
@@ -318,7 +319,7 @@ def assemble(proj, base):
     envv = np.repeat(active, blk)
     envv = np.concatenate([envv, np.full(n - len(envv), envv[-1] if len(envv) else 0, np.float32)])
     fx = fx * 0.3 * (1 - 0.45 * envv)
-    music = load(P("10_Audio", "music", "score_vultures.wav"))
+    music = load(P("10_Audio", "music", SCORE_NAME))
     music = np.resize(music, n) * (0.22 - 0.1 * envv)
     voice = voice / max(np.abs(voice).max(), 1e-9) * 0.8
     mix = voice + fx + music

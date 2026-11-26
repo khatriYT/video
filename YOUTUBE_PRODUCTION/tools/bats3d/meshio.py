@@ -20,7 +20,10 @@ def read(path):
     return nv, nf, na, V, F, A
 
 
-def load(path, name, mat=None, tint=0, offset=None, bone_names=None):
+DECIMATE = float(os.environ.get("DECIMATE", "0.4"))
+
+
+def load(path, name, mat=None, tint=0, offset=None, bone_names=None, decimate=None):
     nv, nf, na, V, F, A = read(path)
     me = bpy.data.meshes.new(name)
     if offset is not None:
@@ -67,4 +70,12 @@ def load(path, name, mat=None, tint=0, offset=None, bone_names=None):
             vg = groups.get(bn) or ob.vertex_groups.get(bn) or ob.vertex_groups.new(name=bn)
             groups[bn] = vg
             vg.add(idx, w, "REPLACE")
+    r = DECIMATE if decimate is None else decimate
+    if r < 0.999 and nv > 15000:
+        from core import apply_mods
+        dm = ob.modifiers.new("dec", "DECIMATE")
+        dm.decimate_type = "COLLAPSE"
+        dm.ratio = r
+        apply_mods(ob)
+        fix_texspace(ob)
     return ob

@@ -84,9 +84,11 @@ def add_fur(ob, mat, density_group, count, length, radius=0.0002, children=0, cl
     st.rendered_child_count = children
     st.child_percent = max(1, children // 4)
     st.clump_factor = clump
-    st.roughness_1 = 0.4
-    st.roughness_1_size = 1.0
-    st.roughness_endpoint = 0.1
+    st.roughness_1 = length * 0.08
+    st.roughness_1_size = length * 3
+    st.roughness_endpoint = length * 0.12
+    st.child_radius = length * 1.5
+    st.clump_shape = 0.3
     st.length_random = 0.4
     ob.data.materials.append(mat)
     st.material = len(ob.data.materials)
@@ -206,7 +208,7 @@ def build(name, sp, mode="flyer", wns=0.0, fur=True, loc=(0, 0, 0), scale=1.0, f
         # arm and finger bones (visible through the membrane), thumb claw
         bone_m = m_simple(f"batbone_{sp}", _shift(S["skin"], 0.06), 0.45, sss=0.2)
         claw_m = m_simple("batclaw", "#1A1410", 0.3, coat=0.5)
-        mem_m = m_membrane(f"membrane_{sp}_{wns}", S["membrane"], _shift(S["membrane"], 0.08), 0.45)
+        mem_m = m_membrane(f"membrane_{sp}_{wns}", S["membrane"], _shift(S["membrane"], 0.08), 0.3)
         panels = []
         for sx, s in ((1, "L"), (-1, "R")):
             M = lambda k: Vector((P[k].x * sx, P[k].y, P[k].z))   # noqa: E731
@@ -265,8 +267,9 @@ def build(name, sp, mode="flyer", wns=0.0, fur=True, loc=(0, 0, 0), scale=1.0, f
         sn = S["snout"]
         for sx in (1, -1):
             e = _eye(f"{name}_eye{sx}", eye_m, S["eye_r"])
-            e.location = (sx * 0.006, -0.0105, -0.037)
-            e.scale = (1.0, 1.0, 0.35 if wns or sp == "myotis" else 1.0)     # hibernating: eyes shut
+            e.location = (sx * 0.0058, -0.0098, -0.0265)
+            r_ = S["eye_r"]
+            e.scale = (r_, r_, r_ * (0.35 if wns or sp == "myotis" else 1.0))     # hibernating: eyes shut
             e.parent = body
             parts.append(e)
         parts.append(body)

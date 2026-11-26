@@ -765,7 +765,7 @@ def m_membrane(name, base="#3B2A24", vein="#5A2E2A", trans=0.45, rough=0.5):
     p.inputs["Specular IOR Level"].default_value = 0.45
     nb.l(nrm, p.inputs["Normal"])
     tr = nb.n("ShaderNodeBsdfTranslucent")
-    tc = nb.mix(col, "#C0543A", None, fac_val=0.45)
+    tc = nb.mix(col, "#7A2E22", None, fac_val=0.35)
     nb.l(tc, tr.inputs["Color"])
     nb.l(nrm, tr.inputs["Normal"])
     mx = nb.n("ShaderNodeMixShader")
@@ -904,7 +904,7 @@ def three_point(subject, cam_loc, key_dir, key_col, key_e, fill_col, fill_e, rim
 
 # ------------------------------------------------------------------ world / sky
 def world_sky(stops, strength=1.0, stars=0.0, sun_dir=None, sun_col="#FFD7A0", sun_glow=0.0, clouds=None,
-              ground="#3A3028", moon=None):
+              ground="#3A3028", moon=None, ambient=None):
     """Gradient sky by elevation; optional sun glow, procedural clouds, stars and a moon disc.
     stops: list of (elevation 0..1, hex) from horizon (0) to zenith (1). clouds: (hex, coverage, scale)."""
     w = bpy.data.worlds.new("World")
@@ -1082,9 +1082,23 @@ def world_sky(stops, strength=1.0, stars=0.0, sun_dir=None, sun_col="#FFD7A0", s
         ad3.inputs[7].default_value = rgba(mcol, 1)
         col = ad3.outputs[2]
     bg = nt.nodes.new("ShaderNodeBackground")
+    bg.name = "Background"
     bg.inputs["Strength"].default_value = strength
     nt.links.new(col, bg.inputs["Color"])
-    nt.links.new(bg.outputs[0], out.inputs["Surface"])
+    if ambient is not None:
+        # camera sees the art-directed sky; the scene is lit by a tuned ambient (keeps colours clean)
+        amb = nt.nodes.new("ShaderNodeBackground")
+        amb.name = "Ambient"
+        amb.inputs["Color"].default_value = rgba(ambient[0])
+        amb.inputs["Strength"].default_value = ambient[1]
+        lp = nt.nodes.new("ShaderNodeLightPath")
+        mx = nt.nodes.new("ShaderNodeMixShader")
+        nt.links.new(lp.outputs["Is Camera Ray"], mx.inputs[0])
+        nt.links.new(amb.outputs[0], mx.inputs[1])
+        nt.links.new(bg.outputs[0], mx.inputs[2])
+        nt.links.new(mx.outputs[0], out.inputs["Surface"])
+    else:
+        nt.links.new(bg.outputs[0], out.inputs["Surface"])
     return w
 
 
@@ -1184,7 +1198,10 @@ def bake_light_cache(irr=None, cubemap=None):
 def irradiance_volume(loc, size, res=(6, 6, 3), bias=0.3):
     pr = bpy.data.lightprobes.new("Irr", "GRID")
     pr.grid_resolution_x, pr.grid_resolution_y, pr.grid_resolution_z = res
-    pr.visibility_bias = bias
+    try:
+        pr.grid_bake_samples = 512
+    except AttributeError:
+        pass
     ob = link(bpy.data.objects.new("Irr", pr))
     ob.location = loc
     ob.scale = size

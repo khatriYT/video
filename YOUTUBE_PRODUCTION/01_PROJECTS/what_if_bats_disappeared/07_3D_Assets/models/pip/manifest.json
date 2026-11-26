@@ -131,16 +131,7 @@
    "mat": "shirt",
    "tint": 0,
    "local": null,
-   "bones": [
-    "pelvis",
-    "spine",
-    "chest",
-    "neck",
-    "shoulder.L",
-    "shoulder.R",
-    "upperarm.L",
-    "upperarm.R"
-   ]
+   "bones": "shirt"
   },
   {
    "file": "collar.bin",

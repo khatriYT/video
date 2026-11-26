@@ -256,6 +256,53 @@ def skin_weights(V, allowed, power=4.0, eps=0.01, topk=3):
     return np.concatenate([I.astype(np.float32), Wk.astype(np.float32)], axis=1)
 
 
+def dense_weights(V, allowed, power=4.0, eps=0.01):
+    global BONES
+    if BONES is None:
+        BONES = {b[0]: (i, _v(b[1]), _v(b[2])) for i, b in enumerate(SK.bones())}
+    D = []
+    for n in allowed:
+        _, a, b = BONES[n]
+        ba = b - a
+        t = np.clip(((V - a) @ ba) / (ba @ ba), 0, 1)
+        D.append(np.linalg.norm(V - (a + t[:, None] * ba), axis=1))
+    W = 1.0 / (np.stack(D, 1) + eps) ** power
+    return W / W.sum(1, keepdims=True)
+
+
+def encode_weights(names, W, topk=3):
+    ids = np.array([BONES[n][0] for n in names])
+    k = min(topk, W.shape[1])
+    order = np.argsort(-W, axis=1)[:, :k]
+    Wk = np.take_along_axis(W, order, axis=1)
+    Wk /= np.maximum(Wk.sum(axis=1, keepdims=True), 1e-9)
+    return np.concatenate([ids[order].astype(np.float32), Wk.astype(np.float32)], axis=1)
+
+
+def shirt_weights(V):
+    """Sleeve surfaces follow the arm, torso surfaces the spine; blended where they meet (armpit/shoulder)."""
+    torso = ["pelvis", "spine", "chest", "neck"]
+    names = torso + ["shoulder.L", "upperarm.L", "shoulder.R", "upperarm.R"]
+    Wt = np.concatenate([dense_weights(V, torso, 4.0, 0.03), np.zeros((len(V), 4))], 1)
+    dt = torso_body(V, 0.006)
+    out = Wt.copy()
+    for sx, s, col in ((1, "L", 4), (-1, "R", 6)):
+        sh, el = _v(SK.mirror(SK.SH, sx)), _v(SK.mirror(SK.EL, sx))
+        ds = rcone(V, sh, sh + (el - sh) * 0.86, 0.056, 0.05)
+        a = np.clip((dt - ds) / 0.025 + 0.5, 0, 1)
+        # along the arm: shoulder near the joint, upper arm further down
+        u = np.clip(((V - sh) @ (el - sh)) / ((el - sh) @ (el - sh)), 0, 1)
+        wa = np.zeros((len(V), 8))
+        wa[:, col] = np.clip(1 - u * 4, 0, 1) * 0.6
+        wa[:, col + 1] = 1 - wa[:, col]
+        out = out * (1 - a[:, None]) + wa * a[:, None]
+        # shoulder blend: torso vertices near the shoulder take a little of the clavicle
+        near = np.exp(-np.sum((V - sh) ** 2, 1) / (2 * 0.05 ** 2)) * (1 - a)
+        out[:, col] += near * 0.5
+    out /= out.sum(1, keepdims=True)
+    return encode_weights(names, out)
+
+
 MANIFEST = []
 
 
@@ -267,11 +314,12 @@ def mesh(path, fn, lo, hi, h, smooth=6, attr_fn=None, mask_fn=None, bones=("head
     V = taubin(V, F, smooth, mask=None if mask_fn is None else mask_fn(V))
     A = None if attr_fn is None else np.asarray(attr_fn(V), dtype=np.float32).reshape(len(V), -1)
     Vw = V + (_v(local) if local is not None else 0.0)
-    Wt = skin_weights(Vw, list(bones), power, eps)
+    Wt = skin_weights(Vw, list(bones), power, eps) if bones != "shirt" else shirt_weights(Vw)
     natt = 0 if A is None else A.shape[1]
     write(path, V, F, Wt if A is None else np.concatenate([A, Wt], axis=1))
     MANIFEST.append(dict(file=os.path.basename(path), mat=mat or os.path.basename(path)[:-4], tint=natt,
-                         local=list(local) if local is not None else None, bones=list(bones)))
+                         local=list(local) if local is not None else None,
+                         bones=list(bones) if bones != "shirt" else "shirt"))
     return V, F
 
 
@@ -300,12 +348,11 @@ def head_sdf(P, design):
         d = smin(d, sphere(P, (sx * 0.0132, -0.0905, -0.0295), 0.0082), 0.006)               # alae
         d = sub(d, sphere(P, (sx * 0.0064, -0.0985 - D["nose"] * 0.5, -0.0355), 0.0036), 0.003)   # nostrils
     # mouth
-    d = smin(d, capsule(P, (-0.019, -0.0835, -0.0468), (0.019, -0.0835, -0.0468), 0.0044), 0.007)
-    d = smin(d, sphere(P, (0, -0.0868, -0.0462), 0.0038), 0.005)
-    d = smin(d, capsule(P, (-0.0145, -0.0822, -0.0566), (0.0145, -0.0822, -0.0566), 0.0052), 0.007)
+    d = smin(d, capsule(P, (-0.019, -0.0815, -0.0468), (0.019, -0.0815, -0.0468), 0.0038), 0.008)
+    d = smin(d, capsule(P, (-0.0145, -0.0805, -0.0566), (0.0145, -0.0805, -0.0566), 0.0045), 0.008)
     smile = D["smile"]
-    crease = polyline(P, [(-0.0245, -0.0805, -0.0495 + smile), (-0.012, -0.0885, -0.0522), (0, -0.0905, -0.0526),
-                          (0.012, -0.0885, -0.0522), (0.0245, -0.0805, -0.0495 + smile)],
+    crease = polyline(P, [(-0.0255, -0.0795, -0.0488 + smile), (-0.012, -0.0865, -0.052), (0, -0.0885, -0.0525),
+                          (0.012, -0.0865, -0.052), (0.0255, -0.0795, -0.0488 + smile)],
                       [0.0013, 0.0016, 0.0017, 0.0016, 0.0013])
     d = sub(d, crease, 0.0016)
     for sx in (1, -1):
@@ -610,7 +657,7 @@ def build_human(out, kind):
              (sx * 0.1 + 0.075, 0.1, 0.04), 0.0022, smooth=2, mat="sole", bones=[f"foot.{s}", f"toe.{s}"], power=5.0)
     torso = ["pelvis", "spine", "chest", "neck", "shoulder.L", "shoulder.R", "upperarm.L", "upperarm.R"]
     mesh(os.path.join(out, "shirt.bin"), shirt_sdf, (-0.33, -0.15, 0.9), (0.33, 0.15, 1.47), 0.0034, smooth=6,
-         mat="shirt", bones=torso, eps=0.03)
+         mat="shirt", bones="shirt", eps=0.03)
     mesh(os.path.join(out, "collar.bin"), collar_sdf, (-0.09, -0.13, 1.32), (0.09, 0.1, 1.46), 0.0016, smooth=3,
          mat="shirt", bones=("chest", "neck"))
     if kind in ("pip", "researcher"):
@@ -659,7 +706,7 @@ def bat_body_sdf(P, sp):
     d = smin(d, ellipsoid(P, (0, -0.036, 0.007), (0.0122, 0.0135, 0.0112)), 0.006)      # head
     d = smin(d, ellipsoid(P, (0, -0.032, 0.0115), (0.0105, 0.011, 0.0085)), 0.004)     # crown
     d = smin(d, rcone(P, (0, -0.043, 0.005), (0, -0.046 - sn, 0.0028), 0.0058, 0.0028), 0.004)   # snout (tapered)
-    d = smin(d, ellipsoid(P, (0, -0.0465 - sn, 0.0034), (0.0034, 0.0022, 0.0026)), 0.0015)          # nose pad
+    d = smin(d, ellipsoid(P, (0, -0.0462 - sn, 0.0034), (0.0027, 0.0018, 0.0021)), 0.0012)          # nose pad
     for sx in (1, -1):
         d = sub(d, sphere(P, (sx * 0.0013, -0.0488 - sn, 0.0038), 0.0008), 0.0005)    # nostrils
         d = smin(d, ellipsoid(P, (sx * 0.0042, -0.0425 - sn * 0.6, 0.0012), (0.0028, 0.006 + sn * 0.3, 0.0026)),
@@ -706,44 +753,57 @@ def bat_attr(V, sp):
     return np.stack([fur, skin, fungus], axis=1)
 
 
+def _hang_ear(Q, sp):
+    w, h, flare = BK.SPECIES[sp]["ear"]
+    R = roty(-28) @ rotx(-18)
+    c = _v((0.0085, -0.002, -0.036))
+    q = (Q - c) @ R
+    e = ellipsoid(q, (0, 0, -h * 0.55), (0.0016, w * 0.48, h * 0.6))
+    e = sub(e, ellipsoid(q, (0, -0.0014, -h * 0.58), (0.0014, w * 0.38, h * 0.5)), 0.0005)
+    if sp in ("myotis", "freetail"):
+        e = smin(e, rcone(q, (0, -0.0008, -h * 0.15), (0, -0.001, -h * 0.5), 0.001, 0.0004), 0.0005)   # tragus
+    return e
+
+
 def bat_hanger_sdf(P, sp):
-    """Hibernating / roosting bat hanging head-down with wings wrapped (feet at +Z, face at -Z)."""
+    """Hibernating / roosting bat hanging head-down, wings folded like a cape (feet at +Z, face at -Z)."""
     S = BK.SPECIES[sp]
     sn = S["snout"]
-    d = ellipsoid(P, (0, 0.0, 0.0), (0.0145, 0.012, 0.03))                                 # body
-    d = smin(d, ellipsoid(P, (0, -0.002, -0.033), (0.0115, 0.011, 0.0125)), 0.006)        # head (bottom)
-    d = smin(d, rcone(P, (0, -0.006, -0.042), (0, -0.008 - sn * 0.6, -0.045 - sn * 0.8), 0.0062, 0.0036), 0.004)
-    d = smin(d, sphere(P, (0, -0.009 - sn * 0.6, -0.047 - sn * 0.85), 0.0036), 0.002)
+    d = ellipsoid(P, (0, 0.0, 0.0), (0.0142, 0.0125, 0.022))                                # body
+    d = smin(d, ellipsoid(P, (0, -0.0035, -0.026), (0.0118, 0.0112, 0.0115)), 0.006)       # head
+    d = smin(d, rcone(P, (0, -0.0095, -0.031), (0, -0.0125 - sn * 0.5, -0.039 - sn * 0.5), 0.0055, 0.0028), 0.003)
+    d = smin(d, ellipsoid(P, (0, -0.0135 - sn * 0.5, -0.0405 - sn * 0.5), (0.0026, 0.0018, 0.0021)), 0.0012)
     for sx in (1, -1):
-        d = sub(d, sphere(P, (sx * 0.006, -0.0095, -0.037), 0.0017), 0.001)               # eye socket
-        # folded wings: leathery wraps on the sides with the forearm as a ridge
-        wrap = ellipsoid(P, (sx * 0.011, 0.0005, -0.004), (0.0085, 0.0145, 0.033))
-        d = smin(d, wrap, 0.004)
-        d = smin(d, rcone(P, (sx * 0.015, -0.006, 0.026), (sx * 0.0135, -0.009, -0.028), 0.0024, 0.002), 0.002)
-        d = smin(d, rcone(P, (sx * 0.0135, -0.009, -0.028), (sx * 0.011, -0.013, -0.033), 0.0014, 0.0006), 0.0008)
+        d = sub(d, sphere(P, (sx * 0.0011, -0.0148 - sn * 0.5, -0.0415 - sn * 0.5), 0.0006), 0.0004)   # nostrils
+        d = smin(d, ellipsoid(P, (sx * 0.0037, -0.0105 - sn * 0.3, -0.037 - sn * 0.4), (0.0025, 0.003, 0.0045)),
+                 0.002)                                                                               # lips
+        d = sub(d, sphere(P, (sx * 0.0058, -0.0105, -0.0265), 0.0015), 0.0008)                         # eye socket
+        # folded wing: leathery cape over the side, forearm ridge, thumb claw near the chin
+        wrap = ellipsoid(P, (sx * 0.0102, -0.0012, -0.002), (0.0072, 0.0128, 0.023))
+        d = smin(d, wrap, 0.003)
+        el, wr = _v((sx * 0.0145, 0.0005, 0.016)), _v((sx * 0.0112, -0.0085, -0.02))
+        d = smin(d, rcone(P, el, wr, 0.0022, 0.0018), 0.0015)
+        d = smin(d, rcone(P, wr, wr + _v((sx * -0.0012, -0.0035, -0.004)), 0.0011, 0.0003), 0.0005)
         # feet gripping at the top
-        d = smin(d, rcone(P, (sx * 0.006, 0.002, 0.028), (sx * 0.005, 0.0, 0.04), 0.0022, 0.0014), 0.002)
+        d = smin(d, rcone(P, (sx * 0.0055, 0.001, 0.02), (sx * 0.0045, 0.0, 0.032), 0.0021, 0.0013), 0.002)
         for k in range(3):
-            t0 = _v((sx * (0.0035 + k * 0.0012), 0.0, 0.041))
-            d = smin(d, rcone(P, t0, t0 + _v((0, -0.0028, 0.0014)), 0.0005, 0.0002), 0.0003)
-    # ears hang downward-outward
+            t0 = _v((sx * (0.003 + k * 0.0011), 0.0, 0.033))
+            d = smin(d, rcone(P, t0, t0 + _v((0, -0.0026, 0.0013)), 0.00045, 0.00018), 0.0003)
     Q = P.copy()
     Q[:, 0] = np.abs(Q[:, 0])
-    Qe = Q.copy()
-    Qe[:, 2] = -Q[:, 2] - 0.052 + 0.016        # flip vertically so the ear points down
-    Qe[:, 1] = Q[:, 1] + 0.03
-    d = smin(d, _bat_ear(Qe, sp), 0.0012)
-    return d + wrinkles(P, 0.0003, 1600.0, 51)
+    d = smin(d, _hang_ear(Q, sp), 0.0012)
+    return d + wrinkles(P, 0.00025, 1600.0, 51)
 
 
 def bat_hanger_attr(V, sp):
     sn = BK.SPECIES[sp]["snout"]
-    face = gauss(V, (0, -0.009 - sn * 0.6, -0.046 - sn * 0.8), 0.006 + sn * 0.3)
-    side = np.clip((np.abs(V[:, 0]) - 0.0105) / 0.003, 0, 1) * (V[:, 2] < 0.03)
-    ear = np.clip((-V[:, 2] - 0.05) / 0.004, 0, 1) * (np.abs(V[:, 0]) > 0.004)
-    fur = np.clip(1 - face * 1.5 - side - ear, 0, 1)
-    skin = np.clip(face + side + ear, 0, 1)
-    fungus = np.clip(face * 1.5 + ear * 0.7 + side * gauss(V, (0, -0.01, -0.03), 0.012) * 1.2, 0, 1)
+    face = gauss(V, (0, -0.0125 - sn * 0.5, -0.039 - sn * 0.5), 0.0055 + sn * 0.3)
+    side = np.clip((np.abs(V[:, 0]) - 0.0098) / 0.0025, 0, 1) * (V[:, 2] < 0.024) * (V[:, 2] > -0.026)
+    ear = np.clip((-V[:, 2] - 0.036) / 0.003, 0, 1) * (np.abs(V[:, 0]) > 0.006)
+    feet = np.clip((V[:, 2] - 0.022) / 0.003, 0, 1)
+    fur = np.clip(1 - face * 1.5 - side - ear - feet, 0, 1)
+    skin = np.clip(face * 1.2 + side + ear + feet, 0, 1)
+    fungus = np.clip(face * 1.6 + ear * 0.8 + side * gauss(V, (0, -0.008, -0.015), 0.012) * 1.1, 0, 1)
     return np.stack([fur, skin, fungus], axis=1)
 
 
@@ -755,10 +815,84 @@ def build_bat(out, sp):
     V, F = surface_nets(lambda P: bat_body_sdf(P, sp), (-0.03, -0.075, -0.02), (0.03, 0.1, 0.04), 0.00042)
     V = taubin(V, F, 4)
     write(os.path.join(out, "body.bin"), V, F, bat_attr(V, sp))
-    V, F = surface_nets(lambda P: bat_hanger_sdf(P, sp), (-0.035, -0.04, -0.08), (0.035, 0.03, 0.05), 0.00045)
+    V, F = surface_nets(lambda P: bat_hanger_sdf(P, sp), (-0.03, -0.035, -0.07), (0.03, 0.025, 0.045), 0.0004)
     V = taubin(V, F, 4)
     write(os.path.join(out, "hanger.bin"), V, F, bat_hanger_attr(V, sp))
     json.dump(dict(species=sp), open(os.path.join(out, "manifest.json"), "w"))
+
+
+# ------------------------------------------------------------------ environment rock meshes
+_PERM = np.random.default_rng(1234).permutation(256)
+_PERM = np.concatenate([_PERM, _PERM])
+_VALS = np.random.default_rng(99).uniform(-1, 1, 256)
+
+
+def vnoise(P):
+    """3D value noise in [-1, 1] (trilinear, smoothstep)."""
+    i = np.floor(P).astype(np.int64)
+    f = P - i
+    u = f * f * (3 - 2 * f)
+    i &= 255
+
+    def h(dx, dy, dz):
+        return _VALS[_PERM[_PERM[_PERM[(i[:, 0] + dx) & 255] + ((i[:, 1] + dy) & 255)] + ((i[:, 2] + dz) & 255)]]
+    x0 = h(0, 0, 0) * (1 - u[:, 0]) + h(1, 0, 0) * u[:, 0]
+    x1 = h(0, 1, 0) * (1 - u[:, 0]) + h(1, 1, 0) * u[:, 0]
+    x2 = h(0, 0, 1) * (1 - u[:, 0]) + h(1, 0, 1) * u[:, 0]
+    x3 = h(0, 1, 1) * (1 - u[:, 0]) + h(1, 1, 1) * u[:, 0]
+    y0 = x0 * (1 - u[:, 1]) + x1 * u[:, 1]
+    y1 = x2 * (1 - u[:, 1]) + x3 * u[:, 1]
+    return y0 * (1 - u[:, 2]) + y1 * u[:, 2]
+
+
+def fbm(P, freq, octaves=4, gain=0.5):
+    a, s = 1.0, 0.0
+    for o in range(octaves):
+        s += a * vnoise(P * freq * (2 ** o) + o * 17.3)
+        a *= gain
+    return s
+
+
+def cave_mouth_sdf(P):
+    """Limestone cliff (vertical face toward -Y) with a large cave mouth at its foot; floor at z=0."""
+    d = rbox(P, (0, 8.0, 3.2), (17.0, 7.0, 4.6), rr=2.6)
+    d = smin(d, rbox(P, (-12.0, 5.5, 2.0), (6.0, 5.0, 3.5), rr=2.4), 1.5)
+    d = smin(d, rbox(P, (12.0, 6.0, 2.4), (6.5, 5.5, 3.8), rr=2.4), 1.5)
+    ledges = 0.35 * np.clip(np.sin(P[:, 2] * 2.6 + fbm(P, 0.25, 2) * 1.5), -0.2, 1.0)    # stepped strata
+    d = d + ledges + fbm(P, 0.3, 4) * 1.1 + fbm(P, 2.0, 3) * 0.14
+    mouth = ellipsoid(P, (0.0, 1.0, 1.4), (5.8, 4.2, 3.6))
+    tunnel = rcone(P, (0.0, 1.5, 1.0), (0.0, 11.0, -3.0), 3.8, 2.6)
+    hole = smin(mouth, tunnel, 1.0) + fbm(P, 0.8, 3) * 0.4
+    d = sub(d, hole, 0.6)
+    return smax(d, -(P[:, 2] + 1.5), 0.3)
+
+
+def hibernaculum_sdf(P):
+    """Cave chamber (inside-out: solid rock outside the cavity). Floor ~0, ceiling ~4 m.
+    A passage leads to a daylight entrance at +Y."""
+    cav = ellipsoid(P, (0, 0, 1.8), (6.5, 4.8, 2.6))
+    cav = smin(cav, ellipsoid(P, (-3.5, -1.5, 1.4), (4.0, 3.5, 2.2)), 1.2)
+    cav = smin(cav, ellipsoid(P, (3.8, 1.0, 1.6), (3.6, 3.2, 2.3)), 1.2)
+    cav = smin(cav, rcone(P, (1.5, 3.0, 1.2), (3.5, 11.0, 1.6), 1.7, 2.0), 1.0)       # passage to the entrance
+    cav = smax(cav, -(P[:, 2] - 0.0 - 0.15 * fbm(P, 0.6, 2)), 0.4)                    # flat-ish floor
+    rock = -cav
+    rock = rock + fbm(P, 0.45, 4) * 0.45 + fbm(P, 3.0, 3) * 0.06 + 0.06 * np.sin(P[:, 2] * 7.0)
+    # flowstone columns and draperies
+    for c, r in (((-4.5, -3.6, 1.5), 0.55), ((5.4, -1.8, 1.7), 0.45), ((-1.0, 3.6, 1.6), 0.4)):
+        rock = smin(rock, rcone(P, (c[0], c[1], -0.5), (c[0] + 0.2, c[1], 4.6), r * 1.5, r * 0.8) +
+                    0.08 * np.sin(np.arctan2(P[:, 1] - c[1], P[:, 0] - c[0]) * 9.0), 0.6)
+    rock = smax(rock, plane(P, (0, 1, 0), 10.5), 0.0)                                  # open end (entrance)
+    return rock
+
+
+def build_env(out):
+    os.makedirs(out, exist_ok=True)
+    V, F = surface_nets(cave_mouth_sdf, (-22, -6, -2), (22, 14, 9), 0.11)
+    V = taubin(V, F, 4)
+    write(os.path.join(out, "cave_mouth.bin"), V, F)
+    V, F = surface_nets(hibernaculum_sdf, (-8.5, -6.8, -0.8), (8.0, 10.6, 5.2), 0.055)
+    V = taubin(V, F, 4)
+    write(os.path.join(out, "hibernaculum.bin"), V, F)
 
 
 if __name__ == "__main__":
@@ -766,5 +900,7 @@ if __name__ == "__main__":
     for k in sys.argv[2].split(","):
         if k.startswith("bat_"):
             build_bat(os.path.join(out, k), k[4:])
+        elif k == "env":
+            build_env(os.path.join(out, "env"))
         else:
             build_human(os.path.join(out, k), k)
