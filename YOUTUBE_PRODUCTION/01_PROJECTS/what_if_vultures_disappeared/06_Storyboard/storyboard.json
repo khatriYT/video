@@ -1,0 +1,1276 @@
+{
+ "title": "What If Every Vulture Disappeared?",
+ "voice": "am_michael",
+ "scenes": [
+  {
+   "id": 1,
+   "file": "SC001",
+   "section": "Cold open",
+   "narration": "A cow dies at the edge of a village in India. By mid-morning, the heat is already working on it.",
+   "visual": {
+    "type": "plate",
+    "shot": "P00",
+    "move": "push",
+    "tab": "HOUR 0 · Village edge, India",
+    "fx": [
+     "heat"
+    ]
+   },
+   "claims": [],
+   "words": 20,
+   "est_s": 8.7
+  },
+  {
+   "id": 2,
+   "file": "SC002",
+   "section": "Cold open",
+   "narration": "Then the sky starts to move. One dark shape. Then ten. Then fifty.",
+   "visual": {
+    "type": "anim",
+    "shot": "A01"
+   },
+   "claims": [],
+   "words": 13,
+   "est_s": 5.9
+  },
+  {
+   "id": 3,
+   "file": "SC003",
+   "section": "Cold open",
+   "narration": "Within about half an hour, there's almost nothing left. No smell. No swarm of flies. No disease left lying in the sun.",
+   "visual": {
+    "type": "plate",
+    "shot": "P02",
+    "move": "push",
+    "fx": [
+     "dust"
+    ]
+   },
+   "claims": [
+    "C15"
+   ],
+   "words": 22,
+   "est_s": 9.5
+  },
+  {
+   "id": 4,
+   "file": "SC004",
+   "section": "Cold open",
+   "narration": "For thousands of years, that's how it worked. Then, in the 1990s, the vultures of South Asia started dying.",
+   "visual": {
+    "type": "plate",
+    "shot": "P15",
+    "move": "pan_r"
+   },
+   "claims": [],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 5,
+   "file": "SC005",
+   "section": "Cold open",
+   "narration": "Not slowly. In about ten years, more than ninety-five percent of them were gone.",
+   "visual": {
+    "type": "card",
+    "card": "bignum",
+    "value": "−95%",
+    "label": "South Asia's Gyps vultures, in about a decade",
+    "tag": "STRONG",
+    "icons": "vultures_fade"
+   },
+   "claims": [
+    "C01"
+   ],
+   "words": 14,
+   "est_s": 6.3
+  },
+  {
+   "id": 6,
+   "file": "SC006",
+   "section": "Cold open",
+   "narration": "What happened next turned one of the world's most hated birds into one of its most expensive losses.",
+   "visual": {
+    "type": "plate",
+    "shot": "P03",
+    "move": "pull",
+    "tab": "DAY 1 · No vultures"
+   },
+   "claims": [],
+   "words": 18,
+   "est_s": 7.9
+  },
+  {
+   "id": 7,
+   "file": "SC007",
+   "section": "Cold open",
+   "narration": "So what really happens when the vultures disappear? We don't have to guess. India already ran the experiment.",
+   "visual": {
+    "type": "plate",
+    "shot": "P12",
+    "move": "rise",
+    "text": {
+     "style": "title",
+     "main": "WHAT IF EVERY VULTURE",
+     "sub": "DISAPPEARED?"
+    }
+   },
+   "claims": [],
+   "words": 18,
+   "est_s": 7.9
+  },
+  {
+   "id": 8,
+   "file": "SC008",
+   "section": "Cold open",
+   "narration": "Welcome to The Disappearance Files, where we find out what the world loses when an animal nobody likes is suddenly gone.",
+   "visual": {
+    "type": "plate",
+    "shot": "P09",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 9,
+   "file": "SC009",
+   "section": "Meet the cleanup crew",
+   "narration": "First, meet the cleanup crew.",
+   "visual": {
+    "type": "plate",
+    "shot": "P13",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "THE CLEANUP CREW",
+     "sub": "Chapter 1"
+    }
+   },
+   "claims": [],
+   "words": 5,
+   "est_s": 2.7
+  },
+  {
+   "id": 10,
+   "file": "SC010",
+   "section": "Meet the cleanup crew",
+   "narration": "Vultures are big, broad-winged birds built for one job: finding dead animals, and finishing them fast.",
+   "visual": {
+    "type": "plate",
+    "shot": "P10",
+    "move": "pan_l"
+   },
+   "claims": [],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 11,
+   "file": "SC011",
+   "section": "Meet the cleanup crew",
+   "narration": "They barely flap. They ride columns of rising warm air, circling for hours while they scan the ground below.",
+   "visual": {
+    "type": "card",
+    "card": "thermal"
+   },
+   "claims": [],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 12,
+   "file": "SC012",
+   "section": "Meet the cleanup crew",
+   "narration": "They also watch each other. When one vulture drops toward a carcass, others see it and follow, so a single meal can pull in birds from kilometres around.",
+   "visual": {
+    "type": "plate",
+    "shot": "P01",
+    "move": "pull"
+   },
+   "claims": [],
+   "words": 28,
+   "est_s": 11.9
+  },
+  {
+   "id": 13,
+   "file": "SC013",
+   "section": "Meet the cleanup crew",
+   "narration": "One Rüppell's vulture was hit by a plane at eleven thousand three hundred metres. That's higher than Mount Everest.",
+   "visual": {
+    "type": "plate",
+    "shot": "P11",
+    "move": "push",
+    "text": {
+     "style": "callout",
+     "main": "11,300 m",
+     "sub": "Rüppell's vulture · 1973"
+    }
+   },
+   "claims": [
+    "C14"
+   ],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 14,
+   "file": "SC014",
+   "section": "Meet the cleanup crew",
+   "narration": "That bald head isn't a flaw. Bare skin stays cleaner when you feed inside a carcass, and it may help the bird shed heat.",
+   "visual": {
+    "type": "plate",
+    "shot": "P14",
+    "move": "push",
+    "tag": "HYPOTHESIS"
+   },
+   "claims": [],
+   "words": 24,
+   "est_s": 10.3
+  },
+  {
+   "id": 15,
+   "file": "SC015",
+   "section": "Meet the cleanup crew",
+   "narration": "And their stomachs are brutal. Harsh acid and specialised gut bacteria let them eat meat carrying germs like anthrax, which would sicken most other animals.",
+   "visual": {
+    "type": "card",
+    "card": "gut",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C13"
+   ],
+   "words": 25,
+   "est_s": 10.7
+  },
+  {
+   "id": 16,
+   "file": "SC016",
+   "section": "Meet the cleanup crew",
+   "narration": "In other words, a vulture isn't just eating garbage. It's taking disease out of circulation.",
+   "visual": {
+    "type": "plate",
+    "shot": "P02",
+    "move": "pull",
+    "fx": [
+     "dust"
+    ]
+   },
+   "claims": [],
+   "words": 15,
+   "est_s": 6.7
+  },
+  {
+   "id": 17,
+   "file": "SC017",
+   "section": "The collapse",
+   "narration": "In India, vultures were part of everyday life: on rooftops, on old trees, circling over every town dump.",
+   "visual": {
+    "type": "plate",
+    "shot": "P15",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "THE COLLAPSE",
+     "sub": "Chapter 2"
+    }
+   },
+   "claims": [],
+   "words": 18,
+   "est_s": 7.9
+  },
+  {
+   "id": 18,
+   "file": "SC018",
+   "section": "The collapse",
+   "narration": "Then, through the 1990s, birdwatchers started noticing empty nests, and dead vultures lying under their roosts.",
+   "visual": {
+    "type": "plate",
+    "shot": "P17",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 19,
+   "file": "SC019",
+   "section": "The collapse",
+   "narration": "Surveys showed losses of more than ninety-five percent. For the white-rumped vulture, by some estimates, ninety-nine point nine.",
+   "visual": {
+    "type": "card",
+    "card": "decline",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C01",
+    "C02"
+   ],
+   "words": 18,
+   "est_s": 7.9
+  },
+  {
+   "id": 20,
+   "file": "SC020",
+   "section": "The collapse",
+   "narration": "Scientists suspected a virus. Pesticides. Something in the water.",
+   "visual": {
+    "type": "card",
+    "card": "suspects"
+   },
+   "claims": [],
+   "words": 9,
+   "est_s": 4.3
+  },
+  {
+   "id": 21,
+   "file": "SC021",
+   "section": "The collapse",
+   "narration": "The real killer was hiding in plain sight, in a medicine cabinet.",
+   "visual": {
+    "type": "plate",
+    "shot": "P16",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 12,
+   "est_s": 5.5
+  },
+  {
+   "id": 22,
+   "file": "SC022",
+   "section": "The collapse",
+   "narration": "Diclofenac: a cheap painkiller that farmers gave to sick and injured cattle.",
+   "visual": {
+    "type": "plate",
+    "shot": "P19",
+    "move": "pan_r",
+    "text": {
+     "style": "label",
+     "main": "DICLOFENAC",
+     "sub": "veterinary painkiller"
+    }
+   },
+   "claims": [
+    "C03"
+   ],
+   "words": 12,
+   "est_s": 5.5
+  },
+  {
+   "id": 23,
+   "file": "SC023",
+   "section": "The collapse",
+   "narration": "When a treated cow died, traces of the drug stayed in its body. Harmless to the cow. Deadly to a vulture.",
+   "visual": {
+    "type": "card",
+    "card": "chain",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C03"
+   ],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 24,
+   "file": "SC024",
+   "section": "The collapse",
+   "narration": "Their kidneys failed within days, and a single contaminated carcass could poison dozens of birds at once.",
+   "visual": {
+    "type": "plate",
+    "shot": "P17",
+    "move": "pull"
+   },
+   "claims": [
+    "C03"
+   ],
+   "words": 17,
+   "est_s": 7.5
+  },
+  {
+   "id": 25,
+   "file": "SC025",
+   "section": "The collapse",
+   "narration": "And it took shockingly little. One study calculated that if fewer than one carcass in a hundred carried a lethal dose, that alone could explain the crash.",
+   "visual": {
+    "type": "card",
+    "card": "grid",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C20"
+   ],
+   "words": 27,
+   "est_s": 11.5
+  },
+  {
+   "id": 26,
+   "file": "SC026",
+   "section": "The collapse",
+   "narration": "Today, three of South Asia's vulture species are listed as critically endangered.",
+   "visual": {
+    "type": "card",
+    "card": "redlist",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C24"
+   ],
+   "words": 12,
+   "est_s": 5.5
+  },
+  {
+   "id": 27,
+   "file": "SC027",
+   "section": "The collapse",
+   "narration": "In 2004, researchers finally proved the link. India banned veterinary diclofenac in 2006.",
+   "visual": {
+    "type": "card",
+    "card": "timeline",
+    "items": [
+     [
+      "2004",
+      "Cause proven"
+     ],
+     [
+      "2006",
+      "India bans vet diclofenac"
+     ]
+    ],
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C03",
+    "C04"
+   ],
+   "words": 13,
+   "est_s": 5.9
+  },
+  {
+   "id": 28,
+   "file": "SC028",
+   "section": "The collapse",
+   "narration": "But by then, the sky above India was already almost empty.",
+   "visual": {
+    "type": "plate",
+    "shot": "P12",
+    "move": "sink"
+   },
+   "claims": [],
+   "words": 11,
+   "est_s": 5.1
+  },
+  {
+   "id": 29,
+   "file": "SC029",
+   "section": "A world without vultures",
+   "narration": "So let's go back to that cow at the edge of the village. Same place. Same morning. But this time, no vultures come.",
+   "visual": {
+    "type": "plate",
+    "shot": "P03",
+    "move": "push",
+    "tab": "DAY 1 · No vultures",
+    "text": {
+     "style": "chapter",
+     "main": "NO VULTURES",
+     "sub": "Chapter 3"
+    }
+   },
+   "claims": [],
+   "words": 23,
+   "est_s": 9.9
+  },
+  {
+   "id": 30,
+   "file": "SC030",
+   "section": "A world without vultures",
+   "narration": "A few crows peck at it. They can't open a carcass this big. So it just lies there, in the heat.",
+   "visual": {
+    "type": "plate",
+    "shot": "P03C",
+    "move": "push",
+    "fx": [
+     "heat"
+    ]
+   },
+   "claims": [],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 31,
+   "file": "SC031",
+   "section": "A world without vultures",
+   "narration": "Day three. The flies arrive. Then thousands more.",
+   "visual": {
+    "type": "plate",
+    "shot": "P04",
+    "move": "push",
+    "tab": "DAY 3",
+    "fx": [
+     "flies"
+    ]
+   },
+   "claims": [],
+   "words": 8,
+   "est_s": 3.9
+  },
+  {
+   "id": 32,
+   "file": "SC032",
+   "section": "A world without vultures",
+   "narration": "This part has been tested. In a 2025 experiment in Costa Rica, carcasses that vultures couldn't reach took about twice as long to break down, and drew nearly twice as many flies.",
+   "visual": {
+    "type": "card",
+    "card": "compare",
+    "title": "Costa Rica, 2025",
+    "rows": [
+     [
+      "Time to decompose",
+      "×2"
+     ],
+     [
+      "Flies at carcass",
+      "×2"
+     ]
+    ],
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C06"
+   ],
+   "words": 32,
+   "est_s": 13.5
+  },
+  {
+   "id": 33,
+   "file": "SC033",
+   "section": "A world without vultures",
+   "narration": "In Kenya, keeping vultures away made carcasses last nearly three times longer, and tripled the number of mammals that came to feed.",
+   "visual": {
+    "type": "card",
+    "card": "compare",
+    "title": "Kenya, 2012",
+    "rows": [
+     [
+      "Carcass lasts",
+      "×3"
+     ],
+     [
+      "Mammal scavengers",
+      "×3"
+     ]
+    ],
+    "tag": "STRONG",
+    "map": "KEN"
+   },
+   "claims": [
+    "C07"
+   ],
+   "words": 22,
+   "est_s": 9.5
+  },
+  {
+   "id": 34,
+   "file": "SC034",
+   "section": "A world without vultures",
+   "narration": "And in India, the mammal that showed up most was this one.",
+   "visual": {
+    "type": "plate",
+    "shot": "P08",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 12,
+   "est_s": 5.5
+  },
+  {
+   "id": 35,
+   "file": "SC035",
+   "section": "A world without vultures",
+   "narration": "Week two. Stray dogs have found the dump. A meal that vultures would have finished in an afternoon is now a feast for the pack.",
+   "visual": {
+    "type": "plate",
+    "shot": "P05",
+    "move": "push",
+    "tab": "WEEK 2",
+    "fx": [
+     "flies"
+    ]
+   },
+   "claims": [],
+   "words": 25,
+   "est_s": 10.7
+  },
+  {
+   "id": 36,
+   "file": "SC036",
+   "section": "A world without vultures",
+   "narration": "More food means more puppies survive. By year one, the pack is bigger.",
+   "visual": {
+    "type": "plate",
+    "shot": "P06",
+    "move": "pan_l",
+    "tab": "YEAR 1",
+    "tag": "DEBATED"
+   },
+   "claims": [
+    "C08"
+   ],
+   "words": 13,
+   "est_s": 5.9
+  },
+  {
+   "id": 37,
+   "file": "SC037",
+   "section": "A world without vultures",
+   "narration": "Across India, researchers saw feral dog numbers rise as the vultures vanished. Whether one caused the other is still debated, but the timing lines up.",
+   "visual": {
+    "type": "card",
+    "card": "lines",
+    "tag": "DEBATED"
+   },
+   "claims": [
+    "C08"
+   ],
+   "words": 25,
+   "est_s": 10.7
+  },
+  {
+   "id": 38,
+   "file": "SC038",
+   "section": "A world without vultures",
+   "narration": "And dogs carry something vultures never spread: rabies.",
+   "visual": {
+    "type": "plate",
+    "shot": "P18",
+    "move": "push",
+    "tab": "YEAR 1 · The village"
+   },
+   "claims": [],
+   "words": 8,
+   "est_s": 3.9
+  },
+  {
+   "id": 39,
+   "file": "SC039",
+   "section": "A world without vultures",
+   "narration": "Dogs cause almost all human rabies cases, and India accounts for roughly a third of the world's rabies deaths.",
+   "visual": {
+    "type": "card",
+    "card": "fraction",
+    "value": "≈ 1/3",
+    "label": "of the world's rabies deaths occur in India (WHO)",
+    "tag": "STRONG",
+    "map": "IND"
+   },
+   "claims": [
+    "C09"
+   ],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 40,
+   "file": "SC040",
+   "section": "A world without vultures",
+   "narration": "Year ten. The dump has become a field of bones, and the dogs own it.",
+   "visual": {
+    "type": "plate",
+    "shot": "P07",
+    "move": "push",
+    "tab": "YEAR 10",
+    "fx": [
+     "dust"
+    ]
+   },
+   "claims": [],
+   "words": 15,
+   "est_s": 6.7
+  },
+  {
+   "id": 41,
+   "file": "SC041",
+   "section": "The bill",
+   "narration": "So did losing the vultures actually cost human lives? In 2024, two economists, Eyal Frank and Anant Sudarshan, set out to measure it.",
+   "visual": {
+    "type": "card",
+    "card": "paper",
+    "title": "The Social Costs of Keystone Species Collapse",
+    "sub": "Frank & Sudarshan · American Economic Review · 2024",
+    "chapter": {
+     "main": "THE BILL",
+     "sub": "Chapter 4"
+    }
+   },
+   "claims": [
+    "C11"
+   ],
+   "words": 23,
+   "est_s": 9.9
+  },
+  {
+   "id": 42,
+   "file": "SC042",
+   "section": "The bill",
+   "narration": "They compared districts where vultures used to be common with districts where they never were, before and after the diclofenac years.",
+   "visual": {
+    "type": "card",
+    "card": "districts"
+   },
+   "claims": [
+    "C11"
+   ],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 43,
+   "file": "SC043",
+   "section": "The bill",
+   "narration": "Their finding: in former vulture country, human death rates rose by about four point seven percent.",
+   "visual": {
+    "type": "card",
+    "card": "bignum",
+    "value": "+4.7%",
+    "label": "human death rate in districts that lost their vultures",
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C11"
+   ],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 44,
+   "file": "SC044",
+   "section": "The bill",
+   "narration": "Sales of rabies vaccine went up. Water quality got worse, as more carcasses were left to rot near rivers and wells.",
+   "visual": {
+    "type": "card",
+    "card": "icons2",
+    "left": [
+     "vaccine",
+     "Rabies vaccine sales ↑"
+    ],
+    "right": [
+     "water",
+     "Water quality ↓"
+    ],
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C10"
+   ],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 45,
+   "file": "SC045",
+   "section": "The bill",
+   "narration": "Their estimate: roughly a hundred thousand extra deaths a year. About half a million people between 2000 and 2005.",
+   "visual": {
+    "type": "card",
+    "card": "bignum",
+    "value": "≈ 500,000",
+    "label": "extra human deaths in India, 2000–2005 (estimate)",
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C11"
+   ],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 46,
+   "file": "SC046",
+   "section": "The bill",
+   "narration": "That's a statistical estimate, not a body count. But it puts a price on the bird nobody wanted: about sixty-nine billion dollars, every year.",
+   "visual": {
+    "type": "card",
+    "card": "bignum",
+    "value": "$69 bn",
+    "label": "per year in mortality costs (estimate)",
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C12"
+   ],
+   "words": 24,
+   "est_s": 10.3
+  },
+  {
+   "id": 47,
+   "file": "SC047",
+   "section": "Ripples",
+   "narration": "The loss reached places you might not expect.",
+   "visual": {
+    "type": "plate",
+    "shot": "P20",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "RIPPLES",
+     "sub": "Chapter 5"
+    }
+   },
+   "claims": [],
+   "words": 8,
+   "est_s": 3.9
+  },
+  {
+   "id": 48,
+   "file": "SC048",
+   "section": "Ripples",
+   "narration": "For centuries, India's Parsi community has laid its dead in Towers of Silence, open to the sky, where vultures returned the bodies to nature.",
+   "visual": {
+    "type": "plate",
+    "shot": "P20",
+    "move": "pan_l"
+   },
+   "claims": [
+    "C16"
+   ],
+   "words": 24,
+   "est_s": 10.3
+  },
+  {
+   "id": 49,
+   "file": "SC049",
+   "section": "Ripples",
+   "narration": "With the vultures gone, some towers now use solar concentrators instead. They struggle in the monsoon, when the sun disappears behind clouds.",
+   "visual": {
+    "type": "plate",
+    "shot": "P20B",
+    "move": "push",
+    "fx": [
+     "rain"
+    ]
+   },
+   "claims": [
+    "C16"
+   ],
+   "words": 22,
+   "est_s": 9.5
+  },
+  {
+   "id": 50,
+   "file": "SC050",
+   "section": "Ripples",
+   "narration": "Europe ran its own version of the experiment, by choice.",
+   "visual": {
+    "type": "card",
+    "card": "map",
+    "country": "ESP",
+    "label": "Spain"
+   },
+   "claims": [],
+   "words": 10,
+   "est_s": 4.7
+  },
+  {
+   "id": 51,
+   "file": "SC051",
+   "section": "Ripples",
+   "narration": "After the mad cow crisis, new rules meant dead livestock had to be collected and trucked away, instead of being left out for vultures.",
+   "visual": {
+    "type": "card",
+    "card": "trucks"
+   },
+   "claims": [
+    "C17"
+   ],
+   "words": 24,
+   "est_s": 10.3
+  },
+  {
+   "id": 52,
+   "file": "SC052",
+   "section": "Ripples",
+   "narration": "One study found those trucks covered nearly fifty million kilometres a year, releasing about seventy-seven thousand tonnes of carbon dioxide. Work the vultures used to do for free.",
+   "visual": {
+    "type": "card",
+    "card": "trucks_numbers",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C17"
+   ],
+   "words": 28,
+   "est_s": 11.9
+  },
+  {
+   "id": 53,
+   "file": "SC053",
+   "section": "It's happening again",
+   "narration": "And right now, it's happening again. This time in Africa.",
+   "visual": {
+    "type": "plate",
+    "shot": "P21",
+    "move": "push",
+    "tab": "TODAY · Savanna, Africa",
+    "text": {
+     "style": "chapter",
+     "main": "AFRICA, NOW",
+     "sub": "Chapter 6"
+    }
+   },
+   "claims": [],
+   "words": 10,
+   "est_s": 4.7
+  },
+  {
+   "id": 54,
+   "file": "SC054",
+   "section": "It's happening again",
+   "narration": "A 2016 study found that eight African vulture species had fallen by an average of sixty-two percent. Seven of them by eighty percent or more, in just three generations.",
+   "visual": {
+    "type": "card",
+    "card": "africa",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C18"
+   ],
+   "words": 29,
+   "est_s": 12.3
+  },
+  {
+   "id": 55,
+   "file": "SC055",
+   "section": "It's happening again",
+   "narration": "The main killer here isn't medicine. It's poison, often laced into carcasses, and the trade in vulture parts for traditional remedies.",
+   "visual": {
+    "type": "plate",
+    "shot": "P22",
+    "move": "pull"
+   },
+   "claims": [
+    "C18"
+   ],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 56,
+   "file": "SC056",
+   "section": "It's happening again",
+   "narration": "Some poachers even poison elephant carcasses on purpose, because circling vultures can lead rangers straight to an illegal kill. In one case in Namibia, around five hundred vultures died at a single carcass.",
+   "visual": {
+    "type": "card",
+    "card": "poison",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C21"
+   ],
+   "words": 33,
+   "est_s": 13.9
+  },
+  {
+   "id": 57,
+   "file": "SC057",
+   "section": "It's happening again",
+   "narration": "Together, those two threats account for about ninety percent of the vulture deaths that get reported.",
+   "visual": {
+    "type": "card",
+    "card": "bignum",
+    "value": "90%",
+    "label": "of reported vulture deaths in Africa: poisoning + trade in parts",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C18"
+   ],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 58,
+   "file": "SC058",
+   "section": "Could anything replace them?",
+   "narration": "So if vultures vanished everywhere, would something else simply step in?",
+   "visual": {
+    "type": "plate",
+    "shot": "P09",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "REPLACEMENTS?",
+     "sub": "Chapter 7"
+    }
+   },
+   "claims": [],
+   "words": 11,
+   "est_s": 5.1
+  },
+  {
+   "id": 59,
+   "file": "SC059",
+   "section": "Could anything replace them?",
+   "narration": "Partly. Dogs, jackals, hyenas, crows, rats, flies and bacteria would all take a share.",
+   "visual": {
+    "type": "card",
+    "card": "replacements"
+   },
+   "claims": [],
+   "words": 14,
+   "est_s": 6.3
+  },
+  {
+   "id": 60,
+   "file": "SC060",
+   "section": "Could anything replace them?",
+   "narration": "But none of them do all three things vultures do: spot a carcass from far away, strip it in minutes, and destroy the germs inside it.",
+   "visual": {
+    "type": "card",
+    "card": "checklist",
+    "tag": "INFERENCE"
+   },
+   "claims": [
+    "C19"
+   ],
+   "words": 26,
+   "est_s": 11.1
+  },
+  {
+   "id": 61,
+   "file": "SC061",
+   "section": "Could anything replace them?",
+   "narration": "The experiments point the same way. Without vultures, carcasses last longer, and the animals that replace them spread more disease, not less.",
+   "visual": {
+    "type": "plate",
+    "shot": "P06",
+    "move": "push",
+    "fx": [
+     "flies"
+    ]
+   },
+   "claims": [
+    "C06",
+    "C07",
+    "C19"
+   ],
+   "words": 22,
+   "est_s": 9.5
+  },
+  {
+   "id": 62,
+   "file": "SC062",
+   "section": "Could anything replace them?",
+   "narration": "Ecologists call that a keystone loss: pull out one stone, and the whole arch starts to lean.",
+   "visual": {
+    "type": "card",
+    "card": "keystone"
+   },
+   "claims": [],
+   "words": 17,
+   "est_s": 7.5
+  },
+  {
+   "id": 63,
+   "file": "SC063",
+   "section": "Holding the line",
+   "narration": "The good news? We know exactly what killed them.",
+   "visual": {
+    "type": "plate",
+    "shot": "P24",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "HOLDING THE LINE",
+     "sub": "Chapter 8"
+    }
+   },
+   "claims": [],
+   "words": 9,
+   "est_s": 4.3
+  },
+  {
+   "id": 64,
+   "file": "SC064",
+   "section": "Holding the line",
+   "narration": "India has banned veterinary diclofenac, and in 2023 it banned two more drugs that harm vultures: ketoprofen and aceclofenac.",
+   "visual": {
+    "type": "card",
+    "card": "bans",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C04",
+    "C05"
+   ],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 65,
+   "file": "SC065",
+   "section": "Holding the line",
+   "narration": "And vets have a safer option: a painkiller called meloxicam, which doesn't harm vultures.",
+   "visual": {
+    "type": "plate",
+    "shot": "P16",
+    "move": "pull",
+    "text": {
+     "style": "label",
+     "main": "MELOXICAM",
+     "sub": "vulture-safe alternative"
+    }
+   },
+   "claims": [
+    "C23"
+   ],
+   "words": 14,
+   "est_s": 6.3
+  },
+  {
+   "id": 66,
+   "file": "SC066",
+   "section": "Holding the line",
+   "narration": "In Nepal, conservationists opened vulture restaurants: feeding stations stocked with drug-free carcasses. Near some of them, nesting vultures have started to come back.",
+   "visual": {
+    "type": "plate",
+    "shot": "P24",
+    "move": "pull",
+    "tab": "NEPAL · Vulture restaurant"
+   },
+   "claims": [
+    "C22"
+   ],
+   "words": 23,
+   "est_s": 9.9
+  },
+  {
+   "id": 67,
+   "file": "SC067",
+   "section": "Holding the line",
+   "narration": "Breeding centres are raising vultures in captivity, and conservationists are pushing for vulture-safe zones, where harmful drugs aren't sold.",
+   "visual": {
+    "type": "plate",
+    "shot": "P15",
+    "move": "pull"
+   },
+   "claims": [
+    "C05"
+   ],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 68,
+   "file": "SC068",
+   "section": "Holding the line",
+   "narration": "But the numbers haven't bounced back, and experts warn that drug bans alone won't be enough.",
+   "visual": {
+    "type": "plate",
+    "shot": "P12",
+    "move": "push"
+   },
+   "claims": [
+    "C05"
+   ],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 69,
+   "file": "SC069",
+   "section": "Holding the line",
+   "narration": "Which brings us back to that cow at the edge of the village.",
+   "visual": {
+    "type": "plate",
+    "shot": "P00",
+    "move": "push",
+    "tab": "HOUR 0"
+   },
+   "claims": [],
+   "words": 13,
+   "est_s": 5.9
+  },
+  {
+   "id": 70,
+   "file": "SC070",
+   "section": "Holding the line",
+   "narration": "Most people would look at the birds crowding around it and see something ugly.",
+   "visual": {
+    "type": "plate",
+    "shot": "P02",
+    "move": "push",
+    "fx": [
+     "dust"
+    ]
+   },
+   "claims": [],
+   "words": 14,
+   "est_s": 6.3
+  },
+  {
+   "id": 71,
+   "file": "SC071",
+   "section": "Holding the line",
+   "narration": "But what you're really watching is a public health service. A cleanup crew, and a firewall against disease, all working for free.",
+   "visual": {
+    "type": "anim",
+    "shot": "A02"
+   },
+   "claims": [],
+   "words": 22,
+   "est_s": 9.5
+  },
+  {
+   "id": 72,
+   "file": "SC072",
+   "section": "Holding the line",
+   "narration": "We tend to protect the animals that look beautiful. Vultures are a reminder that some of the most important ones don't.",
+   "visual": {
+    "type": "plate",
+    "shot": "P13",
+    "move": "pull"
+   },
+   "claims": [],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 73,
+   "file": "SC073",
+   "section": "Holding the line",
+   "narration": "India learned what it costs when that service shuts down. The rest of the world still has a chance to keep it running.",
+   "visual": {
+    "type": "anim",
+    "shot": "A03"
+   },
+   "claims": [],
+   "words": 23,
+   "est_s": 9.9
+  },
+  {
+   "id": 74,
+   "file": "SC074",
+   "section": "Holding the line",
+   "narration": "Which animal do you think we're quietly losing next? Tell me in the comments, and I'll investigate it.",
+   "visual": {
+    "type": "plate",
+    "shot": "P09",
+    "move": "pull",
+    "text": {
+     "style": "end",
+     "main": "THE DISAPPEARANCE FILES",
+     "sub": "Episode 3 · Vultures"
+    }
+   },
+   "claims": [],
+   "words": 18,
+   "est_s": 7.9
+  }
+ ]
+}

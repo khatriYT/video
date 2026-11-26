@@ -1,0 +1,18 @@
+{
+ "shot": "P06",
+ "env": "ENV_DUMP",
+ "state": "year1",
+ "light": "dusk",
+ "camera": "CAM_WIDE",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  18,
+  160
+ ],
+ "seconds": 22.5
+}

@@ -1,0 +1,16 @@
+{
+ "shot": "P20",
+ "env": "ENV_TOWER",
+ "light": "dawn",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  30,
+  200
+ ],
+ "seconds": 32.8
+}

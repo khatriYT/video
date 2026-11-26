@@ -1,0 +1,16 @@
+{
+ "shot": "P21",
+ "env": "ENV_SAVANNA",
+ "light": "golden",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  30,
+  220
+ ],
+ "seconds": 18.3
+}

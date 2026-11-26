@@ -1,0 +1,16 @@
+{
+ "shot": "P12",
+ "env": "ENV_SKY",
+ "light": "day",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  25,
+  180
+ ],
+ "seconds": 8.9
+}

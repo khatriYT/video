@@ -1,0 +1,372 @@
+{
+ "SC005": {
+  "duration": 5.875,
+  "narration": 5.141,
+  "type": "card"
+ },
+ "SC011": {
+  "duration": 8.042,
+  "narration": 7.275,
+  "type": "card"
+ },
+ "SC015": {
+  "duration": 11.333,
+  "narration": 10.581,
+  "type": "card"
+ },
+ "SC019": {
+  "duration": 9.167,
+  "narration": 8.427,
+  "type": "card"
+ },
+ "SC020": {
+  "duration": 5.375,
+  "narration": 4.608,
+  "type": "card"
+ },
+ "SC023": {
+  "duration": 7.958,
+  "narration": 7.211,
+  "type": "card"
+ },
+ "SC025": {
+  "duration": 10.667,
+  "narration": 9.899,
+  "type": "card"
+ },
+ "SC026": {
+  "duration": 6.125,
+  "narration": 5.376,
+  "type": "card"
+ },
+ "SC027": {
+  "duration": 8.708,
+  "narration": 7.957,
+  "type": "card"
+ },
+ "SC032": {
+  "duration": 13.833,
+  "narration": 13.099,
+  "type": "card"
+ },
+ "SC033": {
+  "duration": 9.125,
+  "narration": 8.363,
+  "type": "card"
+ },
+ "SC037": {
+  "duration": 11.083,
+  "narration": 10.325,
+  "type": "card"
+ },
+ "SC039": {
+  "duration": 8.167,
+  "narration": 7.403,
+  "type": "card"
+ },
+ "SC041": {
+  "duration": 11.458,
+  "narration": 10.709,
+  "type": "card"
+ },
+ "SC042": {
+  "duration": 8.667,
+  "narration": 7.936,
+  "type": "card"
+ },
+ "SC043": {
+  "duration": 7.333,
+  "narration": 6.592,
+  "type": "card"
+ },
+ "SC044": {
+  "duration": 8.625,
+  "narration": 7.872,
+  "type": "card"
+ },
+ "SC045": {
+  "duration": 9.375,
+  "narration": 8.619,
+  "type": "card"
+ },
+ "SC046": {
+  "duration": 10.542,
+  "narration": 9.771,
+  "type": "card"
+ },
+ "SC050": {
+  "duration": 4.333,
+  "narration": 3.584,
+  "type": "card"
+ },
+ "SC051": {
+  "duration": 9.583,
+  "narration": 8.832,
+  "type": "card"
+ },
+ "SC052": {
+  "duration": 13.333,
+  "narration": 12.587,
+  "type": "card"
+ },
+ "SC054": {
+  "duration": 13.375,
+  "narration": 12.608,
+  "type": "card"
+ },
+ "SC056": {
+  "duration": 14.958,
+  "narration": 14.229,
+  "type": "card"
+ },
+ "SC057": {
+  "duration": 6.583,
+  "narration": 5.824,
+  "type": "card"
+ },
+ "SC059": {
+  "duration": 6.833,
+  "narration": 6.08,
+  "type": "card"
+ },
+ "SC060": {
+  "duration": 9.417,
+  "narration": 8.683,
+  "type": "card"
+ },
+ "SC062": {
+  "duration": 7.042,
+  "narration": 6.293,
+  "type": "card"
+ },
+ "SC064": {
+  "duration": 10.875,
+  "narration": 10.112,
+  "type": "card"
+ },
+ "SC001": {
+  "duration": 7.625,
+  "narration": 6.464,
+  "type": "plate"
+ },
+ "SC003": {
+  "duration": 9.042,
+  "narration": 8.277,
+  "type": "plate"
+ },
+ "SC004": {
+  "duration": 8.708,
+  "narration": 7.979,
+  "type": "plate"
+ },
+ "SC006": {
+  "duration": 6.833,
+  "narration": 6.08,
+  "type": "plate"
+ },
+ "SC007": {
+  "duration": 8.417,
+  "narration": 6.848,
+  "type": "plate"
+ },
+ "SC008": {
+  "duration": 8.333,
+  "narration": 7.595,
+  "type": "plate"
+ },
+ "SC009": {
+  "duration": 2.542,
+  "narration": 1.792,
+  "type": "plate"
+ },
+ "SC010": {
+  "duration": 7.708,
+  "narration": 6.976,
+  "type": "plate"
+ },
+ "SC012": {
+  "duration": 11.333,
+  "narration": 10.603,
+  "type": "plate"
+ },
+ "SC013": {
+  "duration": 8.167,
+  "narration": 7.424,
+  "type": "plate"
+ },
+ "SC014": {
+  "duration": 8.542,
+  "narration": 7.808,
+  "type": "plate"
+ },
+ "SC016": {
+  "duration": 6.75,
+  "narration": 6.016,
+  "type": "plate"
+ },
+ "SC017": {
+  "duration": 8.333,
+  "narration": 7.573,
+  "type": "plate"
+ },
+ "SC018": {
+  "duration": 9.167,
+  "narration": 8.427,
+  "type": "plate"
+ },
+ "SC021": {
+  "duration": 4.875,
+  "narration": 4.117,
+  "type": "plate"
+ },
+ "SC022": {
+  "duration": 5.708,
+  "narration": 4.949,
+  "type": "plate"
+ },
+ "SC024": {
+  "duration": 7.708,
+  "narration": 6.976,
+  "type": "plate"
+ },
+ "SC028": {
+  "duration": 4.792,
+  "narration": 4.032,
+  "type": "plate"
+ },
+ "SC029": {
+  "duration": 8.292,
+  "narration": 7.552,
+  "type": "plate"
+ },
+ "SC030": {
+  "duration": 6.958,
+  "narration": 6.229,
+  "type": "plate"
+ },
+ "SC031": {
+  "duration": 4.0,
+  "narration": 3.243,
+  "type": "plate"
+ },
+ "SC034": {
+  "duration": 4.458,
+  "narration": 3.691,
+  "type": "plate"
+ },
+ "SC035": {
+  "duration": 8.708,
+  "narration": 7.957,
+  "type": "plate"
+ },
+ "SC036": {
+  "duration": 5.333,
+  "narration": 4.587,
+  "type": "plate"
+ },
+ "SC038": {
+  "duration": 4.5,
+  "narration": 3.733,
+  "type": "plate"
+ },
+ "SC040": {
+  "duration": 5.083,
+  "narration": 4.352,
+  "type": "plate"
+ },
+ "SC047": {
+  "duration": 3.667,
+  "narration": 2.923,
+  "type": "plate"
+ },
+ "SC048": {
+  "duration": 10.667,
+  "narration": 9.92,
+  "type": "plate"
+ },
+ "SC049": {
+  "duration": 10.542,
+  "narration": 9.792,
+  "type": "plate"
+ },
+ "SC053": {
+  "duration": 4.458,
+  "narration": 3.712,
+  "type": "plate"
+ },
+ "SC055": {
+  "duration": 9.542,
+  "narration": 8.811,
+  "type": "plate"
+ },
+ "SC058": {
+  "duration": 4.875,
+  "narration": 4.117,
+  "type": "plate"
+ },
+ "SC061": {
+  "duration": 10.333,
+  "narration": 9.6,
+  "type": "plate"
+ },
+ "SC063": {
+  "duration": 3.667,
+  "narration": 2.901,
+  "type": "plate"
+ },
+ "SC065": {
+  "duration": 6.583,
+  "narration": 5.845,
+  "type": "plate"
+ },
+ "SC066": {
+  "duration": 12.042,
+  "narration": 11.285,
+  "type": "plate"
+ },
+ "SC067": {
+  "duration": 10.0,
+  "narration": 9.259,
+  "type": "plate"
+ },
+ "SC068": {
+  "duration": 6.375,
+  "narration": 5.611,
+  "type": "plate"
+ },
+ "SC069": {
+  "duration": 3.917,
+  "narration": 3.179,
+  "type": "plate"
+ },
+ "SC070": {
+  "duration": 5.042,
+  "narration": 4.309,
+  "type": "plate"
+ },
+ "SC072": {
+  "duration": 8.125,
+  "narration": 7.381,
+  "type": "plate"
+ },
+ "SC074": {
+  "duration": 18.792,
+  "narration": 6.059,
+  "type": "plate"
+ },
+ "SC071": {
+  "duration": 8.917,
+  "narration": 8.149,
+  "type": "anim"
+ },
+ "SC073": {
+  "duration": 7.625,
+  "narration": 6.891,
+  "type": "anim"
+ },
+ "SC002": {
+  "duration": 5.458,
+  "narration": 4.715,
+  "type": "anim"
+ }
+}

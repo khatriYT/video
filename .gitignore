@@ -10,3 +10,10 @@ YOUTUBE_PRODUCTION/03_REFERENCE_LIBRARY/*/02_Reference_Analysis/_sprites/
 YOUTUBE_PRODUCTION/03_REFERENCE_LIBRARY/*/01_Competitor_Research/thumbnails/
 YOUTUBE_PRODUCTION/03_REFERENCE_LIBRARY/*/01_Competitor_Research/thumbnails_contact_sheet.jpg
 YOUTUBE_PRODUCTION/_reference_media/
+# episode 3+ regenerable intermediates (rebuild with tools/vulture3d/*.py; compact copies are committed)
+YOUTUBE_PRODUCTION/01_PROJECTS/*/09_Animation/*.mp4
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders/*.png
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders/A0*/
+YOUTUBE_PRODUCTION/01_PROJECTS/*/11_Edit/*_video_only.mp4
+YOUTUBE_PRODUCTION/01_PROJECTS/*/11_Edit/*.wav
+YOUTUBE_PRODUCTION/01_PROJECTS/*/10_Audio/music/*.wav

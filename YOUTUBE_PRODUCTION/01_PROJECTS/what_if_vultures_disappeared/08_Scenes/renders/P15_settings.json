@@ -1,0 +1,16 @@
+{
+ "shot": "P15",
+ "env": "ENV_ROOST",
+ "light": "dawn",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  25,
+  180
+ ],
+ "seconds": 36.4
+}

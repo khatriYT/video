@@ -1,0 +1,19 @@
+{
+ "shot": "A03",
+ "env": "ENV_DUMP",
+ "state": "nepal",
+ "light": "dawn",
+ "camera": "CAM_WIDE_HIGH",
+ "resolution": [
+  1600,
+  900
+ ],
+ "samples": 8,
+ "engine": "EEVEE",
+ "mist": [
+  18,
+  160
+ ],
+ "frames": 94,
+ "seconds": 600.4
+}

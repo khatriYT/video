@@ -28,7 +28,7 @@ Read these first:
 Then check `00_SYSTEM/CAPABILITY_REPORT.md`: the cloud container is ephemeral, so Blender and the pip tools may need reinstalling.
 
 ## Episode 3 onward (master-prompt workflow)
-- **Topic shortlist:** `00_SYSTEM/TOPIC_SHORTLIST_EP3.md` (waiting for your choice).
+- **Topic shortlist:** `00_SYSTEM/TOPIC_SHORTLIST_EP3.md` (vultures chosen for episode 3).
 - **Proposed hybrid-3D house style:** `00_SYSTEM/STYLE_BIBLE_v2_DRAFT.md` (waiting for your approval).
 - **New project:** `python3 tools/new_project.py <slug> "<Working Title>"` creates the `00_Project_Admin … 14_Delivery` layout.
 - **Blender check:** `blender -b --factory-startup -P tools/blender_benchmark.py -- EEVEE out.png 32`
@@ -36,6 +36,7 @@ Then check `00_SYSTEM/CAPABILITY_REPORT.md`: the cloud container is ephemeral, s
 ## Projects
 - Episode 1: `01_PROJECTS/what_if_mosquitoes_disappeared/` (12:06)
 - Episode 2: `01_PROJECTS/what_if_all_bees_disappeared/` (12:02), with more detailed backgrounds and animated on-screen text
+- Episode 3: `01_PROJECTS/what_if_vultures_disappeared/` (10:00). The first **hybrid-3D** episode (Blender + `tools/vulture3d/`). Review export in `12_Exports/`
 
 ## Episode 1 notes
 `01_PROJECTS/what_if_mosquitoes_disappeared/`. The full 12-minute episode is in `07_FINAL_VIDEO/`. See `PROJECT_STATUS.md` there.

@@ -5,25 +5,26 @@
 
 ## Current position
 
-**Waiting for approval** of two things:
+**Episode 3 (vultures) review video exported. Waiting for your final-video approval.**
 
-1. The Episode 3 topic.
-2. The visual direction: hybrid 3D, 2D, or full 3D.
+- Topic: approved on 2026-11-26.
+- Visual direction: hybrid 3D, the recommended option, which you went with ("your pick").
+- Project tracker: `01_PROJECTS/what_if_vultures_disappeared/00_Project_Admin/production_tracker.md`.
 
 | # | Phase | Status | Outputs | Approval needed | Next action |
 |---|---|---|---|---|---|
 | 0 | Environment inspection | **Complete** | `00_SYSTEM/CAPABILITY_REPORT.md` | — | — |
 | 1 | Competitor research: Hardy Humans | **Complete** (limits noted) | `03_REFERENCE_LIBRARY/HardyHumans/01_Competitor_Research/competitor_report.md`, `channel_videos.csv` | — | — |
 | 2 | Reference video deep analysis (`wqMaepNXeBc`) | **Complete for stills; motion Blocked** | `03_REFERENCE_LIBRARY/HardyHumans/02_Reference_Analysis/` (`report.md`, `scene_timeline.csv`, `visual_style_bible.md`, `camera_and_lighting_notes.md`, `motion_notes.md`; frames local only) | Optional: upload the MP4 | If the file arrives: scene detection, then fill in `motion_notes.md` |
-| 3 | Initial house style bible v2 (hybrid 3D) | **Waiting for Approval** | `00_SYSTEM/STYLE_BIBLE_v2_DRAFT.md` | **Yes**: visual direction | After approval: build `CHR_PIP.blend`, turnarounds, the first observation plate |
-| 4 | Topic selection | **Waiting for Approval** | `00_SYSTEM/TOPIC_SHORTLIST_EP3.md` | **Yes** | After approval: `python3 tools/new_project.py <slug>`, then Phase 8 research |
-| 5 | Scientific research | Not Started | `research/` files per master prompt §8 | — | — |
-| 6 | Script draft | Not Started | `04_Script/script_draft.md` | **Yes** (script gate) | — |
-| 7 | Storyboard | Not Started | `06_Storyboard/` | — | — |
-| 8 | 3D assets, scenes, renders | Not Started | `07_3D_Assets/`, `08_Scenes/` | — | — |
-| 9 | Animation | Not Started | `09_Animation/` | — | — |
-| 10 | Narration, music, SFX, edit | Not Started | `10_Audio/`, `11_Edit/` | — | — |
-| 11 | Review export | Not Started | `12_Exports/` | **Yes** (final video gate) | — |
+| 3 | Initial house style bible v2 (hybrid 3D) | **Applied in Ep 3** (formal sign-off still open) | `00_SYSTEM/STYLE_BIBLE_v2_DRAFT.md` | **Yes**: visual direction | After approval: build `CHR_PIP.blend`, turnarounds, the first observation plate |
+| 4 | Topic selection | **Complete** | Vultures | — | — |
+| 5 | Scientific research | **Complete (Ep 3)** | `research/` files per master prompt §8 | — | — |
+| 6 | Script draft | **Complete (Ep 3)** | `04_Script/script_draft.md` | **Yes** (script gate) | — |
+| 7 | Storyboard | **Complete (Ep 3)** | `06_Storyboard/` | — | — |
+| 8 | 3D assets, scenes, renders | **Complete (Ep 3)** | `07_3D_Assets/`, `08_Scenes/` | — | — |
+| 9 | Animation | **Complete (Ep 3)** | `09_Animation/` | — | — |
+| 10 | Narration, music, SFX, edit | **Complete (Ep 3)** | `10_Audio/`, `11_Edit/` | — | — |
+| 11 | Review export | **Waiting for Approval** (`12_Exports/what_if_every_vulture_disappeared_REVIEW.mp4`, 10:00) | `12_Exports/` | **Yes** (final video gate) | — |
 | 12 | Thumbnail and packaging | Not Started | `13_Thumbnails/`, `14_Delivery/` | **Yes** (title + thumbnail) | — |
 
 ## Earlier episodes

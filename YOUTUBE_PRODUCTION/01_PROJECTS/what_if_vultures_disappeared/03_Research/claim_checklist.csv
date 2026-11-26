@@ -1,0 +1,25 @@
+claim_id,claim_as_used_in_script,evidence_tag,source_ids,status,notes
+C01,"South Asia's Gyps vultures fell by more than 95 percent in about a decade",STRONG,S02,verified-secondary,Prakash et al. 2003 cited in Green et al. 2004
+C02,"The white-rumped vulture fell by as much as 99.9 percent",STRONG,S06,verified-secondary,BNHS estimate; phrase 'by some estimates'
+C03,"The cause was diclofenac, a cheap painkiller given to cattle; vultures feeding on treated carcasses died of kidney failure",STRONG,"S03,S04",verified-primary-abstract,Oaks 2004 (Pakistan); Shultz 2004 (India/Nepal)
+C04,"India banned veterinary diclofenac in 2006",STRONG,S05,verified-secondary,
+C05,"In 2023 India banned two more vulture-killing drugs, ketoprofen and aceclofenac, for animals",STRONG,S05,verified-secondary,Notification 31 Jul 2023
+C06,"Without vultures, carcasses took about twice as long to decompose and flies nearly doubled (Costa Rica experiment)",STRONG,S09,verified-primary-abstract,
+C07,"In Kenya, carcasses lasted nearly three times longer and mammal scavengers tripled when vultures were kept away",STRONG,S10,verified-secondary,
+C08,"Feral dog numbers rose in India as vultures vanished",DEBATED,"S07,S01",verified-secondary,Correlation; causality debated - tag DEBATED
+C09,"Dogs cause the vast majority of human rabies cases; India accounts for roughly a third of global rabies deaths",STRONG,S08,verified-secondary,WHO ~35%
+C10,"Rabies vaccine sales rose in districts that lost their vultures",STRONG,S01,verified-secondary,
+C11,"One study estimates death rates rose about 4.7% in vulture-rich districts: roughly 100,000 extra deaths a year, about half a million from 2000 to 2005",ESTIMATE,S01,verified-primary-summary,Must be framed as an estimate
+C12,"The same study puts the cost at about 69 billion dollars a year",ESTIMATE,S01,verified-primary-summary,
+C13,"Vultures' harsh stomach acid and specialised gut bacteria let them eat meat that would sicken most animals",STRONG,S13,verified-secondary,No pH number
+C14,"A Rüppell's vulture was hit by a plane at 11,300 metres over Ivory Coast in 1973",STRONG,S14,verified-secondary,
+C15,"A group of vultures can strip a large carcass in about half an hour",MODERATE,S16,magazine,Phrase as 'about half an hour'
+C16,"Parsi Towers of Silence relied on vultures; solar concentrators were installed but struggle in the monsoon",STRONG,S15,verified-secondary,
+C17,"In Spain, trucking carcasses away produces about 77,000 tonnes of CO2 a year",STRONG,S12,verified-primary-abstract,Minimum estimate
+C18,"Africa: eight vulture species fell 62% on average; seven by 80% or more over three generations; poisoning and belief-based use cause 90% of reported deaths",STRONG,S11,verified-primary-abstract,
+C19,"Other scavengers can't fully replace vultures",SUPPORTED-INFERENCE,"S09,S10",inference,Present as 'what experiments suggest'
+C20,"If fewer than one carcass in a hundred carried a lethal dose of diclofenac, that alone could explain the crash",STRONG,S17,verified-primary-abstract,Green et al. 2004 modelled 1:130 to 1:760
+C21,"Some poachers poison elephant carcasses so circling vultures don't reveal the kill; in one Namibian case around 500 vultures died at a single carcass",STRONG,S18,verified-secondary,Reported by Smithsonian / Yale e360 / BBC Wildlife
+C22,"Nepal set up 'vulture restaurants' (diclofenac-free feeding stations, first at Pithauli in 2007); nesting white-rumped vultures increased at nearby colonies",STRONG,S19,verified-secondary,BirdLife case study; Mongabay 2019
+C23,"Meloxicam is a painkiller for livestock that does not harm vultures",STRONG,"S19,S20",verified-secondary,Swan et al. 2006 PLoS Biology
+C24,"Three South Asian vulture species (white-rumped, Indian, slender-billed) are listed as critically endangered",STRONG,S19,verified-secondary,IUCN Red List status per BirdLife / Mongabay

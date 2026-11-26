@@ -1,0 +1,16 @@
+{
+ "shot": "P20B",
+ "env": "ENV_TOWER",
+ "light": "monsoon",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  30,
+  200
+ ],
+ "seconds": 28.8
+}
