@@ -1,0 +1,226 @@
+sample,timecode,time_s,chapter,frame_type,shot,environment,caption_word,description,mean_luma,mean_saturation,warm_minus_cool,edge_density,quantised_colours,keyframe_file
+0,00:00,0.0,Part 1 · They're gone,PLATE_CHAR,WS,subway_car,,1-pt perspective car full of round-head commuters; hero centre,0.375,0.252,0.085,0.39,642,KF000_t00m00s.jpg
+1,00:09,9.9,Part 1 · They're gone,CU_CHAR,CU,subway_car,,"hero face, car interior heavily defocused",0.481,0.35,0.189,0.098,520,KF001_t00m09s.jpg
+2,00:19,19.8,Part 1 · They're gone,INFO_OVER,GFX,subway_car,ANNOUNCES,speaker grille + line-stop dots over blurred car,0.277,0.278,0.089,0.121,284,KF002_t00m19s.jpg
+3,00:29,29.8,Part 1 · They're gone,PLATE_CHAR,WS,subway_car,EXCEPT,same car now empty; hero alone; dropped items,0.386,0.355,0.213,0.37,626,KF003_t00m29s.jpg
+4,00:39,39.7,Part 1 · They're gone,POV,CU,dark,YOU,POV mitten holding phone in darkness,0.158,0.373,0.09,0.025,209,KF004_t00m39s.jpg
+5,00:49,49.6,Day 1 · The Street,INFO_DARK,GFX,tunnel_dark,,lightning-bolt icon over dark blurred tunnel,0.079,0.311,0.0,0.013,162,KF005_t00m49s.jpg
+6,00:59,59.5,Day 1 · The Street,PLATE,WS,street,,"abandoned taxis, doors open, low angle",0.391,0.328,0.128,0.305,600,KF006_t00m59s.jpg
+7,01:09,69.4,Day 1 · The Street,PLATE_CHAR,WS,street,,"HERO STREET plate (recurring), sunrise, hero small right",0.476,0.392,0.179,0.426,743,KF007_t01m09s.jpg
+8,01:19,79.4,Day 1 · The Street,INFO_DARK,GFX,dark,STILL,phone/clock icons on charcoal,0.128,0.206,-0.027,0.022,128,KF008_t01m19s.jpg
+9,01:29,89.3,Day 1 · The Street,CU_CHAR,CU,cafe,SECONDS,"hero smiling, cafe interior defocused",0.411,0.412,0.196,0.096,406,KF009_t01m29s.jpg
+10,01:39,99.2,Day 1 · The Street,CU_CHAR,CU,street,HOLDING,"dog (Bagel) close-up, street defocused",0.432,0.405,0.168,0.102,526,KF010_t01m39s.jpg
+11,01:49,109.1,The Last Lights,PLATE_CHAR,WS,street,CITY,"street at dusk, hero + dog small; HUD stamp top-left",0.307,0.468,0.141,0.382,625,KF011_t01m49s.jpg
+12,01:59,119.0,The Last Lights,PLATE_CHAR,WS,times_square,EMPTY,"neon billboards, hero + dog centre",0.44,0.373,0.074,0.391,1335,KF012_t01m59s.jpg
+13,02:08,129.0,The Last Lights,MAP,GFX,map_dark,FIFTY,"blackout map 50,000,000 with lit dots",0.229,0.433,-0.11,0.096,150,KF013_t02m08s.jpg
+14,02:18,138.9,The Last Lights,PLATE_CHAR,WS,rooftop,YORK,"ROOFTOP plate (recurring): water tower, skyline at night, hero rear",0.136,0.478,-0.049,0.161,185,KF014_t02m18s.jpg
+15,02:28,148.8,The Last Lights,PLATE_CHAR,WS,rooftop,,"same rooftop, stars brighter",0.133,0.484,-0.049,0.161,151,KF015_t02m28s.jpg
+16,02:38,158.7,Day 2 · The Stars,PLATE_CHAR,WS,rooftop,MANHATTAN,same rooftop,0.171,0.442,-0.069,0.198,192,KF016_t02m38s.jpg
+17,02:48,168.6,Day 2 · The Stars,PLATE,WS,night_sky,LIGHTS,Milky Way over dark city,0.197,0.458,-0.115,0.06,157,KF017_t02m48s.jpg
+18,02:58,178.6,Day 2 · The Stars,PLATE,WS,airport_terminal,GROUND,"terminal window, grounded jets; '3 DAYS' tag",0.515,0.344,-0.111,0.342,573,KF018_t02m58s.jpg
+19,03:08,188.5,Day 2 · The Stars,PLATE_CHAR,WS,rooftop,,rooftop night,0.168,0.407,-0.066,0.172,160,KF019_t03m08s.jpg
+20,03:18,198.4,Day 3 · The Water,POV,CU,kitchen,,mitten turning sink tap; HUD stamp,0.356,0.326,0.112,0.075,249,KF020_t03m18s.jpg
+21,03:28,208.3,Day 3 · The Water,MAP,GFX,map_light,MILES,reservoirs 100+ miles north of NYC,0.566,0.214,0.015,0.106,238,KF021_t03m28s.jpg
+22,03:38,218.2,Day 3 · The Water,INFO_LIGHT,GFX,diagram,THAT,"building cross-section, water reaches ~6 floors, red X above",0.777,0.177,0.136,0.153,260,KF022_t03m38s.jpg
+23,03:48,228.2,Day 3 · The Water,INFO_OVER,GFX,kitchen,YOU,pot boiling on stove over blurred kitchen,0.262,0.391,0.112,0.037,194,KF023_t03m48s.jpg
+24,03:58,238.1,Day 5 · The Tunnels,TITLE,WS,street,,DAY 5 / THE TUNNELS title card on street plate,0.345,0.189,0.057,0.33,330,KF024_t03m58s.jpg
+25,04:08,248.0,Day 5 · The Tunnels,PLATE,WS,subway_tunnel,THE,flooded subway platform and train,0.135,0.225,0.01,0.156,182,KF025_t04m08s.jpg
+26,04:17,257.9,Day 5 · The Tunnels,INFO_DARK,GFX,diagram,FLOODED,rising water line over pump circles,0.276,0.418,-0.062,0.077,196,KF026_t04m17s.jpg
+27,04:27,267.8,Day 5 · The Tunnels,PLATE_CHAR,WS,street,,"hero + dog, steam from manhole",0.376,0.209,0.07,0.38,325,KF027_t04m27s.jpg
+28,04:37,277.8,Day 12 · The Smell,PLATE_CHAR,WS,street,ANYTHING,hero with dogs on street,0.389,0.221,0.081,0.426,399,KF028_t04m37s.jpg
+29,04:47,287.7,Day 12 · The Smell,INFO_LIGHT,GFX,fridge,AT,"flat fridge interior, spoiled food",0.617,0.103,0.046,0.156,253,KF029_t04m47s.jpg
+30,04:57,297.6,Day 12 · The Smell,INFO_LIGHT,GFX,pantry,SUGAR,"icons: white rice, beans, salt, sugar",0.839,0.139,0.105,0.093,279,KF030_t04m57s.jpg
+31,05:07,307.5,Day 12 · The Smell,TITLE,WS,street,,DAY 12 title dissolving over overcast street,0.377,0.233,0.086,0.397,336,KF031_t05m07s.jpg
+32,05:17,317.4,Day 21 · The Pack,PLATE,WS,street,PACKS,dog pack crossing street,0.393,0.231,0.087,0.414,356,KF032_t05m17s.jpg
+33,05:27,327.4,Day 21 · The Pack,INFO_DARK,GFX,diagram,RUNNING,NEVER RUN vs RUNNING = PREY pictograms,0.157,0.309,-0.038,0.132,136,KF033_t05m27s.jpg
+34,05:37,337.3,Day 21 · The Pack,PLATE_CHAR,WS,brownstones,AFTER,"hero + dog on taxi roof, low angle",0.392,0.44,0.223,0.423,638,KF034_t05m37s.jpg
+35,05:47,347.2,Day 21 · The Pack,PLATE_CHAR,WS,brownstones,,same,0.37,0.515,0.269,0.419,575,KF035_t05m47s.jpg
+36,05:57,357.1,Day 50 · The Quiet,PLATE_CHAR,WS,street,SILENCE,"golden-hour street, hero walking; HUD",0.394,0.562,0.31,0.414,490,KF036_t05m57s.jpg
+37,06:07,367.0,Day 50 · The Quiet,PLATE_CHAR,WS,island_selkirk,ALONE,"historical: castaway, hut, boat, cliffs",0.385,0.391,0.123,0.45,392,KF037_t06m07s.jpg
+38,06:16,377.0,Day 50 · The Quiet,INFO_OVER,GFX,island_selkirk,,split panels HUNTED / READ,0.293,0.369,0.073,0.271,374,KF038_t06m16s.jpg
+39,06:26,386.9,Day 50 · The Quiet,PLATE_CHAR,MS,apartment_night,ONE,"dog at candlelit table, set plates",0.252,0.498,0.154,0.097,397,KF039_t06m26s.jpg
+40,06:36,396.8,Day 50 · The Quiet,TITLE,WS,street,,DAY 70 / THE GREEN on summer street,0.425,0.378,0.176,0.482,723,KF040_t06m36s.jpg
+41,06:46,406.7,Day 70 · The Green,PLATE_CHAR,WS,street,,"summer street, hero + dog",0.45,0.391,0.185,0.515,869,KF041_t06m46s.jpg
+42,06:56,416.6,Day 70 · The Green,MAP,GFX,map_light,NORTHEAST,Northeast map ~30% less pollution,0.329,0.389,-0.065,0.102,241,KF042_t06m56s.jpg
+43,07:06,426.6,Day 70 · The Green,PLATE,WS,street,LIKE,deer on the street,0.457,0.368,0.191,0.482,646,KF043_t07m06s.jpg
+44,07:16,436.5,Day 100 · The Last Voice,INFO_DARK,GFX,diagram,,cell tower + empty battery,0.122,0.338,-0.045,0.059,152,KF044_t07m16s.jpg
+45,07:26,446.4,Day 100 · The Last Voice,INFO_OVER,CU,apartment,A,radio + dog over blurred room,0.407,0.359,0.155,0.168,383,KF045_t07m26s.jpg
+46,07:36,456.3,Day 100 · The Last Voice,MAP,GFX,map_light,MAP,Manhattan map with pin,0.659,0.19,0.02,0.07,262,KF046_t07m36s.jpg
+47,07:46,466.2,Day 100 · The Last Voice,PLATE_CHAR,WS,street,BICYCLE,"hero walking bicycle, dog",0.45,0.37,0.177,0.524,776,KF047_t07m46s.jpg
+48,07:56,476.2,Day 160 · The Fire,PLATE,WS,rooftop,LIGHTNING,"rooftop in night storm, lightning; HUD",0.129,0.369,-0.029,0.145,136,KF048_t07m56s.jpg
+49,08:06,486.1,Day 160 · The Fire,PLATE,WS,historic_waterfront,BEFORE,"historical: lantern-lit waterfront, tall ships, snow",0.353,0.57,0.294,0.338,596,KF049_t08m06s.jpg
+50,08:16,496.0,Day 160 · The Fire,PLATE,WS,rooftop,THE,"rooftop, red sun through smoke",0.307,0.366,0.164,0.118,227,KF050_t08m16s.jpg
+51,08:25,505.9,Day 160 · The Fire,PLATE_CHAR,WS,rooftop,,"night, fires on distant roofs, hero + dog rear",0.124,0.444,0.01,0.076,275,KF051_t08m25s.jpg
+52,08:35,515.8,Day 280 · The Cold,INFO_OVER,GFX,street_snow,DEGREES,thermometer 20F over blurred snowy street,0.435,0.201,-0.057,0.085,275,KF052_t08m35s.jpg
+53,08:45,525.8,Day 280 · The Cold,INSERT,CU,fireplace,PIANO,piano chair burning in fireplace,0.404,0.638,0.37,0.155,453,KF053_t08m45s.jpg
+54,08:55,535.7,Day 280 · The Cold,INFO_DARK,GFX,diagram,AFTER,rain clouds,0.116,0.446,-0.071,0.03,71,KF054_t08m55s.jpg
+55,09:05,545.6,Day 280 · The Cold,PLATE_CHAR,WS,apartment_night,,"fireplace-lit living room, hero on sofa, dog",0.121,0.555,0.069,0.119,280,KF055_t09m05s.jpg
+56,09:15,555.5,Day 302 · The Scratch,PLATE_CHAR,WS,street_snow,THE,"snowy street, smashed pharmacy window; HUD",0.384,0.198,0.055,0.462,324,KF056_t09m15s.jpg
+57,09:25,565.4,Day 302 · The Scratch,POV,CU,dark,,arm with scratch/bandage,0.332,0.399,0.179,0.051,277,KF057_t09m25s.jpg
+58,09:35,575.4,Day 302 · The Scratch,PLATE,WS,white_house,SON,historical: White House lawn tennis court (1924),0.468,0.308,0.131,0.519,221,KF058_t09m35s.jpg
+59,09:45,585.3,Day 302 · The Scratch,INFO_DARK,GFX,diagram,INFECTION,BEFORE ANTIBIOTICS 1 IN 9 people icons,0.155,0.326,-0.018,0.111,298,KF059_t09m45s.jpg
+60,09:55,595.2,Day 302 · The Scratch,INFO_DARK,GFX,diagram,YEARS,YEARS LATER pill bottles with ticks,0.162,0.226,0.008,0.072,213,KF060_t09m55s.jpg
+61,10:05,605.1,Day 302 · The Scratch,INFO_OVER,GFX,pharmacy,HOSPITALS,honey tube over blurred pharmacy shelves,0.305,0.16,0.044,0.035,302,KF061_t10m05s.jpg
+62,10:15,615.0,Day 302 · The Scratch,PLATE_CHAR,WS,apartment,,"daylight living room, hero + dog",0.36,0.385,0.165,0.315,359,KF062_t10m15s.jpg
+63,10:24,625.0,Day 302 · The Scratch,PLATE,WS,street,DOWN,"street one year on: weeds, rust; HUD",0.492,0.368,0.167,0.531,612,KF063_t10m24s.jpg
+64,10:34,634.9,Day 365 · The Sky,PLATE,WS,subway_station,RAIL,"subway train headlights, 625",0.172,0.282,0.031,0.26,317,KF064_t10m34s.jpg
+65,10:44,644.8,Day 365 · The Sky,PLATE,WS,rooftop,NOBODY,"rooftop by day, potted flowers",0.397,0.294,-0.042,0.297,488,KF065_t10m44s.jpg
+66,10:54,654.7,Day 365 · The Sky,PLATE,WS,sky,A,"blue sky, jet contrail",0.654,0.435,-0.392,0.011,152,KF066_t10m54s.jpg
+67,11:04,664.6,Day 365 · The Sky,CU_CHAR,CU,rooftop,OR,"hero worried, rooftop defocused",0.446,0.303,0.002,0.079,476,KF067_t11m04s.jpg
+68,11:14,674.6,Day 365 · The Sky,PLATE,WS,subway_car,EARTH,empty subway car (callback); HUD DAY 366,0.381,0.317,0.189,0.361,529,KF068_t11m14s.jpg
+69,11:24,684.5,Part 2 · Day 366 · Somebody answers,PLATE_CHAR,WS,rooftop,SKY,hero + dog watch contrail,0.418,0.32,-0.048,0.309,554,KF069_t11m24s.jpg
+70,11:34,694.4,Part 2 · Day 366 · Somebody answers,PLATE_CHAR,WS,rooftop,AGAINST,"fire barrel, black smoke, hero signalling",0.38,0.265,0.001,0.27,596,KF070_t11m34s.jpg
+71,11:44,704.3,Part 2 · Day 366 · Somebody answers,PLATE,WS,island_selkirk,ISLAND,historical castaway island + fire,0.382,0.397,0.126,0.449,424,KF071_t11m44s.jpg
+72,11:54,714.2,Part 2 · Day 366 · Somebody answers,PLATE_CHAR,MS,rooftop,AT,hero + dog beside fire barrel,0.311,0.314,0.062,0.262,576,KF072_t11m54s.jpg
+73,12:04,724.2,Part 2 · Day 366 · Somebody answers,PLATE_CHAR,WS,rooftop,PILOT,"black smoke column, hero waving",0.361,0.282,-0.003,0.28,624,KF073_t12m04s.jpg
+74,12:14,734.1,Part 2 · Day 366 · Somebody answers,POV,CU,rooftop,CAN'T,mittens holding cardboard sign CAN / CAN'T,0.43,0.363,0.108,0.072,389,KF074_t12m14s.jpg
+75,12:24,744.0,Part 2 · Day 366 · Somebody answers,TITLE,WS,bridge,,"DAY 367 / THE BRIDGE, 1-pt perspective",0.503,0.346,0.009,0.501,733,KF075_t12m24s.jpg
+76,12:33,753.9,Day 367 · The Bridge,PLATE,WS,bridge,EIGHTY-THREE,bridge plate + '1883' number,0.543,0.36,0.006,0.539,680,KF076_t12m33s.jpg
+77,12:43,763.8,Day 367 · The Bridge,PLATE_CHAR,WS,bridge,AND,"hero small, walking away down bridge",0.539,0.348,-0.001,0.519,684,KF077_t12m43s.jpg
+78,12:53,773.8,Day 367 · The Bridge,INFO_DARK,GFX,diagram,FAIL,maintenance bar DECADES,0.139,0.225,-0.025,0.054,212,KF078_t12m53s.jpg
+79,13:03,783.7,Day 367 · The Bridge,PLATE,WS,collapsed_highway,YEARS,"collapsed elevated road, trucks, snow",0.393,0.294,0.116,0.488,242,KF079_t13m03s.jpg
+80,13:13,793.6,Day 367 · The Bridge,CU_CHAR,MS,street,NOBODY,"hero cycling, background defocused",0.385,0.251,0.069,0.103,386,KF080_t13m13s.jpg
+81,13:23,803.5,Day 368 · The Highway,CU_CHAR,CU,highway,UNDERSTAND,hero reading note: CAN'T LAND HERE. JFK. RUNWAY 4L,0.53,0.322,-0.057,0.097,521,KF081_t13m23s.jpg
+82,13:33,813.4,Day 368 · The Highway,MAP,GFX,map_light,EVERY,route Manhattan to JFK,0.298,0.297,-0.04,0.103,195,KF082_t13m33s.jpg
+83,13:43,823.4,Day 368 · The Highway,INFO_DARK,GFX,diagram,YEARS,"EVERY DRAIN, CHECKED / AT LEAST EVERY 3 YEARS calendar",0.212,0.352,-0.043,0.164,387,KF083_t13m43s.jpg
+84,13:53,833.3,Day 368 · The Highway,PLATE_CHAR,WS,highway,,"overgrown highway, abandoned cars, hero with bike",0.427,0.305,-0.007,0.26,392,KF084_t13m53s.jpg
+85,14:03,843.2,Day 369 · The Runway,PLATE,WS,airport_runway,RUNWAY,runway and terminal,0.503,0.387,-0.087,0.251,502,KF085_t14m03s.jpg
+86,14:13,853.1,Day 369 · The Runway,INFO_DARK,GFX,diagram,AND,runway 4L diagram,0.129,0.391,-0.056,0.06,91,KF086_t14m13s.jpg
+87,14:23,863.0,Day 369 · The Runway,CU_CHAR,CU,airport_runway,AROUND,"Ruth intro: grey bun, glasses, headset, green coat",0.477,0.321,-0.004,0.119,452,KF087_t14m23s.jpg
+88,14:32,873.0,Day 369 · The Runway,PLATE,WS,forest_camp,FOR,"flashback: tent camp in forest, MAINE label",0.319,0.388,0.138,0.484,354,KF088_t14m32s.jpg
+89,14:42,882.9,Day 369 · The Runway,TEXT,GFX,dark,SLOWLY,big word WORDS on dark blur,0.19,0.251,0.042,0.053,98,KF089_t14m42s.jpg
+90,14:52,892.8,Day 369 · The Runway,PLATE_CHAR,WS,airport_runway,,"sunset runway, cargo plane, Ruth + hero + dog",0.401,0.407,0.172,0.244,454,KF090_t14m52s.jpg
+91,15:02,902.7,Day 369 · The Runway,INFO_DARK,GFX,diagram,,FEDEX 200+ plane grid,0.136,0.328,-0.034,0.223,239,KF091_t15m02s.jpg
+92,15:12,912.6,Ruth's Year,INFO_DARK,GFX,diagram,,radar scope SILENT,0.072,0.476,-0.034,0.046,106,KF092_t15m12s.jpg
+93,15:22,922.6,Ruth's Year,INFO_DARK,GFX,diagram,CLEAR,"4 RUNWAYS, one CLEAR",0.167,0.296,-0.035,0.14,269,KF093_t15m22s.jpg
+94,15:32,932.5,Ruth's Year,CU_CHAR,CU,hangar,ME,"Ruth surprised, hangar defocused",0.407,0.269,0.035,0.087,451,KF094_t15m32s.jpg
+95,15:42,942.4,Ruth's Year,PLATE_CHAR,WS,rooftop,SAW,rooftop seen from above/behind hero; plane in sky,0.437,0.292,-0.096,0.209,450,KF095_t15m42s.jpg
+96,15:52,952.3,Ruth's Year,TITLE,WS,fuel_farm,,DAY 380 / THE FUEL over tank farm,0.462,0.382,-0.068,0.269,686,KF096_t15m52s.jpg
+97,16:02,962.2,Day 380 · The Fuel,INFO_OVER,GFX,fuel_farm,YEAR,"pipe + gauge 'A YEAR OLD', POV mitten",0.53,0.33,-0.047,0.142,600,KF097_t16m02s.jpg
+98,16:12,972.2,Day 380 · The Fuel,INFO_LIGHT,GFX,diagram,COLLECTS,"tank section, water settles at bottom",0.547,0.371,0.163,0.049,235,KF098_t16m12s.jpg
+99,16:22,982.1,Day 380 · The Fuel,PLATE_CHAR,WS,airport_runway,,"Ruth checks fuel sample, hero + dog by plane",0.504,0.351,-0.001,0.283,634,KF099_t16m22s.jpg
+100,16:32,992.0,Day 380 · The Fuel,INFO_LIGHT,GFX,diagram,,tank sump labelled WATER,0.475,0.395,0.14,0.066,293,KF100_t16m32s.jpg
+101,16:41,1001.9,Day 380 · The Fuel,INFO_DARK,GFX,diagram,CHECK,FAA 85 DIDN'T CHECK PROPERLY plane grid,0.137,0.375,-0.027,0.215,321,KF101_t16m41s.jpg
+102,16:51,1011.8,Day 380 · The Fuel,PLATE_CHAR,WS,hangar_night,HANGAR,"night hangar, fire barrel, Ruth + hero; HUD",0.141,0.59,-0.096,0.131,441,KF102_t16m51s.jpg
+103,17:01,1021.8,Day 400 · The Number,INFO_DARK,GFX,diagram,,RULE OF THUMB 50 people,0.119,0.351,-0.039,0.042,130,KF103_t17m01s.jpg
+104,17:11,1031.7,Day 400 · The Number,INFO_DARK,GFX,diagram,RESEARCHERS,paper icons,0.158,0.33,-0.036,0.066,124,KF104_t17m11s.jpg
+105,17:21,1041.6,Day 400 · The Number,PLATE,WS,tristan_da_cunha,ATLANTIC,remote island + globe inset,0.407,0.434,-0.023,0.251,472,KF105_t17m21s.jpg
+106,17:31,1051.5,Day 400 · The Number,PLATE_CHAR,MS,hangar_night,SIXTY-FOUR,"Ruth + hero by fire barrel, dog asleep",0.171,0.602,-0.081,0.128,572,KF106_t17m31s.jpg
+107,17:41,1061.4,Day 400 · The Number,PLATE,WS,lab_freezers,BACKUP,lab with cryo tanks; HUD,0.331,0.137,-0.001,0.314,226,KF107_t17m41s.jpg
+108,17:51,1071.4,Day 450 · The Freezers,INFO_DARK,GFX,diagram,FAHRENHEIT,-320F freezer rack,0.198,0.446,-0.081,0.186,164,KF108_t17m51s.jpg
+109,18:01,1081.3,Day 450 · The Freezers,PLATE_CHAR,WS,lab_freezers,TANKS,"hero, dog, Ruth among tanks",0.33,0.145,0.004,0.323,297,KF109_t18m01s.jpg
+110,18:11,1091.2,Day 450 · The Freezers,INFO_DARK,GFX,diagram,TWENTY,2018 freezer + thermometer,0.162,0.429,-0.059,0.101,223,KF110_t18m11s.jpg
+111,18:21,1101.1,Day 450 · The Freezers,INFO_DARK,GFX,diagram,,"4,000+ dot grid",0.12,0.462,-0.053,0.205,159,KF111_t18m21s.jpg
+112,18:31,1111.0,Day 450 · The Freezers,PLATE,WS,lab_freezers,,lab empty,0.326,0.136,-0.003,0.296,208,KF112_t18m31s.jpg
+113,18:40,1121.0,Day 450 · The Freezers,MAP,GFX,map_dark,,Svalbard / Norway,0.204,0.496,-0.139,0.057,137,KF113_t18m40s.jpg
+114,18:50,1130.9,Day 500 · The Vault,INFO_LIGHT,GFX,diagram,,vault tunnel inside mountain cross-section,0.245,0.281,-0.049,0.072,171,KF114_t18m50s.jpg
+115,19:00,1140.8,Day 500 · The Vault,INFO_DARK,GFX,diagram,DESIGNED,thermometer 5 YEARS freezing,0.137,0.492,-0.066,0.052,261,KF115_t19m00s.jpg
+116,19:10,1150.7,Day 500 · The Vault,MAP,GFX,map_dark,BACK,"globe 38,000 Aleppo to Svalbard",0.148,0.407,-0.055,0.077,239,KF116_t19m10s.jpg
+117,19:20,1160.6,Day 500 · The Vault,PLATE,WS,seed_vault,,vault entrance in snowy mountain,0.366,0.35,-0.155,0.124,274,KF117_t19m20s.jpg
+118,19:30,1170.6,Day 500 · The Vault,PLATE,WS,hangar,JFK,hangar door open onto airfield,0.437,0.261,-0.012,0.364,562,KF118_t19m30s.jpg
+119,19:40,1180.5,Day 550 · The Garden,POV,CU,wood_table,STILL,mitten with seed packets on table,0.463,0.44,0.219,0.128,391,KF119_t19m40s.jpg
+120,19:50,1190.4,Day 550 · The Garden,INFO_LIGHT,GFX,wood_table,TOWEL,20 SEEDS on paper towel,0.594,0.297,0.104,0.1,179,KF120_t19m50s.jpg
+121,20:00,1200.3,Day 550 · The Garden,PLATE,WS,rooftop_garden,ROOF,"rooftop garden, solar panels, skyline",0.394,0.37,0.0,0.404,622,KF121_t20m00s.jpg
+122,20:10,1210.2,Day 550 · The Garden,PLATE_CHAR,WS,rooftop_garden,GRID,hero tending garden,0.398,0.338,0.023,0.431,638,KF122_t20m10s.jpg
+123,20:20,1220.2,Day 550 · The Garden,PLATE_CHAR,WS,radio_room,BUILDS,"night radio room, map on wall, hero + Ruth; HUD",0.219,0.325,0.001,0.171,265,KF123_t20m20s.jpg
+124,20:30,1230.1,Day 600 · The Radio,INFO_DARK,GFX,diagram,,line of sight 'A FEW MILES' over curved Earth,0.174,0.353,-0.047,0.068,268,KF124_t20m30s.jpg
+125,20:40,1240.0,Day 600 · The Radio,INFO_DARK,GFX,diagram,OFF,radio wave bouncing off ionosphere,0.158,0.359,-0.062,0.04,156,KF125_t20m40s.jpg
+126,20:49,1249.9,Day 600 · The Radio,MAP,GFX,map_dark,ABOUT,USA with dots,0.229,0.462,-0.106,0.062,121,KF126_t20m49s.jpg
+127,20:59,1259.8,Day 600 · The Radio,PLATE_CHAR,WS,radio_room,CALLS,"Ruth on headset, hero, dog",0.214,0.365,-0.004,0.161,304,KF127_t20m59s.jpg
+128,21:09,1269.8,Day 600 · The Radio,PLATE_CHAR,WS,radio_room,,same,0.216,0.346,-0.006,0.156,272,KF128_t21m09s.jpg
+129,21:19,1279.7,Day 600 · The Radio,CU_CHAR,CU,radio_room,RUTH,Ruth in beanie with headset,0.145,0.562,-0.108,0.053,140,KF129_t21m19s.jpg
+130,21:29,1289.6,Day 650 · The Silence,PLATE,WS,airport_snow,THERE'S,snowed-in airport,0.641,0.15,-0.104,0.116,160,KF130_t21m29s.jpg
+131,21:39,1299.5,Day 650 · The Silence,PLATE_CHAR,MS,hangar,THE,"dog lying alone, water jugs",0.218,0.439,-0.106,0.08,196,KF131_t21m39s.jpg
+132,21:49,1309.4,Day 650 · The Silence,CU_CHAR,CU,radio_room,WHEN,hero with headset at mic,0.158,0.359,-0.011,0.053,181,KF132_t21m49s.jpg
+133,21:59,1319.4,Day 700 · The Answer,PLATE,WS,svalbard_town,,"Arctic town at night, stars",0.247,0.468,-0.105,0.16,291,KF133_t21m59s.jpg
+134,22:09,1329.3,Day 700 · The Answer,POV,CU,radio_room,,mitten keying microphone,0.211,0.483,0.109,0.051,214,KF134_t22m09s.jpg
+135,22:19,1339.2,Day 700 · The Answer,PLATE,WS,svalbard_town,NINE,same Arctic town,0.264,0.452,-0.101,0.163,344,KF135_t22m19s.jpg
+136,22:29,1349.1,Day 700 · The Answer,PLATE,WS,street,,"street two years on, overgrown; HUD DAY 730",0.491,0.433,0.2,0.578,712,KF136_t22m29s.jpg
+137,22:39,1359.0,Day 730 · The Ocean,MAP,GFX,map_dark,GREENLAND,ISLAND-HOPPING route JFK-Goose Bay-Narsarsuaq-Svalbard,0.283,0.448,-0.116,0.133,315,KF137_t22m39s.jpg
+138,22:48,1369.0,Day 730 · The Ocean,MAP,GFX,map_dark,,"900-1,000 NM range rings",0.284,0.425,-0.107,0.171,334,KF138_t22m48s.jpg
+139,22:58,1378.9,Day 730 · The Ocean,INFO_OVER,GFX,hangar,,checklist card: single-engine over the ocean,0.537,0.169,0.072,0.142,164,KF139_t22m58s.jpg
+140,23:08,1388.8,Day 730 · The Ocean,INFO_DARK,GFX,diagram,,plane cutaway EXTRA TANKS,0.205,0.455,-0.043,0.124,376,KF140_t23m08s.jpg
+141,23:18,1398.7,Day 730 · The Ocean,PLATE,WS,sky,,contrail with bright point,0.5,0.64,-0.526,0.015,117,KF141_t23m18s.jpg
+142,23:28,1408.6,Day 730 · The Ocean,PLATE,WS,rooftop,COMMENTS,"rooftop at dusk, empty",0.22,0.388,0.019,0.188,424,KF142_t23m28s.jpg
+143,23:38,1418.6,Day 730 · The Ocean,PLATE_CHAR,MS,cockpit,IS,cockpit from behind Ruth + hero,0.388,0.265,0.033,0.268,394,KF143_t23m38s.jpg
+144,23:48,1428.5,Part 3 · Day 733 · Ice on the wing,INSERT,ECU,cockpit,THE,airspeed gauge + mitten,0.247,0.252,0.011,0.075,275,KF144_t23m48s.jpg
+145,23:58,1438.4,Part 3 · Day 733 · Ice on the wing,INFO_DARK,GFX,diagram,OR,route fork colder / warmer,0.105,0.73,-0.155,0.051,177,KF145_t23m58s.jpg
+146,24:08,1448.3,Part 3 · Day 733 · Ice on the wing,INFO_OVER,GFX,clouds,WORKING,stopwatch over blurred clouds,0.394,0.396,-0.135,0.099,143,KF146_t24m08s.jpg
+147,24:18,1458.2,Part 3 · Day 733 · Ice on the wing,PLATE_CHAR,WS,street,EXCEPT,"callback: day-1 street, hero + dog centre",0.473,0.436,0.244,0.392,326,KF147_t24m18s.jpg
+148,24:28,1468.2,Part 3 · Day 733 · Ice on the wing,CU_CHAR,CU,radio_room,,hero + Ruth two-shot by radio,0.242,0.462,0.129,0.082,193,KF148_t24m28s.jpg
+149,24:38,1478.1,Part 3 · Day 733 · Ice on the wing,PLATE_CHAR,WS,airport_runway,,loading the plane; HUD DAY 731,0.384,0.366,0.142,0.28,477,KF149_t24m38s.jpg
+150,24:48,1488.0,Day 731 · Takeoff,INFO_OVER,GFX,hangar,THEN,dish/sample with mitten,0.498,0.301,0.055,0.09,383,KF150_t24m48s.jpg
+151,24:57,1497.9,Day 731 · Takeoff,INFO_OVER,GFX,hangar,TODAY,"same sample, spots appeared",0.538,0.269,0.073,0.09,334,KF151_t24m57s.jpg
+152,25:07,1507.8,Day 731 · Takeoff,INFO_DARK,GFX,diagram,TO,satellite + rising curve 'a few meters',0.12,0.7,-0.153,0.081,216,KF152_t25m07s.jpg
+153,25:17,1517.8,Day 731 · Takeoff,POV,CU,hangar,HONEY,both mittens holding honey jar,0.391,0.344,0.086,0.112,477,KF153_t25m17s.jpg
+154,25:27,1527.7,Day 731 · Takeoff,PLATE_CHAR,MS,cockpit,,"dog between seats, hero with headset, clouds outside",0.369,0.329,-0.032,0.254,550,KF154_t25m27s.jpg
+155,25:37,1537.6,Day 731 · Takeoff,PLATE,WS,goose_bay,,"snowy night airfield, parked military jets; 22,500 sign",0.263,0.348,0.097,0.138,128,KF155_t25m37s.jpg
+156,25:47,1547.5,Day 731 · Goose Bay,PLATE_CHAR,WS,goose_bay,,"plane, Ruth + hero + dog; gauge inset",0.289,0.411,-0.107,0.198,284,KF156_t25m47s.jpg
+157,25:57,1557.4,Day 731 · Goose Bay,INSERT,CU,goose_bay,A,fuel pump with taped note,0.327,0.529,0.028,0.098,306,KF157_t25m57s.jpg
+158,26:07,1567.4,Day 731 · Goose Bay,PLATE_CHAR,WS,goose_bay,TIRE,hero with tire,0.22,0.481,-0.117,0.141,219,KF158_t26m07s.jpg
+159,26:17,1577.3,Day 731 · Goose Bay,PLATE_CHAR,WS,rooftop,AFTER,"flashback rooftop, hero + dog",0.408,0.22,0.067,0.272,278,KF159_t26m17s.jpg
+160,26:27,1587.2,Day 731 · Goose Bay,TITLE,WS,ocean_ice,,DAY 733 / THE ICE over icy ocean,0.354,0.352,-0.132,0.141,302,KF160_t26m27s.jpg
+161,26:37,1597.1,Day 731 · Goose Bay,PLATE_CHAR,WS,goose_bay,UGLY,same airfield,0.213,0.602,-0.205,0.111,215,KF161_t26m37s.jpg
+162,26:47,1607.0,Day 733 · The Ice,INFO_DARK,GFX,diagram,ACCIDENTS,"icing accidents 1987-2009 timeline, 26",0.116,0.718,-0.153,0.071,143,KF162_t26m47s.jpg
+163,26:56,1617.0,Day 733 · The Ice,INFO_DARK,GFX,diagram,WHEN,ice building on wing leading edge,0.116,0.725,-0.152,0.033,173,KF163_t26m56s.jpg
+164,27:06,1626.9,Day 733 · The Ice,PLATE,WS,clouds,AIR,small plane in grey cloud,0.614,0.127,-0.072,0.05,227,KF164_t27m06s.jpg
+165,27:16,1636.8,Day 733 · The Ice,PLATE_CHAR,MS,cockpit,WINDSHIELD,iced windshield,0.405,0.259,0.016,0.27,464,KF165_t27m16s.jpg
+166,27:26,1646.7,Day 733 · The Ice,PLATE,AERIAL,greenland_fjord,GREENLAND,fjord + glacier aerial; HUD,0.511,0.362,-0.199,0.276,318,KF166_t27m26s.jpg
+167,27:36,1656.6,Day 733 · The Ice,PLATE,AERIAL,greenland_fjord,PILOTS,"same, tiny plane",0.455,0.313,-0.144,0.139,242,KF167_t27m36s.jpg
+168,27:46,1666.6,Day 733 · The Fjord,PLATE_CHAR,MS,cockpit,,cockpit facing snowy peaks,0.372,0.25,0.034,0.305,403,KF168_t27m46s.jpg
+169,27:56,1676.5,Day 733 · The Fjord,PLATE_CHAR,WS,greenland_airstrip,MILES,"airstrip in fjord, trio walking",0.547,0.262,-0.147,0.293,443,KF169_t27m56s.jpg
+170,28:06,1686.4,Day 733 · The Fjord,PLATE,WS,greenland_fjord,PITCH,historical Norse ship + inset of green Greenland,0.531,0.306,0.015,0.223,491,KF170_t28m06s.jpg
+171,28:16,1696.3,Day 733 · The Fjord,PLATE,WS,norse_ruins,1450,"ruins, church, translucent Norse figures",0.491,0.364,-0.024,0.32,425,KF171_t28m16s.jpg
+172,28:26,1706.2,Day 733 · The Fjord,TITLE,WS,ice_sheet,,DAY 734 over ice sheet,0.638,0.257,-0.134,0.164,468,KF172_t28m26s.jpg
+173,28:36,1716.2,Day 733 · The Fjord,INFO_DARK,GFX,diagram,OF,ice sheet dome 3 km cross-section,0.439,0.432,-0.115,0.077,246,KF173_t28m36s.jpg
+174,28:46,1726.1,Day 735 · The Ice Sheet,PLATE,AERIAL,ice_sheet,TWO,historical sepia: 1942 planes on ice,0.586,0.304,0.202,0.059,131,KF174_t28m46s.jpg
+175,28:56,1736.0,Day 735 · The Ice Sheet,INFO_LIGHT,GFX,diagram,DUG,plane buried under ice layers,0.663,0.338,-0.202,0.028,205,KF175_t28m56s.jpg
+176,29:05,1745.9,Day 735 · The Ice Sheet,TITLE,WS,reykjavik,,"DAY 736 / ICELAND, dusk street + church",0.332,0.361,-0.091,0.193,470,KF176_t29m05s.jpg
+177,29:15,1755.8,Day 735 · The Ice Sheet,INFO_DARK,GFX,diagram,,hydro dam + power lines,0.203,0.672,-0.201,0.065,173,KF177_t29m15s.jpg
+178,29:25,1765.8,Day 736 · Iceland,PLATE,WS,geothermal,,geothermal pool landscape,0.492,0.328,0.04,0.259,440,KF178_t29m25s.jpg
+179,29:35,1775.7,Day 736 · Iceland,PLATE,WS,geothermal,,"same, '75,000' sign",0.506,0.321,0.024,0.257,510,KF179_t29m35s.jpg
+180,29:45,1785.6,Day 736 · Iceland,PLATE_CHAR,WS,hot_river,FIRST,"hero + Ruth bathing in hot river, boardwalk",0.555,0.217,-0.021,0.301,398,KF180_t29m45s.jpg
+181,29:55,1795.5,Day 736 · Iceland,PLATE,WS,hot_river,,"same river, steam, no characters",0.403,0.305,-0.051,0.112,236,KF181_t29m55s.jpg
+182,30:05,1805.4,Day 736 · Iceland,MAP,GFX,map_dark,,Iceland-Svalbard route with X,0.325,0.53,-0.164,0.105,181,KF182_t30m05s.jpg
+183,30:15,1815.4,Day 740 · The Last Leg,MAP,GFX,map_dark,OVER,"polar map, Svalbard",0.298,0.554,-0.159,0.081,185,KF183_t30m15s.jpg
+184,30:25,1825.3,Day 740 · The Last Leg,INSERT,CU,plane_window,SEA,sea ice through cabin window,0.571,0.131,0.042,0.241,222,KF184_t30m25s.jpg
+185,30:35,1835.2,Day 740 · The Last Leg,PLATE,WS,sea_ice,,polar bear on sea ice,0.551,0.281,-0.165,0.101,168,KF185_t30m35s.jpg
+186,30:45,1845.1,Day 740 · The Last Leg,CU_CHAR,CU,cockpit,,"Ruth + hero two-shot, sunset window",0.394,0.361,0.041,0.127,580,KF186_t30m45s.jpg
+187,30:55,1855.0,Day 740 · The Last Leg,PLATE_CHAR,WS,svalbard_airport,,nine strangers walk to the plane,0.54,0.307,-0.202,0.232,441,KF187_t30m55s.jpg
+188,31:04,1865.0,Day 740 · The Last Leg,CU_CHAR,CU,svalbard_airport,UKRAINE,Olena intro + luggage-tag name label,0.498,0.294,-0.094,0.099,402,KF188_t31m04s.jpg
+189,31:14,1874.9,Day 741 · The Nine,CU_CHAR,CU,svalbard_airport,OF,Pavel intro + luggage-tag name label,0.503,0.26,-0.08,0.108,349,KF189_t31m14s.jpg
+190,31:24,1884.8,Day 741 · The Nine,MAP,GFX,globe,VANISHING,"globe, Svalbard marked",0.248,0.616,-0.207,0.155,212,KF190_t31m24s.jpg
+191,31:34,1894.7,Day 741 · The Nine,INFO_DARK,GFX,diagram,SIXTY-FIVE,"people grid, 65+ highlighted",0.117,0.705,-0.147,0.124,163,KF191_t31m34s.jpg
+192,31:44,1904.6,Day 741 · The Nine,INFO_OVER,GFX,diagram,BRING,card 1988: cat/dog/rabbit crossed out,0.433,0.445,-0.058,0.097,287,KF192_t31m44s.jpg
+193,31:54,1914.6,Day 741 · The Nine,PLATE_CHAR,WS,dog_yard,ALL,"sled-dog yard, characters",0.553,0.312,-0.197,0.277,506,KF193_t31m54s.jpg
+194,32:04,1924.5,Day 741 · The Nine,CU_CHAR,CU,svalbard_town,,young person in fur hood,0.472,0.268,-0.089,0.091,326,KF194_t32m04s.jpg
+195,32:14,1934.4,Day 741 · The Nine,PLATE_CHAR,REAR,seed_vault_tunnel,INSIDE,group walking into vault tunnel,0.345,0.405,-0.164,0.213,311,KF195_t32m14s.jpg
+196,32:24,1944.3,Day 760 · The Vault,PLATE,WS,seed_vault_tunnel,NOBODY,frosted vault door,0.482,0.217,-0.119,0.067,92,KF196_t32m24s.jpg
+197,32:34,1954.2,Day 760 · The Vault,INSERT,CU,seed_vault,FAHRENHEIT,box of seed packets + clock,0.414,0.354,-0.073,0.136,221,KF197_t32m34s.jpg
+198,32:44,1964.2,Day 760 · The Vault,PLATE_CHAR,MS,seed_vault,YOURS,hero + elderly scientist by seed boxes,0.419,0.35,-0.045,0.209,427,KF198_t32m44s.jpg
+199,32:54,1974.1,Day 760 · The Vault,INFO_DARK,GFX,diagram,COPY,archive device on dark,0.191,0.261,-0.048,0.044,94,KF199_t32m54s.jpg
+200,33:04,1984.0,Day 760 · The Vault,PLATE,WS,satellite_station,POINT,radomes and dishes on snowy plateau,0.587,0.313,-0.209,0.158,311,KF200_t33m04s.jpg
+201,33:13,1993.9,Day 760 · The Vault,PLATE,WS,fjord_sun,TWENTY-THIRD,midnight sun over fjord + clock inset; HUD,0.479,0.359,-0.048,0.175,435,KF201_t33m13s.jpg
+202,33:23,2003.8,Day 760 · The Vault,INFO_DARK,GFX,diagram,MELATONIN,melatonin curve,0.11,0.722,-0.153,0.059,209,KF202_t33m23s.jpg
+203,33:33,2013.8,Day 800 · The Midnight Sun,PLATE_CHAR,WS,greenhouse,CHEF,"greenhouse dome, group at table",0.437,0.337,0.004,0.349,679,KF203_t33m33s.jpg
+204,33:43,2023.7,Day 800 · The Midnight Sun,PLATE_CHAR,WS,fjord_sun,RUN,dog + reindeer at midnight sun,0.431,0.397,0.031,0.187,390,KF204_t33m43s.jpg
+205,33:53,2033.6,Day 800 · The Midnight Sun,CU_CHAR,MS,hangar_dark,,Signe touching airliner fuselage,0.597,0.149,-0.063,0.075,334,KF205_t33m53s.jpg
+206,34:03,2043.5,Day 800 · The Midnight Sun,PLATE,WS,hangar_dark,,airliner in dark hangar,0.07,0.604,-0.06,0.002,50,KF206_t34m03s.jpg
+207,34:13,2053.4,Day 960 · The Jet,CU_CHAR,CU,hangar_dark,,"Signe, airliner defocused",0.166,0.466,-0.067,0.024,101,KF207_t34m13s.jpg
+208,34:23,2063.4,Day 960 · The Jet,INFO_DARK,GFX,diagram,,"35,000 ft, -65F",0.118,0.71,-0.159,0.077,130,KF208_t34m23s.jpg
+209,34:33,2073.3,Day 960 · The Jet,PLATE,AERIAL,nyc_aerial,SIGNE,"Manhattan aerial at dusk, circling contrail",0.244,0.385,-0.124,0.096,177,KF209_t34m33s.jpg
+210,34:43,2083.2,Day 960 · The Jet,CU_CHAR,CU,hangar_dark,EVERY,Signe with radio,0.134,0.518,-0.067,0.032,261,KF210_t34m43s.jpg
+211,34:53,2093.1,Day 960 · The Jet,INSERT,CU,cockpit_window,FOR,Signe seen through oval cockpit window,0.601,0.182,-0.082,0.091,309,KF211_t34m53s.jpg
+212,35:03,2103.0,Day 960 · The Jet,PLATE,WS,svalbard_town,POLAR,polar night town; HUD DAY 1000,0.263,0.421,-0.095,0.189,369,KF212_t35m03s.jpg
+213,35:12,2113.0,Day 960 · The Jet,PLATE,WS,svalbard_town,DAYTIME,same with aurora,0.296,0.443,-0.132,0.183,579,KF213_t35m12s.jpg
+214,35:22,2122.9,Day 1000 · The Dark,PLATE_CHAR,WS,community_room,ALL,whole group + dog in lounge,0.426,0.242,0.048,0.221,705,KF214_t35m22s.jpg
+215,35:32,2132.8,Day 1000 · The Dark,PLATE,WS,space,,space station over Earth,0.156,0.783,-0.198,0.034,227,KF215_t35m32s.jpg
+216,35:42,2142.7,Day 1000 · The Dark,CU_CHAR,REAR,svalbard_town,NIGHTS,"back of fur hood, shooting star",0.203,0.543,-0.087,0.053,212,KF216_t35m42s.jpg
+217,35:52,2152.6,Day 1000 · The Dark,PLATE_CHAR,WS,sun_stairs,EIGHTH,"group on hillside stairs, sun returning; HUD DAY 1095",0.511,0.346,-0.201,0.319,578,KF217_t35m52s.jpg
+218,36:02,2162.6,Day 1000 · The Dark,PLATE_CHAR,WS,sun_stairs,DAY,closer angle,0.374,0.361,-0.155,0.272,510,KF218_t36m02s.jpg
+219,36:12,2172.5,Day 1095 · The Sun,PLATE_CHAR,WS,sun_stairs,EARTH,same,0.551,0.333,-0.194,0.301,624,KF219_t36m12s.jpg
+220,36:22,2182.4,Day 1095 · The Sun,MAP,GFX,map_dark,SVALBARD,Svalbard map,0.319,0.454,-0.137,0.072,184,KF220_t36m22s.jpg
+221,36:32,2192.3,Day 1095 · The Sun,MAP,GFX,map_dark,,map zoomed in,0.296,0.468,-0.145,0.034,141,KF221_t36m32s.jpg
+222,36:42,2202.2,Day 1095 · The Sun,PLATE_CHAR,WS,sun_stairs,,final hold,0.553,0.325,-0.188,0.274,619,KF222_t36m42s.jpg
+223,36:52,2212.2,Day 1095 · The Sun,PLATE_CHAR,WS,sun_stairs,,final hold,0.552,0.321,-0.184,0.279,611,KF223_t36m52s.jpg
+224,37:02,2222.1,Day 1095 · The Sun,BLACK,GFX,black,,end,0.001,0.046,-0.0,0.0,2,KF224_t37m02s.jpg

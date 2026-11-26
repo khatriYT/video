@@ -14,7 +14,24 @@ for animated "What if X disappeared?" science videos.
   - config
 - **Projects:** `01_PROJECTS/<project>/`, one folder per video, using the standard 01–10 subfolders.
 - **Shared assets:** `02_SHARED_ASSETS/`, holding the character sheets and background plates.
+- **Reference library:** `03_REFERENCE_LIBRARY/<channel>/`, holding competitor research and deep reference-video analysis.
+  - Hardy Humans, 2026-11-26: start with `HardyHumans/02_Reference_Analysis/report.md`.
+  - Competitor images are gitignored because the repo is public. `tools/fetch_reference_frames.py` rebuilds them.
 - **Tools:** `tools/`, the Python pipeline. Commands are in `00_SYSTEM/SYSTEM_CONFIG.json`.
+
+## Start of every session
+Read these first:
+1. `00_SYSTEM/production_tracker.md`
+2. `00_SYSTEM/decisions_log.md`
+3. `00_SYSTEM/SYSTEM_CONFIG.json`
+
+Then check `00_SYSTEM/CAPABILITY_REPORT.md`: the cloud container is ephemeral, so Blender and the pip tools may need reinstalling.
+
+## Episode 3 onward (master-prompt workflow)
+- **Topic shortlist:** `00_SYSTEM/TOPIC_SHORTLIST_EP3.md` (waiting for your choice).
+- **Proposed hybrid-3D house style:** `00_SYSTEM/STYLE_BIBLE_v2_DRAFT.md` (waiting for your approval).
+- **New project:** `python3 tools/new_project.py <slug> "<Working Title>"` creates the `00_Project_Admin … 14_Delivery` layout.
+- **Blender check:** `blender -b --factory-startup -P tools/blender_benchmark.py -- EEVEE out.png 32`
 
 ## Projects
 - Episode 1: `01_PROJECTS/what_if_mosquitoes_disappeared/` (12:06)
