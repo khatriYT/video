@@ -36,7 +36,7 @@ def cave_clusters(E, state, rnd_seed=3):
     import random
     import bat as B
     rnd = random.Random(rnd_seed)
-    n = dict(healthy=46, infected=30, empty=3, hope=14)[state]
+    n = dict(healthy=160, infected=110, empty=3, hope=60)[state]
     wns = 1.0 if state == "infected" else 0.0
     dg = bpy.context.evaluated_depsgraph_get()
     cave = E.ground[0].evaluated_get(dg)
@@ -47,9 +47,9 @@ def cave_clusters(E, state, rnd_seed=3):
     placed = []
     for k in range(n):
         c = centers[k % len(centers)] if state != "empty" else centers[k]
-        for _ in range(12):
-            p = Vector((c.x + rnd.gauss(0, 0.16 + 0.05 * (k % 3)), c.y + rnd.gauss(0, 0.13), 1.5))
-            if all((p.xy - q.xy).length > 0.055 for q in placed):
+        for _ in range(20):
+            p = Vector((c.x + rnd.gauss(0, 0.11 + 0.03 * (k % 3)), c.y + rnd.gauss(0, 0.09), 1.5))
+            if all((p.xy - q.xy).length > 0.06 for q in placed):
                 break
         ok, loc, nrm, idx = cave.ray_cast(p, Vector((0, 0, 1)))
         if not ok:
@@ -59,7 +59,7 @@ def cave_clusters(E, state, rnd_seed=3):
         b.data = tmpl.body.data
         bpy.context.scene.collection.objects.link(b)
         b.hide_render = False
-        sc = rnd.uniform(0.92, 1.08)
+        sc = rnd.uniform(0.92, 1.08) * 1.35     # slightly enlarged for readability at cave-wide framings
         b.scale = (sc, sc, sc)
         b.location = loc - Vector((0, 0, 0.043 * sc))
         b.rotation_euler = (rnd.uniform(-0.12, 0.12), rnd.uniform(-0.12, 0.12), rnd.uniform(0, 6.28))
@@ -184,13 +184,14 @@ def build_actors(E, shot, hidden=False):
             p = E.marks[who] if isinstance(who, str) else Vector((who[0], who[1], 0.0))
             if not isinstance(who, str):
                 p = envs4.ground_point(E.ground, p.x, p.y)
+            # build at the origin, mount lamps in rig space, then place the character
             h = human.build(kind if kind == "farmer" else "pip", kind if kind == "farmer" else "pip",
-                            loc=tuple(p), rot_z=rot)
+                            loc=(0, 0, 0), rot_z=0.0)
             lamp_ob = None
             if kw.get("lamp") or motion == "lantern":
                 if kw.get("lamp"):
-                    lamp_ob = C.spot("HEADLAMP", (0, 0, 0), (0, -1, 0), "#FFE2B8", 260.0, 34.0, 0.45, 0.02)
-                    lamp_ob.rotation_euler = (math.radians(90), 0, 0)
+                    lamp_ob = C.spot("HEADLAMP", (0, 0, 0), (0, -1, 0), "#FFE2B8", 420.0, 30.0, 0.5, 0.02)
+                    lamp_ob.rotation_euler = (math.radians(-90), 0, 0)
                     hl = FL.icosphere("headlamp_body", 0.022, 2, C.m_simple("lampbody", "#2E2E2E", 0.4))
                     hl.location = Vector(human.SK.HEAD_C) + Vector((0, -0.118, 0.06))
                     hl.scale = (1.0, 0.7, 0.8)
@@ -212,6 +213,8 @@ def build_actors(E, shot, hidden=False):
                     h.rig.attach(lamp_ob, "hand.R")
                     lan["mask"] = 1.0
                     h.parts.append(lan)
+            h.rig.ob.location = tuple(p)
+            h.rig.ob.rotation_euler = (0, 0, rot)
             t_kw = dict(kw)
             if motion == "walk_to":
                 start = Vector(p)
