@@ -487,9 +487,11 @@ def compose_plate_scene(proj, root, s, dur, out):
                     ch = np.asarray(Image.open(fn).convert("RGBA"), dtype=np.float32) / 255.0
                     shd = np.asarray(Image.open(os.path.join(cdir, f"shadow_{i:04d}.png")).convert("F"), np.float32)
                     ao = np.asarray(Image.open(os.path.join(cdir, f"ao_{i:04d}.png")).convert("F"), np.float32)
+                    zraw = np.asarray(Image.open(os.path.join(cdir, f"depth_{i:04d}.png")), dtype=np.float32)
                     zc = decode_depth(os.path.join(cdir, f"depth_{i:04d}.png"), size)
-                    rs = np.where(base_s > 300, np.clip(shd / np.maximum(base_s, 1), 0, 1), 1.0)
-                    ra = np.where(base_a > 300, np.clip(ao / np.maximum(base_a, 1), 0, 1), 1.0)
+                    rendered = zraw > 0          # outside the render border the passes are empty
+                    rs = np.where(rendered & (base_s > 300), np.clip(shd / np.maximum(base_s, 1), 0, 1), 1.0)
+                    ra = np.where(rendered & (base_a > 300), np.clip(ao / np.maximum(base_a, 1), 0, 1), 1.0)
                     dark = (1 - 0.62 * (1 - rs)) * (1 - 0.5 * (1 - ra))
                     canvas *= dark[..., None]
                     vis = ch[..., 3] * np.clip((depth - zc) / (0.04 * zc + 0.02) + 1.0, 0, 1)

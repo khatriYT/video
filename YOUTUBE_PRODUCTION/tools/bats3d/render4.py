@@ -42,6 +42,9 @@ def cave_clusters(E, state, rnd_seed=3):
     cave = E.ground[0].evaluated_get(dg)
     tmpl = B.build("clt", "myotis", "hanger", wns=wns, fur=True, fur_density=0.35)
     tmpl.root.hide_render = True
+    bare = B.build("clb", "myotis", "hanger", wns=wns, fur=False)
+    bare.root.hide_render = True
+    hero_area = E.marks["cluster"] + Vector((-0.24, -0.3, 0))
     centers = [E.marks["cluster"], E.marks["cluster2"], E.marks["cluster"] + Vector((1.6, 1.2, 0)),
                E.marks["cluster2"] + Vector((-1.4, 1.0, 0))]
     placed = []
@@ -55,16 +58,17 @@ def cave_clusters(E, state, rnd_seed=3):
         if not ok:
             continue
         placed.append(loc)
-        b = tmpl.body.copy()
-        b.data = tmpl.body.data
+        src = tmpl if (loc.xy - hero_area.xy).length < 0.55 else bare     # real fur only near the macro hero
+        b = src.body.copy()
+        b.data = src.body.data
         bpy.context.scene.collection.objects.link(b)
         b.hide_render = False
         sc = rnd.uniform(0.92, 1.08) * 1.35     # slightly enlarged for readability at cave-wide framings
         b.scale = (sc, sc, sc)
         b.location = loc - Vector((0, 0, 0.043 * sc))
         b.rotation_euler = (rnd.uniform(-0.12, 0.12), rnd.uniform(-0.12, 0.12), rnd.uniform(0, 6.28))
-        for e in tmpl.parts:
-            if e is not tmpl.body:
+        for e in src.parts:
+            if e is not src.body:
                 e2 = e.copy()
                 bpy.context.scene.collection.objects.link(e2)
                 e2.parent = b
@@ -392,7 +396,7 @@ def char_rig_lights(E, shot, acts, cam):
            420.0 * rim_e * scale * scale, 1.0 * scale)
 
 
-def build(shot_id, mode, detail):
+def build(shot_id, mode, detail, props=True):
     shot = SHOTS[shot_id]
     C.reset()
     kw = dict(shot["env_kw"])
@@ -406,7 +410,10 @@ def build(shot_id, mode, detail):
             for ob in [r] + list(r.children):
                 ob.hide_render = True
         E.seedlings = []
-    add_props(E, shot)
+    if props:
+        add_props(E, shot)
+    elif shot["env"] == "tropic" and shot["env_kw"].get("scene") == "durian":
+        durian_branch(E)          # needed for the actor's target flowers
     return shot, E
 
 
@@ -566,7 +573,7 @@ def char_border(cam, acts, sc, key_dir):
 
 
 def do_chars(root, shot_id, dur, first=None, last=None, full=False):
-    shot, E = build(shot_id, "chars", 1.0 if full else 0.0)
+    shot, E = build(shot_id, "chars", 1.0 if full else 0.0, props=full)
     acts = build_actors(E, shot)
     cam = camera_for(E, shot, acts)
     lights_for(E, shot, cam, "chars")
