@@ -1,0 +1,12 @@
+{
+ "plate": "SKY_up",
+ "env": "sky",
+ "light": "morning",
+ "cam": "SKY_UP",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 13.7
+}

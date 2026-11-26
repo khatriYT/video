@@ -1,0 +1,13 @@
+{
+ "plate": "VILLAGE_street",
+ "env": "village",
+ "light": "dusk",
+ "cam": "STREET",
+ "shadow_k": 0.35,
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 44.1
+}

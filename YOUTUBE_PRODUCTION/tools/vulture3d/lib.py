@@ -74,7 +74,21 @@ def mat(name, color, rough=0.75, sss=0.0, emit=0.0, noise=None, noise_scale=8.0,
     if alpha < 1:
         b.inputs["Alpha"].default_value = alpha
         m.blend_method = "BLEND"
+    add_mask_aov(m)
     return m
+
+
+def add_mask_aov(m):
+    """Every material writes AOV 'mask' = the object's custom property 'mask' (1 = animated character)."""
+    nt = m.node_tree
+    if any(n.type == "OUTPUT_AOV" for n in nt.nodes):
+        return
+    at = nt.nodes.new("ShaderNodeAttribute")
+    at.attribute_type = "OBJECT"
+    at.attribute_name = "mask"
+    ao = nt.nodes.new("ShaderNodeOutputAOV")
+    ao.name = "mask"
+    nt.links.new(at.outputs["Fac"], ao.inputs["Value"])
 
 
 def setmat(ob, m):

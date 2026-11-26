@@ -1,0 +1,14 @@
+{
+ "plate": "TOWER_monsoon",
+ "env": "tower",
+ "light": "monsoon",
+ "cam": "TOWER",
+ "mirrors": true,
+ "shadow_k": 0.2,
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 53.3
+}

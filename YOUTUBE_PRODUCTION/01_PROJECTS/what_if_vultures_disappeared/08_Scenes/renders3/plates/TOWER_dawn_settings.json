@@ -1,0 +1,12 @@
+{
+ "plate": "TOWER_dawn",
+ "env": "tower",
+ "light": "dawn",
+ "cam": "TOWER",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 56.3
+}

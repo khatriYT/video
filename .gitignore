@@ -17,3 +17,9 @@ YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders/A0*/
 YOUTUBE_PRODUCTION/01_PROJECTS/*/11_Edit/*_video_only.mp4
 YOUTUBE_PRODUCTION/01_PROJECTS/*/11_Edit/*.wav
 YOUTUBE_PRODUCTION/01_PROJECTS/*/10_Audio/music/*.wav
+# v2 render intermediates (rebuild with tools/vulture3d/render3.py + compose3.py)
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/chars/
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/full/
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/claims/
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/plates/*.png
+YOUTUBE_PRODUCTION/01_PROJECTS/*/09_Animation/*.v2

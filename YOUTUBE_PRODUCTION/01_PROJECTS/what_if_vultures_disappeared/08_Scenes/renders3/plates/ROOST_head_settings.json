@@ -1,0 +1,12 @@
+{
+ "plate": "ROOST_head",
+ "env": "roost",
+ "light": "golden",
+ "cam": "HEAD",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 90.0
+}

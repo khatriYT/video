@@ -1,0 +1,13 @@
+{
+ "plate": "ROOST_fallen",
+ "env": "roost",
+ "light": "overcast",
+ "cam": "FALLEN",
+ "shadow_k": 0.25,
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 101.1
+}

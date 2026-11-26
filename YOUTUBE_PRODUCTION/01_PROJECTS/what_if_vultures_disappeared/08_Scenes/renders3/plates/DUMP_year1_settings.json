@@ -1,0 +1,14 @@
+{
+ "plate": "DUMP_year1",
+ "env": "dump",
+ "state": "year1",
+ "light": "dusk",
+ "cam": "WIDE",
+ "shadow_k": 0.35,
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 97.5
+}

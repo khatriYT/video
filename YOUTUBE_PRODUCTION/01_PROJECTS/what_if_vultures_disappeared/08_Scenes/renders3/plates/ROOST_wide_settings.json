@@ -1,0 +1,12 @@
+{
+ "plate": "ROOST_wide",
+ "env": "roost",
+ "light": "dawn",
+ "cam": "ROOST_WIDE",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 90.1
+}

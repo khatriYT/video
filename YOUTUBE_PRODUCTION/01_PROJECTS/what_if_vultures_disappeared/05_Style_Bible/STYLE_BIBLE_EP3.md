@@ -57,3 +57,38 @@
    - Carcasses are grey and stylized, with eyes closed and no blood.
    - The Tower of Silence shows no human remains.
    - The fallen vulture is shown lying still with closed eyes.
+
+---
+
+## v2 (2026-11-26): fully animated characters and detailed backgrounds
+
+This version was made in response to your feedback: "it's just images, not animation… good 3D characters… well detailed backgrounds".
+
+### Characters (`tools/vulture3d/rigs.py`)
+
+Every character is now a **jointed puppet**: an empty hierarchy with detailed parts. Parts are merged per joint for render speed.
+
+| ID | v2 build | Motions |
+|---|---|---|
+| CRE_VULTURE | Feather-scallop body shader; 30-tuft fluffy ruff; two-segment bare neck; brow ridges; glossy eyes with highlights; cere and hooked bill; folded wings (coverts plus 6 flight feathers); spread wings (9 secondaries and coverts on the arm, 7 fingered primaries on the hand); 6-feather tail fan; scaly legs with 4 toes and talons | idle, feed (dip/tug cycle), display (spread wings), circle/soar (banking), glide, flap, land (descend, flap, settle), hop, fallen |
+| CRE_DOG | Fur shader, cream chest and muzzle, ears with inner colour, glossy nose, eyes with highlights, two-segment curled tail, legs with knees and paws; 4 coat colours | walk, trot, sniff-walk (path following), sniff, tug, sit, idle, bark; tail wag, ear flicks, blinks |
+| CHR_PIP | Same identity as before (off-white head, round glasses, mustard bucket hat with band, olive vest). Added: eyes with highlights, brows, blush, smile/talk mouths, shirt and sleeves, pockets and buttons, satchel, trousers, boots, binoculars | idle, walk, wave, point, binoculars, look up, talk, shrug, worried; blinks; lip flaps while talking |
+| CHR_VILLAGER | Pip's rig with hair and coloured clothes; varied skin tones | walk, idle, talk |
+| CRE_CROW | House crow with a grey nape; wing joints | hop, peck, fly |
+| OBJ/CRE_COW | Standing zebu: hump, dewlap, horns, ears, tail tuft | chew/head bob, tail swish, ear flicks, blinks |
+
+### Environments (`tools/vulture3d/envs2.py`)
+
+- **Ground:** a multi-layer terrain shader (dirt, soil, dry grass, green patches, pebbles, bump) with a worn path.
+- **Plants:** 4 grass varieties, wildflowers (4 colours) and flowering shrubs.
+- **Trees:** branching neem, acacia and dead trees; distant tree lines.
+- **Village houses:** wall bands, framed doors and windows with shutters, steps, rooftop water tanks, clotheslines, clay pots, charpais, haystacks; lit windows at dusk and night.
+
+### Render method (`tools/vulture3d/render3.py`, `compose3.py`)
+
+| Step | What it does |
+|---|---|
+| 1. Plates | Each detailed background is rendered once: 2304×1296, Eevee, 16 samples |
+| 2. Character pass | Every frame at 12 fps, from the same camera, terrain and lights. The characters are cut out with a per-object mask (an AOV), and their shadows come from Eevee's shadow pass, normalised against a character-free baseline |
+| 3. Compositing | The plate is darkened by the character shadows, the characters are composited on top, then the eased camera move, overlays and particles are applied |
+| 4. Full-3D shots | Two shots (SC071 orbit, SC073 dolly) are rendered entirely in 3D with characters and moving cameras |
