@@ -32,7 +32,7 @@ SHOTS = {
                        props=[("clusters", "infected")], lamp="cam_left"),
     "HIB_EMPTY": S("cave", "empty", ((-1.9, -3.9, 1.35), (0.5, 0.3, 2.8), 22), props=[("clusters", "empty")],
                    lamp="cam", fx=["dust"]),
-    "HIB_CHAPTER": S("cave", "healthy", ((-4.0, -3.4, 1.1), (1.0, 1.0, 3.0), 20), props=[("clusters", "healthy")],
+    "HIB_CHAPTER": S("cave", "healthy", ((-2.4, -3.0, 1.2), (1.0, 1.2, 3.0), 18), props=[("clusters", "healthy")],
                      lamp="cam", fx=["dust"]),
     "HIB_CLUSTER": S("cave", "healthy", ((-0.9, -1.4, 1.5), (0.8, 0.6, 3.5), 32), props=[("clusters", "healthy")],
                      lamp="cam", fx=["dust"]),

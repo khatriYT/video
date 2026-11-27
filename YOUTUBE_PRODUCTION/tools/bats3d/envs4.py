@@ -774,6 +774,10 @@ def env_tropic(state="dawn", detail=1.0, scene="fig"):
         figl = FL.m_leaf("fig_lf", "#3E8A30", 0.14, 0.4, 0.4, scale=6.0)
         hero = FL.tree("hero", "fig", seed=77, h=13.0, crown=6.5, trunk_m=bark, leaf_m=can if scene == "fig" else can3,
                        leaves=(figl, "broad", 0.24, 70.0 * detail))
+        if scene == "durian":       # keep the big tree clear of the low durian branch and the camera
+            for ob in hero:
+                if ob.parent is None:
+                    ob.location = Vector(ob.location) + Vector((9.0, 11.0, 0.0))
         E.marks["hero"] = Vector((0, 0, 9.0))
     for k in range(int(60 * detail)):
         a = rnd.uniform(0, 6.28)
