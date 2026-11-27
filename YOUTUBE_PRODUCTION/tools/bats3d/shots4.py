@@ -92,7 +92,7 @@ SHOTS = {
     "AGAVE_FARM": S("agave", "sunset", ((3.5, -17, 1.6), (0, -6, 1.2), 32), env_kw=dict(stalks=True),
                     actors=[("farmer", (1.2, -2.0), 3.14, "walk_to", dict(to=(1.2, -9.5)))]),
     "AGAVE_BLUE_HOUR": S("agave", "blue", ((0, -20, 1.5), (0, 25, 5.0), 24), swarm=("agave", "nectar", "dusk", 0.3)),
-    "AGAVE_RECOVERY": S("agave", "night", ((6, -18, 1.2), (-2, 20, 6.0), 22), swarm=("agave", "nectar", "moon", 0.8)),
+    "AGAVE_RECOVERY": S("agave", "blue", ((4.5, -7.5, 0.7), (-1.0, 12.0, 5.2), 24), swarm=("agave", "nectar", "dusk", 1.0)),
     "AGAVE_NIGHT_EMPTY": S("agave", "night", ((-6, -14, 1.2), (0, 15, 5.0), 26), fx=["moths"]),
     # ---------------- tropics
     "TROPIC_FIG": S("tropic", "dawn", ((-6, -20, 2.5), (0, 0, 8.0), 26), env_kw=dict(scene="fig"),
@@ -103,7 +103,8 @@ SHOTS = {
                        actors=[("seedlings", "grow")], swarm=("fly_over", "flyingfox", "dawn", 0.06), fx=["seeds"]),
     "CLEARING_BARE": S("tropic", "dawn", ((0, -14, 1.6), (0, 6, 0.9), 28), env_kw=dict(scene="clearing", bare=True)),
     # ---------------- sky / moon
-    "SKY_HUNT": S("sky", "night", ((0, 0, 0), (0, 100, -14), 24), swarm=("sky", "freetail", "moon", 0.6), fx=["moths"]),
+    "SKY_HUNT": S("sky", "night", ((0, 0, 0), (0, 100, 4), 24), swarm=("sky", "freetail", "moon", 0.6), fx=["moths"],
+                  env_kw=dict(moon_tex=True)),
     "MOON_CHAPTER": S("sky", "night", ((0, 0, 0), (19, 100, 25), 45), swarm=("silhouette", "freetail", "moon", 0.25),
                       env_kw=dict(moon_scene=True)),
     "MOON_SILHOUETTE": S("sky", "night", ((0, 0, 0), (19.5, 100, 25.5), 90), swarm=("silhouette", "freetail", "moon",

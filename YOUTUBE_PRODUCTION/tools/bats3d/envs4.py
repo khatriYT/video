@@ -881,9 +881,9 @@ def env_studio(top="#2A1E5A", bottom="#0E6A78"):
     return E
 
 
-def env_sky(state="night", moon_scene=False):
+def env_sky(state="night", moon_scene=False, moon_tex=False):
     E = Env("sky")
-    if moon_scene:      # chapter / silhouette shots: textured moon, moonlit cloud wisps
+    if moon_scene or moon_tex:      # textured moon, moonlit cloud wisps (ridge + trees only for moon_scene)
         C.world_sky([(0.0, "#3A4A7A"), (0.1, "#22305E"), (0.4, "#121A3C"), (1.0, "#070A1C")], strength=0.9,
                     stars=1.8, moon=((0.2, 1.0, 0.25), 2.0, "#FFF6DE", True), ground="#05060C",
                     clouds=("#8A9AC8", 0.42, 2.4, "#1A2244"))

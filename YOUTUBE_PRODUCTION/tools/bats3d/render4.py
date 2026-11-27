@@ -189,6 +189,17 @@ def flower_point(E):
     return E.flower_clusters[0][3]
 
 
+def hang_lantern(h, t):
+    """Keep a carried lantern hanging upright from the hand's grip point (gentle pendulum sway)."""
+    if not getattr(h, "lantern", None):
+        return
+    piv, lg = h.lantern
+    bpy.context.view_layer.update()
+    pb = h.rig.ob.pose.bones["hand.R"]
+    piv.location = h.rig.ob.matrix_world @ pb.matrix @ lg
+    piv.rotation_euler = (0.06 * math.sin(t * 2.3), 0.05 * math.sin(t * 1.7 + 0.8), 0.0)
+
+
 def build_actors(E, shot, hidden=False):
     import human
     import bat as B
@@ -219,16 +230,48 @@ def build_actors(E, shot, hidden=False):
                     human.hx(lamp_ob)
                     h.rig.attach(lamp_ob, "head")
                 else:
-                    lamp_ob = C.point("LANTERN", (0, 0, 0), "#FFB45A", 90.0, 0.06)
-                    lan = FL.icosphere("lantern_glass", 0.06, 2, C.m_emit("lantern_glow", "#FFC070", 10.0))
-                    lan.scale = (1, 1, 1.4)
+                    # character passes use sharp shadow maps: a shadowing point light 10 cm from the body throws a
+                    # hard black hand shadow over the torso, so the lantern light only casts shadows in the plate
+                    lamp_ob = C.point("LANTERN", (0, 0, 0), "#FFB45A", 90.0, 0.06, shadow=hidden)
                     wr = Vector(human.SK.mirror(human.SK.WR, -1))
-                    lan.location = wr + Vector((0, -0.02, -0.16))
-                    lamp_ob.location = lan.location
-                    h.rig.attach(lan, "hand.R")
-                    h.rig.attach(lamp_ob, "hand.R")
-                    lan["mask"] = 1.0
-                    h.parts.append(lan)
+                    c = wr + Vector((0, -0.02, -0.16))
+                    lamp_ob.location = c
+                    metal = C.m_simple("lantern_metal", "#2B2622", 0.45, metallic=0.8)
+                    parts = [
+                        C.tube("lantern_glass", [c - Vector((0, 0, 0.058)), c + Vector((0, 0, 0.058))],
+                               [0.044, 0.046], 16, C.m_emit("lantern_glow", "#FFB860", 3.2)),
+                        FL.icosphere("lantern_flame", 0.011, 2, C.m_emit("lantern_flame", "#FFE6A8", 18.0)),
+                        C.tube("lantern_base", [c - Vector((0, 0, 0.074)), c - Vector((0, 0, 0.056))],
+                               [0.056, 0.054], 16, metal),
+                        C.tube("lantern_cap", [c + Vector((0, 0, 0.056)), c + Vector((0, 0, 0.08)),
+                                               c + Vector((0, 0, 0.1))], [0.058, 0.04, 0.014], 16, metal),
+                    ]
+                    parts[1].location = c - Vector((0, 0, 0.01))
+                    parts[1].scale = (1.0, 1.0, 1.7)
+                    for j in range(4):          # guard wires around the glass
+                        a = j * math.pi / 2 + math.pi / 4
+                        o = Vector((math.cos(a) * 0.05, math.sin(a) * 0.05, 0))
+                        parts.append(C.tube(f"lantern_wire{j}", [c + o - Vector((0, 0, 0.058)),
+                                                                 c + o * 1.08, c + o + Vector((0, 0, 0.058))],
+                                            0.0028, 5, metal))
+                    arc = [c + Vector((0.05 * math.cos(a), 0, 0.1 + 0.05 * math.sin(a)))
+                           for a in [math.pi * k / 10 for k in range(11)]]
+                    parts.append(C.tube("lantern_handle", arc, 0.003, 5, metal))
+                    # the lantern HANGS from the grip: a pivot follows the hand's grip point every frame but stays
+                    # upright (small pendulum sway) instead of rotating rigidly with the raised hand
+                    grip = c + Vector((0, 0, 0.15))
+                    piv = C.link(bpy.data.objects.new("lantern_pivot", None))
+                    piv.location = grip
+                    bpy.context.view_layer.update()
+                    pb = h.rig.ob.pose.bones["hand.R"]
+                    local_grip = (h.rig.ob.matrix_world @ pb.matrix).inverted() @ grip
+                    for ob in [lamp_ob] + parts:
+                        ob.parent = piv
+                        ob.matrix_parent_inverse = piv.matrix_world.inverted()
+                    for lan in parts:
+                        lan["mask"] = 1.0
+                        h.parts.append(lan)
+                    h.lantern = (piv, local_grip)
             h.rig.ob.location = tuple(p)
             h.rig.ob.rotation_euler = (0, 0, rot)
             t_kw = dict(kw)
@@ -250,10 +293,12 @@ def build_actors(E, shot, hidden=False):
                     h.pose(rots, loc)
                     face["look"] = (0.25, -1, -0.1)
                     h.face.set(**face)
+                    hang_lantern(h, t)
             else:
                 def upd(t, h=h, motion=motion, t_kw=t_kw):
                     human.animate(h, motion if motion != "look_up" or not t_kw.get("awe") else "look_up", t, seed=1,
                                   **{k: v for k, v in t_kw.items() if k in ("awe", "side", "tilt")})
+                    hang_lantern(h, t)
             acts.append(Actor(kind, h.rig.ob, upd, h.parts + [h.rig.ob]))
         elif kind == "hanger":
             _, sp, where, motion, kw = spec

@@ -191,7 +191,7 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
              "mine": 60}[kind]
         n = max(1, int(n * density * (1 if kind in ("fly_over", "durian") else 2.0)))
         tgt = np.array(meta["cam"]["matrix"])[:3, :3] @ np.array([0, 0, -1.0])
-        center = camp + tgt * {"hunt": 22, "agave": 18, "durian": 2.0, "sky": 30, "fig": 20, "fly_over": 6,
+        center = camp + tgt * {"hunt": 22, "agave": 18, "durian": 2.0, "sky": 20, "fig": 20, "fly_over": 6,
                                "silhouette": 45, "mine": 12}[kind]
         if kind == "agave" and meta.get("clusters"):
             cl = np.array([c for s in meta["clusters"] for c in s])
@@ -203,7 +203,7 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
             m = marks.get("mouth", np.array([0, 0.8, 1.6]))
             base = np.repeat(m[None], n, 0)
         else:
-            spread = {"hunt": (14, 10, 5), "sky": (40, 40, 14), "fig": (24, 10, 6), "fly_over": (0, 0, 0),
+            spread = {"hunt": (14, 10, 5), "sky": (24, 14, 8), "fig": (24, 10, 6), "fly_over": (0, 0, 0),
                       "silhouette": (14, 8, 6)}[kind]
             base = center + rng.uniform(-1, 1, (n, 3)) * np.array(spread)
             if kind in ("hunt",):
@@ -213,8 +213,9 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
         if kind == "silhouette" and n >= 3:
             # three hero bats fly straight across the moon (which sits on the view axis) at set moments
             for k, tc in enumerate((0.28, 0.55, 0.8)):
-                base[k] = center + np.array([0.0, (k - 1) * 4.0, (k - 1) * 0.6])
-                sp[k] = 1.0
+                # 20 m out instead of 45 m: big enough to read as bats against the moon disc
+                base[k] = camp + tgt * (20.0 + (k - 1) * 2.0) + np.array([0.0, 0.0, (k - 1) * 0.25])
+                sp[k] = 0.8
                 ph[k, 0] = (4.0 - tc * dur) / 2.0
         if kind == "hunt":
             amp = np.array([6.0, 4.0, 2.0])
