@@ -456,6 +456,8 @@ def camera_for(E, shot, acts=None):
             loc, tgt = E.closeup_cam
         c = C.camera(tuple(loc), tuple(tgt), lens, dof=(None, cam[3]) if len(cam) > 3 else None)
     c.data.dof.aperture_blades = 7
+    if E.name == "sky":
+        c.data.clip_end = 40000.0       # high-altitude views see lights 3-18 km away on the horizon
     return c
 
 

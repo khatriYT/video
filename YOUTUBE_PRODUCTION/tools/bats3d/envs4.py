@@ -885,7 +885,8 @@ def env_sky(state="night", moon_scene=False, moon_tex=False):
     E = Env("sky")
     if moon_scene or moon_tex:      # textured moon, moonlit cloud wisps (ridge + trees only for moon_scene)
         C.world_sky([(0.0, "#3A4A7A"), (0.1, "#22305E"), (0.4, "#121A3C"), (1.0, "#070A1C")], strength=0.9,
-                    stars=1.8, moon=((0.2, 1.0, 0.25), 2.0, "#FFF6DE", True), ground="#05060C",
+                    stars=1.8, moon=((0.2, 1.0, 0.25), 2.0, "#FFF6DE", True),
+                    ground="#05060C" if moon_scene else "#141C30",      # far moonlit land, not a black void
                     clouds=("#8A9AC8", 0.42, 2.4, "#1A2244"))
     else:
         C.world_sky([(0.0, "#3A4A7A"), (0.1, "#22305E"), (0.4, "#121A3C"), (1.0, "#070A1C")], strength=0.9,
@@ -906,6 +907,17 @@ def env_sky(state="night", moon_scene=False, moon_tex=False):
         for k in range(90):
             b = FL.icosphere(f"town{t}_{k}", rnd.uniform(1.5, 3.0), 1, lights)
             b.location = (cx + rnd.gauss(0, 60), cy + rnd.gauss(0, 60), -598)
+    if moon_tex and not moon_scene:
+        # high-altitude view: distant farm and town lights sprinkle the horizon band (sized by distance)
+        for k in range(420):
+            a = math.radians(rnd.uniform(-45.0, 45.0))
+            d = 3500.0 * (1.0 + rnd.random() ** 1.5 * 4.0)
+            if k % 7 == 0:          # a few clustered towns
+                d0, a0 = d, a
+            if k % 7 in (1, 2, 3):
+                d, a = d0 + rnd.gauss(0, 150), a0 + rnd.gauss(0, 0.004)
+            b = FL.icosphere(f"far{k}", d * rnd.uniform(0.0009, 0.0016), 1, lights)
+            b.location = (d * math.sin(a), d * math.cos(a), -598)
     if moon_scene:
         # a dark ridge line with gnarled bare trees, back-lit by the moon (silhouettes frame the chapter shots)
         sil = C.m_simple("silhouette", "#06070E", 0.9)

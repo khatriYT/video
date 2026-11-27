@@ -103,7 +103,7 @@ SHOTS = {
                        actors=[("seedlings", "grow")], swarm=("fly_over", "flyingfox", "dawn", 0.06), fx=["seeds"]),
     "CLEARING_BARE": S("tropic", "dawn", ((0, -14, 1.6), (0, 6, 0.9), 28), env_kw=dict(scene="clearing", bare=True)),
     # ---------------- sky / moon
-    "SKY_HUNT": S("sky", "night", ((0, 0, 0), (0, 100, 4), 24), swarm=("sky", "freetail", "moon", 0.6), fx=["moths"],
+    "SKY_HUNT": S("sky", "night", ((0, 0, 0), (0, 100, 20), 24), swarm=("sky", "freetail", "moon", 0.6), fx=["moths"],
                   env_kw=dict(moon_tex=True)),
     "MOON_CHAPTER": S("sky", "night", ((0, 0, 0), (19, 100, 25), 45), swarm=("silhouette", "freetail", "moon", 0.25),
                       env_kw=dict(moon_scene=True)),
