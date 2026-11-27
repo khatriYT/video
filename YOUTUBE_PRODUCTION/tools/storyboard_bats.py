@@ -201,7 +201,7 @@ sc(A, "Bat-friendly farms, protected caves and dark skies give the survivors roo
 sc(A, "Bats aren't spooky. They're the night shift that keeps our fields, our forests and our families safer while we sleep.",
    plate("EMERGE_MOON_PIP", "rise", swarm="moon"))
 sc(A, "Thanks for watching The Disappearance Files.",
-   plate("EMERGE_END", "pull", text=dict(style="end", main="THE DISAPPEARANCE FILES", sub="Episode 4 · Bats")))
+   plate("EMERGE_END", "pull", text=dict(style="end", main="THE DISAPPEARANCE FILES", sub="Episode 4 · Bats", y=610)))
 
 
 if __name__ == "__main__":

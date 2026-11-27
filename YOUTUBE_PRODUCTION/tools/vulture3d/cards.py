@@ -944,7 +944,7 @@ def overlay_fn(v, dur, seed=0):
             L.rrect((360, 30, W - 360, 330), 40, "bg")
             L.text((W / 2, 140), tx["main"], 84, "black", "cream")
             L.text((W / 2, 250), tx["sub"], 44, "bold", "mustard")
-            layers.append((L.done(), (0, 330), 1.2, "pop", None))
+            layers.append((L.done(), (0, int(tx.get("y", 330))), 1.2, "pop", None))
     fx = v.get("fx", [])
     flies = [(rnd.uniform(0.38, 0.62), rnd.uniform(0.55, 0.78), rnd.uniform(0, 6.28), rnd.uniform(0.6, 1.6))
              for _ in range(70 if "flies" in fx else 0)]
