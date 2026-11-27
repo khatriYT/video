@@ -91,6 +91,10 @@ You asked me to inspect every scene before rendering and fix unfinished models, 
 | R23 | Bat-house shot: the "bat house" was a flat brown panel on a huge barn wall, unreadable | Modelled a pole-mounted two-chamber bat house (dark paint, overhanging roof, batten trim, vent slot, grooved landing plate, mounting bracket). It stands in the open left of the barn and silhouettes against the sunset sky. The farmer turns to look up at it, and bats emerge from its open bottom |
 | R24 | Winter cave exit was overexposed by the cave grade | A dedicated cool "winter" grade without the cave exposure push |
 | R25 | Chapter title "THE EXPERIMENT NOBODY WANTED" was clipped by its panel | Chapter panels grow with the title; the font shrinks only past the frame width |
+| R26 | Durian close-up: the blossoms were plain cream "eggs" that bloomed into glowing balls, and a stray swarm sprite sat on top of the hero bat | Modelled durian blossoms: green calyx cup, five cream petals opening as a bell with reflexed tips, a brush of 24 stamens with yellow anthers. Softer night grade for this torch-lit macro. The stray swarm sprite is removed. Cast-shadow ratios from the older character pass are not applied where the flowers changed |
+| R27 | X-ray shot ("a bat flies by moving its fingers"): the wing held still after unfolding | The rendered unfold range is replayed as a slow, eased fold-and-spread cycle, so the glowing finger bones visibly move |
+| R28 | Night swarms (corn at night, sky hunt) were dark sprites on a dark sky | Moonlit hunting bats carry a cool blue-grey underside tone. Silhouettes against the moon and the emergence stream stay dark. The corn-night shot gets a lifted night grade |
+| R29 | End card covered half of the moon (with the bat stream crossing it) | The end card sits in the lower part of the frame |
 
 ### Render budget decisions (CPU-only machine)
 
