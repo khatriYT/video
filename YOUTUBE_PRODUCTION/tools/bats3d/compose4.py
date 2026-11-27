@@ -191,7 +191,7 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
              "mine": 60}[kind]
         n = max(1, int(n * density * (1 if kind in ("fly_over", "durian") else 2.0)))
         tgt = np.array(meta["cam"]["matrix"])[:3, :3] @ np.array([0, 0, -1.0])
-        center = camp + tgt * {"hunt": 22, "agave": 18, "durian": 2.0, "sky": 20, "fig": 20, "fly_over": 6,
+        center = camp + tgt * {"hunt": 22, "agave": 18, "durian": 2.0, "sky": 11, "fig": 20, "fly_over": 6,
                                "silhouette": 45, "mine": 12}[kind]
         if kind == "agave" and meta.get("clusters"):
             cl = np.array([c for s in meta["clusters"] for c in s])
@@ -203,7 +203,7 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
             m = marks.get("mouth", np.array([0, 0.8, 1.6]))
             base = np.repeat(m[None], n, 0)
         else:
-            spread = {"hunt": (14, 10, 5), "sky": (24, 14, 8), "fig": (24, 10, 6), "fly_over": (0, 0, 0),
+            spread = {"hunt": (14, 10, 5), "sky": (13, 8, 5), "fig": (24, 10, 6), "fly_over": (0, 0, 0),
                       "silhouette": (14, 8, 6)}[kind]
             base = center + rng.uniform(-1, 1, (n, 3)) * np.array(spread)
             if kind in ("hunt",):
@@ -223,8 +223,28 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
         elif kind in ("agave", "durian"):
             amp = np.array([0.9, 0.7, 0.5]) if kind == "agave" else np.array([0.15, 0.1, 0.08])
             p = base + amp * np.sin(t * sp * np.array([1.4, 1.1, 2.3]) + ph)
+            if kind == "agave" and density >= 0.9:
+                # abundance beat: a few bats swoop past close to the lens, crossing the frame at staggered times
+                Rm = np.array(meta["cam"]["matrix"])[:3, :3]
+                fwd, rgt, upv = Rm @ np.array([0, 0, -1.0]), Rm @ np.array([1.0, 0, 0]), Rm @ np.array([0, 1.0, 0])
+                fr = np.random.default_rng(99)
+                extra, eph = [], []
+                for k in range(7):
+                    tc = dur * (0.08 + 0.84 * k / 6.0) + fr.uniform(-0.3, 0.3)
+                    d_ = fr.uniform(3.2, 6.5)
+                    side = 1.0 if k % 2 else -1.0
+                    u = (t - tc) / 2.4 + 0.5
+                    if 0.0 < u < 1.0:
+                        h0, h1 = fr.uniform(-0.6, 1.4), fr.uniform(-0.2, 2.0)
+                        extra.append(camp + fwd * d_ + rgt * side * (-5.0 + 10.0 * u) + upv * (h0 + (h1 - h0) * u))
+                        eph.append(fr.uniform(0, 2 * np.pi))
+                    else:
+                        fr.uniform(-0.6, 1.4), fr.uniform(-0.2, 2.0)
+                if extra:
+                    p = np.concatenate([p, np.array(extra)])
+                    ph = np.concatenate([ph, np.stack([np.array(eph)] * 3, 1)])
         elif kind == "sky":
-            p = base + np.array([8.0, 6.0, 3.0]) * np.sin(t * sp * np.array([0.5, 0.7, 0.9]) + ph)
+            p = base + np.array([5.0, 3.5, 2.0]) * np.sin(t * sp * np.array([0.5, 0.7, 0.9]) + ph)
         elif kind == "fig":
             v = np.array([1.0, 0.25, 0.05]) * 4.0
             p = base + v * ((t - 6.0 + ph[:, :1]) * sp) + np.array([0, 0, 1]) * np.sin(t + ph[:, 1:2])
@@ -276,7 +296,7 @@ def draw_swarm(canvas, depth, cam, atlas, sp, kind, t, meta, density, dur, prese
     img = canvas
     Hh, Ww = depth.shape
     dots = ImageDraw.Draw(img, "RGBA")
-    dotc = (20, 14, 22, 200) if preset != "moon" else (8, 10, 20, 220)
+    dotc = (20, 14, 22, 200) if preset != "moon" else ((70, 84, 124, 220) if kind == "sky" else (8, 10, 20, 220))
     for j, i in enumerate(idx):
         size = int(cam.f * world_cell / z[i])
         if size < 9:      # far bats: a soft dark dash (wings blurred by motion)
@@ -299,6 +319,8 @@ def draw_swarm(canvas, depth, cam, atlas, sp, kind, t, meta, density, dur, prese
         if fogk > 0.05 and kind != "silhouette":
             a = np.asarray(spr, dtype=np.float32)
             a[..., :3] = a[..., :3] * (1 - fogk * 0.6) + haze * fogk * 0.6
+            if kind == "sky":       # moonlit undersides: lift toward a cool blue-grey so they read on the night sky
+                a[..., :3] = a[..., :3] * 0.62 + np.array([96.0, 114.0, 168.0]) * 0.38
             spr = Image.fromarray(a.astype(np.uint8), "RGBA")
         img.alpha_composite(spr, (cx - size // 2, cy - size // 2))
 
