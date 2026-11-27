@@ -547,6 +547,10 @@ def compose_plate_scene(proj, root, s, dur, out):
         t = kf / FPS
         if is_full:
             i = min(len(files) - 1, int(t * meta.get("fps", 12)))
+            if shot.get("pingpong"):            # replay a rendered motion range back and forth (eased)
+                a_, b_ = shot["pingpong"]
+                u_ = 0.5 + 0.5 * math.cos(2 * math.pi * t / shot.get("pp_period", 4.0))
+                i = min(len(files) - 1, a_ + int(round(u_ * (b_ - a_))))
             base = np.asarray(Image.open(os.path.join(full_dir, files[i])).convert("RGB"), dtype=np.float32) / 255.0
             canvas = base
         else:

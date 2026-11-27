@@ -139,3 +139,6 @@ SHOTS["DURIAN_NIGHT"]["fps"] = 12
 SHOTS["AGAVE_BAT_CU"]["char_gain"] = 3.5
 SHOTS["AGAVE_BAT_CU"]["char_rim"] = ((0.6, 0.72, 1.0), 0.4)
 SHOTS["HIB_SNOW_EXIT"]["grade"] = "winter"      # exterior daylight: the cave exposure push blew it out
+# x-ray: "a bat flies by moving its fingers" -> replay the rendered unfold (frames 0-16) as a slow fold/spread cycle
+SHOTS["STUDIO_XRAY"]["pingpong"] = (0, 16)
+SHOTS["STUDIO_XRAY"]["pp_period"] = 4.2
