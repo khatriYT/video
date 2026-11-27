@@ -11,3 +11,6 @@
 | 2026-11-26 | Character passes at 12 fps (8 fps for slow shots, 16 fps for hovering bats); output at 24 fps | CPU-only render budget | Assistant |
 | 2026-11-26 | Infant-mortality findings shown only as data cards | Sensitive subject | Assistant |
 | 2026-11-26 | Not used: the "1,000 mosquitoes an hour" claim, Bracken Cave insect tonnage, and the "10,000 ft" altitude figure | Not well supported, or sources conflict | Assistant |
+| 2026-11-27 | Re-render all 13 farm plates after the corn/cotton instancing fix | Visible modelling defect (plants split into parts). The character passes stay valid | Assistant |
+| 2026-11-27 | Agave close-up bat lifted and rim-lit in compositing rather than re-rendered | A re-render of 163 frames would cost about 2 h of CPU. The comp fix keeps the shading and makes the hero readable | Assistant |
+| 2026-11-27 | Moon chapter and cave exit backgrounds rebuilt as 3D sets | Found weak during review: flat moon disc; blown-out placeholder exit | Assistant |

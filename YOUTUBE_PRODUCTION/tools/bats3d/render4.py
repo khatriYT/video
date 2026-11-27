@@ -75,22 +75,23 @@ def cave_clusters(E, state, rnd_seed=3):
     return placed
 
 
-def net_cage(c, s=(4.0, 4.0, 2.8)):
-    m = C.m_simple("netting", "#E8E8E0", 0.8)
+def net_cage(c, s=(4.0, 4.0, 3.4)):
+    # fine grey exclusion netting over the corn plants, taller than the tassels
+    m = C.m_simple("netting", "#A6A8A0", 0.8)
     x0, y0 = c[0] - s[0] / 2, c[1] - s[1] / 2
     lines = []
-    for k in range(13):
-        u = k / 12
+    for k in range(21):
+        u = k / 20
         for (a, b) in (((x0 + s[0] * u, y0, 0), (x0 + s[0] * u, y0, s[2])), ((x0, y0 + s[1] * u, 0), (x0, y0 + s[1] * u, s[2])),
                        ((x0 + s[0] * u, y0 + s[1], 0), (x0 + s[0] * u, y0 + s[1], s[2])),
                        ((x0 + s[0], y0 + s[1] * u, 0), (x0 + s[0], y0 + s[1] * u, s[2])),
                        ((x0 + s[0] * u, y0, s[2]), (x0 + s[0] * u, y0 + s[1], s[2])),
                        ((x0, y0 + s[1] * u, s[2]), (x0 + s[0], y0 + s[1] * u, s[2]))):
-            lines.append(C.tube(f"net{len(lines)}", [Vector(a), Vector(b)], [0.006, 0.006], 4, m))
+            lines.append(C.tube(f"net{len(lines)}", [Vector(a), Vector(b)], [0.004, 0.004], 4, m))
         z = s[2] * u
         for (a, b) in (((x0, y0, z), (x0 + s[0], y0, z)), ((x0, y0, z), (x0, y0 + s[1], z)),
                        ((x0 + s[0], y0, z), (x0 + s[0], y0 + s[1], z)), ((x0, y0 + s[1], z), (x0 + s[0], y0 + s[1], z))):
-            lines.append(C.tube(f"net{len(lines)}", [Vector(a), Vector(b)], [0.006, 0.006], 4, m))
+            lines.append(C.tube(f"net{len(lines)}", [Vector(a), Vector(b)], [0.004, 0.004], 4, m))
     pole = FL.m_bark("pole", "#8A7A62", 10.0)
     for (x, y) in ((x0, y0), (x0 + s[0], y0), (x0, y0 + s[1]), (x0 + s[0], y0 + s[1])):
         C.tube(f"pole{x}{y}", [Vector((x, y, 0)), Vector((x, y, s[2] + 0.1))], [0.04, 0.04], 6, pole)
@@ -424,6 +425,8 @@ def farm_clearings(shot):
             x, y = a[1]
             segs.append((x, y, x, y, 1.6, 1.6))
     for pr in shot["props"]:
+        if pr[0] == "net":          # the exclosure must keep its corn plants inside (bats kept off them)
+            continue
         if len(pr) > 1 and isinstance(pr[1], tuple):
             x, y = pr[1]
             segs.append((x, y, x, y, 2.0, 2.0))

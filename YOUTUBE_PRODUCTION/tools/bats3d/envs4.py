@@ -275,7 +275,7 @@ def env_hill(state="sunset", detail=1.0):
 
 
 # ------------------------------------------------------------------ ENV_CAVE (hibernaculum)
-def env_cave(state="healthy", detail=1.0, bats=True):
+def env_cave(state="healthy", detail=1.0, bats=True, exterior=False):
     E = Env("cave")
     C.world_flat("#2A3C44", 1.6)
     wall = FL.m_rock("cave_wall", "#7C8A86", "#3E4A4A", strata=True, lichen=None, wet=0.35, scale=1.4)
@@ -314,17 +314,34 @@ def env_cave(state="healthy", detail=1.0, bats=True):
         p.scale = (1.0, 0.7, 0.012)
         p.location = loc + Vector((0, 0, 0.02))
     # daylight entrance at the end of the passage (bright snowy opening)
-    snow = C.m_emit("entrance_light", "#E6EEF5", 6.0)
-    ent = FL.icosphere("entrance", 2.4, 2, snow)
-    ent.location = (3.6, 11.6, 1.6)
-    ent.scale = (1.0, 0.2, 0.9)
+    if not exterior:
+        snow = C.m_emit("entrance_light", "#E6EEF5", 6.0)
+        ent = FL.icosphere("entrance", 2.4, 2, snow)
+        ent.location = (3.6, 11.6, 1.6)
+        ent.scale = (1.0, 0.2, 0.9)
     C.area("ENT_LIGHT", (3.4, 10.2, 2.0), (1.0, 4.0, 0.8), "#CFE0FF", 900.0, 2.5, shadow=True)
     snow_g = C.m_simple("snow", "#F2F6FA", 0.6, sss=0.3)
     sg = FL.grid("snow_ground", 40, 30, 20, 15, snow_g)
     sg.location = (3.5, 25.0, -0.2)
     trunk = FL.m_bark("winter_bark", "#3A3430", 6.0)
     for k, (x, y) in enumerate(((0.5, 16), (6.5, 18), (2.0, 22), (8.5, 24), (-2.0, 20), (5.0, 28))):
-        C.tube(f"wtrunk{k}", [Vector((x, y, -0.2)), Vector((x + 0.2, y, 9.0))], [0.22, 0.12], 8, trunk)
+        if not exterior:
+            C.tube(f"wtrunk{k}", [Vector((x, y, -0.2)), Vector((x + 0.2, y, 9.0))], [0.22, 0.12], 8, trunk)
+    if exterior:
+        # the opening looks out on a real winter scene instead of a glowing placeholder: overcast sky backdrop,
+        # sky light on the snowfield, bare winter trees with branches, snow drifts against the trunks
+        sky = C.m_emit("winter_sky", "#C9D8E6", 2.2)
+        bd = FL.grid("winter_backdrop", 140, 60, 2, 2, sky)
+        bd.rotation_euler = (math.radians(90), 0, 0)
+        bd.location = (3.5, 46.0, 18.0)
+        C.area("SNOW_SKY", (3.5, 24.0, 16.0), (3.5, 24.0, 0.0), "#E4EEFF", 9000.0, 24.0, shadow=True)
+        for k, (x, y, hh) in enumerate(((0.5, 16, 9.0), (6.5, 18, 10.0), (2.0, 22, 8.0), (8.5, 24, 11.0),
+                                         (-2.0, 20, 9.5), (5.0, 28, 10.0), (11.0, 30, 9.0), (-4.5, 27, 8.5))):
+            for ob in FL.bare_tree(f"wtree{k}", trunk, h=hh, seed=40 + k, depth=4):
+                ob.location = Vector(ob.location) + Vector((x + 0.3, y + 0.4, -0.25))
+            dr = FL.icosphere(f"drift{k}", 0.9, 2, snow_g)
+            dr.scale = (1.4, 1.0, 0.25)
+            dr.location = (x + 0.3, y + 0.4, -0.2)
     # cool ambient bounce (hidden area lights) so the chamber volume reads outside the lamp beam
     C.area("BOUNCE1", (0.0, 0.0, 0.4), (0.0, 0.0, 4.0), "#6A9AAA", 400.0, 6.0)
     C.area("BOUNCE2", (-3.6, -2.6, 2.0), (2.0, 2.0, 2.5), "#4A6A8A", 200.0, 4.0)

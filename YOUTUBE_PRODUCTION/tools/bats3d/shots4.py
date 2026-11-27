@@ -46,7 +46,7 @@ SHOTS = {
                   actors=[("hanger", "myotis", "hero", "wake", dict(wns=1.0))],
                   props=[("clusters", "infected")], lamp="cam_left"),
     "HIB_SNOW_EXIT": S("cave", "empty", ((2.4, 3.6, 1.3), (3.6, 11.6, 1.8), 26), props=[("clusters", "empty")],
-                       fx=["snow"]),
+                       fx=["snow"], env_kw=dict(exterior=True)),
     "HIB_HOPE": S("cave", "hope", ((-3.0, -3.6, 1.2), (0.8, 0.6, 3.2), 24), props=[("clusters", "hope")],
                   lamp="cam_warm", fx=["dust"]),
     # ---------------- hill country cave (Bracken-like)
