@@ -57,6 +57,17 @@ def cave_clusters(E, state, rnd_seed=3):
         ok, loc, nrm, idx = cave.ray_cast(p, Vector((0, 0, 1)))
         if not ok:
             continue
+        cc = getattr(E, "closeup_cam", None)
+        if cc:      # macro shot: nothing between the lens and the hero, a little room around the hero
+            camp, tg = cc
+            body = loc - Vector((0, 0, 0.08))
+            if (body - tg).length < 0.12:
+                continue
+            dv = tg - camp
+            L = dv.length
+            u = (body - camp).dot(dv) / (L * L)
+            if -0.05 < u < 1.0 and (body - (camp + dv * u)).length < 0.06 + 0.24 * u * L:
+                continue
         placed.append(loc)
         src = tmpl if (loc.xy - hero_area.xy).length < 0.55 else bare     # real fur only near the macro hero
         b = src.body.copy()
@@ -242,17 +253,23 @@ def build_actors(E, shot, hidden=False):
             else:
                 def upd(t, h=h, motion=motion, t_kw=t_kw):
                     human.animate(h, motion if motion != "look_up" or not t_kw.get("awe") else "look_up", t, seed=1,
-                                  **{k: v for k, v in t_kw.items() if k in ("awe", "side")})
+                                  **{k: v for k, v in t_kw.items() if k in ("awe", "side", "tilt")})
             acts.append(Actor(kind, h.rig.ob, upd, h.parts + [h.rig.ob]))
         elif kind == "hanger":
             _, sp, where, motion, kw = spec
             b = B.build("hero", sp, "hanger", wns=kw.get("wns", 0.0), fur=True, fur_density=1.0)
             hp = hero_point(E)
             b.root.location = hp - Vector((0, 0, 0.043))
-            b.root.rotation_euler = (0, 0, 0.5)
+            # a hanging bat faces -Y at rz=0 (checked with a turnaround): turn its face toward the close-up lens,
+            # three-quarter view
+            rz = 0.5
+            if getattr(E, "closeup_cam", None):
+                cv = (E.closeup_cam[0] - hp).xy.normalized()
+                rz = math.atan2(cv.x, -cv.y) + 0.35
+            b.root.rotation_euler = (0, 0, rz)
 
-            def upd(t, b=b, motion=motion):
-                B.animate(b, t, "wake" if motion == "wake" and t > 1.2 else "breathe", rz=0.5)
+            def upd(t, b=b, motion=motion, rz=rz):
+                B.animate(b, t, "wake" if motion == "wake" and t > 1.2 else "breathe", rz=rz)
                 if motion == "wake":
                     for e in b.parts:
                         if e.name.startswith("hero_eye"):
@@ -345,6 +362,38 @@ def build_actors(E, shot, hidden=False):
 
 
 # ------------------------------------------------------------------ scene assembly
+def _seg_blocked(objs, a, b):
+    dg = bpy.context.evaluated_depsgraph_get()
+    for ob in objs:
+        ev = ob.evaluated_get(dg)
+        inv = ev.matrix_world.inverted()
+        o, e = inv @ a, inv @ b
+        d = e - o
+        ok, *_ = ev.ray_cast(o, d.normalized(), distance=max(1e-4, d.length))
+        if ok:
+            return True
+    return False
+
+
+def clear_closeup_cam(E, tgt, off):
+    """The cave ceiling undulates: keep the requested viewing direction, but lower / pull back the camera until it
+    sits in open air with a clear line of sight to the hero bat (and to the open chamber behind it)."""
+    chamber = Vector((0.0, 0.0, 2.0))
+    for dz in [0.0, -0.04, -0.08, -0.12, -0.16, -0.2, -0.25, -0.3, -0.36, -0.42, -0.5, -0.6]:
+        for sc in (1.0, 0.85, 1.2, 1.4):
+            cand = tgt + Vector((off.x * sc, off.y * sc, off.z + dz))
+            look = tgt - Vector((0, 0, 0.03))
+            to_bat = look - cand
+            if _seg_blocked(E.ground, cand, cand + to_bat * (1.0 - 0.06 / max(to_bat.length, 1e-3))):
+                continue
+            if _seg_blocked(E.ground, cand, chamber):
+                continue
+            print("CLOSEUP_CAM", tuple(round(v, 3) for v in cand), "dz", dz, "scale", sc, flush=True)
+            return cand
+    print("CLOSEUP_CAM fallback", flush=True)
+    return tgt + off
+
+
 def camera_for(E, shot, acts=None):
     cam = shot["cam"]
     if cam[0] == "flower":
@@ -358,11 +407,8 @@ def camera_for(E, shot, acts=None):
         c = C.camera(tuple(loc), tuple(tgt), cam[2], dof=(None, cam[3]) if len(cam) > 3 else None)
     else:
         loc, tgt, lens = cam[0], cam[1], cam[2]
-        if shot["env"] == "cave" and len(cam) > 3:      # close-ups are relative to the hero bat
-            hp = getattr(E, "hero", None) or hero_point(E)
-            tgt = hp - Vector((0, 0, 0.045))
-            off = Vector(loc) - Vector((0.8, 0.6, 3.36))
-            loc = tgt + off * 1.0 + Vector((0, 0, 0.0))
+        if getattr(E, "closeup_cam", None):            # cave macro close-up (settled in build())
+            loc, tgt = E.closeup_cam
         c = C.camera(tuple(loc), tuple(tgt), lens, dof=(None, cam[3]) if len(cam) > 3 else None)
     c.data.dof.aperture_blades = 7
     return c
@@ -449,6 +495,11 @@ def build(shot_id, mode, detail, props=True):
             for ob in [r] + list(r.children):
                 ob.hide_render = True
         E.seedlings = []
+    cam = shot["cam"]
+    if shot["env"] == "cave" and cam and len(cam) > 3 and isinstance(cam[0], tuple):
+        hp = hero_point(E)          # macro close-up: settle the camera first so the cluster can leave it room
+        tgt = hp - Vector((0, 0, 0.06))         # aim at the head end (the bat hangs head-down)
+        E.closeup_cam = (clear_closeup_cam(E, tgt, (Vector(cam[0]) - Vector((0.8, 0.6, 3.36))) * 1.3), tgt)
     if props:
         add_props(E, shot)
     elif shot["env"] == "tropic" and shot["env_kw"].get("scene") == "durian":

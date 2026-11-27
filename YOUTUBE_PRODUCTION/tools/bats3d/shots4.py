@@ -25,7 +25,7 @@ PIP_HILL = (-3.4, -10.6)
 SHOTS = {
     # ---------------- hibernaculum
     "HIB_ENTER": S("cave", "healthy", ((-1.9, -3.9, 1.35), (0.5, 0.3, 2.8), 22),
-                   actors=[("pip", "pip", 2.75, "look_up", dict(lamp=True))],
+                   actors=[("pip", "pip", 2.75, "look_up", dict(lamp=True, tilt=0.4))],
                    props=[("clusters", "healthy")], lamp="pip", fx=["dust"]),
     "HIB_FUNGUS_CU": S("cave", "infected", ((0.62, 0.18, 3.33), (0.8, 0.6, 3.36), 85, 8.0),
                        actors=[("hanger", "myotis", "hero", "breathe", dict(wns=1.0))],

@@ -486,10 +486,8 @@ def vest_sdf(P):
     d = smax(d, plane(P, (0, 0, 1), 1.43), 0.0)
     for sx in (1, -1):
         d = sub(d, ellipsoid(P, SK.mirror((0.2, 0.008, 1.3), sx), (0.072, 0.09, 0.115)), 0.006)   # armholes
-    # V front opening widening toward the neck
-    w = np.clip(0.016 + (P[:, 2] - 1.0) * 0.25, 0.016, 0.1)
-    opening = np.maximum(np.abs(P[:, 0]) - w, -(P[:, 1] + 0.02))
-    d = sub(d, opening, 0.004)
+    # (a V-opening cut used to sit here; its half-space test selected y > -0.02, i.e. the BACK of the vest,
+    #  leaving the back cut open. The vest is closed front and back; the neck capsule below shapes the collar.)
     d = sub(d, capsule(P, (0, 0.014, 1.38), (0, 0.016, 1.6), 0.07), 0.006)
     # pockets with flaps (raised panels)
     for sx in (1, -1):

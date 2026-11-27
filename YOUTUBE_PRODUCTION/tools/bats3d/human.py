@@ -440,10 +440,11 @@ def motion(kind, t, seed=0, **kw):
         face.update(brow_up=0.5 * u, look=(-tgt * 0.3, -1, 0))
     elif kind == "look_up":
         u = _sm(min(t / 1.0, 1.0))
-        r["head"] = (_lerp(0, 28, u) + r["head"][0], 0, r["head"][2])
-        r["neck"] = (_lerp(0, 10, u), 0, 0)
-        r["chest"] = (_lerp(0, 4, u), 0, 0)
-        face.update(brow_up=0.8 * u, look=(0, -1, 0.35 * u))
+        k = kw.get("tilt", 1.0)         # <1: gentler head tilt, the eyes do more of the looking up
+        r["head"] = (_lerp(0, 28 * k, u) + r["head"][0], 0, r["head"][2])
+        r["neck"] = (_lerp(0, 10 * k, u), 0, 0)
+        r["chest"] = (_lerp(0, 4 * k, u), 0, 0)
+        face.update(brow_up=0.8 * u, look=(0, -1, (0.35 + 0.45 * (1 - k)) * u))
         if kw.get("awe"):
             r["upperarm.L"] = (-10, 8, 4)
             r["forearm.L"] = (-60, 0, 0)
