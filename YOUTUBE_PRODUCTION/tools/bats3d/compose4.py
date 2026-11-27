@@ -240,6 +240,18 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
                         eph.append(fr.uniform(0, 2 * np.pi))
                     else:
                         fr.uniform(-0.6, 1.4), fr.uniform(-0.2, 2.0)
+                # and a loose cloud of bats crossing the bright twilight sky above the stalks (abundance)
+                nc = 60
+                cd_ = fr.uniform(14.0, 42.0, nc)
+                cx_ = fr.uniform(-1.0, 1.0, nc) * cd_ * 0.55
+                cz_ = fr.uniform(0.18, 0.5, nc) * cd_
+                vx_ = fr.uniform(0.6, 1.6, nc) * np.where(fr.random(nc) < 0.5, -1.0, 1.0)
+                cph = fr.uniform(0, 2 * np.pi, nc)
+                lat = cx_ + vx_ * (t - dur / 2) + 0.6 * np.sin(t * 1.3 + cph)
+                cloud = (camp[None] + fwd[None] * cd_[:, None] + rgt[None] * lat[:, None] +
+                         upv[None] * (cz_ + 0.4 * np.sin(t * 0.9 + cph * 2))[:, None])
+                extra += list(cloud)
+                eph += list(cph)
                 if extra:
                     p = np.concatenate([p, np.array(extra)])
                     ph = np.concatenate([ph, np.stack([np.array(eph)] * 3, 1)])
