@@ -56,7 +56,7 @@ SHOTS = {
     "EMERGE_SUNSET": S("hill", "sunset", ((-14, -30, 3.0), (2, 10, 5.5), 24), swarm=("emerge", "freetail", "sunset", 0.15)),
     "EMERGE_CHAPTER": S("hill", "sunset", ((11, -22, 2.0), (-2, 8, 4.5), 28), swarm=("emerge", "freetail", "sunset", 0.3)),
     "EMERGE_WIDE": S("hill", "sunset", ((2, -36, 1.2), (0, 8, 11), 20), swarm=("column", "freetail", "sunset", 1.0)),
-    "EMERGE_PIP": S("hill", "dusk", ((-2.4, -13.4, 1.75), (0, 8, 7.0), 30),
+    "EMERGE_PIP": S("hill", "dusk", ((-2.2, -14.8, 1.55), (-0.6, 8, 5.0), 24),
                     actors=[("pip", "pip", 3.05, "binoculars", {})], swarm=("column", "freetail", "dusk", 1.0)),
     "EMERGE_HUNGRY": S("hill", "dusk", ((-3, -5, 0.6), (0, 8, 6.0), 22), swarm=("column", "freetail", "dusk", 1.0)),
     "EMERGE_MOON_PIP": S("hill", "night", ((-0.2, -14.2, 0.9), (-4.6, -6.0, 3.6), 30),
