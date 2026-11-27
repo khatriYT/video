@@ -96,10 +96,18 @@ def lib_collection(name, builders):
         for ob in objs:
             if ob.parent is None:
                 ob.parent = root
+        # Collection Info 'Separate Children' instances every OBJECT of a collection on its own, so a
+        # multi-part plant (corn: stalk + leaves + tassel + ear) must live in its own child collection
+        # to be instanced whole. Single-mesh variants keep the original layout (plates already rendered
+        # with it must keep matching their character passes).
+        dest = col
+        if len(objs) > 1:
+            dest = bpy.data.collections.new(f"{name}_{k}")
+            col.children.link(dest)
         for ob in [root] + objs:
             for c in list(ob.users_collection):
                 c.objects.unlink(ob)
-            col.objects.link(ob)
+            dest.objects.link(ob)
     return col
 
 
@@ -547,7 +555,24 @@ def fence(name, a, b, n=14):
 
 
 # ------------------------------------------------------------------ ENV_FARM
-def env_farm(state="dusk", detail=1.0, crop="corn", sprayer=False, bathouse=False):
+def _seg_dist(px, py, x0, y0, x1, y1):
+    dx, dy = x1 - x0, y1 - y0
+    L2 = dx * dx + dy * dy
+    u = 0.0 if L2 < 1e-9 else max(0.0, min(1.0, ((px - x0) * dx + (py - y0) * dy) / L2))
+    return math.hypot(px - (x0 + u * dx), py - (y0 + u * dy)), u
+
+
+def clear_factor(x, y, clear):
+    """0 inside any clearing (segments (x0, y0, x1, y1, w0, w1) with widths interpolated along them), else 1.
+    Used to keep a camera's line of sight and the actors' spots free of crop plants."""
+    for (x0, y0, x1, y1, w0, w1) in clear or ():
+        d, u = _seg_dist(x, y, x0, y0, x1, y1)
+        if d < w0 + (w1 - w0) * u:
+            return 0.0
+    return 1.0
+
+
+def env_farm(state="dusk", detail=1.0, crop="corn", sprayer=False, bathouse=False, clear=None):
     E = Env("farm")
     rnd = random.Random(21)
     lit = state in ("dusk", "night")
@@ -597,7 +622,7 @@ def env_farm(state="dusk", detail=1.0, crop="corn", sprayer=False, bathouse=Fals
     if bathouse:
         bat_house("bathouse", (8.3, 16.2, 3.2), math.radians(-18))
     # crop rows
-    leaf = FL.m_leaf("corn_leaf", "#6E9A3A" if state != "day" else "#7FAE3E", 0.1, 0.55, 0.3, tip="#B8B85A")
+    leaf = FL.m_leaf("corn_leaf", "#4E8E32" if state != "day" else "#6FA83A", 0.1, 0.55, 0.3, tip="#A8B04E")
     stalk = FL.m_leaf("corn_stalk", "#8AA04A", 0.06)
     tas = C.m_simple("tassel", "#D8B860", 0.6, sss=0.2)
     ear = FL.m_leaf("corn_ear", "#9AB060", 0.06, 0.6)
@@ -612,8 +637,11 @@ def env_farm(state="dusk", detail=1.0, crop="corn", sprayer=False, bathouse=Fals
     rows.data.materials.append(soil)
     for v in rows.data.vertices:
         v.co.z = h(v.co.x, v.co.y - 30) - 0.02
+    # rows.matrix_world may not be updated yet here: convert the mask point to world y explicitly
+    y_off = -30.0 - rows.matrix_world.translation.y
     FL.vgroup_from_fn(rows, "rowmask", lambda p: (1.0 if (p.x % 1.4) < 0.35 else 0.0) *
-                      (0.0 if (abs(p.x + 2.0) < 1.7 and p.y > -24.0) else 1.0))
+                      (0.0 if (abs(p.x + 2.0) < 1.7 and p.y > -24.0) else 1.0) *
+                      (clear_factor(p.x, p.y + y_off, clear) if crop == "corn" else 1.0))
     FL.scatter(rows, corn if crop == "corn" else cotton, (16.0 if crop == "corn" else 18.0) * detail, seed=11,
                scale=(0.85, 1.15), mask="rowmask", name="sc_crop", rot_tilt=0.08)
     # grass verge and wildflowers
@@ -836,11 +864,16 @@ def env_studio(top="#2A1E5A", bottom="#0E6A78"):
     return E
 
 
-def env_sky(state="night"):
+def env_sky(state="night", moon_scene=False):
     E = Env("sky")
-    C.world_sky([(0.0, "#3A4A7A"), (0.1, "#22305E"), (0.4, "#121A3C"), (1.0, "#070A1C")], strength=0.9, stars=1.8,
-                moon=((0.2, 1.0, 0.25), 2.0, "#FFF6DE"), ground="#05060C",
-                clouds=("#4A5A86", 0.3, 1.6, "#161C34"))
+    if moon_scene:      # chapter / silhouette shots: textured moon, moonlit cloud wisps
+        C.world_sky([(0.0, "#3A4A7A"), (0.1, "#22305E"), (0.4, "#121A3C"), (1.0, "#070A1C")], strength=0.9,
+                    stars=1.8, moon=((0.2, 1.0, 0.25), 2.0, "#FFF6DE", True), ground="#05060C",
+                    clouds=("#8A9AC8", 0.42, 2.4, "#1A2244"))
+    else:
+        C.world_sky([(0.0, "#3A4A7A"), (0.1, "#22305E"), (0.4, "#121A3C"), (1.0, "#070A1C")], strength=0.9,
+                    stars=1.8, moon=((0.2, 1.0, 0.25), 2.0, "#FFF6DE"), ground="#05060C",
+                    clouds=("#4A5A86", 0.3, 1.6, "#161C34"))
     ground = FL.grid("night_ground", 6000, 6000, 60, 60, FL.m_ground("night_fields", [("#1A2A2A", 0.3),
                                                                                          ("#2A3A30", 0.6),
                                                                                          ("#3A4A3A", 0.9)], 0.002))
@@ -856,6 +889,25 @@ def env_sky(state="night"):
         for k in range(90):
             b = FL.icosphere(f"town{t}_{k}", rnd.uniform(1.5, 3.0), 1, lights)
             b.location = (cx + rnd.gauss(0, 60), cy + rnd.gauss(0, 60), -598)
+    if moon_scene:
+        # a dark ridge line with gnarled bare trees, back-lit by the moon (silhouettes frame the chapter shots)
+        sil = C.m_simple("silhouette", "#06070E", 0.9)
+
+        def ridge_h(x, wy):     # world y; rises out of view to a wavy crest ~230 m away
+            return -60.0 + _sstep(150.0, 230.0, wy) * (84.0 + 6.0 * math.sin(x / 37.0) + 3.0 * math.sin(x / 13.0 + 1.0))
+        haze = C.m_simple("ridge_haze", "#151C36", 0.95)       # distant ridge a touch lighter: aerial perspective
+        ridge = terrain("ridge", 900, 300, lambda x, y: ridge_h(x, y + 350.0), haze)
+        ridge.location = (0, 350, 0)
+        rnd2 = random.Random(9)
+        trees = [(27.0, 48.0, 22.0, -9.0), (-6.0, 240.0, 16.0, None), (2.0, 250.0, 12.0, None),
+                 (17.0, 260.0, 14.0, None), (-14.0, 245.0, 18.0, None), (35.0, 236.0, 13.0, None)]
+        for k, (yaw, dist, hh, z0) in enumerate(trees):
+            a = math.radians(yaw)
+            x, y = dist * math.sin(a), dist * math.cos(a)
+            z = z0 if z0 is not None else ridge_h(x, y) - 1.0
+            for ob in FL.bare_tree(f"bare{k}", sil, h=hh, seed=11 + k, depth=5 if z0 is not None else 3,
+                                   lean=rnd2.uniform(-0.3, 0.3)):
+                ob.location = Vector(ob.location) + Vector((x, y, z))
     E.key = ((0.2, 1.0, 0.25), "#B8C8FF", 1.2)
     E.marks = dict(center=Vector((0, 30, 0)))
     return E

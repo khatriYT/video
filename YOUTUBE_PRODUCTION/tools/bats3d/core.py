@@ -1048,7 +1048,7 @@ def world_sky(stops, strength=1.0, stars=0.0, sun_dir=None, sun_col="#FFD7A0", s
         ad2.inputs[7].default_value = (1, 1, 1, 1)
         col = ad2.outputs[2]
     if moon is not None:
-        mdir, msize, mcol = moon
+        mdir, msize, mcol = moon[:3]
         d = Vector(mdir).normalized()
         dot = nt.nodes.new("ShaderNodeVectorMath")
         dot.operation = "DOT_PRODUCT"
@@ -1061,6 +1061,24 @@ def world_sky(stops, strength=1.0, stars=0.0, sun_dir=None, sun_col="#FFD7A0", s
         mr.color_ramp.elements[1].position = c0 + 0.00002
         mr.color_ramp.elements[1].color = (1, 1, 1, 1)
         nt.links.new(dot.outputs["Value"], mr.inputs[0])
+        disc = mr.outputs[0]
+        if len(moon) > 3 and moon[3]:       # lunar maria: low-frequency dark patches across the disc
+            mn = nt.nodes.new("ShaderNodeTexNoise")
+            mn.inputs["Scale"].default_value = 90.0
+            mn.inputs["Detail"].default_value = 5.0
+            mn.inputs["Roughness"].default_value = 0.58
+            nt.links.new(nrm.outputs[0], mn.inputs["Vector"])
+            mrp = nt.nodes.new("ShaderNodeMapRange")
+            mrp.inputs[1].default_value = 0.40
+            mrp.inputs[2].default_value = 0.62
+            mrp.inputs[3].default_value = 0.55
+            mrp.inputs[4].default_value = 1.0
+            nt.links.new(mn.outputs["Fac"], mrp.inputs[0])
+            mm = nt.nodes.new("ShaderNodeMath")
+            mm.operation = "MULTIPLY"
+            nt.links.new(mr.outputs[0], mm.inputs[0])
+            nt.links.new(mrp.outputs[0], mm.inputs[1])
+            disc = mm.outputs[0]
         halo = nt.nodes.new("ShaderNodeMath")
         halo.operation = "POWER"
         nt.links.new(dot.outputs["Value"], halo.inputs[0])
@@ -1071,7 +1089,7 @@ def world_sky(stops, strength=1.0, stars=0.0, sun_dir=None, sun_col="#FFD7A0", s
         nt.links.new(halo.outputs[0], hm.inputs[0])
         tot = nt.nodes.new("ShaderNodeMath")
         tot.operation = "ADD"
-        nt.links.new(mr.outputs[0], tot.inputs[0])
+        nt.links.new(disc, tot.inputs[0])
         nt.links.new(hm.outputs[0], tot.inputs[1])
         ad3 = nt.nodes.new("ShaderNodeMix")
         ad3.data_type = "RGBA"

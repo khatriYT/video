@@ -72,7 +72,7 @@ SHOTS = {
     "FARM_SPRAY": S("farm", "day", ((8, -27, 4.4), (-2, -15, 1.2), 28),
                     actors=[("tractor", (-2.0, -23.0), (-2.0, -9.0))], env_kw=dict(sprayer=False), fx=["spray"]),
     "FARM_DAY_CORN": S("farm", "day", ((6, -42, 1.8), (6, -20, 2.2), 30)),
-    "FARM_DUSK_EMPTY": S("farm", "dusk", ((-10, -32, 2.5), (8, 20, 6.0), 26), fx=["moths"]),
+    "FARM_DUSK_EMPTY": S("farm", "dusk", ((-10, -32, 3.4), (8, 20, 6.0), 26), fx=["moths"]),
     "FARM_SPRAY2": S("farm", "day", ((-11, -6, 4.0), (-2, -16, 1.2), 30),
                      actors=[("tractor", (-2.0, -22.0), (-2.0, -10.0))], fx=["spray"]),
     "FARM_HOUSE_NIGHT": S("farm", "night", ((-22, 12, 2.0), (-14, 30, 3.0), 35), fx=["moths_porch"]),
@@ -104,9 +104,10 @@ SHOTS = {
     "CLEARING_BARE": S("tropic", "dawn", ((0, -14, 1.6), (0, 6, 0.9), 28), env_kw=dict(scene="clearing", bare=True)),
     # ---------------- sky / moon
     "SKY_HUNT": S("sky", "night", ((0, 0, 0), (0, 100, -14), 24), swarm=("sky", "freetail", "moon", 0.6), fx=["moths"]),
-    "MOON_CHAPTER": S("sky", "night", ((0, 0, 0), (19, 100, 25), 45), swarm=("silhouette", "freetail", "moon", 0.25)),
+    "MOON_CHAPTER": S("sky", "night", ((0, 0, 0), (19, 100, 25), 45), swarm=("silhouette", "freetail", "moon", 0.25),
+                      env_kw=dict(moon_scene=True)),
     "MOON_SILHOUETTE": S("sky", "night", ((0, 0, 0), (19.5, 100, 25.5), 90), swarm=("silhouette", "freetail", "moon",
-                                                                                 0.12)),
+                                                                                 0.12), env_kw=dict(moon_scene=True)),
     # ---------------- studio
     "STUDIO_WING": S("studio", "", ((0.0, -2.6, 1.55), (0, 0, 1.45), 50), actors=[("studio_bat", "flyingfox")],
                      full=True),
@@ -131,3 +132,7 @@ for _k in ("HIB_FUNGUS_CU", "HIB_HEART", "HIB_FUNGUS_CU2"):
 for _k in ("STUDIO_WING", "STUDIO_XRAY"):
     SHOTS[_k]["fps"] = 8
 SHOTS["DURIAN_NIGHT"]["fps"] = 12
+
+# compositing-side lighting help for an under-lit hero: exposure lift (1 - (1-c)^g) and a cool moonlight rim
+SHOTS["AGAVE_BAT_CU"]["char_gain"] = 3.5
+SHOTS["AGAVE_BAT_CU"]["char_rim"] = ((0.6, 0.72, 1.0), 0.4)

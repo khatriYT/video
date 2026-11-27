@@ -23,6 +23,9 @@ sys.path.insert(0, HERE)
 from cards import H, W, ease, overlay_fn  # noqa: E402
 from compose import MOVES, parse_ids  # noqa: E402
 
+MOVES = dict(MOVES)
+MOVES["agave_bat"] = (1.02, 1.10, 0.45, 0.38, 0.52, 0.50)     # drift left toward the hovering nectar bat
+
 FPS = 24
 ROOT = None
 HOLD = {"title": 0.8, "end": 12.0, "chapter": 0.6}
@@ -189,7 +192,7 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
         n = max(1, int(n * density * (1 if kind in ("fly_over", "durian") else 2.0)))
         tgt = np.array(meta["cam"]["matrix"])[:3, :3] @ np.array([0, 0, -1.0])
         center = camp + tgt * {"hunt": 22, "agave": 18, "durian": 2.0, "sky": 30, "fig": 20, "fly_over": 6,
-                               "silhouette": 110, "mine": 12}[kind]
+                               "silhouette": 45, "mine": 12}[kind]
         if kind == "agave" and meta.get("clusters"):
             cl = np.array([c for s in meta["clusters"] for c in s])
             base = cl[rng.integers(0, len(cl), n)]
@@ -207,6 +210,12 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
                 base[:, 2] = np.maximum(base[:, 2], 2.0)
         ph = rng.uniform(0, 2 * np.pi, (n, 3))
         sp = rng.uniform(0.6, 1.4, (n, 1))
+        if kind == "silhouette" and n >= 3:
+            # three hero bats fly straight across the moon (which sits on the view axis) at set moments
+            for k, tc in enumerate((0.28, 0.55, 0.8)):
+                base[k] = center + np.array([0.0, (k - 1) * 4.0, (k - 1) * 0.6])
+                sp[k] = 1.0
+                ph[k, 0] = (4.0 - tc * dur) / 2.0
         if kind == "hunt":
             amp = np.array([6.0, 4.0, 2.0])
             p = base + amp * np.sin(t * sp * np.array([0.9, 1.3, 1.9]) + ph)
@@ -329,22 +338,45 @@ def particles(im, fx, t, rng_seed, cam_meta=None, shot=None, dur=10.0):
                     gd.ellipse([x - r * 3, y - r * 3, x + r * 3, y + r * 3], fill=(200, 255, 90, int(60 * on)))
                     d.ellipse([x - r * 0.5, y - r * 0.5, x + r * 0.5, y + r * 0.5], fill=(240, 255, 170, int(255 * on)))
         elif kind in ("moths", "moths_dense", "moths_porch"):
-            n = {"moths": 40, "moths_dense": 160, "moths_porch": 60}[kind]
+            # moths: depth-layered (few big near ones, many small far ones), wing pair drawn as a
+            # 'V' of two triangles around a dark body, wing span follows a readable flap cycle,
+            # a faint motion trail, softened so they read as insects (not paired glowing dots)
+            n = {"moths": 40, "moths_dense": 170, "moths_porch": 60}[kind]
+            ml = Image.new("RGBA", im.size, (0, 0, 0, 0))
+            md = ImageDraw.Draw(ml, "RGBA")
             for k in range(n):
                 if kind == "moths_porch":
-                    cx, cy, rad = 0.34, 0.5, 0.06
+                    # circling the porch lamp of the farmhouse (FARM_HOUSE_NIGHT plate, normalised plate coords)
+                    cx, cy, rad = 0.53 + rnd.uniform(-0.05, 0.05), 0.6 + rnd.uniform(-0.03, 0.03), rnd.uniform(0.015, 0.05)
+                    dk = rnd.uniform(0.35, 0.8)
                 else:
-                    cx, cy, rad = rnd.uniform(0.05, 0.95), rnd.uniform(0.2, 0.8), rnd.uniform(0.02, 0.08)
-                ph, sp = rnd.uniform(0, 6.28), rnd.uniform(1.5, 3.5)
-                x = (cx + rad * math.sin(t * sp + ph) + 0.4 * rad * math.sin(t * 2.7 * sp + ph * 2)) * Wc
-                y = (cy + rad * 0.7 * math.cos(t * sp * 1.3 + ph)) * Hc
-                s = rnd.uniform(3, 7) * (1.5 if kind == "moths_dense" and k % 5 == 0 else 1.0)
-                flap = abs(math.sin(t * 40 + ph))
-                col = (232, 220, 196, 230)
-                d.ellipse([x - s, y - s * 0.35 * (0.4 + flap), x, y + s * 0.35 * (0.4 + flap)], fill=col)
-                d.ellipse([x, y - s * 0.35 * (0.4 + flap), x + s, y + s * 0.35 * (0.4 + flap)], fill=col)
+                    dk = rnd.random() ** (1.4 if kind == "moths_dense" else 1.8)   # 0 = far, 1 = near
+                    cx, cy = rnd.uniform(0.03, 0.97), rnd.uniform(0.18 + 0.1 * (1 - dk), 0.85)
+                    rad = (0.012 + 0.05 * dk) * rnd.uniform(0.6, 1.4)
+                ph, sp, fhz = rnd.uniform(0, 6.28), rnd.uniform(1.2, 3.0), rnd.uniform(5.0, 8.0)
+                drift = rnd.uniform(-0.006, 0.006)
+
+                def pos(tt):
+                    return ((cx + drift * tt + rad * math.sin(tt * sp + ph) + 0.35 * rad * math.sin(tt * 2.7 * sp + ph * 2)) * Wc,
+                            (cy + rad * 0.7 * math.cos(tt * sp * 1.3 + ph) + 0.25 * rad * math.sin(tt * 4.1 * sp)) * Hc)
+                x, y = pos(t)
+                xp, yp = pos(t - 0.05)
+                s = 2.2 + 13.0 * dk
+                flap = 0.5 + 0.5 * math.sin(t * fhz * 6.2832 + ph)
+                span = s * (0.22 + 0.78 * flap)
+                lift = s * (0.55 - 0.45 * flap)                   # wings up when closed, flat when open
+                a = int(95 + 135 * dk)
+                wc = (int(214 - 40 * (1 - dk)), int(194 - 36 * (1 - dk)), int(158 - 20 * (1 - dk)), a)
                 if kind == "moths_porch":
-                    gd.ellipse([x - 10, y - 10, x + 10, y + 10], fill=(255, 200, 120, 25))
+                    wc = (255, 226, 170, min(255, a + 20))
+                md.line([xp, yp, x, y], fill=wc[:3] + (int(a * 0.28),), width=max(1, int(s * 0.35)))
+                md.polygon([(x, y), (x - span, y - lift), (x - span * 0.75, y + s * 0.32)], fill=wc)
+                md.polygon([(x, y), (x + span, y - lift), (x + span * 0.75, y + s * 0.32)], fill=wc)
+                md.ellipse([x - s * 0.16, y - s * 0.42, x + s * 0.16, y + s * 0.42], fill=(70, 52, 40, a))
+                if kind == "moths_porch":
+                    gd.ellipse([x - 12, y - 12, x + 12, y + 12], fill=(255, 200, 120, 22))
+            ml = ml.filter(ImageFilter.GaussianBlur(0.7))
+            lay.alpha_composite(ml)
         elif kind == "pollen":
             for k in range(90):
                 x0, y0, ph = rnd.uniform(0.3, 0.7), rnd.uniform(0.3, 0.7), rnd.uniform(0, 6.28)
@@ -493,6 +525,22 @@ def compose_plate_scene(proj, root, s, dur, out):
                             chim = chim.transform(chim.size, Image.AFFINE, (1 / br, 0, cx_ - cx_ / br, 0, 1 / br,
                                                                            cy_ - cy_ / br), Image.BICUBIC)
                     ch = np.asarray(chim, dtype=np.float32) / 255.0
+                    if shot.get("char_gain"):       # per-shot exposure lift for an under-lit hero (display space)
+                        gn = shot["char_gain"]      # lift luminance only, keep hue, temper saturation, warm slightly
+                        rgb = np.clip(ch[..., :3], 0, 1)
+                        lum = rgb @ np.array([0.2126, 0.7152, 0.0722], np.float32)
+                        l2 = 1.0 - (1.0 - lum) ** gn
+                        rgb = rgb * (l2 / np.maximum(lum, 1e-4))[..., None]
+                        rgb = l2[..., None] + (rgb - l2[..., None]) * 0.5
+                        ch[..., :3] = np.clip(rgb * np.array([1.1, 1.0, 0.9], np.float32), 0, 1)
+                    if shot.get("char_rim"):        # thin rim light along the silhouette edge
+                        rc, rk = shot["char_rim"]
+                        al = Image.fromarray((ch[..., 3] * 255).astype(np.uint8))
+                        er = np.asarray(al.filter(ImageFilter.MinFilter(7)), np.float32) / 255.0
+                        edge = np.clip(ch[..., 3] - er, 0, 1)
+                        edge = np.asarray(Image.fromarray((edge * 255).astype(np.uint8)).filter(
+                            ImageFilter.GaussianBlur(1.5)), np.float32) / 255.0 * ch[..., 3]
+                        ch[..., :3] = np.clip(ch[..., :3] + edge[..., None] * rk * np.array(rc, np.float32), 0, 1)
                     shd = np.asarray(Image.open(os.path.join(cdir, f"shadow_{i:04d}.png")).convert("F"), np.float32)
                     ao = np.asarray(Image.open(os.path.join(cdir, f"ao_{i:04d}.png")).convert("F"), np.float32)
                     zraw = np.asarray(Image.open(os.path.join(cdir, f"depth_{i:04d}.png")), dtype=np.float32)

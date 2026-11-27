@@ -406,13 +406,39 @@ def char_rig_lights(E, shot, acts, cam):
            420.0 * rim_e * scale * scale, 1.0 * scale)
 
 
+def farm_clearings(shot):
+    """Crop-free zones for a farm shot (identical in plate and character passes): a widening corridor
+    along a low camera's line of sight, plus spots around actors and props placed by coordinates."""
+    segs = []
+    cam = shot["cam"]
+    if cam and isinstance(cam[0], tuple):
+        (cx, cy, cz), (tx, ty, tz) = cam[0], cam[1]
+        if cz < 2.8:
+            dx, dy = tx - cx, ty - cy
+            L = math.hypot(dx, dy) or 1.0
+            ux, uy = dx / L, dy / L
+            reach = min(L, 26.0)
+            segs.append((cx - 1.5 * ux, cy - 1.5 * uy, cx + reach * ux, cy + reach * uy, 1.4, 1.4 + 0.09 * reach))
+    for a in shot["actors"]:
+        if len(a) > 1 and isinstance(a[1], tuple):
+            x, y = a[1]
+            segs.append((x, y, x, y, 1.6, 1.6))
+    for pr in shot["props"]:
+        if len(pr) > 1 and isinstance(pr[1], tuple):
+            x, y = pr[1]
+            segs.append((x, y, x, y, 2.0, 2.0))
+    return segs
+
+
 def build(shot_id, mode, detail, props=True):
     shot = SHOTS[shot_id]
     C.reset()
     kw = dict(shot["env_kw"])
     bare = kw.pop("bare", False)
+    if shot["env"] == "farm":
+        kw["clear"] = farm_clearings(shot)
     if shot["env"] in ("studio", "sky", "mine", "wind"):
-        E = envs4.BUILDERS[shot["env"]]()
+        E = envs4.BUILDERS[shot["env"]](**kw)
     else:
         E = envs4.BUILDERS[shot["env"]](shot["state"], detail=detail, **kw)
     if bare and getattr(E, "seedlings", None):

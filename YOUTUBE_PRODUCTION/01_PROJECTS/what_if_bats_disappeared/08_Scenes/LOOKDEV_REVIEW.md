@@ -62,6 +62,21 @@ You asked me to inspect every scene before rendering and fix unfinished models, 
 | E9 | Mine and night-sky plates flat | Ambient fill and a side key on the mine. Moonlit fields and town light clusters on the sky plate |
 | E10 | A light-cache (bounce light) bake ran for over 15 minutes for one set on this CPU | Not used. Fill is designed with ambient-split skies and hidden bounce lights instead |
 
+### Shot review during rendering (each finished shot composited and checked)
+
+| # | Found | Fix |
+|---|---|---|
+| R1 | Durian close-up: the camera was inside the giant fig trunk (the hero fig and the durian branch shared a spot) | The durian scene moves the hero fig 9 m / 11 m away. The plate was re-rendered |
+| R2 | Torches (head-lamp / hand torch) pointed at the ground; their direction was read before the rig had updated | View layer updated before aiming. Lamps are mounted on the rig at the origin, then the rig is placed |
+| R3 | Agave close-up: the nectar bat was hidden behind the flower stalk | The bat is placed screen-left of the umbel, facing it, so face, tongue and wings read |
+| R4 | Emergence swarm: individual bats were unreadable blobs far away. The column looked like scattered noise | Bats are emitted as a continuous ribbon that rises out of the cave mouth. Far bats are drawn as soft motion-blurred dashes, and near flybys use the 3D flight cycles. The dusk haze colour now matches the sky |
+| R5 | Fact call-outs clipped long text (e.g. "1,300+ species") | Call-outs auto-fit: text is measured and scaled to the panel width |
+| R6 | Corn-net shot: a corn leaf crossed the camera lens | Camera moved and the plant removed from the near-camera band |
+| R7 | The first over-the-shoulder shot of Pip watching the bats (EMERGE_PIP) put Pip too small and off the column | Re-framed: low over-the-shoulder camera with a 24 mm lens, Pip at screen-left, the column rising in the right two-thirds. Plate and character pass re-rendered |
+| R8 | Character shadows darkened a rectangle around the character (the shadow ratio was applied outside the rendered region) | Shadow and AO ratios apply only where the character pass actually rendered |
+| R9 | Farm moths read as pairs of glowing white dots ("eyes") | Moths redrawn: depth-layered (a few large near ones, many small far ones), wing pair as a "V" around a dark body with a readable flap cycle, a faint motion trail, softened edges and depth-faded colour |
+| R10 | Hanging-bat close-ups move very little but cost full render time | One frame rendered, then animated in compositing with a subtle breathing scale and drift. The camera move continues over it |
+
 ### Render budget decisions (CPU-only machine)
 
 - A character frame took about 110 s at first. I reduced it to about 45–50 s (with 4 renders sharing 4 cores) by:

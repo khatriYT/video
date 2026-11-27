@@ -504,6 +504,34 @@ def corn_plant(name, leaf_m, stalk_m, tassel_m, ear_m, h=2.2, seed=1):
     return parts
 
 
+def bare_tree(name, mat, h=12.0, seed=1, depth=4, lean=0.0):
+    """Gnarled leafless tree for moonlit silhouettes: recursive forking limbs with kinks and taper."""
+    rnd = random.Random(seed)
+    objs = []
+
+    def limb(p0, d, length, r0, lvl, k):
+        pts, rad = [p0], [r0]
+        p = p0.copy()
+        n = 4
+        for i in range(1, n + 1):
+            d = (d + Vector((rnd.gauss(0, 0.22), rnd.gauss(0, 0.22), rnd.gauss(0.04, 0.12)))).normalized()
+            p = p + d * (length / n)
+            pts.append(p.copy())
+            rad.append(r0 * (1 - 0.55 * i / n))
+        objs.append(tube(f"{name}_l{lvl}_{k}", pts, rad, max(5, 10 - 2 * lvl), mat))
+        if lvl < depth:
+            nb = 2 if lvl == 0 else rnd.choice((2, 2, 3))
+            for j in range(nb):
+                a = rnd.uniform(0, 6.283)
+                side = Vector((math.cos(a), math.sin(a), 0))
+                nd = (d * 0.55 + side * rnd.uniform(0.45, 0.8) + Vector((0, 0, rnd.uniform(0.1, 0.45)))).normalized()
+                start = pts[-1] if j == 0 else pts[rnd.randint(2, n)]
+                limb(start, nd, length * rnd.uniform(0.55, 0.75), rad[-1] * 1.15 if j == 0 else rad[-2],
+                     lvl + 1, k * 4 + j)
+    limb(Vector((0, 0, 0)), Vector((lean, 0, 1)).normalized(), h * 0.42, h * 0.045, 0, 0)
+    return objs
+
+
 def cotton_plant(name, leaf_m, boll_m, stem_m, h=1.0, seed=1):
     rnd = random.Random(seed)
     parts = [tube(name + "_stem", [(0, 0, 0), (0, 0, h * 0.9)], [0.012, 0.006], 5, stem_m)]
