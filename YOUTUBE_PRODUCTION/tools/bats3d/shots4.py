@@ -144,3 +144,6 @@ SHOTS["STUDIO_XRAY"]["pingpong"] = (0, 16)
 SHOTS["STUDIO_XRAY"]["pp_period"] = 4.2
 SHOTS["CORN_NIGHT_BATS"]["grade"] = "night_lift"
 SHOTS["DURIAN_NIGHT"]["grade"] = "night_soft"
+# durian blossoms were remodelled after this character pass: its cast-shadow ratios were computed against the old
+# flower shapes, so only the depth occlusion is used (the plate carries the lighting)
+SHOTS["DURIAN_NIGHT"]["char_shadow"] = False

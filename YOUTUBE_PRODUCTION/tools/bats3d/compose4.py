@@ -600,7 +600,8 @@ def compose_plate_scene(proj, root, s, dur, out):
                     rs = np.where(rendered & (base_s > 300), np.clip(shd / np.maximum(base_s, 1), 0, 1), 1.0)
                     ra = np.where(rendered & (base_a > 300), np.clip(ao / np.maximum(base_a, 1), 0, 1), 1.0)
                     dark = (1 - 0.62 * (1 - rs)) * (1 - 0.5 * (1 - ra))
-                    canvas *= dark[..., None]
+                    if shot.get("char_shadow", True):     # off where plate geometry changed after the char pass
+                        canvas *= dark[..., None]
                     vis = ch[..., 3] * np.clip((depth - zc) / (0.04 * zc + 0.02) + 1.0, 0, 1)
                     canvas = canvas * (1 - vis[..., None]) + ch[..., :3] * vis[..., None]
         im = Image.fromarray((np.clip(canvas, 0, 1) * 255).astype(np.uint8)).convert("RGBA")
