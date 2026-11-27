@@ -1,0 +1,13 @@
+{
+ "plate": "DUMP_pip",
+ "env": "dump",
+ "state": "fresh",
+ "light": "morning",
+ "cam": "PIP",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 102.2
+}

@@ -1,0 +1,12 @@
+{
+ "plate": "SKY_high",
+ "env": "sky_high",
+ "light": "day",
+ "cam": "SKY_HIGH",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 15.7
+}

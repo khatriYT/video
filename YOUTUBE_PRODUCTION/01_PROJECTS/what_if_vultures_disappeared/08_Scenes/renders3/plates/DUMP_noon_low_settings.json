@@ -1,0 +1,13 @@
+{
+ "plate": "DUMP_noon_low",
+ "env": "dump",
+ "state": "fresh",
+ "light": "noon_hot",
+ "cam": "LOW",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 97.9
+}

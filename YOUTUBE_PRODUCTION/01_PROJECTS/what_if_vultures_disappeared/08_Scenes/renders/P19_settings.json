@@ -1,0 +1,16 @@
+{
+ "shot": "P19",
+ "env": "ENV_VILLAGE",
+ "light": "morning",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  20,
+  120
+ ],
+ "seconds": 32.3
+}

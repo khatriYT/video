@@ -3,3 +3,31 @@ __pycache__/
 # regenerable from 05_ANIMATIONS + tools/assemble.py; kept out of git to save LFS space
 YOUTUBE_PRODUCTION/01_PROJECTS/*/08_EDITING_PROJECT/*_video_only.mp4
 YOUTUBE_PRODUCTION/01_PROJECTS/*/08_EDITING_PROJECT/*_audio_mix.wav
+# competitor reference images: public repo, do not republish (regenerate with tools/fetch_reference_frames.py)
+YOUTUBE_PRODUCTION/03_REFERENCE_LIBRARY/*/02_Reference_Analysis/keyframes/
+YOUTUBE_PRODUCTION/03_REFERENCE_LIBRARY/*/02_Reference_Analysis/contact_sheets/
+YOUTUBE_PRODUCTION/03_REFERENCE_LIBRARY/*/02_Reference_Analysis/_sprites/
+YOUTUBE_PRODUCTION/03_REFERENCE_LIBRARY/*/01_Competitor_Research/thumbnails/
+YOUTUBE_PRODUCTION/03_REFERENCE_LIBRARY/*/01_Competitor_Research/thumbnails_contact_sheet.jpg
+YOUTUBE_PRODUCTION/_reference_media/
+# episode 3+ regenerable intermediates (rebuild with tools/vulture3d/*.py; compact copies are committed)
+YOUTUBE_PRODUCTION/01_PROJECTS/*/09_Animation/*.mp4
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders/*.png
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders/A0*/
+YOUTUBE_PRODUCTION/01_PROJECTS/*/11_Edit/*_video_only.mp4
+YOUTUBE_PRODUCTION/01_PROJECTS/*/11_Edit/*.wav
+YOUTUBE_PRODUCTION/01_PROJECTS/*/10_Audio/music/*.wav
+# v2 render intermediates (rebuild with tools/vulture3d/render3.py + compose3.py)
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/chars/
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/full/
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/claims/
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/plates/*.png
+YOUTUBE_PRODUCTION/01_PROJECTS/*/09_Animation/*.v2
+YOUTUBE_PRODUCTION/01_PROJECTS/*/08_Scenes/renders3/logs/
+# ep4 (bats) regenerable intermediates
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/07_3D_Assets/models/*/*.bin
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/08_Scenes/lookdev/*.png
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/08_Scenes/logs/
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/08_Scenes/renders4/
+YOUTUBE_PRODUCTION/01_PROJECTS/what_if_bats_disappeared/09_Animation/*.mp4
+YOUTUBE_PRODUCTION/tools/bats3d/__pycache__/

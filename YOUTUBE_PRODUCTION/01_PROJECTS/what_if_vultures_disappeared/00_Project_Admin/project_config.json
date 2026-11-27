@@ -1,0 +1,13 @@
+{
+  "slug": "what_if_vultures_disappeared",
+  "working_title": "What If Every Vulture Disappeared?",
+  "created": "2026-11-26",
+  "system_config": "../../00_SYSTEM/SYSTEM_CONFIG.json",
+  "style_bible": "../../00_SYSTEM/STYLE_BIBLE_v2_DRAFT.md",
+  "reference_library": "../../03_REFERENCE_LIBRARY/",
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 24
+  },
+  "secrets": "never stored here; use environment variables / environment secrets"
+}

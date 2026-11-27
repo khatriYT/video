@@ -23,7 +23,9 @@
       "editing_project": "08_EDITING_PROJECT",
       "thumbnail": "09_THUMBNAIL",
       "exports": "10_EXPORTS"
-    }
+    },
+    "reference_library": "03_REFERENCE_LIBRARY",
+    "per_project_v2": "00_Project_Admin .. 14_Delivery (tools/new_project.py), used from episode 3 on"
   },
   "video": {
     "resolution": "1920x1080",
@@ -38,7 +40,10 @@
     "narration_tts": "Kokoro v1.0 ONNX, local (voice am_michael). Model files: kokoro-v1.0.onnx + voices-v1.0.bin from github.com/thewh1teagle/kokoro-onnx releases (model-files-v1.0).",
     "music_sfx": "Synthesised with numpy (tools/make_audio_assets.py), royalty-free",
     "assembly": "FFmpeg (tools/assemble.py)",
-    "capcut": "Not available in the cloud container; assets + SRT + timeline exported for manual import"
+    "capcut": "Not available in the cloud container; assets + SRT + timeline exported for manual import",
+    "blender": "Blender 4.0.2 (Ubuntu apt) + libegl1 libegl-mesa0 libgl1-mesa-dri; CPU only; Eevee ~25 s/frame 1080p (simple scene), Cycles 64spp ~71 s, no OIDN denoiser in this build",
+    "reference_fetch": "tools/fetch_reference_frames.py (yt-dlp mweb client + Node; storyboard frames only, full video download blocked by YouTube)",
+    "container_setup": "pip3 install 'yt-dlp[default]' opencv-python-headless scenedetect; apt-get install blender libegl1 libegl-mesa0 libgl1-mesa-dri"
   },
   "timing": {
     "scene_duration": "narration_length + 0.7 s, minimum 2.0 s",
@@ -53,7 +58,9 @@
     "5_anim": "python3 tools/render.py 01_PROJECTS/<project> anim [ids]   (run several processes with different id lists in parallel)",
     "6_audio_assets": "python3 tools/make_audio_assets.py 01_PROJECTS/<project>",
     "7_assemble": "python3 tools/assemble.py 01_PROJECTS/<project> <first> <last> <output_basename>",
-    "8_thumbnail": "python3 tools/render_thumbnail.py 01_PROJECTS/<project>"
+    "8_thumbnail": "python3 tools/render_thumbnail.py 01_PROJECTS/<project>",
+    "9_new_project": "python3 tools/new_project.py <slug> \"<Working Title>\"",
+    "10_reference_fetch": "python3 tools/fetch_reference_frames.py <video_url> <channel_url> 03_REFERENCE_LIBRARY/<Channel>"
   },
   "dependencies": "pip install kokoro-onnx soundfile numpy playwright; system: ffmpeg, imagemagick, chromium (Playwright build)",
   "audio_mix": {
@@ -62,5 +69,27 @@
     "music_gain": "0.17 -> 0.10 under voice",
     "loudness": "two-pass loudnorm, target -14 LUFS, TP -1.5"
   },
-  "storage": "Git LFS for *.mp4 and *.wav (GitHub rejects single files > 100 MB on all plans). *_video_only.mp4 and *_audio_mix.wav are gitignored (regenerable)."
+  "storage": "Git LFS for *.mp4 and *.wav (GitHub rejects single files > 100 MB on all plans). *_video_only.mp4 and *_audio_mix.wav are gitignored (regenerable).",
+  "updated": "2026-11-26",
+  "reference_channels": [
+    {
+      "name": "Nobody Gets In",
+      "url": "https://www.youtube.com/@NobodyGetsIn",
+      "researched": "2026-11-23",
+      "report": "00_SYSTEM/COMPETITOR_RESEARCH_REPORT.md"
+    },
+    {
+      "name": "Hardy Humans",
+      "url": "https://www.youtube.com/@HardyHumans",
+      "reference_video": "https://youtu.be/wqMaepNXeBc",
+      "researched": "2026-11-26",
+      "folder": "03_REFERENCE_LIBRARY/HardyHumans",
+      "use": "structure/visual reference only; never copy characters, scripts, plates, title cards or thumbnail layouts"
+    }
+  ],
+  "visual_direction": {
+    "status": "pending user approval",
+    "proposed": "hybrid 3D (Blender stills/layers + ~10 true-3D hero shots per episode)",
+    "draft": "00_SYSTEM/STYLE_BIBLE_v2_DRAFT.md"
+  }
 }

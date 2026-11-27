@@ -1,0 +1,71 @@
+# Asset Requirements
+
+## 3D shots (Blender)
+- A01
+- A02
+- A03
+- P00
+- P01
+- P02
+- P03
+- P03C
+- P04
+- P05
+- P06
+- P07
+- P08
+- P09
+- P10
+- P11
+- P12
+- P13
+- P14
+- P15
+- P16
+- P17
+- P18
+- P19
+- P20
+- P20B
+- P21
+- P22
+- P24
+
+## Cards
+- africa
+- bans
+- bignum
+- chain
+- checklist
+- compare
+- decline
+- districts
+- fraction
+- grid
+- gut
+- icons2
+- keystone
+- lines
+- map
+- paper
+- poison
+- redlist
+- replacements
+- suspects
+- thermal
+- timeline
+- trucks
+- trucks_numbers
+
+## Recurring 3D assets
+- CHR_PIP (mascot)
+- CRE_VULTURE (Gyps, folded / feeding / soaring / fallen poses)
+- CRE_DOG (pariah dog)
+- CRE_CROW
+- OBJ_COW (standing / carcass)
+- OBJ_VIAL (diclofenac vial)
+- ENV_DUMP (observation plate with time-step states)
+- ENV_SKY
+- ENV_VILLAGE
+- ENV_TOWER (Tower of Silence)
+- ENV_SAVANNA

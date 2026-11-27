@@ -1,0 +1,81 @@
+# Asset Requirements
+
+## 3D shots (Blender)
+- AGAVE_BAT_CU
+- AGAVE_BLUE_HOUR
+- AGAVE_CHAPTER
+- AGAVE_FARM
+- AGAVE_NIGHT_EMPTY
+- AGAVE_RECOVERY
+- AGAVE_WIDE
+- CLEARING_BARE
+- CLEARING_GROW
+- CORN_NET
+- CORN_NIGHT_BATS
+- COTTON_DUSK
+- DURIAN_NIGHT
+- EMERGE_CHAPTER
+- EMERGE_END
+- EMERGE_HUNGRY
+- EMERGE_MOON_PIP
+- EMERGE_PIP
+- EMERGE_PIP_WAVE
+- EMERGE_SUNSET
+- EMERGE_TITLE
+- EMERGE_WIDE
+- FARM_BATHOUSE
+- FARM_DAY_CHAPTER
+- FARM_DAY_CORN
+- FARM_DUSK_EMPTY
+- FARM_DUSK_WIDE
+- FARM_HOUSE_NIGHT
+- FARM_MOTHS
+- FARM_SONAR
+- FARM_SPRAY
+- FARM_SPRAY2
+- HIB_CHAPTER
+- HIB_CLUSTER
+- HIB_EMPTY
+- HIB_ENTER
+- HIB_FUNGUS_CU
+- HIB_FUNGUS_CU2
+- HIB_HEART
+- HIB_HOPE
+- HIB_SNOW_EXIT
+- HIB_WAKE
+- MINE_RETURN
+- MOON_CHAPTER
+- MOON_SILHOUETTE
+- SKY_HUNT
+- STUDIO_WING
+- STUDIO_XRAY
+- TROPIC_FIG
+- WIND_RIDGE
+
+## Cards
+- bignum
+- compare
+- corn_compare
+- cull_cycle
+- decline3
+- diets
+- fraction
+- jobs
+- menu
+- paper
+- quiet
+- range
+- spread
+
+## Recurring 3D assets
+- CHR_PIP (mascot)
+- CRE_VULTURE (Gyps, folded / feeding / soaring / fallen poses)
+- CRE_DOG (pariah dog)
+- CRE_CROW
+- OBJ_COW (standing / carcass)
+- OBJ_VIAL (diclofenac vial)
+- ENV_DUMP (observation plate with time-step states)
+- ENV_SKY
+- ENV_VILLAGE
+- ENV_TOWER (Tower of Silence)
+- ENV_SAVANNA

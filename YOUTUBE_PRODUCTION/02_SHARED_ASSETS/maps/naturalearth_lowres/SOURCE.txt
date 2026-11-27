@@ -1,0 +1,1 @@
+Natural Earth 1:110m admin-0 countries (public domain), via geopandas 0.14.4 bundled dataset.

@@ -1,0 +1,72 @@
+asset_id,type,file,version,status,used_in_scenes,notes
+CHR_PIP,character,tools/vulture3d/lib.py:pip,v1,final,,procedural; rebuilt per shot
+CHR_VILLAGER,character,tools/vulture3d/lib.py:villager,v1,final,,procedural; rebuilt per shot
+CRE_VULTURE,creature,tools/vulture3d/lib.py:vulture,v1,final,,procedural; rebuilt per shot
+CRE_DOG,creature,tools/vulture3d/lib.py:dog,v1,final,,procedural; rebuilt per shot
+CRE_CROW,creature,tools/vulture3d/lib.py:crow,v1,final,,procedural; rebuilt per shot
+OBJ_COW,object,tools/vulture3d/lib.py:cow,v1,final,,procedural; rebuilt per shot
+OBJ_BONES,object,tools/vulture3d/lib.py:bones,v1,final,,procedural; rebuilt per shot
+OBJ_VIAL,object,tools/vulture3d/lib.py:vial,v1,final,,procedural; rebuilt per shot
+OBJ_TREE,object,tools/vulture3d/lib.py:tree,v1,final,,procedural; rebuilt per shot
+OBJ_HOUSE,object,tools/vulture3d/lib.py:house,v1,final,,procedural; rebuilt per shot
+OBJ_TOWER,object,tools/vulture3d/lib.py:tower,v1,final,,procedural; rebuilt per shot
+ENV_DUMP,environment,tools/vulture3d/shots.py:env_dump,v1,final,,procedural; rebuilt per shot
+ENV_ROOST,environment,tools/vulture3d/shots.py:env_roost,v1,final,,procedural; rebuilt per shot
+ENV_SKY,environment,tools/vulture3d/shots.py:env_sky,v1,final,,procedural; rebuilt per shot
+ENV_ROOM,environment,tools/vulture3d/shots.py:env_room,v1,final,,procedural; rebuilt per shot
+ENV_VILLAGE,environment,tools/vulture3d/shots.py:env_village,v1,final,,procedural; rebuilt per shot
+ENV_TOWER,environment,tools/vulture3d/shots.py:env_tower,v1,final,,procedural; rebuilt per shot
+ENV_SAVANNA,environment,tools/vulture3d/shots.py:env_savanna,v1,final,,procedural; rebuilt per shot
+A01,render,08_Scenes/renders/A01/,v1,final,SC002,
+A02,render,08_Scenes/renders/A02/,v1,final,SC071,
+A03,render,08_Scenes/renders/A03/,v1,final,SC073,
+CARD_africa,card,tools/vulture3d/cards.py,v1,final,SC054,
+CARD_bans,card,tools/vulture3d/cards.py,v1,final,SC064,
+CARD_bignum,card,tools/vulture3d/cards.py,v1,final,SC005 SC043 SC045 SC046 SC057,
+CARD_chain,card,tools/vulture3d/cards.py,v1,final,SC023,
+CARD_checklist,card,tools/vulture3d/cards.py,v1,final,SC060,
+CARD_compare,card,tools/vulture3d/cards.py,v1,final,SC032 SC033,
+CARD_decline,card,tools/vulture3d/cards.py,v1,final,SC019,
+CARD_districts,card,tools/vulture3d/cards.py,v1,final,SC042,
+CARD_fraction,card,tools/vulture3d/cards.py,v1,final,SC039,
+CARD_grid,card,tools/vulture3d/cards.py,v1,final,SC025,
+CARD_gut,card,tools/vulture3d/cards.py,v1,final,SC015,
+CARD_icons2,card,tools/vulture3d/cards.py,v1,final,SC044,
+CARD_keystone,card,tools/vulture3d/cards.py,v1,final,SC062,
+CARD_lines,card,tools/vulture3d/cards.py,v1,final,SC037,
+CARD_map,card,tools/vulture3d/cards.py,v1,final,SC050,
+CARD_paper,card,tools/vulture3d/cards.py,v1,final,SC041,
+CARD_poison,card,tools/vulture3d/cards.py,v1,final,SC056,
+CARD_redlist,card,tools/vulture3d/cards.py,v1,final,SC026,
+CARD_replacements,card,tools/vulture3d/cards.py,v1,final,SC059,
+CARD_suspects,card,tools/vulture3d/cards.py,v1,final,SC020,
+CARD_thermal,card,tools/vulture3d/cards.py,v1,final,SC011,
+CARD_timeline,card,tools/vulture3d/cards.py,v1,final,SC027,
+CARD_trucks,card,tools/vulture3d/cards.py,v1,final,SC051,
+CARD_trucks_numbers,card,tools/vulture3d/cards.py,v1,final,SC052,
+P00,render,08_Scenes/renders/P00.png,v1,final,SC001 SC069,
+P01,render,08_Scenes/renders/P01.png,v1,final,SC012,
+P02,render,08_Scenes/renders/P02.png,v1,final,SC003 SC016 SC070,
+P03,render,08_Scenes/renders/P03.png,v1,final,SC006 SC029,
+P03C,render,08_Scenes/renders/P03C.png,v1,final,SC030,
+P04,render,08_Scenes/renders/P04.png,v1,final,SC031,
+P05,render,08_Scenes/renders/P05.png,v1,final,SC035,
+P06,render,08_Scenes/renders/P06.png,v1,final,SC036 SC061,
+P07,render,08_Scenes/renders/P07.png,v1,final,SC040,
+P08,render,08_Scenes/renders/P08.png,v1,final,SC034,
+P09,render,08_Scenes/renders/P09.png,v1,final,SC008 SC058 SC074,
+P10,render,08_Scenes/renders/P10.png,v1,final,SC010,
+P11,render,08_Scenes/renders/P11.png,v1,final,SC013,
+P12,render,08_Scenes/renders/P12.png,v1,final,SC007 SC028 SC068,
+P13,render,08_Scenes/renders/P13.png,v1,final,SC009 SC072,
+P14,render,08_Scenes/renders/P14.png,v1,final,SC014,
+P15,render,08_Scenes/renders/P15.png,v1,final,SC004 SC017 SC067,
+P16,render,08_Scenes/renders/P16.png,v1,final,SC021 SC065,
+P17,render,08_Scenes/renders/P17.png,v1,final,SC018 SC024,
+P18,render,08_Scenes/renders/P18.png,v1,final,SC038,
+P19,render,08_Scenes/renders/P19.png,v1,final,SC022,
+P20,render,08_Scenes/renders/P20.png,v1,final,SC047 SC048,
+P20B,render,08_Scenes/renders/P20B.png,v1,final,SC049,
+P21,render,08_Scenes/renders/P21.png,v1,final,SC053,
+P22,render,08_Scenes/renders/P22.png,v1,final,SC055,
+P24,render,08_Scenes/renders/P24.png,v1,final,SC063 SC066,

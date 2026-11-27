@@ -1,0 +1,67 @@
+scene,section,type,shot_or_card,move,tab,tag,fx,words,est_s,claims,narration
+SC001,Cold open,plate,HIB_ENTER,push,"FEBRUARY 2006 · Cave near Albany, New York",,,23,9.9,C01,"February, 2006. A cave west of Albany, New York. A caver's light falls on a cluster of sleeping bats, and something is wrong."
+SC002,Cold open,plate,HIB_FUNGUS_CU,push,,,,21,9.1,C01,"Their noses are dusted with white, as if they'd been dipped in powdered sugar. At first, nobody knew what it was."
+SC003,Cold open,plate,HIB_EMPTY,pull,A FEW WINTERS LATER,,,14,6.3,,"Within a few winters, caves that had held thousands of bats were almost silent."
+SC004,Cold open,card,bignum,,,STRONG,,17,7.5,C04,"The white fuzz was a fungus. Since then, it has killed millions of bats across North America."
+SC005,Cold open,plate,FARM_DUSK_WIDE,push,,,,26,11.1,,"Which means we don't have to imagine a world without bats. In parts of America, it has already started. And people paid a price nobody expected."
+SC006,Cold open,plate,EMERGE_TITLE,rise,,,,8,3.9,,So what really happens when the bats disappear?
+SC007,Cold open,plate,EMERGE_PIP_WAVE,push,,,,21,9.1,,"Welcome to The Disappearance Files, where we find out what the world loses when an animal nobody likes is suddenly gone."
+SC008,The night shift,plate,EMERGE_SUNSET,push,,,,5,2.7,,"First, meet the night shift."
+SC009,The night shift,card,fraction,,,STRONG,,20,8.7,C07,There are more than fourteen hundred species of bats. That's roughly one in every five kinds of mammal on Earth.
+SC010,The night shift,plate,STUDIO_WING,push,,,,21,9.1,C08,"They're also the only mammals that can truly fly. Look closely at a wing, and you'll see why. It's a hand."
+SC011,The night shift,plate,STUDIO_XRAY,hold,,,,18,7.9,C08,"Long finger bones, with a thin, living skin stretched between them. A bat flies by moving its fingers."
+SC012,The night shift,plate,FARM_SONAR,pan_r,,,sonar,17,7.5,,"Most bats hunt insects in the dark, using echolocation. They call out, and listen for the echo."
+SC013,The night shift,card,diets,,,STRONG,,15,6.7,C29,"Others eat fruit, or drink nectar. Out of all those species, only three drink blood."
+SC014,The night shift,card,jobs,,,,,19,8.3,,"To see what we'd lose, follow three jobs that bats do every night: pest control, pollination, and planting forests."
+SC015,The white nose,plate,HIB_CHAPTER,push,,,,6,3.1,,So what happened in that cave?
+SC016,The white nose,plate,HIB_CLUSTER,pan_l,,,,26,11.1,,"Bats in the northern United States survive winter by hibernating. They hang in cold caves for months, living on the fat they built up in autumn."
+SC017,The white nose,plate,HIB_HEART,push,,STRONG,,27,11.5,C33,"A hibernating bat's heart can slow from a few hundred beats a minute to about ten, and its body cools to nearly the temperature of the cave."
+SC018,The white nose,plate,HIB_FUNGUS_CU2,push,,,,19,8.3,C02,"The fungus, called Pseudogymnoascus destructans, loves the cold. It grows on their noses, ears and wings while they sleep."
+SC019,The white nose,plate,HIB_WAKE,hold,,STRONG,,15,6.7,C03,"Infected bats keep waking up. Every time they do, they burn fat they can't replace."
+SC020,The white nose,plate,HIB_SNOW_EXIT,push,,,,7,3.5,,"By late winter, many have nothing left."
+SC021,The white nose,card,decline3,,,STRONG,,19,8.3,C05,"Little brown bats, northern long-eared bats and tricolored bats fell by more than ninety percent, in under ten years."
+SC022,The white nose,card,spread,,,STRONG,,25,10.7,C06,"And the fungus kept spreading, county by county, state by state. It's now been confirmed in more than forty US states, and parts of Canada."
+SC023,The experiment nobody wanted,plate,FARM_DAY_CHAPTER,push,,,,13,5.9,C09,"That slow, steady spread created something scientists almost never get: a natural experiment."
+SC024,The experiment nobody wanted,card,paper,,,STRONG,,17,7.5,C09,Economist Eyal Frank compared farming counties the fungus had reached with similar counties it hadn't reached yet.
+SC025,The experiment nobody wanted,plate,FARM_MOTHS,push,,,moths,12,5.5,,"Without bats eating their pests, farmers had to fight insects another way."
+SC026,The experiment nobody wanted,plate,FARM_SPRAY,pan_r,,STRONG,,14,6.3,C10,"In the counties that lost their bats, insecticide use went up by thirty-one percent."
+SC027,The experiment nobody wanted,card,quiet,,,,,9,4.3,,Then he looked at something far more serious: babies.
+SC028,The experiment nobody wanted,card,compare,,,STRONG,,16,7.1,C11,"In those same counties, infant deaths from internal causes, like illness, rose by about eight percent."
+SC029,The experiment nobody wanted,card,bignum,,,ESTIMATE,,18,7.9,C12,"His estimate: about thirteen hundred extra infant deaths, in two hundred and forty-five counties, between 2006 and 2017."
+SC030,The experiment nobody wanted,card,paper,,,ESTIMATE,,30,12.7,C12,"It's one study, and it's a statistical estimate, not a list of names. But it was published in the journal Science, and the pattern follows the fungus, county by county."
+SC031,The experiment nobody wanted,plate,FARM_DAY_CORN,pull,,ESTIMATE,,16,7.1,C13,Farmers paid too. Lost crops and extra pesticide added up to an estimated twenty-seven billion dollars.
+SC032,The bug hunters,plate,EMERGE_CHAPTER,push,,,,9,4.3,,So how much work were those bats really doing?
+SC033,The bug hunters,plate,EMERGE_WIDE,pull,BRACKEN CAVE · Texas,,,26,11.1,C15,"Come to Texas, just before sunset. Bracken Cave holds somewhere between fifteen and twenty million Mexican free-tailed bats. It's the biggest bat colony known on Earth."
+SC034,The bug hunters,plate,EMERGE_PIP,push,,,,16,7.1,C15,"On summer evenings, they pour out in a living river that can take hours to drain."
+SC035,The bug hunters,plate,EMERGE_HUNGRY,push,,STRONG,,21,9.1,C34,"And they're hungry. A nursing mother can eat insects weighing more than half her own body weight, in a single night."
+SC036,The bug hunters,plate,SKY_HUNT,rise,,,moths,28,11.9,C16,"They climb hundreds of metres into the sky to hunt moths migrating on the wind. Many of those moths are corn earworms, one of America's worst crop pests."
+SC037,The bug hunters,plate,COTTON_DUSK,pan_l,,ESTIMATE,,23,9.9,C17,"In eight Texas counties, scientists valued the bats' pest control for cotton farmers at about seven hundred and forty thousand dollars a year."
+SC038,The bug hunters,plate,CORN_NET,push,,,,20,8.7,C18,"In Illinois, researchers tried something simple. At night, they covered patches of corn with nets, so bats couldn't get in."
+SC039,The bug hunters,card,corn_compare,,,STRONG,,16,7.1,C18,"Under the nets, there were nearly sixty percent more earworms, and fifty-six percent more damaged kernels."
+SC040,The bug hunters,card,range,,,ESTIMATE,,24,10.3,C14,"Across North America, one estimate puts bats' pest control at more than three point seven billion dollars a year, and possibly over twenty billion."
+SC041,The bug hunters,plate,CORN_NIGHT_BATS,pan_r,,ESTIMATE,,15,6.7,C19,"For corn alone, worldwide, it may be worth more than a billion dollars a year."
+SC042,The bug hunters,card,menu,,,DEBATED,,22,9.5,C20,"And mosquitoes? Bats do eat them. But for most bats, mosquitoes are a side dish. The main course is moths and beetles."
+SC043,The night gardeners,plate,AGAVE_CHAPTER,push,,,,8,3.9,,Pest control is only one of their jobs.
+SC044,The night gardeners,plate,AGAVE_WIDE,pull,,STRONG,,14,6.3,C21,More than five hundred kinds of plants rely on bats to pollinate their flowers.
+SC045,The night gardeners,plate,AGAVE_BAT_CU,agave_bat,,,,24,10.3,C22,"In the deserts of Mexico, the lesser long-nosed bat pushes its face into agave flowers to drink nectar, and comes out dusted with pollen."
+SC046,The night gardeners,plate,AGAVE_FARM,pan_r,,,,22,9.5,C22,"Agave is the plant tequila comes from. Tequila farms grow agave from clones, so they don't actually need bats to make tequila."
+SC047,The night gardeners,plate,AGAVE_BLUE_HOUR,pull,,STRONG,,33,13.9,C22,"But clones have almost no genetic variety. Bat pollination keeps wild agave diverse, and better able to survive new diseases. Some growers now let part of their crop flower, just for the bats."
+SC048,The night gardeners,plate,AGAVE_RECOVERY,pull,,STRONG,,47,19.5,C35,"The lesser long-nosed bat is also a comeback story. In 1988, fewer than a thousand were known, at just fourteen roosts. Thirty years later there were about two hundred thousand, and it became the first bat ever taken off the US endangered list because it had recovered."
+SC049,The night gardeners,plate,DURIAN_NIGHT,push,,STRONG,,25,10.7,C23,"In Southeast Asia, durian, the famously smelly king of fruits, is pollinated mainly by cave nectar bats. Farms farther from bat caves get less fruit."
+SC050,The night gardeners,plate,TROPIC_FIG,pan_l,,,,22,9.5,C24,"And fruit bats plant forests. They eat fruit in one place, and drop the seeds somewhere else, often in open, cleared land."
+SC051,The night gardeners,plate,CLEARING_GROW,push,,,,18,7.9,C24,Many of those seeds are pioneer plants: the first trees that turn a bare clearing back into forest.
+SC052,Aren't bats dangerous?,plate,MOON_CHAPTER,push,,,,15,6.7,C30,"Of course, bats have a scary reputation. Some carry viruses that can make people sick."
+SC053,Aren't bats dangerous?,plate,MOON_SILHOUETTE,hold,,,,11,5.1,,So why not just get rid of them? People have tried.
+SC054,Aren't bats dangerous?,card,paper,,,STRONG,,37,15.5,C31 C25,"In Peru, vampire bats spread rabies to livestock, and colonies have been culled for years. A study of twenty colonies found culling didn't reduce rabies exposure. Where bats were culled now and then, exposure actually went up."
+SC055,Aren't bats dangerous?,plate,MINE_RETURN,push,,STRONG,,32,13.5,C26,"In Uganda, after miners caught Marburg virus in a gold mine, the bats there were wiped out. Years later, bats moved back in, and more of them carried the virus than before."
+SC056,Aren't bats dangerous?,card,cull_cycle,,,HYPOTHESIS,,30,12.7,C32,"Scientists suspect culling leaves behind more young bats that have never met the virus, so it can spread faster. For people, the safest bat is usually one that's left alone."
+SC057,A world without bats,plate,FARM_DUSK_EMPTY,push,,,,6,3.1,,"So, what if all bats disappeared?"
+SC058,A world without bats,plate,FARM_SPRAY2,pan_l,,,moths,15,6.7,,"Night skies would fill with crop pests, and farmers would fight them with more chemicals."
+SC059,A world without bats,plate,AGAVE_NIGHT_EMPTY,push,,,,12,5.5,,Wild agave and durian flowers would wait for pollinators that never come.
+SC060,A world without bats,plate,CLEARING_BARE,pull,,,,13,5.9,,Cleared land in the tropics would take longer to grow back into forest.
+SC061,A world without bats,plate,FARM_HOUSE_NIGHT,push,,,,16,7.1,C11,"And as those American counties showed, some of that cost lands on people, even on babies."
+SC062,A world without bats,plate,HIB_HOPE,push,,DEBATED,,41,17.1,C27 C36,"But there is some good news. In parts of New York, some little brown bat colonies stopped crashing. They seem to be resisting the fungus. Recovery will be slow, though. A little brown bat usually raises just one pup a year."
+SC063,A world without bats,plate,WIND_RIDGE,pan_r,,ESTIMATE,,42,17.5,C37 C28,"Wind farms also kill bats: estimates for the United States run from hundreds of thousands to more than a million a year. But just pausing the turbines on low-wind nights, when bats fly most, can cut those deaths by about sixty percent."
+SC064,A world without bats,plate,FARM_BATHOUSE,push,,,,14,6.3,,"Bat-friendly farms, protected caves and dark skies give the survivors room to come back."
+SC065,A world without bats,plate,EMERGE_MOON_PIP,rise,,,,20,8.7,,"Bats aren't spooky. They're the night shift that keeps our fields, our forests and our families safer while we sleep."
+SC066,A world without bats,plate,EMERGE_END,pull,,,,6,3.1,,Thanks for watching The Disappearance Files.

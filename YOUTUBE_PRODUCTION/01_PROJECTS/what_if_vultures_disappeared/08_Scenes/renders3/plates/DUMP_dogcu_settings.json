@@ -1,0 +1,13 @@
+{
+ "plate": "DUMP_dogcu",
+ "env": "dump",
+ "state": "bloated",
+ "light": "golden",
+ "cam": "CU_DOG",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 105.2
+}

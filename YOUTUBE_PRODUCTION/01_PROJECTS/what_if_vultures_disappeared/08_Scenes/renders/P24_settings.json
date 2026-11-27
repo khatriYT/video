@@ -1,0 +1,18 @@
+{
+ "shot": "P24",
+ "env": "ENV_DUMP",
+ "state": "nepal",
+ "light": "dawn",
+ "camera": "CAM_WIDE_HIGH",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  18,
+  160
+ ],
+ "seconds": 23.9
+}

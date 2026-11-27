@@ -1,0 +1,1182 @@
+{
+ "title": "What If All Bats Disappeared?",
+ "voice": "am_michael",
+ "scenes": [
+  {
+   "id": 1,
+   "file": "SC001",
+   "section": "Cold open",
+   "narration": "February, 2006. A cave west of Albany, New York. A caver's light falls on a cluster of sleeping bats, and something is wrong.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_ENTER",
+    "move": "push",
+    "tab": "FEBRUARY 2006 · Cave near Albany, New York"
+   },
+   "claims": [
+    "C01"
+   ],
+   "words": 23,
+   "est_s": 9.9
+  },
+  {
+   "id": 2,
+   "file": "SC002",
+   "section": "Cold open",
+   "narration": "Their noses are dusted with white, as if they'd been dipped in powdered sugar. At first, nobody knew what it was.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_FUNGUS_CU",
+    "move": "push"
+   },
+   "claims": [
+    "C01"
+   ],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 3,
+   "file": "SC003",
+   "section": "Cold open",
+   "narration": "Within a few winters, caves that had held thousands of bats were almost silent.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_EMPTY",
+    "move": "pull",
+    "tab": "A FEW WINTERS LATER"
+   },
+   "claims": [],
+   "words": 14,
+   "est_s": 6.3
+  },
+  {
+   "id": 4,
+   "file": "SC004",
+   "section": "Cold open",
+   "narration": "The white fuzz was a fungus. Since then, it has killed millions of bats across North America.",
+   "visual": {
+    "type": "card",
+    "card": "bignum",
+    "value": "MILLIONS",
+    "label": "bats killed by white-nose syndrome since 2006",
+    "tag": "STRONG",
+    "icons": "bats_fade"
+   },
+   "claims": [
+    "C04"
+   ],
+   "words": 17,
+   "est_s": 7.5
+  },
+  {
+   "id": 5,
+   "file": "SC005",
+   "section": "Cold open",
+   "narration": "Which means we don't have to imagine a world without bats. In parts of America, it has already started. And people paid a price nobody expected.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_DUSK_WIDE",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 26,
+   "est_s": 11.1
+  },
+  {
+   "id": 6,
+   "file": "SC006",
+   "section": "Cold open",
+   "narration": "So what really happens when the bats disappear?",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_TITLE",
+    "move": "rise",
+    "text": {
+     "style": "title",
+     "main": "WHAT IF ALL BATS",
+     "sub": "DISAPPEARED?"
+    }
+   },
+   "claims": [],
+   "words": 8,
+   "est_s": 3.9
+  },
+  {
+   "id": 7,
+   "file": "SC007",
+   "section": "Cold open",
+   "narration": "Welcome to The Disappearance Files, where we find out what the world loses when an animal nobody likes is suddenly gone.",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_PIP_WAVE",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 8,
+   "file": "SC008",
+   "section": "The night shift",
+   "narration": "First, meet the night shift.",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_SUNSET",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "THE NIGHT SHIFT",
+     "sub": "Chapter 1"
+    }
+   },
+   "claims": [],
+   "words": 5,
+   "est_s": 2.7
+  },
+  {
+   "id": 9,
+   "file": "SC009",
+   "section": "The night shift",
+   "narration": "There are more than fourteen hundred species of bats. That's roughly one in every five kinds of mammal on Earth.",
+   "visual": {
+    "type": "card",
+    "card": "fraction",
+    "value": "1 in 5",
+    "label": "mammal species is a bat · 1,400+ species",
+    "tag": "STRONG",
+    "icon": "bat"
+   },
+   "claims": [
+    "C07"
+   ],
+   "words": 20,
+   "est_s": 8.7
+  },
+  {
+   "id": 10,
+   "file": "SC010",
+   "section": "The night shift",
+   "narration": "They're also the only mammals that can truly fly. Look closely at a wing, and you'll see why. It's a hand.",
+   "visual": {
+    "type": "plate",
+    "shot": "STUDIO_WING",
+    "move": "push"
+   },
+   "claims": [
+    "C08"
+   ],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 11,
+   "file": "SC011",
+   "section": "The night shift",
+   "narration": "Long finger bones, with a thin, living skin stretched between them. A bat flies by moving its fingers.",
+   "visual": {
+    "type": "plate",
+    "shot": "STUDIO_XRAY",
+    "move": "hold",
+    "xray": true
+   },
+   "claims": [
+    "C08"
+   ],
+   "words": 18,
+   "est_s": 7.9
+  },
+  {
+   "id": 12,
+   "file": "SC012",
+   "section": "The night shift",
+   "narration": "Most bats hunt insects in the dark, using echolocation. They call out, and listen for the echo.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_SONAR",
+    "move": "pan_r",
+    "fx": [
+     "sonar"
+    ]
+   },
+   "claims": [],
+   "words": 17,
+   "est_s": 7.5
+  },
+  {
+   "id": 13,
+   "file": "SC013",
+   "section": "The night shift",
+   "narration": "Others eat fruit, or drink nectar. Out of all those species, only three drink blood.",
+   "visual": {
+    "type": "card",
+    "card": "diets",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C29"
+   ],
+   "words": 15,
+   "est_s": 6.7
+  },
+  {
+   "id": 14,
+   "file": "SC014",
+   "section": "The night shift",
+   "narration": "To see what we'd lose, follow three jobs that bats do every night: pest control, pollination, and planting forests.",
+   "visual": {
+    "type": "card",
+    "card": "jobs"
+   },
+   "claims": [],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 15,
+   "file": "SC015",
+   "section": "The white nose",
+   "narration": "So what happened in that cave?",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_CHAPTER",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "THE WHITE NOSE",
+     "sub": "Chapter 2"
+    }
+   },
+   "claims": [],
+   "words": 6,
+   "est_s": 3.1
+  },
+  {
+   "id": 16,
+   "file": "SC016",
+   "section": "The white nose",
+   "narration": "Bats in the northern United States survive winter by hibernating. They hang in cold caves for months, living on the fat they built up in autumn.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_CLUSTER",
+    "move": "pan_l"
+   },
+   "claims": [],
+   "words": 26,
+   "est_s": 11.1
+  },
+  {
+   "id": 17,
+   "file": "SC017",
+   "section": "The white nose",
+   "narration": "A hibernating bat's heart can slow from a few hundred beats a minute to about ten, and its body cools to nearly the temperature of the cave.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_HEART",
+    "move": "push",
+    "meter": "HEART RATE",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C33"
+   ],
+   "words": 27,
+   "est_s": 11.5
+  },
+  {
+   "id": 18,
+   "file": "SC018",
+   "section": "The white nose",
+   "narration": "The fungus, called Pseudogymnoascus destructans, loves the cold. It grows on their noses, ears and wings while they sleep.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_FUNGUS_CU2",
+    "move": "push",
+    "label": "Pseudogymnoascus destructans"
+   },
+   "claims": [
+    "C02"
+   ],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 19,
+   "file": "SC019",
+   "section": "The white nose",
+   "narration": "Infected bats keep waking up. Every time they do, they burn fat they can't replace.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_WAKE",
+    "move": "hold",
+    "meter": "FAT RESERVES",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C03"
+   ],
+   "words": 15,
+   "est_s": 6.7
+  },
+  {
+   "id": 20,
+   "file": "SC020",
+   "section": "The white nose",
+   "narration": "By late winter, many have nothing left.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_SNOW_EXIT",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 7,
+   "est_s": 3.5
+  },
+  {
+   "id": 21,
+   "file": "SC021",
+   "section": "The white nose",
+   "narration": "Little brown bats, northern long-eared bats and tricolored bats fell by more than ninety percent, in under ten years.",
+   "visual": {
+    "type": "card",
+    "card": "decline3",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C05"
+   ],
+   "words": 19,
+   "est_s": 8.3
+  },
+  {
+   "id": 22,
+   "file": "SC022",
+   "section": "The white nose",
+   "narration": "And the fungus kept spreading, county by county, state by state. It's now been confirmed in more than forty US states, and parts of Canada.",
+   "visual": {
+    "type": "card",
+    "card": "spread",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C06"
+   ],
+   "words": 25,
+   "est_s": 10.7
+  },
+  {
+   "id": 23,
+   "file": "SC023",
+   "section": "The experiment nobody wanted",
+   "narration": "That slow, steady spread created something scientists almost never get: a natural experiment.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_DAY_CHAPTER",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "THE EXPERIMENT NOBODY WANTED",
+     "sub": "Chapter 3"
+    }
+   },
+   "claims": [
+    "C09"
+   ],
+   "words": 13,
+   "est_s": 5.9
+  },
+  {
+   "id": 24,
+   "file": "SC024",
+   "section": "The experiment nobody wanted",
+   "narration": "Economist Eyal Frank compared farming counties the fungus had reached with similar counties it hadn't reached yet.",
+   "visual": {
+    "type": "card",
+    "card": "paper",
+    "title": "The economic impacts of ecosystem disruptions: Costs from substituting biological pest control",
+    "who": "E. Frank · Science · 2024",
+    "tag": "STRONG",
+    "split": true
+   },
+   "claims": [
+    "C09"
+   ],
+   "words": 17,
+   "est_s": 7.5
+  },
+  {
+   "id": 25,
+   "file": "SC025",
+   "section": "The experiment nobody wanted",
+   "narration": "Without bats eating their pests, farmers had to fight insects another way.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_MOTHS",
+    "move": "push",
+    "fx": [
+     "moths"
+    ]
+   },
+   "claims": [],
+   "words": 12,
+   "est_s": 5.5
+  },
+  {
+   "id": 26,
+   "file": "SC026",
+   "section": "The experiment nobody wanted",
+   "narration": "In the counties that lost their bats, insecticide use went up by thirty-one percent.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_SPRAY",
+    "move": "pan_r",
+    "text": {
+     "style": "callout",
+     "main": "+31%",
+     "sub": "insecticide use"
+    },
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C10"
+   ],
+   "words": 14,
+   "est_s": 6.3
+  },
+  {
+   "id": 27,
+   "file": "SC027",
+   "section": "The experiment nobody wanted",
+   "narration": "Then he looked at something far more serious: babies.",
+   "visual": {
+    "type": "card",
+    "card": "quiet",
+    "main": "Infant health"
+   },
+   "claims": [],
+   "words": 9,
+   "est_s": 4.3
+  },
+  {
+   "id": 28,
+   "file": "SC028",
+   "section": "The experiment nobody wanted",
+   "narration": "In those same counties, infant deaths from internal causes, like illness, rose by about eight percent.",
+   "visual": {
+    "type": "card",
+    "card": "compare",
+    "left": [
+     "Before the fungus",
+     100
+    ],
+    "right": [
+     "After bats declined",
+     107.9
+    ],
+    "unit": "infant deaths (index)",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C11"
+   ],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 29,
+   "file": "SC029",
+   "section": "The experiment nobody wanted",
+   "narration": "His estimate: about thirteen hundred extra infant deaths, in two hundred and forty-five counties, between 2006 and 2017.",
+   "visual": {
+    "type": "card",
+    "card": "bignum",
+    "value": "≈1,334",
+    "label": "additional infant deaths · 245 counties · 2006–2017",
+    "tag": "ESTIMATE",
+    "icons": "none"
+   },
+   "claims": [
+    "C12"
+   ],
+   "words": 18,
+   "est_s": 7.9
+  },
+  {
+   "id": 30,
+   "file": "SC030",
+   "section": "The experiment nobody wanted",
+   "narration": "It's one study, and it's a statistical estimate, not a list of names. But it was published in the journal Science, and the pattern follows the fungus, county by county.",
+   "visual": {
+    "type": "card",
+    "card": "paper",
+    "title": "Natural experiment: the fungus arrived in different counties in different years",
+    "who": "Infant deaths rose after bats declined, not before",
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C12"
+   ],
+   "words": 30,
+   "est_s": 12.7
+  },
+  {
+   "id": 31,
+   "file": "SC031",
+   "section": "The experiment nobody wanted",
+   "narration": "Farmers paid too. Lost crops and extra pesticide added up to an estimated twenty-seven billion dollars.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_DAY_CORN",
+    "move": "pull",
+    "text": {
+     "style": "callout",
+     "main": "≈$26.9 billion",
+     "sub": "farm losses · 2006–2017"
+    },
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C13"
+   ],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 32,
+   "file": "SC032",
+   "section": "The bug hunters",
+   "narration": "So how much work were those bats really doing?",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_CHAPTER",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "THE BUG HUNTERS",
+     "sub": "Chapter 4"
+    }
+   },
+   "claims": [],
+   "words": 9,
+   "est_s": 4.3
+  },
+  {
+   "id": 33,
+   "file": "SC033",
+   "section": "The bug hunters",
+   "narration": "Come to Texas, just before sunset. Bracken Cave holds somewhere between fifteen and twenty million Mexican free-tailed bats. It's the biggest bat colony known on Earth.",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_WIDE",
+    "move": "pull",
+    "tab": "BRACKEN CAVE · Texas",
+    "swarm": "emerge"
+   },
+   "claims": [
+    "C15"
+   ],
+   "words": 26,
+   "est_s": 11.1
+  },
+  {
+   "id": 34,
+   "file": "SC034",
+   "section": "The bug hunters",
+   "narration": "On summer evenings, they pour out in a living river that can take hours to drain.",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_PIP",
+    "move": "push",
+    "swarm": "column"
+   },
+   "claims": [
+    "C15"
+   ],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 35,
+   "file": "SC035",
+   "section": "The bug hunters",
+   "narration": "And they're hungry. A nursing mother can eat insects weighing more than half her own body weight, in a single night.",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_HUNGRY",
+    "move": "push",
+    "swarm": "column",
+    "text": {
+     "style": "callout",
+     "main": "39–73%",
+     "sub": "of body weight in insects per night · nursing mothers"
+    },
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C34"
+   ],
+   "words": 21,
+   "est_s": 9.1
+  },
+  {
+   "id": 36,
+   "file": "SC036",
+   "section": "The bug hunters",
+   "narration": "They climb hundreds of metres into the sky to hunt moths migrating on the wind. Many of those moths are corn earworms, one of America's worst crop pests.",
+   "visual": {
+    "type": "plate",
+    "shot": "SKY_HUNT",
+    "move": "rise",
+    "swarm": "high",
+    "fx": [
+     "moths"
+    ]
+   },
+   "claims": [
+    "C16"
+   ],
+   "words": 28,
+   "est_s": 11.9
+  },
+  {
+   "id": 37,
+   "file": "SC037",
+   "section": "The bug hunters",
+   "narration": "In eight Texas counties, scientists valued the bats' pest control for cotton farmers at about seven hundred and forty thousand dollars a year.",
+   "visual": {
+    "type": "plate",
+    "shot": "COTTON_DUSK",
+    "move": "pan_l",
+    "text": {
+     "style": "callout",
+     "main": "≈$741,000 / year",
+     "sub": "cotton · 8 Texas counties"
+    },
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C17"
+   ],
+   "words": 23,
+   "est_s": 9.9
+  },
+  {
+   "id": 38,
+   "file": "SC038",
+   "section": "The bug hunters",
+   "narration": "In Illinois, researchers tried something simple. At night, they covered patches of corn with nets, so bats couldn't get in.",
+   "visual": {
+    "type": "plate",
+    "shot": "CORN_NET",
+    "move": "push"
+   },
+   "claims": [
+    "C18"
+   ],
+   "words": 20,
+   "est_s": 8.7
+  },
+  {
+   "id": 39,
+   "file": "SC039",
+   "section": "The bug hunters",
+   "narration": "Under the nets, there were nearly sixty percent more earworms, and fifty-six percent more damaged kernels.",
+   "visual": {
+    "type": "card",
+    "card": "corn_compare",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C18"
+   ],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 40,
+   "file": "SC040",
+   "section": "The bug hunters",
+   "narration": "Across North America, one estimate puts bats' pest control at more than three point seven billion dollars a year, and possibly over twenty billion.",
+   "visual": {
+    "type": "card",
+    "card": "range",
+    "lo": 3.7,
+    "mid": 22.9,
+    "hi": 53,
+    "unit": "billion $ / year",
+    "label": "Value of bats to North American farms",
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C14"
+   ],
+   "words": 24,
+   "est_s": 10.3
+  },
+  {
+   "id": 41,
+   "file": "SC041",
+   "section": "The bug hunters",
+   "narration": "For corn alone, worldwide, it may be worth more than a billion dollars a year.",
+   "visual": {
+    "type": "plate",
+    "shot": "CORN_NIGHT_BATS",
+    "move": "pan_r",
+    "text": {
+     "style": "callout",
+     "main": "> $1 billion / year",
+     "sub": "corn, worldwide"
+    },
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C19"
+   ],
+   "words": 15,
+   "est_s": 6.7
+  },
+  {
+   "id": 42,
+   "file": "SC042",
+   "section": "The bug hunters",
+   "narration": "And mosquitoes? Bats do eat them. But for most bats, mosquitoes are a side dish. The main course is moths and beetles.",
+   "visual": {
+    "type": "card",
+    "card": "menu",
+    "tag": "DEBATED"
+   },
+   "claims": [
+    "C20"
+   ],
+   "words": 22,
+   "est_s": 9.5
+  },
+  {
+   "id": 43,
+   "file": "SC043",
+   "section": "The night gardeners",
+   "narration": "Pest control is only one of their jobs.",
+   "visual": {
+    "type": "plate",
+    "shot": "AGAVE_CHAPTER",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "THE NIGHT GARDENERS",
+     "sub": "Chapter 5"
+    }
+   },
+   "claims": [],
+   "words": 8,
+   "est_s": 3.9
+  },
+  {
+   "id": 44,
+   "file": "SC044",
+   "section": "The night gardeners",
+   "narration": "More than five hundred kinds of plants rely on bats to pollinate their flowers.",
+   "visual": {
+    "type": "plate",
+    "shot": "AGAVE_WIDE",
+    "move": "pull",
+    "text": {
+     "style": "callout",
+     "main": "500+",
+     "sub": "plant species pollinated by bats"
+    },
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C21"
+   ],
+   "words": 14,
+   "est_s": 6.3
+  },
+  {
+   "id": 45,
+   "file": "SC045",
+   "section": "The night gardeners",
+   "narration": "In the deserts of Mexico, the lesser long-nosed bat pushes its face into agave flowers to drink nectar, and comes out dusted with pollen.",
+   "visual": {
+    "type": "plate",
+    "shot": "AGAVE_BAT_CU",
+    "move": "agave_bat"
+   },
+   "claims": [
+    "C22"
+   ],
+   "words": 24,
+   "est_s": 10.3
+  },
+  {
+   "id": 46,
+   "file": "SC046",
+   "section": "The night gardeners",
+   "narration": "Agave is the plant tequila comes from. Tequila farms grow agave from clones, so they don't actually need bats to make tequila.",
+   "visual": {
+    "type": "plate",
+    "shot": "AGAVE_FARM",
+    "move": "pan_r"
+   },
+   "claims": [
+    "C22"
+   ],
+   "words": 22,
+   "est_s": 9.5
+  },
+  {
+   "id": 47,
+   "file": "SC047",
+   "section": "The night gardeners",
+   "narration": "But clones have almost no genetic variety. Bat pollination keeps wild agave diverse, and better able to survive new diseases. Some growers now let part of their crop flower, just for the bats.",
+   "visual": {
+    "type": "plate",
+    "shot": "AGAVE_BLUE_HOUR",
+    "move": "pull",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C22"
+   ],
+   "words": 33,
+   "est_s": 13.9
+  },
+  {
+   "id": 48,
+   "file": "SC048",
+   "section": "The night gardeners",
+   "narration": "The lesser long-nosed bat is also a comeback story. In 1988, fewer than a thousand were known, at just fourteen roosts. Thirty years later there were about two hundred thousand, and it became the first bat ever taken off the US endangered list because it had recovered.",
+   "visual": {
+    "type": "plate",
+    "shot": "AGAVE_RECOVERY",
+    "move": "pull",
+    "swarm": "agave",
+    "text": {
+     "style": "callout",
+     "main": "<1,000 → ≈200,000",
+     "sub": "lesser long-nosed bats · 1988 → 2018"
+    },
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C35"
+   ],
+   "words": 47,
+   "est_s": 19.5
+  },
+  {
+   "id": 49,
+   "file": "SC049",
+   "section": "The night gardeners",
+   "narration": "In Southeast Asia, durian, the famously smelly king of fruits, is pollinated mainly by cave nectar bats. Farms farther from bat caves get less fruit.",
+   "visual": {
+    "type": "plate",
+    "shot": "DURIAN_NIGHT",
+    "move": "push",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C23"
+   ],
+   "words": 25,
+   "est_s": 10.7
+  },
+  {
+   "id": 50,
+   "file": "SC050",
+   "section": "The night gardeners",
+   "narration": "And fruit bats plant forests. They eat fruit in one place, and drop the seeds somewhere else, often in open, cleared land.",
+   "visual": {
+    "type": "plate",
+    "shot": "TROPIC_FIG",
+    "move": "pan_l"
+   },
+   "claims": [
+    "C24"
+   ],
+   "words": 22,
+   "est_s": 9.5
+  },
+  {
+   "id": 51,
+   "file": "SC051",
+   "section": "The night gardeners",
+   "narration": "Many of those seeds are pioneer plants: the first trees that turn a bare clearing back into forest.",
+   "visual": {
+    "type": "plate",
+    "shot": "CLEARING_GROW",
+    "move": "push",
+    "grow": true
+   },
+   "claims": [
+    "C24"
+   ],
+   "words": 18,
+   "est_s": 7.9
+  },
+  {
+   "id": 52,
+   "file": "SC052",
+   "section": "Aren't bats dangerous?",
+   "narration": "Of course, bats have a scary reputation. Some carry viruses that can make people sick.",
+   "visual": {
+    "type": "plate",
+    "shot": "MOON_CHAPTER",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "AREN'T BATS DANGEROUS?",
+     "sub": "Chapter 6"
+    }
+   },
+   "claims": [
+    "C30"
+   ],
+   "words": 15,
+   "est_s": 6.7
+  },
+  {
+   "id": 53,
+   "file": "SC053",
+   "section": "Aren't bats dangerous?",
+   "narration": "So why not just get rid of them? People have tried.",
+   "visual": {
+    "type": "plate",
+    "shot": "MOON_SILHOUETTE",
+    "move": "hold"
+   },
+   "claims": [],
+   "words": 11,
+   "est_s": 5.1
+  },
+  {
+   "id": 54,
+   "file": "SC054",
+   "section": "Aren't bats dangerous?",
+   "narration": "In Peru, vampire bats spread rabies to livestock, and colonies have been culled for years. A study of twenty colonies found culling didn't reduce rabies exposure. Where bats were culled now and then, exposure actually went up.",
+   "visual": {
+    "type": "card",
+    "card": "paper",
+    "title": "Culling did not reduce rabies exposure in vampire bats",
+    "who": "Streicker et al. · Proc. R. Soc. B · 2012 · 20 colonies, Peru",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C31",
+    "C25"
+   ],
+   "words": 37,
+   "est_s": 15.5
+  },
+  {
+   "id": 55,
+   "file": "SC055",
+   "section": "Aren't bats dangerous?",
+   "narration": "In Uganda, after miners caught Marburg virus in a gold mine, the bats there were wiped out. Years later, bats moved back in, and more of them carried the virus than before.",
+   "visual": {
+    "type": "plate",
+    "shot": "MINE_RETURN",
+    "move": "push",
+    "tag": "STRONG"
+   },
+   "claims": [
+    "C26"
+   ],
+   "words": 32,
+   "est_s": 13.5
+  },
+  {
+   "id": 56,
+   "file": "SC056",
+   "section": "Aren't bats dangerous?",
+   "narration": "Scientists suspect culling leaves behind more young bats that have never met the virus, so it can spread faster. For people, the safest bat is usually one that's left alone.",
+   "visual": {
+    "type": "card",
+    "card": "cull_cycle",
+    "tag": "HYPOTHESIS"
+   },
+   "claims": [
+    "C32"
+   ],
+   "words": 30,
+   "est_s": 12.7
+  },
+  {
+   "id": 57,
+   "file": "SC057",
+   "section": "A world without bats",
+   "narration": "So, what if all bats disappeared?",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_DUSK_EMPTY",
+    "move": "push",
+    "text": {
+     "style": "chapter",
+     "main": "A WORLD WITHOUT BATS",
+     "sub": "Chapter 7"
+    }
+   },
+   "claims": [],
+   "words": 6,
+   "est_s": 3.1
+  },
+  {
+   "id": 58,
+   "file": "SC058",
+   "section": "A world without bats",
+   "narration": "Night skies would fill with crop pests, and farmers would fight them with more chemicals.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_SPRAY2",
+    "move": "pan_l",
+    "fx": [
+     "moths"
+    ]
+   },
+   "claims": [],
+   "words": 15,
+   "est_s": 6.7
+  },
+  {
+   "id": 59,
+   "file": "SC059",
+   "section": "A world without bats",
+   "narration": "Wild agave and durian flowers would wait for pollinators that never come.",
+   "visual": {
+    "type": "plate",
+    "shot": "AGAVE_NIGHT_EMPTY",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 12,
+   "est_s": 5.5
+  },
+  {
+   "id": 60,
+   "file": "SC060",
+   "section": "A world without bats",
+   "narration": "Cleared land in the tropics would take longer to grow back into forest.",
+   "visual": {
+    "type": "plate",
+    "shot": "CLEARING_BARE",
+    "move": "pull"
+   },
+   "claims": [],
+   "words": 13,
+   "est_s": 5.9
+  },
+  {
+   "id": 61,
+   "file": "SC061",
+   "section": "A world without bats",
+   "narration": "And as those American counties showed, some of that cost lands on people, even on babies.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_HOUSE_NIGHT",
+    "move": "push"
+   },
+   "claims": [
+    "C11"
+   ],
+   "words": 16,
+   "est_s": 7.1
+  },
+  {
+   "id": 62,
+   "file": "SC062",
+   "section": "A world without bats",
+   "narration": "But there is some good news. In parts of New York, some little brown bat colonies stopped crashing. They seem to be resisting the fungus. Recovery will be slow, though. A little brown bat usually raises just one pup a year.",
+   "visual": {
+    "type": "plate",
+    "shot": "HIB_HOPE",
+    "move": "push",
+    "tag": "DEBATED"
+   },
+   "claims": [
+    "C27",
+    "C36"
+   ],
+   "words": 41,
+   "est_s": 17.1
+  },
+  {
+   "id": 63,
+   "file": "SC063",
+   "section": "A world without bats",
+   "narration": "Wind farms also kill bats: estimates for the United States run from hundreds of thousands to more than a million a year. But just pausing the turbines on low-wind nights, when bats fly most, can cut those deaths by about sixty percent.",
+   "visual": {
+    "type": "plate",
+    "shot": "WIND_RIDGE",
+    "move": "pan_r",
+    "text": {
+     "style": "callout",
+     "main": "≈ −60%",
+     "sub": "bat deaths with curtailment"
+    },
+    "tag": "ESTIMATE"
+   },
+   "claims": [
+    "C37",
+    "C28"
+   ],
+   "words": 42,
+   "est_s": 17.5
+  },
+  {
+   "id": 64,
+   "file": "SC064",
+   "section": "A world without bats",
+   "narration": "Bat-friendly farms, protected caves and dark skies give the survivors room to come back.",
+   "visual": {
+    "type": "plate",
+    "shot": "FARM_BATHOUSE",
+    "move": "push"
+   },
+   "claims": [],
+   "words": 14,
+   "est_s": 6.3
+  },
+  {
+   "id": 65,
+   "file": "SC065",
+   "section": "A world without bats",
+   "narration": "Bats aren't spooky. They're the night shift that keeps our fields, our forests and our families safer while we sleep.",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_MOON_PIP",
+    "move": "rise",
+    "swarm": "moon"
+   },
+   "claims": [],
+   "words": 20,
+   "est_s": 8.7
+  },
+  {
+   "id": 66,
+   "file": "SC066",
+   "section": "A world without bats",
+   "narration": "Thanks for watching The Disappearance Files.",
+   "visual": {
+    "type": "plate",
+    "shot": "EMERGE_END",
+    "move": "pull",
+    "text": {
+     "style": "end",
+     "main": "THE DISAPPEARANCE FILES",
+     "sub": "Episode 4 · Bats",
+     "y": 610
+    }
+   },
+   "claims": [],
+   "words": 6,
+   "est_s": 3.1
+  }
+ ],
+ "respell": {
+  "Pseudogymnoascus destructans": "Soodo-jimno-askus de-struck-tunz",
+  "Eyal": "Eye-al",
+  "Bracken": "Brakken",
+  "Kitaka": "Kee-tah-kah"
+ }
+}

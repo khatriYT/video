@@ -1,0 +1,13 @@
+{
+ "plate": "VILLAGE_yard",
+ "env": "village",
+ "light": "morning",
+ "cam": "YARD",
+ "cow": true,
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 36.5
+}

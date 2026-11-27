@@ -1,0 +1,14 @@
+{
+ "plate": "DUMP_day3",
+ "env": "dump",
+ "state": "bloated",
+ "light": "overcast",
+ "cam": "WIDE",
+ "shadow_k": 0.25,
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 96.1
+}

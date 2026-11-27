@@ -1,0 +1,17 @@
+{
+ "shot": "A02",
+ "env": "ENV_ROOST",
+ "light": "golden",
+ "resolution": [
+  1600,
+  900
+ ],
+ "samples": 8,
+ "engine": "EEVEE",
+ "mist": [
+  25,
+  180
+ ],
+ "frames": 108,
+ "seconds": 759.1
+}

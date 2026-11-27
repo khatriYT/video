@@ -1,0 +1,18 @@
+{
+ "shot": "P02",
+ "env": "ENV_DUMP",
+ "state": "feed",
+ "light": "morning",
+ "camera": "CAM_LOW",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "engine": "EEVEE",
+ "mist": [
+  18,
+  160
+ ],
+ "seconds": 29.8
+}

@@ -1,0 +1,12 @@
+{
+ "plate": "ROOM",
+ "env": "room",
+ "light": "day",
+ "cam": "ROOM",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 44.3
+}

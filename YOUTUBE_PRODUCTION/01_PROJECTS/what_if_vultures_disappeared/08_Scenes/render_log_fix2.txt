@@ -1,0 +1,1230 @@
+Blender 4.0.2
+EGL Error (0x3001): EGL_NOT_INITIALIZED: EGL is not initialized, or could not be initialized, for the specified EGL display connection.
+
+Managed to successfully fallback to surfaceless EGL rendering!
+
+EGL Error (0x3009): EGL_BAD_MATCH: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+EGL Error (0x3001): EGL_NOT_INITIALIZED: EGL is not initialized, or could not be initialized, for the specified EGL display connection.
+
+Managed to successfully fallback to surfaceless EGL rendering!
+
+Fra:1 Mem:159.32M (Peak 160.40M) | Time:00:00.43 | Syncing SUN
+Fra:1 Mem:159.32M (Peak 160.40M) | Time:00:00.43 | Syncing FILL
+Fra:1 Mem:159.32M (Peak 160.40M) | Time:00:00.43 | Syncing ENV_GROUND
+Fra:1 Mem:162.11M (Peak 162.11M) | Time:00:00.48 | Syncing trunk
+Fra:1 Mem:162.11M (Peak 162.11M) | Time:00:00.48 | Syncing OBJ_TREE_DEAD
+Fra:1 Mem:162.12M (Peak 162.12M) | Time:00:00.48 | Syncing branch.001
+Fra:1 Mem:162.13M (Peak 162.13M) | Time:00:00.48 | Syncing branch.002
+Fra:1 Mem:162.14M (Peak 162.14M) | Time:00:00.48 | Syncing branch.003
+Fra:1 Mem:162.15M (Peak 162.15M) | Time:00:00.48 | Syncing branch.004
+Fra:1 Mem:162.15M (Peak 162.15M) | Time:00:00.48 | Syncing branch
+Fra:1 Mem:162.16M (Peak 162.16M) | Time:00:00.48 | Syncing trunk.001
+Fra:1 Mem:162.17M (Peak 162.17M) | Time:00:00.48 | Syncing OBJ_TREE_NEEM
+Fra:1 Mem:162.17M (Peak 162.17M) | Time:00:00.48 | Syncing canopy.001
+Fra:1 Mem:162.23M (Peak 162.23M) | Time:00:00.49 | Syncing canopy.002
+Fra:1 Mem:162.28M (Peak 162.28M) | Time:00:00.49 | Syncing canopy.003
+Fra:1 Mem:162.32M (Peak 162.32M) | Time:00:00.49 | Syncing canopy.004
+Fra:1 Mem:162.37M (Peak 162.37M) | Time:00:00.49 | Syncing canopy.005
+Fra:1 Mem:162.42M (Peak 162.42M) | Time:00:00.49 | Syncing canopy.006
+Fra:1 Mem:162.47M (Peak 162.47M) | Time:00:00.49 | Syncing canopy.007
+Fra:1 Mem:162.52M (Peak 162.52M) | Time:00:00.49 | Syncing trunk.002
+Fra:1 Mem:162.53M (Peak 162.53M) | Time:00:00.49 | Syncing OBJ_TREE_NEEM.001
+Fra:1 Mem:162.53M (Peak 162.53M) | Time:00:00.49 | Syncing canopy.008
+Fra:1 Mem:162.58M (Peak 162.58M) | Time:00:00.49 | Syncing canopy.009
+Fra:1 Mem:162.63M (Peak 162.63M) | Time:00:00.49 | Syncing canopy.010
+Fra:1 Mem:162.68M (Peak 162.68M) | Time:00:00.49 | Syncing canopy.011
+Fra:1 Mem:162.73M (Peak 162.73M) | Time:00:00.49 | Syncing canopy.012
+Fra:1 Mem:162.78M (Peak 162.78M) | Time:00:00.49 | Syncing canopy.013
+Fra:1 Mem:162.83M (Peak 162.83M) | Time:00:00.49 | Syncing canopy.014
+Fra:1 Mem:162.88M (Peak 162.88M) | Time:00:00.49 | Syncing trunk.003
+Fra:1 Mem:162.88M (Peak 162.88M) | Time:00:00.49 | Syncing OBJ_TREE_NEEM.002
+Fra:1 Mem:162.89M (Peak 162.89M) | Time:00:00.49 | Syncing canopy.015
+Fra:1 Mem:162.94M (Peak 162.94M) | Time:00:00.49 | Syncing canopy.016
+Fra:1 Mem:162.99M (Peak 162.99M) | Time:00:00.49 | Syncing canopy.017
+Fra:1 Mem:163.04M (Peak 163.04M) | Time:00:00.49 | Syncing canopy.018
+Fra:1 Mem:163.08M (Peak 163.08M) | Time:00:00.49 | Syncing canopy.019
+Fra:1 Mem:163.13M (Peak 163.13M) | Time:00:00.49 | Syncing canopy.020
+Fra:1 Mem:163.18M (Peak 163.18M) | Time:00:00.49 | Syncing canopy.021
+Fra:1 Mem:163.23M (Peak 163.23M) | Time:00:00.49 | Syncing trunk.004
+Fra:1 Mem:163.24M (Peak 163.24M) | Time:00:00.49 | Syncing OBJ_TREE_NEEM.003
+Fra:1 Mem:163.24M (Peak 163.24M) | Time:00:00.49 | Syncing canopy.022
+Fra:1 Mem:163.29M (Peak 163.29M) | Time:00:00.49 | Syncing canopy.023
+Fra:1 Mem:163.34M (Peak 163.34M) | Time:00:00.49 | Syncing canopy.024
+Fra:1 Mem:163.39M (Peak 163.39M) | Time:00:00.49 | Syncing canopy.025
+Fra:1 Mem:163.44M (Peak 163.44M) | Time:00:00.49 | Syncing canopy.026
+Fra:1 Mem:163.49M (Peak 163.49M) | Time:00:00.49 | Syncing canopy.027
+Fra:1 Mem:163.54M (Peak 163.54M) | Time:00:00.49 | Syncing canopy
+Fra:1 Mem:163.59M (Peak 163.59M) | Time:00:00.49 | Syncing wall
+Fra:1 Mem:163.59M (Peak 163.59M) | Time:00:00.49 | Syncing OBJ_HOUSE
+Fra:1 Mem:163.60M (Peak 163.60M) | Time:00:00.49 | Syncing parapet
+Fra:1 Mem:163.62M (Peak 163.62M) | Time:00:00.51 | Syncing door
+Fra:1 Mem:163.63M (Peak 163.63M) | Time:00:00.51 | Syncing win
+Fra:1 Mem:163.64M (Peak 163.64M) | Time:00:00.51 | Syncing wall.001
+Fra:1 Mem:163.64M (Peak 163.64M) | Time:00:00.51 | Syncing OBJ_HOUSE.001
+Fra:1 Mem:163.65M (Peak 163.65M) | Time:00:00.51 | Syncing roof
+Fra:1 Mem:163.66M (Peak 163.66M) | Time:00:00.51 | Syncing roof2
+Fra:1 Mem:163.66M (Peak 163.66M) | Time:00:00.51 | Syncing door.001
+Fra:1 Mem:163.67M (Peak 163.67M) | Time:00:00.51 | Syncing win.001
+Fra:1 Mem:163.68M (Peak 163.68M) | Time:00:00.51 | Syncing wall.002
+Fra:1 Mem:163.69M (Peak 163.69M) | Time:00:00.51 | Syncing OBJ_HOUSE.002
+Fra:1 Mem:163.69M (Peak 163.69M) | Time:00:00.51 | Syncing parapet.001
+Fra:1 Mem:163.70M (Peak 163.70M) | Time:00:00.51 | Syncing door.002
+Fra:1 Mem:163.71M (Peak 163.71M) | Time:00:00.51 | Syncing win.002
+Fra:1 Mem:163.72M (Peak 163.72M) | Time:00:00.51 | Syncing wall.003
+Fra:1 Mem:163.72M (Peak 163.72M) | Time:00:00.51 | Syncing OBJ_HOUSE.003
+Fra:1 Mem:163.73M (Peak 163.73M) | Time:00:00.51 | Syncing roof.001
+Fra:1 Mem:163.74M (Peak 163.74M) | Time:00:00.51 | Syncing roof2.001
+Fra:1 Mem:163.74M (Peak 163.74M) | Time:00:00.51 | Syncing door.003
+Fra:1 Mem:163.75M (Peak 163.75M) | Time:00:00.51 | Syncing win.003
+Fra:1 Mem:163.76M (Peak 163.76M) | Time:00:00.51 | Syncing wall.004
+Fra:1 Mem:163.77M (Peak 163.77M) | Time:00:00.51 | Syncing OBJ_HOUSE.004
+Fra:1 Mem:163.77M (Peak 163.77M) | Time:00:00.51 | Syncing parapet.002
+Fra:1 Mem:163.78M (Peak 163.78M) | Time:00:00.51 | Syncing door.004
+Fra:1 Mem:163.79M (Peak 163.79M) | Time:00:00.51 | Syncing win.004
+Fra:1 Mem:163.80M (Peak 163.80M) | Time:00:00.51 | Syncing wall.005
+Fra:1 Mem:163.80M (Peak 163.80M) | Time:00:00.51 | Syncing OBJ_HOUSE.005
+Fra:1 Mem:163.81M (Peak 163.81M) | Time:00:00.51 | Syncing parapet.003
+Fra:1 Mem:163.82M (Peak 163.82M) | Time:00:00.51 | Syncing door.005
+Fra:1 Mem:163.82M (Peak 163.82M) | Time:00:00.51 | Syncing win.005
+Fra:1 Mem:163.83M (Peak 163.83M) | Time:00:00.51 | Syncing wall.006
+Fra:1 Mem:163.84M (Peak 163.84M) | Time:00:00.51 | Syncing OBJ_HOUSE.006
+Fra:1 Mem:163.84M (Peak 163.84M) | Time:00:00.51 | Syncing roof.002
+Fra:1 Mem:163.85M (Peak 163.85M) | Time:00:00.51 | Syncing roof2.002
+Fra:1 Mem:163.86M (Peak 163.86M) | Time:00:00.51 | Syncing door.006
+Fra:1 Mem:163.87M (Peak 163.87M) | Time:00:00.51 | Syncing win.006
+Fra:1 Mem:163.87M (Peak 163.87M) | Time:00:00.51 | Syncing PT
+Fra:1 Mem:163.87M (Peak 163.87M) | Time:00:00.51 | Syncing PT.001
+Fra:1 Mem:163.87M (Peak 163.87M) | Time:00:00.51 | Syncing PT.002
+Fra:1 Mem:163.87M (Peak 163.87M) | Time:00:00.51 | Syncing PT.003
+Fra:1 Mem:163.87M (Peak 163.87M) | Time:00:00.51 | Syncing PT.004
+Fra:1 Mem:163.88M (Peak 163.88M) | Time:00:00.51 | Syncing hill.001
+Fra:1 Mem:164.03M (Peak 164.03M) | Time:00:00.52 | Syncing hill.002
+Fra:1 Mem:164.18M (Peak 164.18M) | Time:00:00.52 | Syncing hill.003
+Fra:1 Mem:164.34M (Peak 164.34M) | Time:00:00.52 | Syncing hill.004
+Fra:1 Mem:164.49M (Peak 164.49M) | Time:00:00.52 | Syncing hill
+Fra:1 Mem:164.64M (Peak 164.64M) | Time:00:00.52 | Syncing rock
+Fra:1 Mem:164.66M (Peak 164.66M) | Time:00:00.52 | Syncing rock.001
+Fra:1 Mem:164.67M (Peak 164.67M) | Time:00:00.52 | Syncing rock.002
+Fra:1 Mem:164.69M (Peak 164.69M) | Time:00:00.52 | Syncing rock.003
+Fra:1 Mem:164.70M (Peak 164.70M) | Time:00:00.52 | Syncing rock.004
+Fra:1 Mem:164.71M (Peak 164.71M) | Time:00:00.52 | Syncing rock.005
+Fra:1 Mem:164.73M (Peak 164.73M) | Time:00:00.52 | Syncing rock.006
+Fra:1 Mem:164.74M (Peak 164.74M) | Time:00:00.52 | Syncing rock.007
+Fra:1 Mem:164.76M (Peak 164.76M) | Time:00:00.52 | Syncing rock.008
+Fra:1 Mem:164.77M (Peak 164.77M) | Time:00:00.52 | Syncing rock.009
+Fra:1 Mem:164.78M (Peak 164.78M) | Time:00:00.52 | Syncing rock.010
+Fra:1 Mem:164.80M (Peak 164.80M) | Time:00:00.52 | Syncing rock.011
+Fra:1 Mem:164.81M (Peak 164.81M) | Time:00:00.52 | Syncing rock.012
+Fra:1 Mem:164.83M (Peak 164.83M) | Time:00:00.52 | Syncing rock.013
+Fra:1 Mem:164.84M (Peak 164.84M) | Time:00:00.52 | Syncing rock.014
+Fra:1 Mem:164.86M (Peak 164.86M) | Time:00:00.52 | Syncing rock.015
+Fra:1 Mem:164.87M (Peak 164.87M) | Time:00:00.52 | Syncing rock.016
+Fra:1 Mem:164.88M (Peak 164.88M) | Time:00:00.52 | Syncing rock.017
+Fra:1 Mem:164.90M (Peak 164.90M) | Time:00:00.52 | Syncing rock.018
+Fra:1 Mem:164.91M (Peak 164.91M) | Time:00:00.52 | Syncing rock.019
+Fra:1 Mem:164.93M (Peak 164.93M) | Time:00:00.52 | Syncing rock.020
+Fra:1 Mem:164.94M (Peak 164.94M) | Time:00:00.52 | Syncing rock.021
+Fra:1 Mem:164.95M (Peak 164.95M) | Time:00:00.52 | Syncing rock.022
+Fra:1 Mem:164.97M (Peak 164.97M) | Time:00:00.52 | Syncing rock.023
+Fra:1 Mem:164.98M (Peak 164.98M) | Time:00:00.52 | Syncing rock.024
+Fra:1 Mem:165.00M (Peak 165.00M) | Time:00:00.52 | Syncing rock.025
+Fra:1 Mem:165.01M (Peak 165.01M) | Time:00:00.52 | Syncing rock.026
+Fra:1 Mem:165.02M (Peak 165.02M) | Time:00:00.52 | Syncing rock.027
+Fra:1 Mem:165.04M (Peak 165.04M) | Time:00:00.52 | Syncing rock.028
+Fra:1 Mem:165.05M (Peak 165.05M) | Time:00:00.52 | Syncing rock.029
+Fra:1 Mem:165.07M (Peak 165.07M) | Time:00:00.52 | Syncing rock.030
+Fra:1 Mem:165.08M (Peak 165.08M) | Time:00:00.52 | Syncing rock.031
+Fra:1 Mem:165.09M (Peak 165.09M) | Time:00:00.52 | Syncing rock.032
+Fra:1 Mem:165.11M (Peak 165.11M) | Time:00:00.52 | Syncing rock.033
+Fra:1 Mem:165.12M (Peak 165.12M) | Time:00:00.52 | Syncing rock.034
+Fra:1 Mem:165.14M (Peak 165.14M) | Time:00:00.52 | Syncing rock.035
+Fra:1 Mem:165.15M (Peak 165.15M) | Time:00:00.52 | Syncing rock.036
+Fra:1 Mem:165.17M (Peak 165.17M) | Time:00:00.52 | Syncing rock.037
+Fra:1 Mem:165.18M (Peak 165.18M) | Time:00:00.52 | Syncing rock.038
+Fra:1 Mem:165.19M (Peak 165.19M) | Time:00:00.52 | Syncing rock.039
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.001
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.002
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.003
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.004
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.005
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.006
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.007
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.008
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.009
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.010
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.011
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.012
+Fra:1 Mem:165.21M (Peak 165.21M) | Time:00:00.52 | Syncing tuft.013
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.014
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.015
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.016
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.017
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.018
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.019
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.020
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.021
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.022
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.023
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.024
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.025
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.026
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.027
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.028
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.029
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.030
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.031
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.032
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.033
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.034
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.035
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.036
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.037
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.038
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.039
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.040
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.041
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.042
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.043
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.044
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.045
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.046
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.047
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.048
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.049
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.050
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.051
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.052
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.053
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.054
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.055
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.056
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.057
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.058
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.059
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.060
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.061
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.062
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.063
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.064
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.065
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.066
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.067
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.068
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.069
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.070
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.071
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.072
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.073
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.074
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.075
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.076
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.077
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.078
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.079
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.080
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.081
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.082
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.083
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.084
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.085
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.086
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.087
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.088
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.089
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.090
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.091
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.092
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.093
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.094
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.095
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.096
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.097
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.098
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.099
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.100
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.101
+Fra:1 Mem:165.22M (Peak 165.22M) | Time:00:00.52 | Syncing tuft.102
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.103
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.104
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.105
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.106
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.107
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.108
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.109
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.110
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.111
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.112
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.113
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.114
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.115
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.116
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.117
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.118
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.119
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.120
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.121
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.122
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.123
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.124
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.125
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.126
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.127
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.128
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.129
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.130
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.131
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.132
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.133
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.134
+Fra:1 Mem:165.25M (Peak 165.25M) | Time:00:00.52 | Syncing tuft.135
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.136
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.137
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.138
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.139
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.140
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.141
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.142
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.143
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.144
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.145
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.146
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.147
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.148
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.149
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.150
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.151
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.152
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.153
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.154
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.155
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.156
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.157
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.158
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.159
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.160
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.161
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.162
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.163
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.164
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.165
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.166
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.167
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.168
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.169
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.170
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.171
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.172
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.173
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.174
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.175
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.176
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.177
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.178
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.179
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.180
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.181
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.182
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.183
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.184
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.185
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.186
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.187
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.188
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.189
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.190
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.191
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.192
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.193
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.194
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.195
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.196
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.197
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.198
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.199
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.200
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.201
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.202
+Fra:1 Mem:165.26M (Peak 165.26M) | Time:00:00.52 | Syncing tuft.203
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.204
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.205
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.206
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.207
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.208
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.209
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.210
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.211
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.212
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.213
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.214
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.215
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.216
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.217
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.218
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.219
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.220
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.221
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.222
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.223
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.224
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.225
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.226
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.227
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.228
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.229
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.230
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.231
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.232
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.233
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.234
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.235
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.236
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.237
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.238
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.239
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.240
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.241
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.242
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.243
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.244
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.245
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.246
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.247
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.248
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.249
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.250
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.251
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.252
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.253
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.254
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.255
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.256
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.257
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.258
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.259
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.260
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.261
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.262
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.263
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.264
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.265
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.266
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.267
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.268
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.269
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.270
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.271
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.272
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.273
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.274
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.275
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.276
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.277
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.278
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.279
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.280
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.281
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.282
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.283
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.284
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.285
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.286
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.287
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.288
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.289
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.290
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.291
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.292
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.293
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.294
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.295
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.296
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.297
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.298
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.299
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.300
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.301
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.302
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.303
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.304
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.305
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.306
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.307
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.308
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.309
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.310
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.311
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.312
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.313
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.314
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.315
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.316
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.317
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.318
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.319
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.320
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.321
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.322
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.323
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.324
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.325
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.326
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.327
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.328
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.329
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.330
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.331
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.332
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.333
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.334
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.335
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.336
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.337
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.338
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.339
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.340
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.341
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.342
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.343
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.344
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.345
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.346
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.347
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.348
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.349
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.350
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.351
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.352
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.353
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.354
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.355
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.356
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.357
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.358
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.359
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.360
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.361
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.362
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.363
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.364
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.365
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.366
+Fra:1 Mem:165.27M (Peak 165.27M) | Time:00:00.52 | Syncing tuft.367
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.368
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.369
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.370
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.371
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.372
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.373
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.374
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.375
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.376
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.377
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.378
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.379
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.380
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.381
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.382
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.383
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.384
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.385
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.386
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.387
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.388
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.389
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.390
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.391
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.392
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.393
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.394
+Fra:1 Mem:165.28M (Peak 165.28M) | Time:00:00.52 | Syncing tuft.395
+Fra:1 Mem:165.39M (Peak 165.39M) | Time:00:00.52 | Syncing tuft.396
+Fra:1 Mem:165.39M (Peak 165.39M) | Time:00:00.52 | Syncing tuft.397
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.398
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.399
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.400
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.401
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.402
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.403
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.404
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.405
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.406
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.407
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.408
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.409
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.410
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.411
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.412
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.413
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.414
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.415
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.416
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.417
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.418
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.419
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.420
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.421
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.422
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.423
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.424
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.425
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.426
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.427
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.428
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.429
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.430
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.431
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.432
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.433
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.434
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.435
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.436
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.437
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.438
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.439
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.440
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.441
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.442
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.443
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.444
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.445
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.446
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.447
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.448
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.449
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.450
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.451
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.452
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.453
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.454
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.455
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.456
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.457
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.458
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.459
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.460
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.461
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.462
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.463
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.464
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.465
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.466
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.467
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.468
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.469
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.470
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.471
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.472
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.473
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.474
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.475
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.476
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.477
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.478
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.479
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.480
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.481
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.482
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.483
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.484
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.485
+Fra:1 Mem:165.40M (Peak 165.40M) | Time:00:00.52 | Syncing tuft.486
+Fra:1 Mem:165.43M (Peak 165.43M) | Time:00:00.52 | Syncing tuft.487
+Fra:1 Mem:165.43M (Peak 165.43M) | Time:00:00.52 | Syncing tuft.488
+Fra:1 Mem:165.43M (Peak 165.43M) | Time:00:00.52 | Syncing tuft.489
+Fra:1 Mem:165.43M (Peak 165.43M) | Time:00:00.52 | Syncing tuft.490
+Fra:1 Mem:165.43M (Peak 165.43M) | Time:00:00.52 | Syncing tuft.491
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.492
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.493
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.494
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.495
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.496
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.497
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.498
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.499
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.500
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.501
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.502
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.503
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.504
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.505
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.506
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.507
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.508
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.509
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.510
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.511
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.512
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.513
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.514
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.515
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.516
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.517
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.518
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.519
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.520
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.521
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.522
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.523
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.524
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.525
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.526
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.527
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.528
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.529
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.530
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.531
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.532
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.533
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.534
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.535
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.536
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.537
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.538
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.539
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.540
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.541
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.542
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.543
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.544
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.545
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.546
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.547
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.548
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.549
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.550
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.551
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.552
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.553
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.554
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.555
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.556
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.557
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.558
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.559
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.560
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.561
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.562
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.563
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.564
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.565
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.566
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.567
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.568
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.569
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.570
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.571
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.572
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.573
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.574
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.575
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.576
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.577
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.578
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.579
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.580
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.581
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.582
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.583
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.584
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.585
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.586
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.587
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.588
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.589
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.590
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.591
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.592
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.593
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.594
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.595
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.596
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.597
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.598
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.599
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.600
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.601
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.602
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.603
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.604
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.605
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.606
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.607
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.608
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.609
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.610
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.611
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.612
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.613
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.614
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.615
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.616
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.617
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.618
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.619
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.620
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.621
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.622
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.623
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.624
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.625
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.626
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.627
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.628
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.629
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.630
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.631
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.632
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.633
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.634
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.635
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.636
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.637
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.638
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.639
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.640
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.641
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.642
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.643
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.644
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.645
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.646
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.647
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.648
+Fra:1 Mem:165.44M (Peak 165.44M) | Time:00:00.52 | Syncing tuft.649
+Fra:1 Mem:165.45M (Peak 165.45M) | Time:00:00.52 | Syncing rib.001
+Fra:1 Mem:165.49M (Peak 165.49M) | Time:00:00.52 | Syncing OBJ_BONES
+Fra:1 Mem:165.50M (Peak 165.50M) | Time:00:00.52 | Syncing rib.002
+Fra:1 Mem:165.54M (Peak 165.54M) | Time:00:00.52 | Syncing rib.003
+Fra:1 Mem:165.59M (Peak 165.59M) | Time:00:00.52 | Syncing rib.004
+Fra:1 Mem:165.63M (Peak 165.63M) | Time:00:00.52 | Syncing rib.005
+Fra:1 Mem:165.68M (Peak 165.68M) | Time:00:00.52 | Syncing rib.006
+Fra:1 Mem:165.72M (Peak 165.72M) | Time:00:00.52 | Syncing rib.007
+Fra:1 Mem:165.76M (Peak 165.76M) | Time:00:00.52 | Syncing spine
+Fra:1 Mem:165.78M (Peak 165.78M) | Time:00:00.52 | Syncing skull
+Fra:1 Mem:165.86M (Peak 165.86M) | Time:00:00.52 | Syncing longbone
+Fra:1 Mem:165.88M (Peak 165.88M) | Time:00:00.52 | Syncing longbone.001
+Fra:1 Mem:165.89M (Peak 165.89M) | Time:00:00.52 | Syncing longbone.002
+Fra:1 Mem:165.90M (Peak 165.90M) | Time:00:00.52 | Syncing longbone.003
+Fra:1 Mem:165.91M (Peak 165.91M) | Time:00:00.52 | Syncing longbone.004
+Fra:1 Mem:165.93M (Peak 165.93M) | Time:00:00.52 | Syncing longbone.005
+Fra:1 Mem:165.94M (Peak 165.94M) | Time:00:00.52 | Syncing rib.008
+Fra:1 Mem:165.98M (Peak 165.98M) | Time:00:00.52 | Syncing OBJ_BONES.001
+Fra:1 Mem:165.98M (Peak 165.98M) | Time:00:00.52 | Syncing rib.009
+Fra:1 Mem:166.03M (Peak 166.03M) | Time:00:00.52 | Syncing rib.010
+Fra:1 Mem:166.07M (Peak 166.07M) | Time:00:00.52 | Syncing rib.011
+Fra:1 Mem:166.12M (Peak 166.12M) | Time:00:00.52 | Syncing rib.012
+Fra:1 Mem:166.16M (Peak 166.16M) | Time:00:00.52 | Syncing rib.013
+Fra:1 Mem:166.21M (Peak 166.21M) | Time:00:00.52 | Syncing rib.014
+Fra:1 Mem:166.25M (Peak 166.25M) | Time:00:00.52 | Syncing spine.001
+Fra:1 Mem:166.26M (Peak 166.26M) | Time:00:00.52 | Syncing skull.001
+Fra:1 Mem:166.35M (Peak 166.35M) | Time:00:00.52 | Syncing longbone.006
+Fra:1 Mem:166.36M (Peak 166.36M) | Time:00:00.52 | Syncing longbone.007
+Fra:1 Mem:166.37M (Peak 166.37M) | Time:00:00.52 | Syncing longbone.008
+Fra:1 Mem:166.39M (Peak 166.39M) | Time:00:00.52 | Syncing longbone.009
+Fra:1 Mem:166.40M (Peak 166.40M) | Time:00:00.52 | Syncing longbone.010
+Fra:1 Mem:166.41M (Peak 166.41M) | Time:00:00.52 | Syncing longbone.011
+Fra:1 Mem:166.42M (Peak 166.42M) | Time:00:00.52 | Syncing rib.015
+Fra:1 Mem:166.46M (Peak 166.46M) | Time:00:00.52 | Syncing OBJ_BONES.002
+Fra:1 Mem:166.47M (Peak 166.47M) | Time:00:00.52 | Syncing rib.016
+Fra:1 Mem:166.51M (Peak 166.51M) | Time:00:00.52 | Syncing rib.017
+Fra:1 Mem:166.56M (Peak 166.56M) | Time:00:00.52 | Syncing rib.018
+Fra:1 Mem:166.60M (Peak 166.60M) | Time:00:00.53 | Syncing rib.019
+Fra:1 Mem:166.65M (Peak 166.65M) | Time:00:00.53 | Syncing rib.020
+Fra:1 Mem:166.69M (Peak 166.69M) | Time:00:00.53 | Syncing rib.021
+Fra:1 Mem:166.74M (Peak 166.74M) | Time:00:00.53 | Syncing spine.002
+Fra:1 Mem:166.75M (Peak 166.75M) | Time:00:00.53 | Syncing skull.002
+Fra:1 Mem:166.84M (Peak 166.84M) | Time:00:00.53 | Syncing longbone.012
+Fra:1 Mem:166.85M (Peak 166.85M) | Time:00:00.53 | Syncing longbone.013
+Fra:1 Mem:166.86M (Peak 166.86M) | Time:00:00.53 | Syncing longbone.014
+Fra:1 Mem:166.87M (Peak 166.87M) | Time:00:00.53 | Syncing longbone.015
+Fra:1 Mem:166.89M (Peak 166.89M) | Time:00:00.53 | Syncing longbone.016
+Fra:1 Mem:166.90M (Peak 166.90M) | Time:00:00.53 | Syncing longbone.017
+Fra:1 Mem:166.91M (Peak 166.91M) | Time:00:00.53 | Syncing rib.022
+Fra:1 Mem:166.95M (Peak 166.95M) | Time:00:00.53 | Syncing OBJ_BONES.003
+Fra:1 Mem:166.96M (Peak 166.96M) | Time:00:00.53 | Syncing rib.023
+Fra:1 Mem:167.00M (Peak 167.00M) | Time:00:00.53 | Syncing rib.024
+Fra:1 Mem:167.05M (Peak 167.05M) | Time:00:00.53 | Syncing rib.025
+Fra:1 Mem:167.09M (Peak 167.09M) | Time:00:00.53 | Syncing rib.026
+Fra:1 Mem:167.14M (Peak 167.14M) | Time:00:00.53 | Syncing rib.027
+Fra:1 Mem:167.18M (Peak 167.18M) | Time:00:00.53 | Syncing rib
+Fra:1 Mem:167.22M (Peak 167.22M) | Time:00:00.53 | Syncing spine.003
+Fra:1 Mem:167.24M (Peak 167.24M) | Time:00:00.53 | Syncing skull.003
+Fra:1 Mem:167.32M (Peak 167.32M) | Time:00:00.53 | Syncing longbone.018
+Fra:1 Mem:167.34M (Peak 167.34M) | Time:00:00.53 | Syncing longbone.019
+Fra:1 Mem:167.35M (Peak 167.35M) | Time:00:00.53 | Syncing longbone.020
+Fra:1 Mem:167.36M (Peak 167.36M) | Time:00:00.53 | Syncing longbone.021
+Fra:1 Mem:167.37M (Peak 167.37M) | Time:00:00.53 | Syncing longbone.022
+Fra:1 Mem:167.39M (Peak 167.39M) | Time:00:00.53 | Syncing longbone.023
+Fra:1 Mem:167.40M (Peak 167.40M) | Time:00:00.53 | Syncing dog_body
+Fra:1 Mem:167.80M (Peak 167.80M) | Time:00:00.53 | Syncing CRE_DOG
+Fra:1 Mem:167.80M (Peak 167.80M) | Time:00:00.53 | Syncing dog_tail
+Fra:1 Mem:167.85M (Peak 167.85M) | Time:00:00.53 | Syncing dog_ear
+Fra:1 Mem:167.87M (Peak 167.87M) | Time:00:00.53 | Syncing dog_eye.001
+Fra:1 Mem:167.88M (Peak 167.88M) | Time:00:00.53 | Syncing dog_ear.001
+Fra:1 Mem:167.89M (Peak 167.89M) | Time:00:00.53 | Syncing dog_eye.002
+Fra:1 Mem:167.91M (Peak 167.91M) | Time:00:00.53 | Syncing dog_nose.001
+Fra:1 Mem:167.92M (Peak 167.92M) | Time:00:00.53 | Syncing dog_body.001
+Fra:1 Mem:168.30M (Peak 168.30M) | Time:00:00.53 | Syncing CRE_DOG.001
+Fra:1 Mem:168.31M (Peak 168.31M) | Time:00:00.53 | Syncing dog_tail.001
+Fra:1 Mem:168.36M (Peak 168.36M) | Time:00:00.53 | Syncing dog_ear.002
+Fra:1 Mem:168.37M (Peak 168.37M) | Time:00:00.53 | Syncing dog_eye.003
+Fra:1 Mem:168.39M (Peak 168.39M) | Time:00:00.53 | Syncing dog_ear.003
+Fra:1 Mem:168.39M (Peak 168.39M) | Time:00:00.53 | Syncing dog_eye.004
+Fra:1 Mem:168.41M (Peak 168.41M) | Time:00:00.53 | Syncing dog_nose.002
+Fra:1 Mem:168.43M (Peak 168.43M) | Time:00:00.53 | Syncing dog_body.002
+Fra:1 Mem:168.85M (Peak 168.85M) | Time:00:00.53 | Syncing CRE_DOG.002
+Fra:1 Mem:168.85M (Peak 168.85M) | Time:00:00.53 | Syncing dog_tail.002
+Fra:1 Mem:168.91M (Peak 168.91M) | Time:00:00.53 | Syncing dog_ear.004
+Fra:1 Mem:168.92M (Peak 168.92M) | Time:00:00.53 | Syncing dog_eye.005
+Fra:1 Mem:168.93M (Peak 168.93M) | Time:00:00.53 | Syncing dog_ear.005
+Fra:1 Mem:168.94M (Peak 168.94M) | Time:00:00.53 | Syncing dog_eye.006
+Fra:1 Mem:168.96M (Peak 168.96M) | Time:00:00.53 | Syncing dog_nose.003
+Fra:1 Mem:168.97M (Peak 168.97M) | Time:00:00.53 | Syncing dog_body.003
+Fra:1 Mem:169.40M (Peak 169.40M) | Time:00:00.53 | Syncing CRE_DOG.003
+Fra:1 Mem:169.40M (Peak 169.40M) | Time:00:00.53 | Syncing dog_tail.003
+Fra:1 Mem:169.45M (Peak 169.45M) | Time:00:00.53 | Syncing dog_ear.006
+Fra:1 Mem:169.46M (Peak 169.46M) | Time:00:00.53 | Syncing dog_eye.007
+Fra:1 Mem:169.48M (Peak 169.48M) | Time:00:00.53 | Syncing dog_ear.007
+Fra:1 Mem:169.49M (Peak 169.49M) | Time:00:00.53 | Syncing dog_eye.008
+Fra:1 Mem:169.50M (Peak 169.50M) | Time:00:00.53 | Syncing dog_nose.004
+Fra:1 Mem:169.52M (Peak 169.52M) | Time:00:00.53 | Syncing dog_body.004
+Fra:1 Mem:169.91M (Peak 169.91M) | Time:00:00.53 | Syncing CRE_DOG.004
+Fra:1 Mem:169.92M (Peak 169.92M) | Time:00:00.53 | Syncing dog_tail.004
+Fra:1 Mem:169.97M (Peak 169.97M) | Time:00:00.53 | Syncing dog_ear.008
+Fra:1 Mem:169.98M (Peak 169.98M) | Time:00:00.53 | Syncing dog_eye.009
+Fra:1 Mem:170.00M (Peak 170.00M) | Time:00:00.53 | Syncing dog_ear.009
+Fra:1 Mem:170.01M (Peak 170.01M) | Time:00:00.53 | Syncing dog_eye.010
+Fra:1 Mem:170.02M (Peak 170.02M) | Time:00:00.53 | Syncing dog_nose.005
+Fra:1 Mem:170.04M (Peak 170.04M) | Time:00:00.53 | Syncing dog_body.005
+Fra:1 Mem:170.42M (Peak 170.42M) | Time:00:00.53 | Syncing CRE_DOG.005
+Fra:1 Mem:170.42M (Peak 170.42M) | Time:00:00.53 | Syncing dog_tail.005
+Fra:1 Mem:170.48M (Peak 170.48M) | Time:00:00.53 | Syncing dog_ear.010
+Fra:1 Mem:170.49M (Peak 170.49M) | Time:00:00.53 | Syncing dog_eye.011
+Fra:1 Mem:170.50M (Peak 170.50M) | Time:00:00.53 | Syncing dog_ear.011
+Fra:1 Mem:170.51M (Peak 170.51M) | Time:00:00.53 | Syncing dog_eye.012
+Fra:1 Mem:170.53M (Peak 170.53M) | Time:00:00.53 | Syncing dog_nose.006
+Fra:1 Mem:170.54M (Peak 170.54M) | Time:00:00.53 | Syncing dog_body.006
+Fra:1 Mem:170.96M (Peak 170.96M) | Time:00:00.53 | Syncing CRE_DOG.006
+Fra:1 Mem:170.97M (Peak 170.97M) | Time:00:00.53 | Syncing dog_tail.006
+Fra:1 Mem:171.02M (Peak 171.02M) | Time:00:00.53 | Syncing dog_ear.012
+Fra:1 Mem:171.03M (Peak 171.03M) | Time:00:00.53 | Syncing dog_eye.013
+Fra:1 Mem:171.05M (Peak 171.05M) | Time:00:00.53 | Syncing dog_ear.013
+Fra:1 Mem:171.06M (Peak 171.06M) | Time:00:00.53 | Syncing dog_eye.014
+Fra:1 Mem:171.07M (Peak 171.07M) | Time:00:00.53 | Syncing dog_nose.007
+Fra:1 Mem:171.09M (Peak 171.09M) | Time:00:00.53 | Syncing dog_body.007
+Fra:1 Mem:171.48M (Peak 171.48M) | Time:00:00.53 | Syncing CRE_DOG.007
+Fra:1 Mem:171.48M (Peak 171.48M) | Time:00:00.53 | Syncing dog_tail.007
+Fra:1 Mem:171.54M (Peak 171.54M) | Time:00:00.53 | Syncing dog_ear.014
+Fra:1 Mem:171.55M (Peak 171.55M) | Time:00:00.53 | Syncing dog_eye.015
+Fra:1 Mem:171.56M (Peak 171.56M) | Time:00:00.53 | Syncing dog_ear.015
+Fra:1 Mem:171.57M (Peak 171.57M) | Time:00:00.53 | Syncing dog_eye.016
+Fra:1 Mem:171.59M (Peak 171.59M) | Time:00:00.53 | Syncing dog_nose.008
+Fra:1 Mem:171.60M (Peak 171.60M) | Time:00:00.53 | Syncing dog_body.008
+Fra:1 Mem:171.98M (Peak 171.98M) | Time:00:00.54 | Syncing CRE_DOG.008
+Fra:1 Mem:171.99M (Peak 171.99M) | Time:00:00.54 | Syncing dog_tail.008
+Fra:1 Mem:172.04M (Peak 172.04M) | Time:00:00.54 | Syncing dog_ear.016
+Fra:1 Mem:172.05M (Peak 172.05M) | Time:00:00.54 | Syncing dog_eye.017
+Fra:1 Mem:172.07M (Peak 172.07M) | Time:00:00.54 | Syncing dog_ear.017
+Fra:1 Mem:172.07M (Peak 172.07M) | Time:00:00.54 | Syncing dog_eye.018
+Fra:1 Mem:172.09M (Peak 172.09M) | Time:00:00.54 | Syncing dog_nose.009
+Fra:1 Mem:172.11M (Peak 172.11M) | Time:00:00.54 | Syncing dog_body.009
+Fra:1 Mem:172.48M (Peak 172.48M) | Time:00:00.54 | Syncing CRE_DOG.009
+Fra:1 Mem:172.49M (Peak 172.49M) | Time:00:00.54 | Syncing dog_tail.009
+Fra:1 Mem:172.54M (Peak 172.54M) | Time:00:00.54 | Syncing dog_ear.018
+Fra:1 Mem:172.55M (Peak 172.55M) | Time:00:00.54 | Syncing dog_eye.019
+Fra:1 Mem:172.57M (Peak 172.57M) | Time:00:00.54 | Syncing dog_ear.019
+Fra:1 Mem:172.58M (Peak 172.58M) | Time:00:00.54 | Syncing dog_eye.020
+Fra:1 Mem:172.59M (Peak 172.59M) | Time:00:00.54 | Syncing dog_nose.010
+Fra:1 Mem:172.61M (Peak 172.61M) | Time:00:00.54 | Syncing dog_body.010
+Fra:1 Mem:173.00M (Peak 173.00M) | Time:00:00.54 | Syncing CRE_DOG.010
+Fra:1 Mem:173.01M (Peak 173.01M) | Time:00:00.54 | Syncing dog_tail.010
+Fra:1 Mem:173.06M (Peak 173.06M) | Time:00:00.54 | Syncing dog_ear.020
+Fra:1 Mem:173.07M (Peak 173.07M) | Time:00:00.54 | Syncing dog_eye.021
+Fra:1 Mem:173.08M (Peak 173.08M) | Time:00:00.54 | Syncing dog_ear.021
+Fra:1 Mem:173.09M (Peak 173.09M) | Time:00:00.54 | Syncing dog_eye.022
+Fra:1 Mem:173.11M (Peak 173.11M) | Time:00:00.54 | Syncing dog_nose.011
+Fra:1 Mem:173.12M (Peak 173.12M) | Time:00:00.54 | Syncing dog_body.011
+Fra:1 Mem:173.55M (Peak 173.55M) | Time:00:00.54 | Syncing CRE_DOG.011
+Fra:1 Mem:173.55M (Peak 173.55M) | Time:00:00.54 | Syncing dog_tail.011
+Fra:1 Mem:173.61M (Peak 173.61M) | Time:00:00.54 | Syncing dog_ear.022
+Fra:1 Mem:173.61M (Peak 173.61M) | Time:00:00.54 | Syncing dog_eye.023
+Fra:1 Mem:173.63M (Peak 173.63M) | Time:00:00.54 | Syncing dog_ear.023
+Fra:1 Mem:173.64M (Peak 173.64M) | Time:00:00.54 | Syncing dog_eye
+Fra:1 Mem:173.66M (Peak 173.66M) | Time:00:00.54 | Syncing dog_nose
+Fra:1 Mem:173.67M (Peak 173.67M) | Time:00:00.54 | Syncing CAM
+Fra:1 Mem:173.52M (Peak 173.67M) | Time:00:00.64 | Rendering 1 / 16 samples
+Fra:1 Mem:163.87M (Peak 173.67M) | Time:00:42.79 | Rendering 16 / 16 samples
+Fra:1 Mem:162.86M (Peak 255.00M) | Time:00:45.97 | Compositing
+Fra:1 Mem:162.86M (Peak 255.00M) | Time:00:45.97 | Compositing | Determining resolution
+Fra:1 Mem:162.86M (Peak 255.00M) | Time:00:45.97 | Compositing | Initializing execution
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.98 | Compositing | Tile 1-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.98 | Compositing | Tile 2-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.98 | Compositing | Tile 3-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.98 | Compositing | Tile 4-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.98 | Compositing | Tile 5-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.99 | Compositing | Tile 6-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.99 | Compositing | Tile 7-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.99 | Compositing | Tile 8-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.99 | Compositing | Tile 9-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.99 | Compositing | Tile 10-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:45.99 | Compositing | Tile 11-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 12-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 13-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 14-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 15-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 16-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 17-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 18-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 19-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.00 | Compositing | Tile 20-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 21-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 22-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 23-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 24-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 25-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 26-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 27-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 28-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 29-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 30-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 31-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 32-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.01 | Compositing | Tile 33-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.02 | Compositing | Tile 34-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.02 | Compositing | Tile 35-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.02 | Compositing | Tile 36-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.02 | Compositing | Tile 37-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.02 | Compositing | Tile 38-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.02 | Compositing | Tile 39-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.02 | Compositing | Tile 40-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 41-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 42-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 43-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 44-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 45-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 46-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 47-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 48-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.03 | Compositing | Tile 49-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.04 | Compositing | Tile 50-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.04 | Compositing | Tile 51-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.04 | Compositing | Tile 52-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.04 | Compositing | Tile 53-54
+Fra:1 Mem:208.49M (Peak 255.00M) | Time:00:46.04 | Compositing | Tile 54-54
+Fra:1 Mem:208.43M (Peak 255.00M) | Time:00:46.04 | Compositing | De-initializing execution
+Saved: '01_PROJECTS/what_if_vultures_disappeared/08_Scenes/renders/P07.png'
+Time: 00:47.66 (Saving: 00:01.62)
+
+RENDERED P07 in 54.4 s
+Fra:1 Mem:122.27M (Peak 122.27M) | Time:00:00.18 | Syncing SUN
+Fra:1 Mem:122.27M (Peak 122.27M) | Time:00:00.18 | Syncing FILL
+Fra:1 Mem:122.27M (Peak 122.27M) | Time:00:00.18 | Syncing ENV_GROUND
+Fra:1 Mem:125.03M (Peak 125.03M) | Time:00:00.18 | Syncing wall
+Fra:1 Mem:125.03M (Peak 125.03M) | Time:00:00.18 | Syncing OBJ_HOUSE
+Fra:1 Mem:125.04M (Peak 125.04M) | Time:00:00.18 | Syncing parapet
+Fra:1 Mem:125.05M (Peak 125.05M) | Time:00:00.18 | Syncing door
+Fra:1 Mem:125.06M (Peak 125.06M) | Time:00:00.18 | Syncing win
+Fra:1 Mem:125.07M (Peak 125.07M) | Time:00:00.18 | Syncing wall.001
+Fra:1 Mem:125.07M (Peak 125.07M) | Time:00:00.18 | Syncing OBJ_HOUSE.001
+Fra:1 Mem:125.08M (Peak 125.08M) | Time:00:00.18 | Syncing roof
+Fra:1 Mem:125.09M (Peak 125.09M) | Time:00:00.18 | Syncing roof2
+Fra:1 Mem:125.10M (Peak 125.10M) | Time:00:00.18 | Syncing door.001
+Fra:1 Mem:125.10M (Peak 125.10M) | Time:00:00.18 | Syncing win.001
+Fra:1 Mem:125.11M (Peak 125.11M) | Time:00:00.18 | Syncing wall.002
+Fra:1 Mem:125.12M (Peak 125.12M) | Time:00:00.18 | Syncing OBJ_HOUSE.002
+Fra:1 Mem:125.12M (Peak 125.12M) | Time:00:00.18 | Syncing parapet.001
+Fra:1 Mem:125.13M (Peak 125.13M) | Time:00:00.18 | Syncing door.002
+Fra:1 Mem:125.14M (Peak 125.14M) | Time:00:00.18 | Syncing win.002
+Fra:1 Mem:125.15M (Peak 125.15M) | Time:00:00.18 | Syncing wall.003
+Fra:1 Mem:125.15M (Peak 125.15M) | Time:00:00.18 | Syncing OBJ_HOUSE.003
+Fra:1 Mem:125.16M (Peak 125.16M) | Time:00:00.18 | Syncing parapet.002
+Fra:1 Mem:125.17M (Peak 125.17M) | Time:00:00.18 | Syncing door.003
+Fra:1 Mem:125.18M (Peak 125.18M) | Time:00:00.18 | Syncing win.003
+Fra:1 Mem:125.18M (Peak 125.18M) | Time:00:00.18 | Syncing wall.004
+Fra:1 Mem:125.19M (Peak 125.19M) | Time:00:00.18 | Syncing OBJ_HOUSE.004
+Fra:1 Mem:125.19M (Peak 125.19M) | Time:00:00.18 | Syncing parapet.003
+Fra:1 Mem:125.20M (Peak 125.20M) | Time:00:00.18 | Syncing door.004
+Fra:1 Mem:125.21M (Peak 125.21M) | Time:00:00.18 | Syncing win.004
+Fra:1 Mem:125.22M (Peak 125.22M) | Time:00:00.18 | Syncing wall.005
+Fra:1 Mem:125.22M (Peak 125.22M) | Time:00:00.18 | Syncing OBJ_HOUSE.005
+Fra:1 Mem:125.23M (Peak 125.23M) | Time:00:00.18 | Syncing parapet.004
+Fra:1 Mem:125.24M (Peak 125.24M) | Time:00:00.18 | Syncing door.005
+Fra:1 Mem:125.25M (Peak 125.25M) | Time:00:00.18 | Syncing win.005
+Fra:1 Mem:125.25M (Peak 125.25M) | Time:00:00.18 | Syncing wall.006
+Fra:1 Mem:125.26M (Peak 125.26M) | Time:00:00.18 | Syncing OBJ_HOUSE.006
+Fra:1 Mem:125.26M (Peak 125.26M) | Time:00:00.18 | Syncing parapet.005
+Fra:1 Mem:125.27M (Peak 125.27M) | Time:00:00.18 | Syncing door.006
+Fra:1 Mem:125.28M (Peak 125.28M) | Time:00:00.18 | Syncing win.006
+Fra:1 Mem:125.29M (Peak 125.29M) | Time:00:00.18 | Syncing wall.007
+Fra:1 Mem:125.30M (Peak 125.30M) | Time:00:00.18 | Syncing OBJ_HOUSE.007
+Fra:1 Mem:125.30M (Peak 125.30M) | Time:00:00.18 | Syncing parapet.006
+Fra:1 Mem:125.31M (Peak 125.31M) | Time:00:00.18 | Syncing door.007
+Fra:1 Mem:125.32M (Peak 125.32M) | Time:00:00.18 | Syncing win.007
+Fra:1 Mem:125.33M (Peak 125.33M) | Time:00:00.18 | Syncing trunk
+Fra:1 Mem:125.33M (Peak 125.33M) | Time:00:00.18 | Syncing OBJ_TREE_NEEM
+Fra:1 Mem:125.34M (Peak 125.34M) | Time:00:00.18 | Syncing canopy.001
+Fra:1 Mem:125.39M (Peak 125.39M) | Time:00:00.18 | Syncing canopy.002
+Fra:1 Mem:125.44M (Peak 125.44M) | Time:00:00.18 | Syncing canopy.003
+Fra:1 Mem:125.49M (Peak 125.49M) | Time:00:00.18 | Syncing canopy.004
+Fra:1 Mem:125.54M (Peak 125.54M) | Time:00:00.18 | Syncing canopy.005
+Fra:1 Mem:125.59M (Peak 125.59M) | Time:00:00.18 | Syncing canopy.006
+Fra:1 Mem:125.64M (Peak 125.64M) | Time:00:00.18 | Syncing canopy
+Fra:1 Mem:125.69M (Peak 125.69M) | Time:00:00.18 | Syncing rock
+Fra:1 Mem:125.70M (Peak 125.70M) | Time:00:00.18 | Syncing rock.001
+Fra:1 Mem:125.72M (Peak 125.72M) | Time:00:00.18 | Syncing rock.002
+Fra:1 Mem:125.73M (Peak 125.73M) | Time:00:00.18 | Syncing rock.003
+Fra:1 Mem:125.75M (Peak 125.75M) | Time:00:00.18 | Syncing rock.004
+Fra:1 Mem:125.76M (Peak 125.76M) | Time:00:00.18 | Syncing rock.005
+Fra:1 Mem:125.77M (Peak 125.77M) | Time:00:00.18 | Syncing rock.006
+Fra:1 Mem:125.79M (Peak 125.79M) | Time:00:00.18 | Syncing rock.007
+Fra:1 Mem:125.80M (Peak 125.80M) | Time:00:00.18 | Syncing rock.008
+Fra:1 Mem:125.82M (Peak 125.82M) | Time:00:00.18 | Syncing rock.009
+Fra:1 Mem:125.83M (Peak 125.83M) | Time:00:00.18 | Syncing rock.010
+Fra:1 Mem:125.84M (Peak 125.84M) | Time:00:00.18 | Syncing rock.011
+Fra:1 Mem:125.86M (Peak 125.86M) | Time:00:00.18 | Syncing rock.012
+Fra:1 Mem:125.87M (Peak 125.87M) | Time:00:00.18 | Syncing rock.013
+Fra:1 Mem:125.89M (Peak 125.89M) | Time:00:00.18 | Syncing rock.014
+Fra:1 Mem:125.90M (Peak 125.90M) | Time:00:00.18 | Syncing rock.015
+Fra:1 Mem:125.91M (Peak 125.91M) | Time:00:00.18 | Syncing rock.016
+Fra:1 Mem:125.93M (Peak 125.93M) | Time:00:00.18 | Syncing rock.017
+Fra:1 Mem:125.94M (Peak 125.94M) | Time:00:00.18 | Syncing rock.018
+Fra:1 Mem:125.96M (Peak 125.96M) | Time:00:00.18 | Syncing rock.019
+Fra:1 Mem:125.97M (Peak 125.97M) | Time:00:00.18 | Syncing rock.020
+Fra:1 Mem:125.99M (Peak 125.99M) | Time:00:00.18 | Syncing rock.021
+Fra:1 Mem:126.00M (Peak 126.00M) | Time:00:00.18 | Syncing rock.022
+Fra:1 Mem:126.01M (Peak 126.01M) | Time:00:00.18 | Syncing rock.023
+Fra:1 Mem:126.03M (Peak 126.03M) | Time:00:00.18 | Syncing rock.024
+Fra:1 Mem:126.04M (Peak 126.04M) | Time:00:00.18 | Syncing PT
+Fra:1 Mem:126.04M (Peak 126.04M) | Time:00:00.18 | Syncing PT.001
+Fra:1 Mem:126.04M (Peak 126.04M) | Time:00:00.18 | Syncing PT.002
+Fra:1 Mem:126.04M (Peak 126.04M) | Time:00:00.18 | Syncing PT.003
+Fra:1 Mem:126.04M (Peak 126.04M) | Time:00:00.18 | Syncing PT.004
+Fra:1 Mem:126.04M (Peak 126.04M) | Time:00:00.18 | Syncing PT.005
+Fra:1 Mem:126.04M (Peak 126.04M) | Time:00:00.18 | Syncing dog_body
+Fra:1 Mem:126.42M (Peak 126.42M) | Time:00:00.18 | Syncing CRE_DOG
+Fra:1 Mem:126.43M (Peak 126.43M) | Time:00:00.18 | Syncing dog_tail
+Fra:1 Mem:126.48M (Peak 126.48M) | Time:00:00.18 | Syncing dog_ear
+Fra:1 Mem:126.49M (Peak 126.49M) | Time:00:00.18 | Syncing dog_eye.001
+Fra:1 Mem:126.51M (Peak 126.51M) | Time:00:00.18 | Syncing dog_ear.001
+Fra:1 Mem:126.52M (Peak 126.52M) | Time:00:00.18 | Syncing dog_eye.002
+Fra:1 Mem:126.54M (Peak 126.54M) | Time:00:00.18 | Syncing dog_nose.001
+Fra:1 Mem:126.55M (Peak 126.55M) | Time:00:00.18 | Syncing dog_body.001
+Fra:1 Mem:126.95M (Peak 126.95M) | Time:00:00.18 | Syncing CRE_DOG.001
+Fra:1 Mem:126.95M (Peak 126.95M) | Time:00:00.18 | Syncing dog_tail.001
+Fra:1 Mem:127.01M (Peak 127.01M) | Time:00:00.18 | Syncing dog_ear.002
+Fra:1 Mem:127.01M (Peak 127.01M) | Time:00:00.18 | Syncing dog_eye.003
+Fra:1 Mem:127.03M (Peak 127.03M) | Time:00:00.18 | Syncing dog_ear.003
+Fra:1 Mem:127.04M (Peak 127.04M) | Time:00:00.18 | Syncing dog_eye.004
+Fra:1 Mem:127.05M (Peak 127.05M) | Time:00:00.18 | Syncing dog_nose.002
+Fra:1 Mem:127.07M (Peak 127.07M) | Time:00:00.18 | Syncing dog_body.002
+Fra:1 Mem:127.46M (Peak 127.46M) | Time:00:00.18 | Syncing CRE_DOG.002
+Fra:1 Mem:127.47M (Peak 127.47M) | Time:00:00.18 | Syncing dog_tail.002
+Fra:1 Mem:127.52M (Peak 127.52M) | Time:00:00.18 | Syncing dog_ear.004
+Fra:1 Mem:127.53M (Peak 127.53M) | Time:00:00.18 | Syncing dog_eye.005
+Fra:1 Mem:127.55M (Peak 127.55M) | Time:00:00.18 | Syncing dog_ear.005
+Fra:1 Mem:127.56M (Peak 127.56M) | Time:00:00.18 | Syncing dog_eye.006
+Fra:1 Mem:127.57M (Peak 127.57M) | Time:00:00.18 | Syncing dog_nose.003
+Fra:1 Mem:127.59M (Peak 127.59M) | Time:00:00.18 | Syncing dog_body.003
+Fra:1 Mem:128.04M (Peak 128.04M) | Time:00:00.18 | Syncing CRE_DOG.003
+Fra:1 Mem:128.05M (Peak 128.05M) | Time:00:00.18 | Syncing dog_tail.003
+Fra:1 Mem:128.10M (Peak 128.10M) | Time:00:00.18 | Syncing dog_ear.006
+Fra:1 Mem:128.11M (Peak 128.11M) | Time:00:00.18 | Syncing dog_eye.007
+Fra:1 Mem:128.12M (Peak 128.12M) | Time:00:00.18 | Syncing dog_ear.007
+Fra:1 Mem:128.13M (Peak 128.13M) | Time:00:00.18 | Syncing dog_eye.008
+Fra:1 Mem:128.15M (Peak 128.15M) | Time:00:00.18 | Syncing dog_nose.004
+Fra:1 Mem:128.16M (Peak 128.16M) | Time:00:00.18 | Syncing dog_body.004
+Fra:1 Mem:128.56M (Peak 128.56M) | Time:00:00.18 | Syncing CRE_DOG.004
+Fra:1 Mem:128.56M (Peak 128.56M) | Time:00:00.18 | Syncing dog_tail.004
+Fra:1 Mem:128.62M (Peak 128.62M) | Time:00:00.18 | Syncing dog_ear.008
+Fra:1 Mem:128.63M (Peak 128.63M) | Time:00:00.18 | Syncing dog_eye.009
+Fra:1 Mem:128.64M (Peak 128.64M) | Time:00:00.18 | Syncing dog_ear.009
+Fra:1 Mem:128.65M (Peak 128.65M) | Time:00:00.18 | Syncing dog_eye
+Fra:1 Mem:128.67M (Peak 128.67M) | Time:00:00.18 | Syncing dog_nose
+Fra:1 Mem:128.68M (Peak 128.68M) | Time:00:00.18 | Syncing v_head
+Fra:1 Mem:128.76M (Peak 128.76M) | Time:00:00.21 | Syncing CHR_VILLAGER
+Fra:1 Mem:128.77M (Peak 128.77M) | Time:00:00.21 | Syncing v_hair
+Fra:1 Mem:128.84M (Peak 128.84M) | Time:00:00.21 | Syncing v_body
+Fra:1 Mem:128.88M (Peak 128.88M) | Time:00:00.21 | Syncing v_eye
+Fra:1 Mem:128.93M (Peak 128.93M) | Time:00:00.21 | Syncing v_leg
+Fra:1 Mem:128.94M (Peak 128.94M) | Time:00:00.21 | Syncing v_arm
+Fra:1 Mem:128.95M (Peak 128.95M) | Time:00:00.21 | Syncing v_eye.001
+Fra:1 Mem:128.99M (Peak 128.99M) | Time:00:00.21 | Syncing v_leg.001
+Fra:1 Mem:129.01M (Peak 129.01M) | Time:00:00.21 | Syncing v_arm.001
+Fra:1 Mem:129.02M (Peak 129.02M) | Time:00:00.21 | Syncing v_head.001
+Fra:1 Mem:129.09M (Peak 129.09M) | Time:00:00.21 | Syncing CHR_VILLAGER.001
+Fra:1 Mem:129.09M (Peak 129.09M) | Time:00:00.21 | Syncing v_hair.001
+Fra:1 Mem:129.17M (Peak 129.17M) | Time:00:00.21 | Syncing v_body.001
+Fra:1 Mem:129.21M (Peak 129.21M) | Time:00:00.21 | Syncing v_eye.002
+Fra:1 Mem:129.25M (Peak 129.25M) | Time:00:00.21 | Syncing v_leg.002
+Fra:1 Mem:129.27M (Peak 129.27M) | Time:00:00.21 | Syncing v_arm.002
+Fra:1 Mem:129.28M (Peak 129.28M) | Time:00:00.21 | Syncing v_eye.003
+Fra:1 Mem:129.32M (Peak 129.32M) | Time:00:00.21 | Syncing v_leg.003
+Fra:1 Mem:129.33M (Peak 129.33M) | Time:00:00.21 | Syncing v_arm.003
+Fra:1 Mem:129.34M (Peak 129.34M) | Time:00:00.21 | Syncing CAM
+Fra:1 Mem:129.28M (Peak 129.34M) | Time:00:00.32 | Rendering 1 / 16 samples
+Fra:1 Mem:124.34M (Peak 129.34M) | Time:00:38.65 | Rendering 16 / 16 samples
+Fra:1 Mem:123.49M (Peak 215.47M) | Time:00:41.71 | Compositing
+Fra:1 Mem:123.49M (Peak 215.47M) | Time:00:41.71 | Compositing | Determining resolution
+Fra:1 Mem:123.49M (Peak 215.47M) | Time:00:41.71 | Compositing | Initializing execution
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.71 | Compositing | Tile 1-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.72 | Compositing | Tile 2-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.72 | Compositing | Tile 3-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.72 | Compositing | Tile 4-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.72 | Compositing | Tile 5-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.73 | Compositing | Tile 6-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.73 | Compositing | Tile 7-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.73 | Compositing | Tile 8-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.74 | Compositing | Tile 9-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.74 | Compositing | Tile 10-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.74 | Compositing | Tile 11-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.74 | Compositing | Tile 12-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.74 | Compositing | Tile 13-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.74 | Compositing | Tile 14-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.74 | Compositing | Tile 15-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.75 | Compositing | Tile 16-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.75 | Compositing | Tile 17-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.75 | Compositing | Tile 18-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.76 | Compositing | Tile 19-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.76 | Compositing | Tile 20-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.76 | Compositing | Tile 21-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.77 | Compositing | Tile 22-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.77 | Compositing | Tile 23-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.77 | Compositing | Tile 24-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.77 | Compositing | Tile 25-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.77 | Compositing | Tile 26-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.78 | Compositing | Tile 27-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.78 | Compositing | Tile 28-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.78 | Compositing | Tile 29-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.78 | Compositing | Tile 30-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.78 | Compositing | Tile 31-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.78 | Compositing | Tile 32-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.79 | Compositing | Tile 33-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.79 | Compositing | Tile 34-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.79 | Compositing | Tile 35-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.80 | Compositing | Tile 36-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.80 | Compositing | Tile 37-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.81 | Compositing | Tile 38-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.81 | Compositing | Tile 39-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.81 | Compositing | Tile 40-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.81 | Compositing | Tile 41-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.81 | Compositing | Tile 42-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.81 | Compositing | Tile 43-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.82 | Compositing | Tile 44-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.82 | Compositing | Tile 45-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.82 | Compositing | Tile 46-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.82 | Compositing | Tile 47-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.83 | Compositing | Tile 48-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.83 | Compositing | Tile 49-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.83 | Compositing | Tile 50-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.83 | Compositing | Tile 51-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.83 | Compositing | Tile 52-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.83 | Compositing | Tile 53-54
+Fra:1 Mem:169.13M (Peak 215.47M) | Time:00:41.84 | Compositing | Tile 54-54
+Fra:1 Mem:169.06M (Peak 215.47M) | Time:00:41.84 | Compositing | De-initializing execution
+Saved: '01_PROJECTS/what_if_vultures_disappeared/08_Scenes/renders/P18.png'
+Time: 00:43.15 (Saving: 00:01.30)
+
+RENDERED P18 in 44.0 s
+
+Blender quit

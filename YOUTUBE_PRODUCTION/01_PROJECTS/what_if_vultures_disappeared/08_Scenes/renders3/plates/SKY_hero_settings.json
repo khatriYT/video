@@ -1,0 +1,12 @@
+{
+ "plate": "SKY_hero",
+ "env": "sky",
+ "light": "day",
+ "cam": "SKY_HERO",
+ "resolution": [
+  2304,
+  1296
+ ],
+ "samples": 16,
+ "seconds": 13.7
+}
