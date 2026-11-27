@@ -254,7 +254,7 @@
 
 ### SC045 · The night gardeners
 - **Narration:** In the deserts of Mexico, the lesser long-nosed bat pushes its face into agave flowers to drink nectar, and comes out dusted with pollen.
-- **Visual:** plate `AGAVE_BAT_CU`, camera move `hold`
+- **Visual:** plate `AGAVE_BAT_CU`, camera move `agave_bat`
 - **Claims illustrated:** C22
 - **Estimated duration:** 10.3 s
 
