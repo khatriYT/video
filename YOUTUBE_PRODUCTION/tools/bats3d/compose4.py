@@ -229,14 +229,14 @@ def swarm_state(kind, t, meta, rng_seed, density, dur):
                 fwd, rgt, upv = Rm @ np.array([0, 0, -1.0]), Rm @ np.array([1.0, 0, 0]), Rm @ np.array([0, 1.0, 0])
                 fr = np.random.default_rng(99)
                 extra, eph = [], []
-                for k in range(7):
-                    tc = dur * (0.08 + 0.84 * k / 6.0) + fr.uniform(-0.3, 0.3)
-                    d_ = fr.uniform(3.2, 6.5)
+                for k in range(10):
+                    tc = dur * (0.06 + 0.88 * k / 9.0) + fr.uniform(-0.3, 0.3)
+                    d_ = fr.uniform(1.8, 3.4)
                     side = 1.0 if k % 2 else -1.0
-                    u = (t - tc) / 2.4 + 0.5
+                    u = (t - tc) / 1.7 + 0.5
                     if 0.0 < u < 1.0:
-                        h0, h1 = fr.uniform(-0.6, 1.4), fr.uniform(-0.2, 2.0)
-                        extra.append(camp + fwd * d_ + rgt * side * (-5.0 + 10.0 * u) + upv * (h0 + (h1 - h0) * u))
+                        h0, h1 = fr.uniform(-0.4, 0.8), fr.uniform(-0.1, 1.2)
+                        extra.append(camp + fwd * d_ + rgt * side * (-3.4 + 6.8 * u) + upv * (h0 + (h1 - h0) * u))
                         eph.append(fr.uniform(0, 2 * np.pi))
                     else:
                         fr.uniform(-0.6, 1.4), fr.uniform(-0.2, 2.0)
