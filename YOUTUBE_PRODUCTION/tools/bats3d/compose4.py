@@ -308,7 +308,7 @@ def draw_swarm(canvas, depth, cam, atlas, sp, kind, t, meta, density, dur, prese
     img = canvas
     Hh, Ww = depth.shape
     dots = ImageDraw.Draw(img, "RGBA")
-    dotc = (20, 14, 22, 200) if preset != "moon" else ((70, 84, 124, 220) if kind == "sky" else (8, 10, 20, 220))
+    dotc = (20, 14, 22, 200) if preset != "moon" else ((8, 10, 20, 220) if kind == "silhouette" else (70, 84, 124, 220))
     for j, i in enumerate(idx):
         size = int(cam.f * world_cell / z[i])
         if size < 9:      # far bats: a soft dark dash (wings blurred by motion)
@@ -331,7 +331,8 @@ def draw_swarm(canvas, depth, cam, atlas, sp, kind, t, meta, density, dur, prese
         if fogk > 0.05 and kind != "silhouette":
             a = np.asarray(spr, dtype=np.float32)
             a[..., :3] = a[..., :3] * (1 - fogk * 0.6) + haze * fogk * 0.6
-            if kind == "sky":       # moonlit undersides: lift toward a cool blue-grey so they read on the night sky
+            if kind == "sky" or (preset == "moon" and kind not in ("silhouette",)):
+                # moonlit undersides: lift toward a cool blue-grey so they read on the night sky
                 a[..., :3] = a[..., :3] * 0.62 + np.array([96.0, 114.0, 168.0]) * 0.38
             spr = Image.fromarray(a.astype(np.uint8), "RGBA")
         img.alpha_composite(spr, (cx - size // 2, cy - size // 2))
@@ -455,6 +456,9 @@ GRADES = {
     "dusk": dict(sat=1.1, contrast=0.25, shadows=(0.0, 0.01, 0.09), highs=(0.05, 0.01, -0.02), bloom=0.3, exp=1.08),
     "night": dict(sat=1.05, contrast=0.22, shadows=(0.0, 0.02, 0.08), highs=(0.0, 0.02, 0.05), bloom=0.38, exp=1.15),
     "cave": dict(sat=1.08, contrast=0.3, shadows=(-0.01, 0.04, 0.07), highs=(0.06, 0.02, -0.03), bloom=0.35, exp=1.2),
+    # moonlit field where the hunting bats must read: a little more exposure than the standard night grade
+    "night_lift": dict(sat=1.05, contrast=0.22, shadows=(0.0, 0.02, 0.08), highs=(0.0, 0.02, 0.05), bloom=0.38,
+                       exp=1.45),
     # looking out of the cave into a winter day: no cave exposure push; cool, soft, slightly desaturated
     "winter": dict(sat=0.95, contrast=0.24, shadows=(-0.01, 0.02, 0.06), highs=(0.0, 0.01, 0.03), bloom=0.12, exp=0.9),
     "day": dict(sat=1.12, contrast=0.22, shadows=(0.0, 0.01, 0.04), highs=(0.03, 0.02, -0.01), bloom=0.18, exp=1.0),
