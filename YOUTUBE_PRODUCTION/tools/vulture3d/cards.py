@@ -910,11 +910,18 @@ def overlay_fn(v, dur, seed=0):
             L.text((W / 2, 270), tx["sub"], 120, "black", "mustard")
             layers.append((L.done(), (0, 300), 0.6, "pop", None))
         elif st == "chapter":
-            L = Layer(1000, 170)
-            L.rrect((0, 0, 1000, 170), 24, "bg")
+            # panel grows with the title (long titles used to clip); shrink the font only past the frame width
+            fs = 64
+            tw = F("black", fs).getlength(tx["main"])
+            if tw > W - 140 - 100:
+                fs = int(fs * (W - 240) / tw)
+                tw = F("black", fs).getlength(tx["main"])
+            pw = int(max(1000, tw + 100))
+            L = Layer(pw, 170)
+            L.rrect((0, 0, pw, 170), 24, "bg")
             L.rrect((0, 0, 14, 170), 6, "mustard")
             L.text((50, 52), tx["sub"].upper(), 30, "bold", "mustard", anchor="lm")
-            L.text((50, 115), tx["main"], 64, "black", "cream", anchor="lm")
+            L.text((50, 115), tx["main"], fs, "black", "cream", anchor="lm")
             layers.append((L.done(), (70, 70), 0.3, "left", 3.4))
         elif st == "callout":
             # auto-fit: shrink the text so long values ("$26.9 billion") never clip

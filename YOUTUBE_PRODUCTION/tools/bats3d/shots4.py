@@ -137,3 +137,4 @@ SHOTS["DURIAN_NIGHT"]["fps"] = 12
 # compositing-side lighting help for an under-lit hero: exposure lift (1 - (1-c)^g) and a cool moonlight rim
 SHOTS["AGAVE_BAT_CU"]["char_gain"] = 3.5
 SHOTS["AGAVE_BAT_CU"]["char_rim"] = ((0.6, 0.72, 1.0), 0.4)
+SHOTS["HIB_SNOW_EXIT"]["grade"] = "winter"      # exterior daylight: the cave exposure push blew it out
