@@ -143,3 +143,4 @@ SHOTS["HIB_SNOW_EXIT"]["grade"] = "winter"      # exterior daylight: the cave ex
 SHOTS["STUDIO_XRAY"]["pingpong"] = (0, 16)
 SHOTS["STUDIO_XRAY"]["pp_period"] = 4.2
 SHOTS["CORN_NIGHT_BATS"]["grade"] = "night_lift"
+SHOTS["DURIAN_NIGHT"]["grade"] = "night_soft"

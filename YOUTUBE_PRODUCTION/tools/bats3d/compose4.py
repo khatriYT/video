@@ -457,6 +457,9 @@ GRADES = {
     "dusk": dict(sat=1.1, contrast=0.25, shadows=(0.0, 0.01, 0.09), highs=(0.05, 0.01, -0.02), bloom=0.3, exp=1.08),
     "night": dict(sat=1.05, contrast=0.22, shadows=(0.0, 0.02, 0.08), highs=(0.0, 0.02, 0.05), bloom=0.38, exp=1.15),
     "cave": dict(sat=1.08, contrast=0.3, shadows=(-0.01, 0.04, 0.07), highs=(0.06, 0.02, -0.03), bloom=0.35, exp=1.2),
+    # torch-lit macro at night: keep the cream blossoms from blooming out
+    "night_soft": dict(sat=1.06, contrast=0.24, shadows=(0.0, 0.02, 0.07), highs=(0.02, 0.01, 0.0), bloom=0.2,
+                       exp=0.98),
     # moonlit field where the hunting bats must read: a little more exposure than the standard night grade
     "night_lift": dict(sat=1.05, contrast=0.22, shadows=(0.0, 0.02, 0.08), highs=(0.0, 0.02, 0.05), bloom=0.38,
                        exp=1.45),

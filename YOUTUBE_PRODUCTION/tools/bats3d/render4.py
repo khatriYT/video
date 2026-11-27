@@ -11,6 +11,7 @@ Character pass: same camera/lights; RGBA (AOV mask), shadow + AO ratios vs a cha
 fill and rim without shadows). 12 fps.
 """
 import json
+import random
 import math
 import os
 import sys
@@ -128,6 +129,57 @@ def foxes_hanging(E):
     tmpl.root.hide_render = True
 
 
+def durian_flower(name, p, pet, stam, calyx, rnd):
+    """Hanging durian blossom: green calyx cup, five cream petals opening as a bell with reflexed tips,
+    and a brush of long stamens with yellow anthers spilling out below (one mesh, three materials)."""
+    import bmesh
+    me = bpy.data.meshes.new(name)
+    for m in (pet, stam, calyx):
+        me.materials.append(m)
+    bm = bmesh.new()
+
+    def add(coords, faces, mi):
+        vs = [bm.verts.new(tuple(c)) for c in coords]
+        for f in faces:
+            bm.faces.new([vs[i] for i in f]).material_index = mi
+    r = bmesh.ops.create_cone(bm, cap_ends=True, segments=10, radius1=0.016, radius2=0.007, depth=0.022)
+    bmesh.ops.translate(bm, verts=r["verts"], vec=(p.x, p.y, p.z - 0.011))
+    for f in {f for v in r["verts"] for f in v.link_faces}:
+        f.material_index = 2
+    base = Vector((p.x, p.y, p.z - 0.02))
+    for k in range(5):                                   # petals: bell-shaped, tips curl outward
+        a = 2 * math.pi * k / 5 + rnd.uniform(-0.15, 0.15)
+        d, side = Vector((math.cos(a), math.sin(a), 0)), Vector((-math.sin(a), math.cos(a), 0))
+        n, coords = 7, []
+        for i in range(n + 1):
+            u = i / n
+            c = base + d * (0.012 + 0.026 * u + 0.016 * u * u) - Vector((0, 0, 0.048 * u - 0.024 * u * u))
+            w = 0.005 + 0.015 * math.sin(math.pi * min(1.0, u * 1.08)) ** 0.7
+            cup = 0.006 * math.sin(math.pi * min(1.0, u * 1.08))     # V-section: edge-on petals keep some width
+            coords += [c - side * w, c + d * cup - Vector((0, 0, cup * 0.6)), c + side * w]
+        add(coords, [(i * 3 + j, i * 3 + j + 1, i * 3 + j + 4, i * 3 + j + 3) for i in range(n) for j in range(2)], 0)
+    for k in range(24):                                  # stamen brush
+        a, spread, L = rnd.uniform(0, 2 * math.pi), rnd.uniform(0.0, 0.024), rnd.uniform(0.05, 0.078)
+        s0 = base + Vector((math.cos(a), math.sin(a), 0)) * 0.004
+        s1 = base + Vector((math.cos(a) * spread, math.sin(a) * spread, -L))
+        ax = (s1 - s0).normalized()
+        q = ax.cross(Vector((0, 0, 1)) if abs(ax.z) < 0.9 else Vector((1, 0, 0))).normalized()
+        q2 = ax.cross(q)
+        rr = 0.0008
+        ring = [q * rr, (q * -0.5 + q2 * 0.866) * rr, (q * -0.5 - q2 * 0.866) * rr]
+        add([s0 + o for o in ring] + [s1 + o for o in ring], [(0, 1, 4, 3), (1, 2, 5, 4), (2, 0, 3, 5)], 1)
+        an = bmesh.ops.create_icosphere(bm, subdivisions=1, radius=0.0028)
+        bmesh.ops.translate(bm, verts=an["verts"], vec=tuple(s1))
+        for f in {f for v in an["verts"] for f in v.link_faces}:
+            f.material_index = 1
+    bm.to_mesh(me)
+    bm.free()
+    ob = C.link(bpy.data.objects.new(name, me))
+    for poly in me.polygons:
+        poly.use_smooth = True
+    return ob
+
+
 def durian_branch(E):
     """A low durian branch near the camera with hanging cream flower clusters and spiky fruit."""
     bark = FL.m_bark("durian_bark", "#6A5A4A", 6.0, moss="#5A7A3A")
@@ -136,18 +188,15 @@ def durian_branch(E):
     pet = C.m_simple("durian_petal", "#F4EAD0", 0.5, sss=0.4)
     stam = C.m_simple("durian_stamen", "#F2D27A", 0.5, sss=0.3)
     fruit = FL.m_leaf("durian_fruit", "#7A8A3A", 0.08, 0.6, 0.1)
+    calyx = C.m_simple("durian_calyx", "#8A9A4A", 0.6, sss=0.1)
+    rnd_f = random.Random(17)
     E.flowers = []
     for k, x in enumerate((-1.6, -0.6, 0.4, 1.3, 2.2)):
         top = Vector((x, 0.75 - 0.08 * x, 4.05 + 0.1 * x))
         for j in range(5):
             stalk = top + Vector(((j - 2) * 0.05, 0.02 * j, -0.12 - 0.04 * (j % 2)))
             C.tube(f"dst{k}{j}", [top, stalk], [0.006, 0.004], 5, FL.m_leaf("dstalk", "#7A8A4A", 0.05))
-            f = FL.icosphere(f"dfl{k}{j}", 0.035, 2, pet)
-            f.location = stalk - Vector((0, 0, 0.03))
-            f.scale = (1.0, 1.0, 1.4)
-            s = FL.icosphere(f"dsm{k}{j}", 0.022, 1, stam)
-            s.location = stalk - Vector((0, 0, 0.075))
-            FL.disp(s, 0.01, 0.005, depth=1)
+            durian_flower(f"dfl{k}{j}", stalk, pet, stam, calyx, rnd_f)
             E.flowers.append(stalk - Vector((0, 0, 0.07)))
     for k, x in enumerate((-3.5, 3.2)):
         fr = FL.icosphere(f"dfruit{k}", 0.16, 3, fruit)
