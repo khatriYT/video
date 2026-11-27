@@ -87,6 +87,10 @@ You asked me to inspect every scene before rendering and fix unfinished models, 
 | R19 | Sky-hunt shot ("bats climb hundreds of metres to hunt moths"): no bats visible; the camera looked down at dark farmland, where back-lit bats vanish | Camera tilted up so the bats silhouette against the moonlit sky above distant farm-town lights. Swarm brought closer (20 m). Textured moon |
 | R20 | Lesser long-nosed bat comeback: a very dark, empty night field for a hopeful beat | Re-staged at blue hour like the neighbouring agave scenes: a low camera looking up at flowering agave stalks against the twilight sky, with a dense swarm of lit nectar bats around the blossoms |
 | R21 | Bats crossing the moon were specks at 45 m | The three hero bats fly 20 m from the lens, large enough to read as bat silhouettes on the moon disc |
+| R22 | Sky hunt, second pass: the lower half was a black void below the horizon, and the bats were dark specks on a dark sky | The camera looks higher into the moonlit sky; the far land has a dim moonlit tone; hundreds of distant farm and town lights reach the horizon (camera far-clip extended to 40 km for this view); the swarm is closer and its bats carry a cool moonlit tone |
+| R23 | Bat-house shot: the "bat house" was a flat brown panel on a huge barn wall, unreadable | Modelled a pole-mounted two-chamber bat house (dark paint, overhanging roof, batten trim, vent slot, grooved landing plate, mounting bracket). It stands in the open left of the barn and silhouettes against the sunset sky. The farmer turns to look up at it, and bats emerge from its open bottom |
+| R24 | Winter cave exit was overexposed by the cave grade | A dedicated cool "winter" grade without the cave exposure push |
+| R25 | Chapter title "THE EXPERIMENT NOBODY WANTED" was clipped by its panel | Chapter panels grow with the title; the font shrinks only past the frame width |
 
 ### Render budget decisions (CPU-only machine)
 
