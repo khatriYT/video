@@ -540,7 +540,7 @@ def backdrop_for(root, sb, idx):
             if os.path.exists(p):
                 im = Image.open(p).convert("RGB").resize((W // 4, H // 4), Image.BILINEAR)
                 im = im.filter(ImageFilter.GaussianBlur(10)).resize((W, H), Image.BICUBIC)
-                a = np.asarray(im, dtype=np.float32) * 0.42
+                a = np.asarray(im, dtype=np.float32) * 0.62
                 return Image.fromarray(a.astype(np.uint8)).convert("RGBA")
     return None
 

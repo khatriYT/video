@@ -119,7 +119,7 @@ def backdrop(bg):
     for r in range(10, 0, -1):
         d.ellipse([W / 2 - r * 120, H / 2 - r * 75, W / 2 + r * 120, H / 2 + r * 75], fill=int(120 * (1 - r / 10)))
     g = g.filter(ImageFilter.GaussianBlur(70))
-    dark = Image.new("RGBA", (W, H), K.rgba(C["bg"], 150))
+    dark = Image.new("RGBA", (W, H), K.rgba(C["bg"], 118))
     im.alpha_composite(dark)
     lift = Image.new("RGBA", (W, H), K.rgba(C["bg2"], 255))
     return Image.composite(lift, im, g.point(lambda v: v // 4))
