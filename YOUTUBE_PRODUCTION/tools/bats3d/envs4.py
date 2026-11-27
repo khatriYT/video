@@ -547,15 +547,51 @@ def tractor(name, loc, rot=0.0, spray=False):
     return root
 
 
+def _box(name, c, size, mat, bevel=0.006):
+    hx, hy, hz = size[0] / 2, size[1] / 2, size[2] / 2
+    v = [(sx * hx, sy * hy, sz * hz) for sz in (-1, 1) for sy in (-1, 1) for sx in (-1, 1)]
+    f = [(0, 1, 3, 2), (4, 6, 7, 5), (0, 4, 5, 1), (2, 3, 7, 6), (0, 2, 6, 4), (1, 5, 7, 3)]
+    ob = C.mesh_ob(name, v, f, mat, smooth_=False)
+    if bevel:
+        m = ob.modifiers.new("bev", "BEVEL")
+        m.width = bevel
+        m.segments = 2
+    ob.location = c
+    return ob
+
+
 def bat_house(name, loc, rot=0.0):
-    wood = C.m_paint("bathouse_wood", "#7A5A3E", 0.75, grime=0.3)
-    b = FL.icosphere(name, 1.0, 1, wood)
-    b.data = C.mesh_ob(name + "_m", [(-0.3, -0.05, 0), (0.3, -0.05, 0), (0.3, -0.05, 0.75), (0, -0.05, 0.9),
-                                     (-0.3, -0.05, 0.75)], [(0, 1, 2, 3, 4)], wood, smooth_=False).data
-    b.modifiers.new("s", "SOLIDIFY").thickness = 0.12
-    b.location = loc
-    b.rotation_euler = (0, 0, rot)
-    return b
+    """Pole-mounted two-chamber bat house (the kind farms put up): dark-painted box with an overhanging roof,
+    grooved landing plate below the open bottom, a vent slot and batten trim. loc = ground point under the pole."""
+    paint = C.m_paint("bathouse_paint", "#3E2E24", 0.72, grime=0.3, chip=0.15)
+    trim = C.m_paint("bathouse_trim", "#5E4636", 0.66, grime=0.25)
+    roof_m = C.m_metal("bathouse_roof", "#4A4E52", 0.5)
+    pole_m = FL.m_bark("bathouse_pole", "#5A4A3C", 9.0)
+    gx, gy, gz = loc
+    z0 = gz + 3.55                       # bottom of the box
+    root = C.link(bpy.data.objects.new(name, None))
+    root.location = (gx, gy, gz)
+    root.rotation_euler = (0, 0, rot)
+    parts = [C.tube(name + "_pole", [Vector((0, 0, 0)), Vector((0, 0, 3.6))], [0.075, 0.065], 10, pole_m)]
+    W, D, H = 0.62, 0.24, 0.82
+    parts.append(_box(name + "_body", (0, 0, 3.55 + H / 2), (W, D, H), paint))
+    for k in range(5):                    # vertical batten trim on the front
+        parts.append(_box(f"{name}_bat{k}", (-W / 2 + 0.06 + k * (W - 0.12) / 4, -D / 2 - 0.008, 3.55 + H / 2),
+                          (0.035, 0.018, H - 0.04), trim, 0.003))
+    parts.append(_box(name + "_vent", (0, -D / 2 - 0.02, 3.55 + 0.26), (W - 0.1, 0.02, 0.03), C.m_simple(
+        name + "_slot", "#0A0806", 0.9), 0.0))
+    roof = _box(name + "_roof", (0, -0.02, 3.55 + H + 0.03), (W + 0.12, D + 0.16, 0.035), roof_m, 0.004)
+    roof.rotation_euler = (math.radians(-9), 0, 0)
+    parts.append(roof)
+    land = _box(name + "_landing", (0, 0.04, 3.55 - 0.13), (W - 0.04, 0.03, 0.3), trim, 0.003)    # landing plate
+    parts.append(land)
+    for k in range(6):                    # grooves on the landing plate
+        parts.append(_box(f"{name}_gr{k}", (0, 0.02, 3.55 - 0.03 - k * 0.04), (W - 0.08, 0.006, 0.008),
+                          C.m_simple(name + "_groove", "#2A1E16", 0.9), 0.0))
+    parts.append(_box(name + "_bracket", (0, D / 2 + 0.04, 3.55 + 0.35), (0.12, 0.08, 0.5), pole_m, 0.004))
+    for ob in parts:
+        ob.parent = root
+    return root
 
 
 def fence(name, a, b, n=14):
@@ -637,7 +673,7 @@ def env_farm(state="dusk", detail=1.0, crop="corn", sprayer=False, bathouse=Fals
     for ob in fence("fence", (-30, 8, 0.0), (30, 8, 0.0), 30):
         pass
     if bathouse:
-        bat_house("bathouse", (8.3, 16.2, 3.2), math.radians(-18))
+        bat_house("bathouse", (4.2, 15.2, h(4.2, 15.2) - 0.05), math.radians(-10))
     # crop rows
     leaf = FL.m_leaf("corn_leaf", "#4E8E32" if state != "day" else "#6FA83A", 0.1, 0.55, 0.3, tip="#A8B04E")
     stalk = FL.m_leaf("corn_stalk", "#8AA04A", 0.06)
@@ -684,7 +720,7 @@ def env_farm(state="dusk", detail=1.0, crop="corn", sprayer=False, bathouse=Fals
     C.volume_fog(haze[1], haze[0], 0.3, size=700.0, center=(0, 0, 10), height=30.0)
     E.marks = dict(farmer=Vector((-1.5, -2.0, h(-1.5, -2.0))), pip=Vector((1.6, -2.6, h(1.6, -2.6))),
                    field=Vector((0, -20, 2.0)), barn=Vector((14, 24, 5)), house=Vector((-14, 30, 3)),
-                   bathouse=Vector((8.3, 16.0, 3.6)), tractor=Vector((-2.0, -14.0, 1.5)))
+                   bathouse=Vector((4.2, 15.2, h(4.2, 15.2) + 3.42)), tractor=Vector((-2.0, -14.0, 1.5)))
     return E
 
 
