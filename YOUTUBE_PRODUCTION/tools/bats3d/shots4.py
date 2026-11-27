@@ -147,3 +147,5 @@ SHOTS["DURIAN_NIGHT"]["grade"] = "night_soft"
 # durian blossoms were remodelled after this character pass: its cast-shadow ratios were computed against the old
 # flower shapes, so only the depth occlusion is used (the plate carries the lighting)
 SHOTS["DURIAN_NIGHT"]["char_shadow"] = False
+# the one-bat 'durian' swarm landed on top of the hero bat at the same blossoms: the hero feeds alone
+SHOTS["DURIAN_NIGHT"]["swarm"] = None
