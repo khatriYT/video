@@ -484,7 +484,15 @@ def compose_plate_scene(proj, root, s, dur, out):
                 i = min(nchar - 1, int(round(t * cm.get("fps", 12))))
                 fn = os.path.join(cdir, f"char_{i:04d}.png")
                 if os.path.exists(fn):
-                    ch = np.asarray(Image.open(fn).convert("RGBA"), dtype=np.float32) / 255.0
+                    chim = Image.open(fn).convert("RGBA")
+                    if cm.get("frames", 2) == 1:       # held frame: slow breathing (scale about the subject)
+                        bb = chim.getchannel("A").getbbox()
+                        if bb:
+                            br = 1.0 + 0.014 * math.sin(2 * math.pi * t / 2.6)
+                            cx_, cy_ = (bb[0] + bb[2]) / 2, bb[1]
+                            chim = chim.transform(chim.size, Image.AFFINE, (1 / br, 0, cx_ - cx_ / br, 0, 1 / br,
+                                                                           cy_ - cy_ / br), Image.BICUBIC)
+                    ch = np.asarray(chim, dtype=np.float32) / 255.0
                     shd = np.asarray(Image.open(os.path.join(cdir, f"shadow_{i:04d}.png")).convert("F"), np.float32)
                     ao = np.asarray(Image.open(os.path.join(cdir, f"ao_{i:04d}.png")).convert("F"), np.float32)
                     zraw = np.asarray(Image.open(os.path.join(cdir, f"depth_{i:04d}.png")), dtype=np.float32)

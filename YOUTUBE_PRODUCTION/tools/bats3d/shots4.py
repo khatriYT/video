@@ -124,3 +124,10 @@ for _k in ("HIB_FUNGUS_CU", "HIB_HEART", "HIB_FUNGUS_CU2", "FARM_BATHOUSE", "EME
     SHOTS[_k]["fps"] = 8
 for _k in ("AGAVE_BAT_CU", "DURIAN_NIGHT"):
     SHOTS[_k]["fps"] = 16
+
+# hanging-bat close-ups barely move: render one frame, breathe it in compositing
+for _k in ("HIB_FUNGUS_CU", "HIB_HEART", "HIB_FUNGUS_CU2"):
+    SHOTS[_k]["hold"] = True
+for _k in ("STUDIO_WING", "STUDIO_XRAY"):
+    SHOTS[_k]["fps"] = 8
+SHOTS["DURIAN_NIGHT"]["fps"] = 12

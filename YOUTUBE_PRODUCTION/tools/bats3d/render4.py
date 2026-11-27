@@ -278,7 +278,7 @@ def build_actors(E, shot, hidden=False):
                 side = Vector((-d.y, d.x, 0))
                 off = side * 0.03 * math.sin(t * 1.3) + d * 0.015 * math.sin(t * 0.7) + Vector((0, 0, 0.012 * math.sin(t * 2.1)))
                 b.rig.ob.location = base + off
-                B.animate(b, t, "hover", freq=4.0)
+                B.animate(b, t, "hover", freq=4.0 if where == "flower" else 3.0)
             acts.append(Actor(kind, b.rig.ob, upd, b.parts + [b.rig.ob]))
         elif kind == "tractor":
             _, a, z = spec
@@ -610,7 +610,7 @@ def do_chars(root, shot_id, dur, first=None, last=None, full=False):
     out = os.path.join(root, "full" if full else "chars", shot_id)
     os.makedirs(out, exist_ok=True)
     fps = int(os.environ.get("CHAR_FPS", str(shot.get("fps", CHAR_FPS))))
-    n = int(math.ceil(dur * fps)) + 1
+    n = 1 if shot.get("hold") else int(math.ceil(dur * fps)) + 1
     a0 = 0 if first is None else first
     a1 = n - 1 if last is None else min(last, n - 1)
     key_dir = E.key[0] if E.key else None
