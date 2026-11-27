@@ -20,11 +20,11 @@ for s in sb:
 print(n)
 PY
 )
-  running=$(pgrep -fc "charqueue.sh")
+  running=$(pgrep -fc "charqueue2?\.sh")
   if [ "$pending" -eq 0 ]; then echo "[super] no unclaimed jobs; exiting" >> $L/super.log; exit 0; fi
   if [ "$running" -lt "$N" ]; then
     id=$((id+1)); echo "[super] $(date +%H:%M) pending=$pending running=$running -> worker $id" >> $L/super.log
-    nohup bash tools/bats3d/charqueue.sh "$P" $id >> $L/cq$id.log 2>&1 &
+    nohup bash tools/bats3d/charqueue2.sh "$P" $id >> $L/cq$id.log 2>&1 &
   fi
   sleep 90
 done
