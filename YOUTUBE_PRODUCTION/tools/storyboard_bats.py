@@ -150,7 +150,7 @@ sc(A, "More than five hundred kinds of plants rely on bats to pollinate their fl
    plate("AGAVE_WIDE", "pull", text=dict(style="callout", main="500+", sub="plant species pollinated by bats"),
          tag="STRONG"), ["C21"])
 sc(A, "In the deserts of Mexico, the lesser long-nosed bat pushes its face into agave flowers to drink nectar, and comes out dusted with pollen.",
-   plate("AGAVE_BAT_CU", "push"), ["C22"])
+   plate("AGAVE_BAT_CU", "hold"), ["C22"])
 sc(A, "Agave is the plant tequila comes from. Tequila farms grow agave from clones, so they don't actually need bats to make tequila.",
    plate("AGAVE_FARM", "pan_r"), ["C22"])
 sc(A, "But clones have almost no genetic variety. Bat pollination keeps wild agave diverse, and better able to survive new diseases. Some growers now let part of their crop flower, just for the bats.",

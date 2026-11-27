@@ -801,7 +801,7 @@
    "visual": {
     "type": "plate",
     "shot": "AGAVE_BAT_CU",
-    "move": "push"
+    "move": "hold"
    },
    "claims": [
     "C22"
