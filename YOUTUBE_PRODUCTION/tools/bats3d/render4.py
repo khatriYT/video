@@ -263,11 +263,21 @@ def build_actors(E, shot, hidden=False):
             _, where, motion, kw = spec
             b = B.build("nb", kw.get("sp", "nectar"), "flyer", fur=True)
             target = flower_point(E) if where == "flower" else E.flowers[2]
-            b.rig.ob.rotation_euler = (math.radians(-35), 0, math.radians(200 if where == "flower" else 160))
+            # hover just outside the blossoms on the camera side, facing them, body tilted up
+            camp = Vector(shot["cam"][1]) if False else None
+            cam_off = Vector((0.42, -0.82, 0.08)) if where == "flower" else Vector((0.9, -1.1, 0.1))
+            f = (-cam_off).normalized()                      # camera viewing direction
+            right = f.cross(Vector((0, 0, 1))).normalized()   # screen-right in the world
+            lat = 0.23 if where == "flower" else 0.1
+            base = target - right * lat - f * 0.04 + Vector((0, 0, -0.03))
+            yaw = math.atan2(right.x, -right.y)              # snout (local -Y) points screen-right, into the flower
+            b.rig.ob.rotation_euler = (math.radians(-35), 0, yaw)
+            d = right
 
-            def upd(t, b=b, target=target):
-                off = Vector((0.07 * math.sin(t * 1.3), -0.075 + 0.015 * math.sin(t * 0.7), -0.01 + 0.01 * math.sin(t * 2.1)))
-                b.rig.ob.location = target + off
+            def upd(t, b=b, base=base, d=d):
+                side = Vector((-d.y, d.x, 0))
+                off = side * 0.03 * math.sin(t * 1.3) + d * 0.015 * math.sin(t * 0.7) + Vector((0, 0, 0.012 * math.sin(t * 2.1)))
+                b.rig.ob.location = base + off
                 B.animate(b, t, "hover", freq=4.0)
             acts.append(Actor(kind, b.rig.ob, upd, b.parts + [b.rig.ob]))
         elif kind == "tractor":
