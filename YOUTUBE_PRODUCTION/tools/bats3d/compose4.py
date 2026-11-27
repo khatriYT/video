@@ -308,7 +308,8 @@ def draw_swarm(canvas, depth, cam, atlas, sp, kind, t, meta, density, dur, prese
     img = canvas
     Hh, Ww = depth.shape
     dots = ImageDraw.Draw(img, "RGBA")
-    dotc = (20, 14, 22, 200) if preset != "moon" else ((8, 10, 20, 220) if kind == "silhouette" else (70, 84, 124, 220))
+    dotc = (20, 14, 22, 200) if preset != "moon" else ((8, 10, 20, 220) if kind in ("silhouette", "moon")
+                                                       else (70, 84, 124, 220))
     for j, i in enumerate(idx):
         size = int(cam.f * world_cell / z[i])
         if size < 9:      # far bats: a soft dark dash (wings blurred by motion)
@@ -331,7 +332,7 @@ def draw_swarm(canvas, depth, cam, atlas, sp, kind, t, meta, density, dur, prese
         if fogk > 0.05 and kind != "silhouette":
             a = np.asarray(spr, dtype=np.float32)
             a[..., :3] = a[..., :3] * (1 - fogk * 0.6) + haze * fogk * 0.6
-            if kind == "sky" or (preset == "moon" and kind not in ("silhouette",)):
+            if kind == "sky" or (preset == "moon" and kind not in ("silhouette", "moon")):
                 # moonlit undersides: lift toward a cool blue-grey so they read on the night sky
                 a[..., :3] = a[..., :3] * 0.62 + np.array([96.0, 114.0, 168.0]) * 0.38
             spr = Image.fromarray(a.astype(np.uint8), "RGBA")
