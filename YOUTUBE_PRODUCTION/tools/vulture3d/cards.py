@@ -917,10 +917,14 @@ def overlay_fn(v, dur, seed=0):
             L.text((50, 115), tx["main"], 64, "black", "cream", anchor="lm")
             layers.append((L.done(), (70, 70), 0.3, "left", 3.4))
         elif st == "callout":
-            L = Layer(760, 260)
-            L.text((380, 100), tx["main"], 140, "black", "cream", stroke=6, stroke_fill="bg")
-            L.text((380, 210), tx["sub"], 40, "bold", "mustard", stroke=4, stroke_fill="bg")
-            layers.append((L.done(), (W - 840, 120), 0.8, "pop", None))
+            # auto-fit: shrink the text so long values ("$26.9 billion") never clip
+            mw = 1040
+            ms = min(140, int(140 * (mw - 60) / max(1.0, F("black", 140).getlength(tx["main"]))))
+            ss = min(40, int(40 * (mw - 60) / max(1.0, F("bold", 40).getlength(tx["sub"]))))
+            L = Layer(mw, 260)
+            L.text((mw / 2, 100), tx["main"], ms, "black", "cream", stroke=6, stroke_fill="bg")
+            L.text((mw / 2, 210), tx["sub"], ss, "bold", "mustard", stroke=4, stroke_fill="bg")
+            layers.append((L.done(), (W - mw - 70, 120), 0.8, "pop", None))
         elif st == "label":
             wv = int(max(F("black", 64).getlength(tx["main"]), F("semi", 34).getlength(tx["sub"]))) + 100
             L = Layer(wv, 190)

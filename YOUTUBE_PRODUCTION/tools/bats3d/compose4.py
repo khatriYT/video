@@ -121,7 +121,7 @@ class Atlas:
 
 SPECIES_SCALE = {"myotis": 1.0, "freetail": 1.05, "nectar": 1.1, "flyingfox": 3.4}
 FLAP_HZ = {"myotis": 10.0, "freetail": 8.0, "nectar": 12.0, "flyingfox": 3.0}
-HAZE = {"sunset": (232, 150, 120), "dusk": (120, 106, 160), "moon": (24, 34, 70), "dawn": (232, 224, 200)}
+HAZE = {"sunset": (150, 80, 110), "dusk": (52, 44, 92), "moon": (18, 26, 56), "dawn": (190, 190, 170)}
 
 
 def swarm_state(kind, t, meta, rng_seed, density, dur):
@@ -288,7 +288,7 @@ def draw_swarm(canvas, depth, cam, atlas, sp, kind, t, meta, density, dur, prese
         fogk = 1.0 - math.exp(-z[i] / fogd)
         if fogk > 0.05 and kind != "silhouette":
             a = np.asarray(spr, dtype=np.float32)
-            a[..., :3] = a[..., :3] * (1 - fogk * 0.85) + haze * fogk * 0.85
+            a[..., :3] = a[..., :3] * (1 - fogk * 0.6) + haze * fogk * 0.6
             spr = Image.fromarray(a.astype(np.uint8), "RGBA")
         img.alpha_composite(spr, (cx - size // 2, cy - size // 2))
 
